@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BETK Property Set Browser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --color-bg: #f3f4f6;
+      --color-surface: #ffffff;
+      --color-sidebar: #f9fafb;
+      --color-border: #e5e7eb;
+      --color-text: #1f2937;
+      --color-text-muted: #6b7280;
+      --color-primary: #2563eb;
+      --color-primary-light: #dbeafe;
+      --color-highlight: #fef08a;
+      --color-badge-bg: #e0e7ff;
+      --color-badge-text: #3730a3;
+      --color-row-alt: #f9fafb;
+      --sidebar-width: 280px;
+      --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+    }
+
+    html {
+      font-size: 15px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .header .source-badge {
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+      background: var(--color-badge-bg);
+      color: var(--color-badge-text);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-weight: 500;
+    }
+
+    /* Layout */
+    .layout {
+      display: flex;
+      min-height: calc(100vh - 57px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: var(--sidebar-width);
+      min-width: var(--sidebar-width);
+      background: var(--color-sidebar);
+      border-right: 1px solid var(--color-border);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: sticky;
+      top: 57px;
+      height: calc(100vh - 57px);
+      overflow-y: auto;
+    }
+
+    .sidebar label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    .sidebar input[type="text"] {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      background: var(--color-surface);
+      color: var(--color-text);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .sidebar input[type="text"]:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .sidebar select {
+      width: 100%;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      background: var(--color-surface);
+      color: var(--color-text);
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+
+    .sidebar select:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    /* Stats */
+    .stats {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 0.875rem;
+    }
+
+    .stats-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      padding: 0.2rem 0;
+    }
+
+    .stats-row .stats-label {
+      color: var(--color-text-muted);
+    }
+
+    .stats-row .stats-value {
+      font-weight: 600;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+    }
+
+    /* Reset button */
+    .btn-reset {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      background: var(--color-surface);
+      color: var(--color-text-muted);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .btn-reset:hover {
+      background: var(--color-bg);
+      color: var(--color-text);
+      border-color: var(--color-text-muted);
+    }
+
+    /* Main content */
+    .content {
+      flex: 1;
+      padding: 1.5rem;
+      max-width: 1100px;
+    }
+
+    /* Error message */
+    .error-msg {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #991b1b;
+      border-radius: 8px;
+      padding: 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    /* No results */
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--color-text-muted);
+      font-size: 1rem;
+    }
+
+    /* Property set card */
+    .pset-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: box-shadow 0.15s;
+    }
+
+    .pset-card:hover {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .pset-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.875rem 1.125rem;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.1s;
+    }
+
+    .pset-header:hover {
+      background: var(--color-bg);
+    }
+
+    .pset-header-left {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+
+    .pset-chevron {
+      width: 18px;
+      height: 18px;
+      color: var(--color-text-muted);
+      transition: transform 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .pset-card.open .pset-chevron {
+      transform: rotate(90deg);
+    }
+
+    .pset-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .pset-count {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      background: var(--color-badge-bg);
+      color: var(--color-badge-text);
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      font-weight: 500;
+    }
+
+    /* Card body with collapse */
+    .pset-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .pset-card.open .pset-body {
+      max-height: none;
+    }
+
+    /* Table */
+    .pset-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+
+    .pset-table thead th {
+      text-align: left;
+      padding: 0.6rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--color-text-muted);
+      background: var(--color-bg);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    .pset-table tbody tr {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .pset-table tbody tr:nth-child(even) {
+      background: var(--color-row-alt);
+    }
+
+    .pset-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .pset-table td {
+      padding: 0.5rem 1rem;
+      vertical-align: top;
+    }
+
+    .pset-table .col-name {
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .pset-table .col-tekla {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      word-break: break-all;
+    }
+
+    .pset-table .col-example {
+      color: var(--color-text);
+    }
+
+    .pset-table .col-desc {
+      color: var(--color-text-muted);
+      max-width: 300px;
+    }
+
+    .cell-empty {
+      color: #d1d5db;
+    }
+
+    mark {
+      background: var(--color-highlight);
+      color: inherit;
+      padding: 0.05em 0.1em;
+      border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        min-width: 100%;
+        position: static;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .content {
+        padding: 1rem;
+      }
+
+      .pset-table {
+        font-size: 0.8rem;
+      }
+
+      .pset-table td,
+      .pset-table th {
+        padding: 0.4rem 0.5rem;
+      }
+
+      .pset-table .col-desc {
+        max-width: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1rem;
+      }
+
+      .pset-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>BETK Property Set Browser</h1>
+    <span class="source-badge" id="sourceBadge"></span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div>
+        <label for="searchInput">Search</label>
+        <input type="text" id="searchInput" placeholder="Filter properties...">
+      </div>
+
+      <div>
+        <label for="psetSelect">Property set</label>
+        <select id="psetSelect">
+          <option value="">All property sets</option>
+        </select>
+      </div>
+
+      <div class="stats">
+        <div class="stats-row">
+          <span class="stats-label">Property sets</span>
+          <span class="stats-value" id="statSets">0</span>
+        </div>
+        <div class="stats-row">
+          <span class="stats-label">Total properties</span>
+          <span class="stats-value" id="statTotal">0</span>
+        </div>
+        <div class="stats-row">
+          <span class="stats-label">Shown</span>
+          <span class="stats-value" id="statShown">0</span>
+        </div>
+      </div>
+
+      <button class="btn-reset" id="btnReset">Reset filters</button>
+    </aside>
+
+    <main class="content" id="mainContent">
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      var data = null;
+      var searchInput = document.getElementById('searchInput');
+      var psetSelect = document.getElementById('psetSelect');
+      var btnReset = document.getElementById('btnReset');
+      var mainContent = document.getElementById('mainContent');
+      var sourceBadge = document.getElementById('sourceBadge');
+      var statSets = document.getElementById('statSets');
+      var statTotal = document.getElementById('statTotal');
+      var statShown = document.getElementById('statShown');
+      var debounceTimer = null;
+      var openSets = {};
+
+      // Load data
+      fetch('psets.json')
+        .then(function (res) {
+          if (!res.ok) throw new Error('Failed to load psets.json (' + res.status + ')');
+          return res.json();
+        })
+        .then(function (json) {
+          data = json;
+          init();
+        })
+        .catch(function (err) {
+          mainContent.innerHTML = '<div class="error-msg">Could not load property data.<br><br>' +
+            escapeHtml(err.message) +
+            '<br><br>Make sure <code>psets.json</code> is in the same directory and the page is served over HTTP (not opened as a local file).</div>';
+        });
+
+      function init() {
+        sourceBadge.textContent = data.source || '';
+
+        // Populate dropdown
+        var sets = data.propertySets || [];
+        sets.forEach(function (ps) {
+          var opt = document.createElement('option');
+          opt.value = ps.name;
+          opt.textContent = ps.name;
+          psetSelect.appendChild(opt);
+        });
+
+        // Set total stats
+        var totalProps = sets.reduce(function (sum, ps) {
+          return sum + (ps.properties ? ps.properties.length : 0);
+        }, 0);
+        statSets.textContent = sets.length;
+        statTotal.textContent = totalProps;
+
+        // Open all cards by default
+        sets.forEach(function (ps) {
+          openSets[ps.name] = true;
+        });
+
+        // Restore state from URL hash
+        readHash();
+
+        // Render
+        render();
+
+        // Events
+        searchInput.addEventListener('input', function () {
+          clearTimeout(debounceTimer);
+          debounceTimer = setTimeout(function () {
+            writeHash();
+            render();
+          }, 300);
+        });
+
+        psetSelect.addEventListener('change', function () {
+          writeHash();
+          render();
+        });
+
+        btnReset.addEventListener('click', function () {
+          searchInput.value = '';
+          psetSelect.value = '';
+          writeHash();
+          render();
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') {
+            searchInput.value = '';
+            writeHash();
+            render();
+            searchInput.focus();
+          }
+        });
+
+        window.addEventListener('hashchange', function () {
+          readHash();
+          render();
+        });
+      }
+
+      function render() {
+        if (!data) return;
+
+        var query = (searchInput.value || '').trim().toLowerCase();
+        var selectedSet = psetSelect.value;
+        var sets = data.propertySets || [];
+        var html = '';
+        var shownCount = 0;
+        var visibleSets = 0;
+
+        sets.forEach(function (ps) {
+          // Filter by dropdown
+          if (selectedSet && ps.name !== selectedSet) return;
+
+          var props = ps.properties || [];
+          var matchedProps = [];
+
+          // Filter by search
+          props.forEach(function (p) {
+            if (!query) {
+              matchedProps.push(p);
+              return;
+            }
+            var fields = [p.name, p.teklaSource, p.example, p.description];
+            var match = fields.some(function (f) {
+              return (f || '').toLowerCase().indexOf(query) !== -1;
+            });
+            if (match) matchedProps.push(p);
+          });
+
+          if (matchedProps.length === 0) return;
+
+          visibleSets++;
+          shownCount += matchedProps.length;
+
+          var isOpen = openSets[ps.name] !== false;
+          html += '<div class="pset-card' + (isOpen ? ' open' : '') + '" data-pset="' + escapeAttr(ps.name) + '">';
+          html += '<div class="pset-header" onclick="window.__toggleCard(this)">';
+          html += '<div class="pset-header-left">';
+          html += '<svg class="pset-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"/></svg>';
+          html += '<span class="pset-name">' + escapeHtml(ps.name) + '</span>';
+          html += '</div>';
+          html += '<span class="pset-count">' + matchedProps.length + '</span>';
+          html += '</div>';
+
+          html += '<div class="pset-body">';
+          html += '<table class="pset-table">';
+          html += '<thead><tr>';
+          html += '<th>Name</th><th>Tekla Source</th><th>Example</th><th>Description</th>';
+          html += '</tr></thead>';
+          html += '<tbody>';
+
+          matchedProps.forEach(function (p) {
+            html += '<tr>';
+            html += '<td class="col-name">' + highlightOrDash(p.name, query) + '</td>';
+            html += '<td class="col-tekla">' + highlightOrDash(p.teklaSource, query) + '</td>';
+            html += '<td class="col-example">' + highlightOrDash(p.example, query) + '</td>';
+            html += '<td class="col-desc">' + highlightOrDash(p.description, query) + '</td>';
+            html += '</tr>';
+          });
+
+          html += '</tbody></table>';
+          html += '</div></div>';
+        });
+
+        if (html === '') {
+          html = '<div class="no-results">No properties match the current filters.</div>';
+        }
+
+        mainContent.innerHTML = html;
+        statShown.textContent = shownCount;
+      }
+
+      function highlightOrDash(value, query) {
+        if (!value || value.trim() === '') {
+          return '<span class="cell-empty">\u2014</span>';
+        }
+        var safe = escapeHtml(value);
+        if (!query) return safe;
+        var lower = safe.toLowerCase();
+        var idx = lower.indexOf(query);
+        if (idx === -1) return safe;
+
+        // Highlight all occurrences
+        var result = '';
+        var pos = 0;
+        while (idx !== -1) {
+          result += safe.substring(pos, idx);
+          result += '<mark>' + safe.substring(idx, idx + query.length) + '</mark>';
+          pos = idx + query.length;
+          idx = lower.indexOf(query, pos);
+        }
+        result += safe.substring(pos);
+        return result;
+      }
+
+      function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+
+      function escapeAttr(str) {
+        return escapeHtml(str);
+      }
+
+      // Toggle card open/close
+      window.__toggleCard = function (headerEl) {
+        var card = headerEl.parentElement;
+        var name = card.getAttribute('data-pset');
+        var isOpen = card.classList.contains('open');
+        if (isOpen) {
+          card.classList.remove('open');
+          openSets[name] = false;
+        } else {
+          card.classList.add('open');
+          openSets[name] = true;
+        }
+      };
+
+      // URL hash support
+      function writeHash() {
+        var parts = [];
+        var q = searchInput.value.trim();
+        var ps = psetSelect.value;
+        if (q) parts.push('search=' + encodeURIComponent(q));
+        if (ps) parts.push('pset=' + encodeURIComponent(ps));
+        var hash = parts.length ? '#' + parts.join('&') : '';
+        if (window.location.hash !== hash) {
+          history.replaceState(null, '', hash || window.location.pathname);
+        }
+      }
+
+      function readHash() {
+        var hash = window.location.hash.replace(/^#/, '');
+        if (!hash) return;
+        var params = {};
+        hash.split('&').forEach(function (pair) {
+          var kv = pair.split('=');
+          if (kv.length === 2) {
+            params[decodeURIComponent(kv[0])] = decodeURIComponent(kv[1]);
+          }
+        });
+        if (params.search !== undefined) searchInput.value = params.search;
+        if (params.pset !== undefined) psetSelect.value = params.pset;
+      }
+    })();
+  </script>
+
+</body>
+</html>
