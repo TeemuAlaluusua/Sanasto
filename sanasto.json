@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "source": "BETK Master Data",
-  "propertySets": [
+  "source": "Digisanasto",
+  "Index": [
     {
-      "name": "FI_Kiinteistö",
-      "properties": [
+      "name": "A",
+      "terms": [
         {
           "description": "",
           "example": "ManseBIM Esimerkkikiinteistö",
