@@ -464,9 +464,9 @@
       var openSets = {};
 
       // Load data
-      fetch('psets.json')
+      fetch('sanasto.json')
         .then(function (res) {
-          if (!res.ok) throw new Error('Failed to load psets.json (' + res.status + ')');
+          if (!res.ok) throw new Error('Failed to load sanasto.json (' + res.status + ')');
           return res.json();
         })
         .then(function (json) {
@@ -476,7 +476,7 @@
         .catch(function (err) {
           mainContent.innerHTML = '<div class="error-msg">Could not load property data.<br><br>' +
             escapeHtml(err.message) +
-            '<br><br>Make sure <code>psets.json</code> is in the same directory and the page is served over HTTP (not opened as a local file).</div>';
+            '<br><br>Make sure <code>sanasto.json</code> is in the same directory and the page is served over HTTP (not opened as a local file).</div>';
         });
 
       function init() {
