@@ -1,2 +1,2 @@
-# Sanastoty-
+# Sanasto
 Sanastotyö
