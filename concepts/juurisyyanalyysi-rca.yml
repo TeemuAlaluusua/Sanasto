@@ -1,0 +1,33 @@
+id: juurisyyanalyysi-rca
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: juurisyyanalyysi (RCA)
+  type: Suositettava termi
+- lang: sv
+  label: rotorsaksanalys
+  type: Suositettava termi
+- lang: en
+  label: root cause analysis
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Toiminto, joka tunnistaa häiriön tai ongelman perussyyn.
+- lang: sv
+  text: En funktion som identifierar grundorsaken till en störning eller ett problem.
+- lang: en
+  text: A function that identifies the root cause of a disturbance or problem.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC/IEEE 24765:2017
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - juurisyy
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

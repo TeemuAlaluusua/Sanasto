@@ -1,0 +1,67 @@
+id: ebom
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: suunnittelun tuoteosaluettelo
+  type: Suositettava termi
+- lang: fi
+  label: eBOM
+  type: Lyhenne
+
+- lang: sv
+  label: konstruktionsmateriallista
+  type: Suositettava termi
+- lang: sv
+  label: eBOM
+  type: Lyhenne
+
+- lang: en
+  label: engineering bill of material
+  type: Suositettava termi
+- lang: en
+  label: eBOM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Luettelo osanumeroista ja kokoonpanoista, jotka muodostavat
+    suunnittelun mukaisen tuotteen kokoonpanorakenteen ja
+    sisältävät esimerkiksi raaka-aineen mitat ja
+    materiaalimääritykset.
+
+- lang: sv
+  text: |
+    Lista över artikelnummer och sammansättningar som utgör
+    den konstruktionsmässiga produktkonfigurationen och som
+    innehåller uppgifter om råmaterialets dimensioner och
+    materialspecifikationer.
+
+- lang: en
+  text: |
+    List of part numbers and assemblies that make up the
+    design engineering configuration that contains the raw
+    stock size and the material specification.
+
+notes:
+- lang: en
+  text: |
+    English definition adapted from ISO 10303-240:2005.
+
+sources:
+- lang: en
+  label: ISO/TR 3151-1:2023(E)
+  uri: 
+
+relations:
+  broader:
+  - bom
+  narrower: []
+  related:
+  - mbom
+
+metadata:
+  created: "2026-03-14T00:00"
+  modified: "2026-03-14T00:00"

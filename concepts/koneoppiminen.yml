@@ -1,0 +1,53 @@
+id: koneoppiminen
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: koneoppiminen
+  type: Suositettava termi
+
+- lang: sv
+  label: maskininlärning
+  type: Suositettava termi
+
+- lang: en
+  label: machine learning
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tietojenkäsittelytieteen osa-alue, jossa järjestelmä oppii datasta ja parantaa suorituskykyään tehtävässä ilman eksplisiittistä ohjelmointia
+
+- lang: sv
+  text: delområde inom datavetenskap där ett system lär sig från data och förbättrar sin prestanda i en uppgift utan explicit programmering
+
+- lang: en
+  text: field of study in which a system learns from data and improves its performance on a task without being explicitly programmed
+
+notes:
+- lang: fi
+  text: Koneoppiminen hyödyntää tilastollisia ja laskennallisia menetelmiä.
+
+- lang: sv
+  text: Maskininlärning använder statistiska och beräkningsmässiga metoder.
+
+- lang: en
+  text: Machine learning uses statistical and computational methods.
+
+sources:
+- lang: en
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - data
+  - tekoäly
+  - tiedon-louhinta
+  - laajat-kielimallit-llm
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

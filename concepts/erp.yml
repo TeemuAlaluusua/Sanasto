@@ -1,0 +1,65 @@
+id: erp
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: toiminnanohjausjärjestelmä
+  type: Suositettava termi
+- lang: fi
+  label: ERP
+  type: Lyhenne
+
+- lang: sv
+  label: affärssystem
+  type: Suositettava termi
+- lang: sv
+  label: ERP
+  type: Lyhenne
+
+- lang: en
+  label: enterprise resource planning
+  type: Suositettava termi
+- lang: en
+  label: ERP
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Toiminnanohjausjärjestelmä on yrityksen tietojärjestelmä, joka integroi eri
+    toimintoja, esimerkiksi tuotantoa, jakelua, varastonhallintaa, laskutusta ja
+    kirjanpitoa.
+
+- lang: sv
+  text: |
+    Ett affärssystem är ett företags informationssystem som integrerar olika
+    funktioner, till exempel produktion, distribution, lagerhantering,
+    fakturering och bokföring.
+
+- lang: en
+  text: |
+    Enterprise resource planning is a company's information system that
+    integrates different functions, such as production, distribution,
+    inventory management, invoicing and accounting.
+
+notes: []
+
+sources:
+- lang: fi
+  label: ISO 16100-1:2009
+  uri: https://www.iso.org
+
+- lang: fi
+  label: Logistiikan maailma -termisanasto:2025
+  uri: https://www.logistiikanmaailma.fi/aineistot/sanastot/logistiikan-maailma-termisanasto/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - mes
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-30T00:00

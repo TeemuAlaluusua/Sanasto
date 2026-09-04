@@ -1,0 +1,60 @@
+id: ifc
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: Industry Foundation Classes
+  type: Suositettava termi
+- lang: fi
+  label: IFC
+  type: Lyhenne
+- lang: sv
+  label: Industry Foundation Classes
+  type: Suositettava termi
+- lang: sv
+  label: IFC
+  type: Lyhenne
+- lang: en
+  label: Industry Foundation Classes
+  type: Suositettava termi
+- lang: en
+  label: IFC
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: IFC on rakennusalan kansainvälinen standardi (EN ISO 16739) oliopohjaisen talo- tai infrarakenteen
+    tiedon semanttiseen määrittelyyn, jäsentämiseen ja siirtoon tietokonejärjestelmästä toiseen. Toisin
+    sanoen IFC on standardi, joka määrittelee, miten fyysisiä rakennusosia vastaavat tietokomponentit
+    tulee kuvata. Tätä avoimen standardin mukaista tietomuotoa hyödynnetään laajasti ohjelmistojen välisessä
+    tiedonvaihdossa suunnittelusta rakentamiseen ja ylläpitoon.
+- lang: sv
+  text: IFC är en internationell standard för byggbranschen (EN ISO 16739) för semantisk definition, strukturering
+    och överföring av objektbaserad information om hus- eller infrastrukturkonstruktioner från ett datorsystem
+    till ett annat. Med andra ord är IFC en standard som fastställer hur datakomponenter som motsvarar
+    fysiska byggdelar ska beskrivas. Detta öppna standardformat för data används i stor utsträckning vid
+    informationsutbyte mellan program, från projektering till byggande och underhåll.
+- lang: en
+  text: IFC is an international standard for the construction industry (EN ISO 16739) for the semantic
+    definition, structuring and transfer of object-based information on building or infrastructure structures
+    from one computer system to another. In other words, IFC is a standard that defines how data components
+    corresponding to physical building parts must be described. This open-standard data format is widely
+    used for information exchange between software, from design to construction and maintenance.
+notes: []
+sources:
+- lang: fi
+  label: 'Ympäristöministeriö, RASTI-projekti: 2019'
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+relations:
+  broader: []
+  narrower:
+  - ifcjson
+  - ifcowl
+  - ifcql
+  - ifcspff
+  - ifcxml
+  related:
+  - bcf
+  - lupamalli
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

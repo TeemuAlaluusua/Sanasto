@@ -1,0 +1,70 @@
+id: xbrl
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: eXtensible Business Reporting Language
+  type: Suositettava termi
+- lang: fi
+  label: XBRL
+  type: Lyhenne
+
+- lang: sv
+  label: eXtensible Business Reporting Language
+  type: Suositettava termi
+- lang: sv
+  label: XBRL
+  type: Lyhenne
+
+- lang: en
+  label: eXtensible Business Reporting Language
+  type: Suositettava termi
+- lang: en
+  label: XBRL
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: kuvauskieli, jolla taloudelliset tiedot kuvataan sähköisessä ja rakenteisessa muodossa
+
+- lang: sv
+  text: beskrivningsspråk för att uttrycka finansiell information i elektronisk och strukturerad form
+
+- lang: en
+  text: open international standard for digital business reporting
+
+notes:
+- lang: fi
+  text: XBRL pohjautuu XML-kieleen (Extensible Markup Language), joka on metakieli rakenteellisten kuvauskielten kehittämiseksi. XML:llä saadaan aikaan dokumentteja, joiden rakenne on erotettu sen tietosisällöstä.
+
+- lang: fi
+  text: XBRL:ää hallinnoi kansainvälinen voittoa tavoittelematon organisaatio XBRL International.
+
+- lang: sv
+  text: XBRL bygger på XML (Extensible Markup Language), som är ett metaspråk för att utveckla strukturerade beskrivningsspråk. Med XML kan man skapa dokument där strukturen är åtskild från informationsinnehållet.
+
+- lang: sv
+  text: XBRL förvaltas av en global ideell organisation, XBRL International.
+
+- lang: en
+  text: XBRL is based on XML (Extensible Markup Language), which is a meta-language for developing structured description languages. XML enables documents where the structure is separated from the content.
+
+- lang: en
+  text: XBRL is managed by a global not for profit consortium, XBRL International.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-43
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - xml
+  - tietomalli
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

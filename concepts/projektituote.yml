@@ -1,0 +1,55 @@
+id: projektituote
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: projektituote
+  type: Suositettava termi
+- lang: sv
+  label: projektprodukt
+  type: Suositettava termi
+- lang: en
+  label: project product
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Projektituotteilla tarkoitetaan yksittäistä projektia varten suunniteltuja ja tuotettuja tuotteita,
+    jotka poikkeavat sarjavalmisteisista vakiotuotteista tuotteen ominaisuuksien, kuten mittojen tai suorituskyvyn
+    perusteella, sekä rajatumman saatavuuden myötä. Projektituotteiden tuotannon ohjaus edellyttää suunnittelijoiden,
+    tuotetoimittajien ja urakoitsijoiden välistä yhteistyötä. Projektituotteina on pidetty ETO-tuotantostrategian
+    mukaisia suunnittelutuotteita. Lisäksi jotkin kauppatuotteet voidaan nähdä projektikohtaisina kokoonpanoina
+    erilaisista vakiotuotteista, jolla viitataan ATO-tuotantostrategiaan.
+- lang: sv
+  text: Med projektprodukter avses produkter som projekterats och tillverkats för ett enskilt projekt
+    och som avviker från seriemässigt tillverkade standardprodukter i fråga om produktegenskaper, till
+    exempel mått eller prestanda, samt genom en mer begränsad tillgänglighet. Styrning av produktionen
+    av projektprodukter kräver samarbete mellan projektörer, produktleverantörer och entreprenörer. Projektprodukter
+    har ansetts vara projekteringsprodukter enligt ETO-produktionsstrategin (engineer-to-order). Dessutom
+    kan vissa handelsprodukter ses som projektspecifika sammansättningar av olika standardprodukter, vilket
+    hänvisar till ATO-produktionsstrategin (assemble-to-order).
+- lang: en
+  text: Project products refer to products designed and manufactured for an individual project, which
+    differ from mass-produced standard products in terms of product properties such as dimensions or performance,
+    and through more limited availability. Controlling the production of project products requires cooperation
+    between designers, product suppliers and contractors. Project products have been regarded as design
+    products under the engineer-to-order (ETO) production strategy. In addition, some trade products can
+    be seen as project-specific assemblies of various standard products, referring to the assemble-to-order
+    (ATO) production strategy.
+notes: []
+sources:
+- lang: fi
+  label: Alaluusua 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+- lang: fi
+  label: ISO 15489-1:2017
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - vakiotuote
+  - eto
+  - ato
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

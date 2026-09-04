@@ -1,0 +1,67 @@
+id: mts
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: MTS
+    type: Lyhenne
+  - lang: fi
+    label: varasto-ohjautuva tuotanto
+    type: Suositettava termi
+  - lang: sv
+    label: MTS
+    type: Lyhenne
+  - lang: sv
+    label: lagerstyrd produktion
+    type: Suositettava termi
+  - lang: en
+    label: MTS
+    type: Lyhenne
+  - lang: en
+    label: make-to-stock
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: Tuotantomuoto, jossa tuotteita valmistetaan varastoon ennakoidun kysynnän perusteella.
+  - lang: sv
+    text: Produktionsform där produkter tillverkas för lager baserat på prognostiserad efterfrågan.
+  - lang: en
+    text: Production strategy in which goods are manufactured for stock based on forecasted demand.
+notes:
+  - lang: fi
+    text: |
+      Varasto-ohjautuvaa tuotantomuotoa käytetään tyypillisesti tuotteissa, joiden kysyntä on ennustettavissa.
+      Asiakastilauksen kytkentäpiste sijaitsee lopputuotevarastossa, josta tuotteet toimitetaan asiakkaalle.
+      Tuotteita valmistetaan sisäisten tuotantotilausten perusteella varastoon, usein suurina määrinä mittakaavaetujen saavuttamiseksi.
+      Tuotantomuoto sitoo pääomaa, ja valmistusmäärän optimointi riippuu kysyntäennusteiden tarkkuudesta.
+  - lang: sv
+    text: |
+      Lagerstyrd produktion används typiskt för produkter med förutsägbar efterfrågan.
+      Kundorderpunkten finns i färdigvarulagret, varifrån produkterna levereras till kunden.
+      Produkter tillverkas för lager baserat på interna produktionsorder, ofta i stora volymer för att uppnå stordriftsfördelar.
+      Produktionsformen binder kapital och den optimala tillverkningsmängden beror på prognosernas noggrannhet.
+  - lang: en
+    text: |
+      Make-to-stock is typically used for products with predictable demand.
+      The customer order decoupling point is located at the finished goods inventory, from which products are delivered to customers.
+      Products are manufactured to stock based on internal production orders, often in large volumes to achieve economies of scale.
+      The production strategy ties up capital, and the optimal production quantity depends on the accuracy of demand forecasts.
+sources:
+  - lang: fi
+    label: Alaluusua 2023
+    uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+  - lang: fi
+    label: Peltokorpi 2020
+    uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+relations:
+  broader:
+  - tuotantomuoto
+  narrower: []
+  related:
+  - mto
+  - eto
+  - ato
+  - vakiotuote
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

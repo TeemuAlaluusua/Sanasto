@@ -1,0 +1,103 @@
+
+
+
+id: koodisto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: koodisto
+  type: Suositettava termi
+
+- lang: sv
+  label: kodlista
+  type: Suositettava termi
+
+- lang: en
+  label: codelist
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: kokoelma tiettyä käyttötarkoitusta varten määriteltyjä koodeja tai luettelo luokan ominaisuuden sallituista arvoista
+
+- lang: en
+  text: Value domain including a code for each permissible value / Complete set of data element values of a coded simple data element
+
+- lang: sv
+  text: värdemängd som innehåller en kod för varje tillåtet värde / fullständig uppsättning värden för ett kodat dataelement
+
+notes:
+- lang: fi
+  text: |
+    Koodisto määrittelee sallitut arvot tietylle tietoelementille ja toimii
+    tiedon validoinnin ja yhdenmukaisuuden varmistamisen välineenä.
+
+- lang: sv
+  text: |
+    En kodlista definierar tillåtna värden för ett visst dataelement och fungerar
+    som ett medel för att säkerställa datavalidering och enhetlighet.
+
+- lang: en
+  text: |
+    A codelist defines the permissible values for a specific data element and
+    serves as a means to ensure data validation and consistency.
+
+- lang: fi
+  text: |
+    Koodistoja käytetään erityisesti tietomalleissa ja rajapinnoissa, joissa
+    tietosisältö esitetään ennalta määriteltyjen arvojen avulla.
+
+- lang: sv
+  text: |
+    Kodlistor används särskilt i datamodeller och gränssnitt där informationsinnehåll
+    representeras med hjälp av fördefinierade värden.
+
+- lang: en
+  text: |
+    Codelists are particularly used in data models and interfaces where
+    information content is represented using predefined values.
+
+- lang: fi
+  text: |
+    Koodisto eroaa luokituksesta siten, että koodisto määrittelee sallitut arvot,
+    kun taas luokitus kuvaa käsitteellistä ryhmittelyä.
+
+- lang: sv
+  text: |
+    En kodlista skiljer sig från en klassificering genom att den definierar
+    tillåtna värden, medan en klassificering beskriver en begreppsmässig
+    indelning.
+
+- lang: en
+  text: |
+    A codelist differs from a classification in that it defines permissible
+    values, whereas a classification describes a conceptual grouping.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-11
+
+- lang: en
+  label: ISO 19136
+  uri: https://www.iso.org/
+
+- lang: en
+  label: ISO 9735-1:2002
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - tietomääritys
+  narrower: []
+  related:
+  - luokitus
+  - sanasto
+  - tietomalli
+  - metatieto
+  - versio
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

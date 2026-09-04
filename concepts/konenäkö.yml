@@ -1,0 +1,56 @@
+id: konenäkö
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: konenäkö
+  type: Suositettava termi
+- lang: sv
+  label: datorseende
+  type: Suositettava termi
+- lang: en
+  label: computer vision
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Konenäkö tarkoittaa toiminnallisen yksikön kykyä hankkia, käsitellä ja tulkita dataa kuva- tai
+    videomuodossa olevasta lähteestä. Konenäkö sisältää sensoreiden käyttöä visuaalista tilannetta esittävän
+    digitaalisen kuvan luomiseen. Konenäkö liittyy läheisesti kuvantunnistukseen, kuten digitaalisten
+    kuvien käsittelyyn. Kuvamuodossa oleva data on yleensä peräisin digitaalisesta kamerasta, digitaalisesti
+    skannatusta fyysisestä kuvasta tai jostain muusta kuvansyöttölaitteesta. Digitaaliset kuvat ovat olemassa
+    numeromatriisina, joka edustaa kuvassa olevia harmaa-asteikon sävyjä tai värejä tai joissain tapauksissa
+    vektorien kokoelmaa. Digitaaliset kuvat voivat sisältää metatietoa, joka kuvailee kuvaan liittyviä
+    ominaispiirteitä ja attribuutteja. Digitaaliset kuvat voidaan pakata tallennustilan säästämiseksi
+    ja niiden lähetysnopeuden parantamiseksi digitaalisissa verkoissa.
+- lang: sv
+  text: Datorseende avser en funktionell enhets förmåga att skaffa, bearbeta och tolka data från en bild-
+    eller videobaserad källa. Datorseende omfattar användning av sensorer för att skapa en digital bild
+    som återger en visuell situation. Datorseende är nära besläktat med bildigenkänning, såsom behandling
+    av digitala bilder. Data i bildform härrör vanligen från en digitalkamera, en digitalt skannad fysisk
+    bild eller någon annan bildinmatningsenhet. Digitala bilder existerar som en talmatris som representerar
+    gråskalenyanser eller färger i bilden, eller i vissa fall som en samling vektorer. Digitala bilder
+    kan innehålla metadata som beskriver egenskaper och attribut som hör till bilden. Digitala bilder
+    kan komprimeras för att spara lagringsutrymme och förbättra överföringshastigheten i digitala nätverk.
+- lang: en
+  text: Computer vision refers to a functional unit's ability to acquire, process and interpret data from
+    an image- or video-based source. Computer vision includes the use of sensors to create a digital image
+    representing a visual scene. Computer vision is closely related to image recognition, such as the
+    processing of digital images. Image-form data usually originates from a digital camera, a digitally
+    scanned physical image, or some other image input device. Digital images exist as a numerical matrix
+    representing the grayscale shades or colors in the image, or in some cases as a collection of vectors.
+    Digital images may contain metadata describing features and attributes related to the image. Digital
+    images can be compressed to save storage space and to improve their transmission speed over digital
+    networks.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org
+relations:
+  broader: []
+  narrower: []
+  related:
+  - metatieto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

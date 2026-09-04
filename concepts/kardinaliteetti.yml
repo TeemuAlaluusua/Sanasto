@@ -1,0 +1,44 @@
+id: kardinaliteetti
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: kardinaliteetti
+  type: Suositettava termi
+- lang: sv
+  label: kardinalitet
+  type: Suositettava termi
+- lang: en
+  label: cardinality
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tietomallissa kahden tietoelementin välisen suhteen sallittu tai vaadittu lukumäärä.
+- lang: sv
+  text: Det tillåtna eller obligatoriska antalet i förhållandet mellan två datalement i en datamodell.
+- lang: en
+  text: The permitted or required number of occurrences in the relationship between two data elements
+    in a data model.
+notes:
+- lang: fi
+  text: |
+    Kardinaliteetti (minimi..maksimi) ilmaistaan usein merkinnöillä, kuten (1), (0..1), (1..n) tai (0..n).
+
+    - (1) = täsmälleen yksi
+    - (0..1) = nolla tai yksi (enintään yksi)
+    - (1..n) = yksi tai useampi (vähintään yksi)
+    - (0..n) = nolla tai useampia
+
+    Merkintätavoissa käytetään myös symboleja kuten * tai jätetään maksimi auki (esim. 0..* / 0..n).
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietomalli
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

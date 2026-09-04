@@ -1,0 +1,74 @@
+id: idm
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tiedon toimitusohje
+  type: Suositettava termi
+
+- lang: fi
+  label: IDM
+  type: Lyhenne
+
+- lang: sv
+  label: informationsleveransmanual
+  type: Suositettava termi
+
+- lang: sv
+  label: IDM
+  type: Lyhenne
+
+- lang: en
+  label: information delivery manual
+  type: Suositettava termi
+
+- lang: en
+  label: IDM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: SFS-EN ISO 29481-1 -standardin mukainen menettely, jolla kuvataan informaatiotuotannon prosessit ja sisältövaatimukset tiettyyn käyttötarkoitukseen tuotettavalle informaatiolle
+
+- lang: sv
+  text: metod enligt SFS-EN ISO 29481-1 för att beskriva processer för informationsproduktion och innehållskrav för information som tas fram för ett visst användningsändamål
+
+- lang: en
+  text: method according to SFS-EN ISO 29481-1 for describing information production processes and content requirements for information produced for a specific purpose
+
+notes:
+- lang: fi
+  text: |
+    IDM-määrittely jakautuu kolmeen osioon: käyttötapaus, prosessit ja
+    tiedonvaihdon vaatimukset (Use Case, Process Definition, Exchange Requirement).
+
+- lang: sv
+  text: |
+    IDM-definitionen delas in i tre delar: användningsfall, processer och
+    krav på informationsutbyte (Use Case, Process Definition, Exchange Requirement).
+
+- lang: en
+  text: |
+    IDM is divided into three parts: use case, process definition and
+    exchange requirements.
+
+sources:
+- lang: fi
+  label: Ympäristöministeriö – Yleiset tietomallivaatimukset 2022
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+
+- lang: en
+  label: SFS-EN ISO 29481-1
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - eir
+  - tietomalli
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

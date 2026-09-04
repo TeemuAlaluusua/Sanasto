@@ -1,0 +1,86 @@
+id: ato
+status: []
+schemeId: []
+terms:
+
+- lang: fi
+  label: ATO
+  type: Lyhenne
+- lang: fi
+  label: asiakasohjautuva kokoonpano
+  type: Synonyymi
+- lang: fi
+  label: tilauksesta kokoonpano
+  type: Suositettava termi
+
+- lang: sv
+  label: ATO
+  type: Lyhenne
+- lang: sv
+  label: kundorderstyrd montering
+  type: Suositettava termi
+
+- lang: en
+  label: assemble-to-order
+  type: Suositettava termi
+- lang: en
+  label: ATO
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Tuotanto- ja toimitusstrategia, jossa tuote kootaan asiakkaan
+    tilauksen jälkeen varastoiduista vakiokomponenteista tai
+    osakokoonpanoista. Komponentit valmistetaan tai hankitaan
+    etukäteen, mutta lopullinen kokoonpano tehdään vasta
+    asiakastilauksen perusteella. Toimitusaika määräytyy
+    komponentti- ja osakokoonpanovaraston saatavuuden sekä
+    kokoonpanoajan mukaan.
+
+- lang: sv
+  text: |
+    Produktions- och leveransstrategi där produkten monteras efter
+    kundorder från lagerhållna standardkomponenter eller
+    delmontage. Komponenterna tillverkas eller anskaffas i förväg,
+    men den slutliga monteringen sker först efter mottagen
+    kundorder. Leveranstiden bestäms av tillgången på komponent-
+    och delmontagelager samt monteringstiden.
+
+- lang: en
+  text: |
+    Production and fulfilment strategy in which a product is
+    assembled after receipt of a customer order from stocked
+    standard components or subassemblies. Components are produced
+    or procured in advance, while the final assembly is performed
+    only after the order is received. Lead time depends on the
+    availability of components and subassemblies and the assembly
+    time.
+
+notes: []
+
+sources:
+- lang: fi
+  label: Alaluusua 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+- lang: fi
+  label: Peltokorpi 2020 Tuotetiedon hallinta ja hyödyntäminen
+  uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+- lang: en
+  label: ISO TR 3151-1
+  uri:
+
+relations:
+  broader:
+  - tuotantomuoto
+  narrower: []
+  related:
+  - asiakastilauksen-kytkeytymiskohta
+  - mts
+  - mto
+  - eto
+  - dto
+  - projektituote
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-13T00:00

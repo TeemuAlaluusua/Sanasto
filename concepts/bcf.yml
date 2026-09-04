@@ -1,0 +1,77 @@
+id: bcf
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: BCF
+  type: Lyhenne
+- lang: fi
+  label: bim collaboration format
+  type: Suositettava termi
+- lang: sv
+  label: BCF
+  type: Lyhenne
+- lang: sv
+  label: bim collaboration format
+  type: Suositettava termi
+- lang: en
+  label: BCF
+  type: Lyhenne
+- lang: en
+  label: bim collaboration format
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    Standardi, jolla vaihdetaan tietoja IFC-tietoaineiston
+    sisällöstä. Tietoja voidaan vaihtaa ZIP-tiedostossa
+    (XML-muodossa) tai rajapinnan kautta (JSON-muodossa).
+- lang: sv
+  text: |
+    Standard för att utbyta information om innehållet i ett
+    IFC-dataset. Informationen kan utbytas i en ZIP-fil
+    (XML-format) eller via ett API (JSON-format).
+- lang: en
+  text: |
+    Standard to exchange information about the contents inside
+    an IFC dataset. Information can be exchanged in a ZIP file
+    (XML) or through an API (JSON).
+
+notes:
+- lang: fi
+  text: |
+    BCF:ää käytetään erityisesti tietomalliin liittyvien
+    havaintojen, kommenttien ja ongelmien välittämiseen eri
+    BIM-ohjelmistojen välillä ilman, että itse tietomallia
+    tarvitsee siirtää.
+- lang: sv
+  text: |
+    BCF används särskilt för att förmedla observationer,
+    kommentarer och problem kopplade till en informationsmodell
+    mellan olika BIM-program utan att själva modellen behöver
+    överföras.
+- lang: en
+  text: |
+    BCF is commonly used to communicate issues, comments and
+    viewpoints related to a building information model without
+    exchanging the model itself.
+
+
+sources:
+- lang: en
+  label: buildingSMART Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - ifc
+  - tietomalli
+  - rakentamiskohteiden-informaation-mallinnus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

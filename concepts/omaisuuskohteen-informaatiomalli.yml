@@ -1,0 +1,75 @@
+id: omaisuuskohteen-informaatiomalli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: omaisuuskohteen informaatiomalli
+  type: Suositettava termi
+- lang: fi
+  label: AIM
+  type: Lyhenne
+
+- lang: sv
+  label: tillgångsinformationsmodell
+  type: Suositettava termi
+- lang: sv
+  label: AIM
+  type: Lyhenne
+
+- lang: en
+  label: asset information model
+  type: Suositettava termi
+- lang: en
+  label: AIM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: rakennuskohteen informaatiomalli, joka sisältää rakennuskohteen käyttö- ja ylläpitovaiheen aikana tarvittavat tiedot
+
+- lang: sv
+  text: informationsmodell för byggnadsobjekt som innehåller de uppgifter som behövs under byggnadsobjektets användnings- och underhållsskede
+
+- lang: en
+  text: information model of a built asset that contains the information required during the use and maintenance phase of the built asset
+
+notes:
+- lang: fi
+  text: 'Käsitejärjestelmäkaavio: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+
+- lang: fi
+  text: Omaisuuskohteen informaatiomallin sisältö perustuu usein projektin informaatiomalliin, johon kuuluvat esimerkiksi suunnitelma- ja toteumamallin tiedot.
+
+- lang: fi
+  text: Omaisuuskohteen informaatiomalli tukee omaisuudenhallintaa.
+
+- lang: sv
+  text: Innehållet i tillgångsinformationsmodellen baseras ofta på projektets informationsmodell, som till exempel omfattar uppgifter från planerings- och genomförandemodeller.
+
+- lang: sv
+  text: Tillgångsinformationsmodellen stödjer förvaltningen av tillgångar.
+
+- lang: en
+  text: The content of the asset information model is often based on the project information model, which includes for example information from design and as-built models.
+
+- lang: en
+  text: The asset information model supports asset management.
+
+sources:
+- lang: fi
+  label: RY-mallit sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c25
+
+relations:
+  broader:
+  - rakennuskohteen-informaatiomalli
+  narrower: []
+  related:
+  - projektin-informaatiomalli
+  - suunnitelmamalli
+  - toteumamalli
+  - rakennuskohde
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2025-12-23T14:08

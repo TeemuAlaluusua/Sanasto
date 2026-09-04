@@ -1,0 +1,52 @@
+id: toteumamalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: toteumamalli
+  type: Suositettava termi
+- lang: sv
+  label: as-built-modell
+  type: Suositettava termi
+- lang: en
+  label: as-built model
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: rakennuskohteen informaatiomalli, joka sisältää tiedot toteutuneesta rakennuskohteesta mukaan
+    lukien suunnitelmamallista poikkeavat tiedot
+- lang: sv
+  text: informationsmodell av byggnadsobjekt som innehåller uppgifter om det byggnadsobjekt som genomförts,
+    inklusive uppgifter som avviker från projekteringsmodellen
+- lang: en
+  text: information model of a construction entity that contains information on the as-built construction
+    entity, including information that deviates from the design model
+notes:
+- lang: fi
+  text: Toteumamalli kuvaa rakennuskohdetta käyttöönotto- tai loppukatselmuksen hetkellä.
+- lang: fi
+  text: 'Käsitejärjestelmäkaavio: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: sv
+  text: As-built-modellen beskriver byggnadsobjektet vid tidpunkten för idrifttagningen eller slutsynen.
+- lang: sv
+  text: 'Begreppssystemschema: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: en
+  text: The as-built model describes the construction entity at the time of commissioning or final inspection.
+- lang: en
+  text: 'Concept system diagram: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+sources:
+- lang: fi
+  label: Sanastokeskus, RY-mallit -sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c23
+relations:
+  broader:
+  - rakennuskohteen-informaatiomalli
+  narrower: []
+  related:
+  - omaisuuskohteen-informaatiomalli
+  - projektin-informaatiomalli
+  - suunnitelmamalli
+  - rakennuskohde
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-08-28T00:00

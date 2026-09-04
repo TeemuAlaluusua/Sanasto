@@ -1,0 +1,44 @@
+id: versio
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: versio
+  type: Suositettava termi
+
+- lang: sv
+  label: version
+  type: Suositettava termi
+
+- lang: en
+  label: version
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Tietosisällöt, joilla on sama käyttötarkoitus, mutta eri voimassaoloaika ja joiden sisältö voi poiketa toisistaan. Versio on yksittäisen sanaston, koodiston tai tietomallin uusi tai vanha versio. Niiden voimassaolon alkamis- ja päättymispäivämäärät poikkeavat toisistaan. Tyypillisesti uusi versio korvaa vanhan version.
+
+- lang: sv
+  text: Informationsinnehåll med samma användningsändamål men med olika giltighetstid och vars innehåll kan skilja sig från varandra. En version är en ny eller gammal version av ett enskilt begreppssystem, kodsystem eller informationsmodell. Deras giltighetsperioder börjar och slutar vid olika tidpunkter. Vanligtvis ersätter en ny version den gamla versionen.
+
+- lang: en
+  text: Information contents that have the same purpose of use but different validity periods and whose content may differ from each other. A version is a new or old version of a specific terminology, code system or data model. Their validity start and end dates differ. Typically, a new version replaces the old version.
+
+notes: []
+
+sources:
+- lang: fi
+  label: Sanastot,suomi.fi
+  uri: https://iri.suomi.fi/terminology/yti/concept-16
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - sanasto
+  - koodisto
+  - tietomalli
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

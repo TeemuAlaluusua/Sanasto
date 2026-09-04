@@ -1,0 +1,62 @@
+id: lokitiedosto
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: lokitiedosto
+    type: Suositettava termi
+
+  - lang: sv
+    label: loggfil
+    type: Suositettava termi
+
+  - lang: en
+    label: log file
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: "palvelimen automaattisesti luoma tiedosto, joka sisältää tietoa palvelimella tehdyistä toimenpiteistä"
+
+  - lang: sv
+    text: "fil som automatiskt skapas av en server och som innehåller information om aktiviteter som utförs på servern"
+
+  - lang: en
+    text: "file automatically created by a server that maintains a record of its activities"
+
+notes:
+  - lang: fi
+    text: |
+      Lokitiedostoja käytetään järjestelmien valvontaan,
+      virheiden jäljittämiseen ja tietoturvatapahtumien
+      analysointiin.
+
+  - lang: sv
+    text: |
+      Loggfiler används för övervakning av system,
+      felsökning och analys av säkerhetshändelser.
+
+  - lang: en
+    text: |
+      Log files are commonly used for system monitoring,
+      troubleshooting and security auditing.
+
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+relations:
+  broader:
+  - käsitemalli
+  narrower: []
+  related:
+  - tietomalli
+  - ontologia
+  - lokitieto
+  - loki-
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-15T00:00"

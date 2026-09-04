@@ -1,0 +1,42 @@
+id: pilvilaskenta
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: pilvilaskenta
+  type: Suositettava termi
+- lang: sv
+  label: molntjänstdatoranvändning
+  type: Suositettava termi
+- lang: en
+  label: cloud computing
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Pilvilaskenta on paradigma eli ajatusmalli, jossa mahdollistetaan verkkopohjainen pääsy skaalautuviin
+    ja joustaviin fyysisiin tai virtuaalisiin jaettavissa oleviin resursseihin (palvelimet, käyttöjärjestelmät,
+    verkot, ohjelmistot, sovellukset ja tallennusvälineet) ja jossa palvelun resurssien käyttöä kyetään
+    hallitsemaan itse tarvepohjaisesti.
+- lang: sv
+  text: Molntjänstbaserad databehandling är ett paradigm, det vill säga en tankemodell, som möjliggör
+    nätverksbaserad tillgång till skalbara och flexibla fysiska eller virtuella delade resurser (servrar,
+    operativsystem, nätverk, programvara, applikationer och lagringsmedier) och där resursanvändningen
+    på begäran kan hanteras av användaren själv.
+- lang: en
+  text: Cloud computing is a paradigm, i.e. a conceptual model, that enables network-based access to scalable
+    and flexible physical or virtual shared resources (servers, operating systems, networks, software,
+    applications and storage media), and where the use of the resources can be managed by the user on
+    an on-demand basis.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22123-1:2023
+  uri: https://www.iso.org/standard/82758.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - pilvipalvelu
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

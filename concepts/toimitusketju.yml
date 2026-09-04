@@ -1,0 +1,37 @@
+id: toimitusketju
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: toimitusketju
+  type: Suositettava termi
+- lang: sv
+  label: leveranskedja
+  type: Suositettava termi
+- lang: en
+  label: construction supply chain
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Rakentamisessa toimitusketju käsittää kaikki ne toimet ja toimijat, jotka liittyvät lopputuotteen
+    tuottamiseen raaka-aineista.
+- lang: sv
+  text: Inom byggande omfattar leveranskedjan alla de åtgärder och aktörer som är kopplade till framställningen
+    av slutprodukten från råmaterial.
+- lang: en
+  text: In construction, the supply chain covers all the activities and actors involved in producing the
+    end product from raw materials.
+notes: []
+sources:
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+relations:
+  broader: []
+  narrower:
+  - asiakastilauksen-kytkeytymiskohta
+  related:
+  - arvoketju
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

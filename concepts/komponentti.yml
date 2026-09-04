@@ -1,0 +1,46 @@
+id: komponentti
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: komponentti
+    type: Suositettava termi
+  - lang: sv
+    label: komponent
+    type: Suositettava termi
+  - lang: en
+    label: component
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: Yksi kokonaisuuden osa.
+  - lang: sv
+    text: En del av en helhet.
+  - lang: en
+    text: One of the parts of a system, process, or machine.
+notes:
+  - lang: fi
+    text: |
+      Rakennuskohteen komponentit ovat joko rakennusosia tai tuoteosia.
+      Rakennusosat valmistetaan pääosin työmaalla, kun taas tuoteosat ovat valmiita ostettavia tuotteita, jotka asennetaan.
+  - lang: sv
+    text: |
+      Komponenter i en byggnad utgörs av byggdelar eller produktdelar.
+      Byggdelar tillverkas huvudsakligen på plats, medan produktdelar är färdiga produkter som installeras.
+  - lang: en
+    text: |
+      In construction, components can be building elements or product elements.
+      Building elements are mainly assembled on site, while product elements are pre-manufactured items that are installed.
+sources:
+  - lang: en
+    label: Cambridge Dictionary
+    uri: https://dictionary.cambridge.org/dictionary/english/component
+relations:
+  broader: []
+  narrower: []
+  related:
+  - bom
+  - nimikkeistö-tai-luokitus
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

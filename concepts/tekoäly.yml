@@ -1,0 +1,40 @@
+id: tekoäly
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tekoäly
+  type: Suositettava termi
+- lang: sv
+  label: artificiell intelligens, AI
+  type: Suositettava termi
+- lang: en
+  label: AI
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tekoäly on tietojenkäsittelytieteen osa-alue, jonka tarkoituksena on kehittää tietojenkäsittelyjärjestelmiä,
+    jotka suorittavat normaalisti ihmisen älykkyyteen liittyviä toimintoja, kuten päättelyä, oppimista
+    ja itsensä parantamista.
+- lang: sv
+  text: Artificiell intelligens (AI) är ett delområde inom datavetenskap som syftar till att utveckla
+    databehandlingssystem som utför funktioner som normalt förknippas med mänsklig intelligens, såsom
+    resonemang, inlärning och självförbättring.
+- lang: en
+  text: Artificial intelligence (AI) is a branch of computer science that aims to develop data processing
+    systems capable of performing functions normally associated with human intelligence, such as reasoning,
+    learning and self-improvement.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 2382:2015
+  uri: https://www.iso.org/standard/63598.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - big-data
+  - koneoppiminen
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

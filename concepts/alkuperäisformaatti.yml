@@ -1,0 +1,67 @@
+id: alkuperäisformaatti
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: alkuperäisformaatti
+  type: Suositettava termi
+- lang: fi
+  label: natiiviformaatti
+  type: Synonyymi
+- lang: fi
+  label: natiivimalli
+  type: Synonyymi
+- lang: sv
+  label: nativt format
+  type: Suositettava termi
+- lang: sv
+  label: ursprungsformat
+  type: Synonyymi
+- lang: sv
+  label: nativt filformat
+  type: Synonyymi
+- lang: en
+  label: native format
+  type: Suositettava termi
+- lang: en
+  label: native file format
+  type: Synonyymi
+- lang: en
+  label: proprietary format
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: |
+    Mallinnusohjelman oma tallennusformaatti. Rakennusalan julkaisuissa käytetään
+    tälle synonyyminä käsitteitä natiivimalli tai natiiviformaatti.
+- lang: sv
+  text: |
+    Det filformat som är specifikt för ett visst modelleringsprogram och dess
+    interna lagring av modellen. Inom byggbranschen används även benämningarna
+    nativ modell eller nativt format som synonymer.
+- lang: en
+  text: |
+    The file format specific to a particular modelling software used for the
+    model’s native storage. In the construction industry, the terms native model
+    or native format are also used as synonyms.
+
+notes: []
+
+sources:
+- lang: fi
+  label: BEC:2023 Elementtisuunnittelun mallinnusohje
+  uri: https://www.elementtisuunnittelu.fi/Download/23982/BEC2012%20Elementtisuunnittelun%20mallinnusohje_v110.pdf
+- lang: fi
+  label: YTV:2012 Yleiset tietomallivaatimukset
+  uri: https://wiki.buildingsmart.fi/fi/04_Julkaisut_ja_Standardit/YTV
+
+relations:
+  broader: []
+  narrower: []
+  related: []
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-27T00:00

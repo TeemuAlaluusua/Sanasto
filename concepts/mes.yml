@@ -1,0 +1,61 @@
+id: mes
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tuotannonohjausjärjestelmä
+  type: Suositettava termi
+
+- lang: fi
+  label: MES
+  type: Lyhenne
+
+- lang: sv
+  label: produktionsstyrningssystem
+  type: Suositettava termi
+
+- lang: sv
+  label: MES
+  type: Lyhenne
+
+- lang: en
+  label: manufacturing execution system
+  type: Suositettava termi
+
+- lang: en
+  label: MES
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: järjestelmä haluttujen tuotteiden tai palvelujen tuottamiseen, mukaan lukien laadunvalvonta, dokumenttien hallinta, tuotannonohjaus, keskeneräisen tuotannon seuranta, yksityiskohtainen tuotteen reititys ja seuranta, työraportointi, resurssien ja uudelleentyöstön hallinta, tuotannon mittaus ja tiedonkeruu
+
+- lang: sv
+  text: system för att producera önskade produkter eller tjänster, inklusive kvalitetskontroll, dokumenthantering, produktionsstyrning, uppföljning av arbete under produktion, detaljerad produktdirigering och spårning, arbetsrapportering, hantering av resurser och omarbete samt produktionsmätning och datainsamling
+
+- lang: en
+  text: system for producing the desired products or services, including quality control, document management, plant floor dispatching, work-in-process tracking, detailed product routing and tracking, labour reporting, resource and rework management, production measurement and data collection
+
+notes: []
+
+sources:
+- lang: en
+  label: ISO 16100-1:2009, 3.14
+  uri: https://www.iso.org/
+
+- lang: en
+  label: ISO/TR 3151-1:2023,3.1.7
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - erp
+  - plm
+  - mom
+
+metadata:
+  created: 2026-03-17T00:00
+  modified: 2026-03-17T00:00

@@ -1,0 +1,69 @@
+id: looginen-tietomalli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: looginen tietomalli
+  type: Suositettava termi
+
+- lang: sv
+  label: logisk datamodell
+  type: Suositettava termi
+
+- lang: en
+  label: logical data model
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tietomalli, joka kuvaa tiedot ja tietorakenteet loogisella tasolla
+
+- lang: sv
+  text: datamodell som beskriver data och datastrukturer på en logisk nivå
+
+- lang: en
+  text: data model that describes data and data structures at a logical level
+
+notes:
+- lang: fi
+  text: Looginen tietomalli kuvaa tarkastelun kohteena olevat luokat, niiden väliset assosiaatiot (suhteet) ja luokkiin sisältyvät attribuutit.
+
+- lang: fi
+  text: Looginen tietomalli on käsitemallista tarkemmalle tasolle viety kuvaus.
+
+- lang: sv
+  text: Den logiska datamodellen beskriver de klasser som analyseras, relationerna (associationerna) mellan dem samt de attribut som ingår i klasserna.
+
+- lang: sv
+  text: Den logiska datamodellen är en mer detaljerad beskrivning än en begreppsmodell.
+
+- lang: en
+  text: The logical data model describes the classes under consideration, the associations (relationships) between them, and the attributes contained within the classes.
+
+- lang: en
+  text: The logical data model is a more detailed representation than a conceptual model.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-73
+
+relations:
+  broader:
+  - tietomalli
+  - käsitteellinen-tietomalli
+
+  narrower:
+  - fyysinen-tietomalli
+
+  related:
+  - käsitemalli
+  - käsiteskeema
+  - luokka
+  - attribuutti
+  - assosiaatio
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

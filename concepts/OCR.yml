@@ -1,0 +1,83 @@
+id: OCR
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: optinen merkkien tunnistus
+  type: Suositettava termi
+- lang: fi
+  label: optinen merkinluku
+  type: Synonyymi
+- lang: fi
+  label: tekstintunnistus
+  type: Synonyymi
+- lang: fi
+  label: OCR
+  type: Lyhenne
+
+- lang: sv
+  label: optisk teckenigenkänning
+  type: Suositettava termi
+- lang: sv
+  label: optisk teckenläsning
+  type: Synonyymi
+- lang: sv
+  label: OCR
+  type: Lyhenne
+
+- lang: en
+  label: optical character recognition
+  type: Suositettava termi
+- lang: en
+  label: OCR
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Menetelmä, jossa koneellisesti kirjoitettua, tulostettua tai
+    käsin kirjoitettua tekstiä sisältävät kuvat muunnetaan
+    koneellisesti käsiteltäväksi tekstimuodoksi.
+
+- lang: sv
+  text: |
+    Metod där bilder som innehåller maskinskriven, tryckt eller
+    handskriven text omvandlas till maskinläsbar text.
+
+- lang: en
+  text: |
+    Conversion of images of typed, printed or handwritten text
+    into machine-readable text.
+
+notes:
+- lang: fi
+  text: |
+    OCR-teknologiaa käytetään esimerkiksi skannattujen asiakirjojen
+    digitoinnissa, arkistoinnissa ja tekstin automaattisessa
+    käsittelyssä.
+
+- lang: sv
+  text: |
+    OCR-teknik används till exempel för digitalisering av skannade
+    dokument, arkivering och automatisk behandling av text.
+
+- lang: en
+  text: |
+    OCR technology is commonly used for digitizing scanned
+    documents and enabling automated processing of textual
+    information.
+
+sources:
+- lang: en
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org/standard/74296.html
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - digitointi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

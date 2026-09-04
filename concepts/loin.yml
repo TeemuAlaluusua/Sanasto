@@ -1,0 +1,60 @@
+id: loin
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: informaatiotarve
+    type: Suositettava termi
+  - lang: fi
+    label: LOIN
+    type: Lyhenne
+  - lang: sv
+    label: informationsbehov
+    type: Suositettava termi
+  - lang: sv
+    label: LOIN
+    type: Lyhenne
+  - lang: en
+    label: Level of Information Need
+    type: Suositettava termi
+  - lang: en
+    label: LOIN
+    type: Lyhenne
+definitions:
+  - lang: fi
+    text: Viitekehys (LOIN), joka määrittelee informaation laajuuden ja rakeisuuden.
+  - lang: sv
+    text: Ramverk (LOIN) som definierar informationens omfattning och detaljeringsgrad.
+  - lang: en
+    text: Framework (LOIN) that defines the extent and granularity of information.
+notes:
+  - lang: fi
+    text: |
+      Informaatiotarpeen määrittelyn yksi tarkoitus on estää liiallisen informaation toimittaminen.
+      Rakennustietomallien osalta puhutaan usein kehitystasomäärittelystä (LOD), joka on suunniteltu erityisesti mallipohjaista työskentelyä varten.
+      LOIN-termillä pyritään kuvaamaan koko projektin tietosisältöä laajemmin siirtämällä painopistettä metatietoon geometristen ominaisuuksien sijasta.
+  - lang: sv
+    text: |
+      Ett syfte med att definiera informationsbehov är att undvika att leverera för mycket information.
+      Inom byggnadsinformationsmodeller används ofta begreppet utvecklingsnivå (LOD), som är särskilt avsett för modellbaserat arbete.
+      Med termen LOIN eftersträvas att beskriva projektets informationsinnehåll mer heltäckande med större fokus på metadata än på geometriska egenskaper.
+  - lang: en
+    text: |
+      One purpose of defining information need is to avoid delivering excessive information.
+      In building information modelling, the concept of level of development (LOD) is often used and is intended for model-based workflows.
+      The term LOIN aims to describe the overall information content of a project more broadly by emphasizing metadata over geometric properties.
+sources:
+  - lang: fi
+    label: EN/ISO 19650:2018
+    uri: https://www.iso.org/standard/68078.html
+  - lang: fi
+    label: Tomczak 2022
+    uri: https://www.buildingsmart.org/methods-to-specify-information-requirements-in-digital-construction-projects/
+relations:
+  broader: []
+  narrower: []
+  related:
+    - lod
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

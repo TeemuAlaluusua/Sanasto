@@ -1,0 +1,34 @@
+id: ifcjson
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ifcJSON
+  type: Suositettava termi
+- lang: sv
+  label: ifcJSON
+  type: Suositettava termi
+- lang: en
+  label: ifcJSON
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: JSON-muotoinen IFC-tietoaineisto.
+- lang: sv
+  text: IFC-dataset i JSON-format.
+- lang: en
+  text: IFC dataset in JSON format.
+notes: []
+sources:
+- lang: fi
+  label: buildingSmart Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+relations:
+  broader:
+  - ifc
+  narrower: []
+  related:
+  - json
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

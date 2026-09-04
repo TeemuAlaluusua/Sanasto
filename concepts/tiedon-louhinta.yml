@@ -1,0 +1,63 @@
+id: tiedon-louhinta
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: tiedon louhinta
+    type: Suositettava termi
+
+  - lang: sv
+    label: datautvinning
+    type: Suositettava termi
+
+  - lang: en
+    label: data mining
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: tietokoneperusteiset tiedonhakutoimenpiteet, joiden avulla tunnistetaan malleja analysoimalla kvantitatiivista dataa eri näkökulmista ja ulottuvuuksista, kategorisoidaan sitä ja tehdään yhteenvetoja potentiaalisista suhteista ja vaikutuksista
+
+  - lang: sv
+    text: datorbaserad process för informationssökning och analys där mönster identifieras genom att analysera kvantitativa data från olika perspektiv och dimensioner, kategorisera dem och sammanfatta potentiella samband och effekter
+
+  - lang: en
+    text: computational search and retrieval process that identifies patterns by analysing quantitative data from different perspectives and dimensions, categorizing it, and summarizing potential relationships and impacts
+
+notes:
+  - lang: fi
+    text: |
+      Tiedon louhintaa käytetään esimerkiksi suurten
+      tietoaineistojen analysoinnissa, ennusteiden
+      tekemisessä sekä piilevien riippuvuuksien
+      tunnistamisessa datasta.
+
+  - lang: sv
+    text: |
+      Datautvinning används till exempel för analys
+      av stora datamängder, för att göra prognoser
+      och för att identifiera dolda samband i data.
+
+  - lang: en
+    text: |
+      Data mining is commonly used to analyse large
+      datasets, discover hidden patterns and support
+      predictive analytics.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+relations:
+  broader:
+    - data-analytiikka
+  narrower: []
+  related:
+    - big-data
+    - koneoppiminen
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

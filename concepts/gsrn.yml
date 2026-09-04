@@ -1,0 +1,54 @@
+id: gsrn
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: palvelusuhteen tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GSRN
+  type: Lyhenne
+- lang: sv
+  label: globalt tjänsterelationsnummer
+  type: Suositettava termi
+- lang: sv
+  label: GSRN
+  type: Lyhenne
+- lang: en
+  label: Global Service Relation Number
+  type: Suositettava termi
+- lang: en
+  label: GSRN
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GSRN on GS1:n yksilöinnin standardi, jota käytetään antamaan palvelun asiakas-, liike- tai käyttäjäsuhteille
+    yksilöllinen tunniste. Sen avulla voidaan tunnistaa sekä palvelun vastaanottaja että palvelun tarjoaja,
+    ja usein nämä rekisteröidään samanaikaisesti, esimerkiksi kun tavarantoimittaja toimittaa asiakkaalle
+    tuotteen. Palvelusuhteen osapuoli voi olla joko henkilö tai yritys. GSRN-tunnus voidaan koodata viivakoodiin
+    tai EPC/RFID-tunnisteeseen, esimerkiksi henkilökorttiin tai sähkömittariin.
+- lang: sv
+  text: GSRN är en GS1-identifieringsstandard som används för att ge en unik identifierare åt en tjänsts
+    kund-, affärs- eller användarrelation. Med hjälp av GSRN kan man identifiera både mottagaren och leverantören
+    av en tjänst, och dessa registreras ofta samtidigt, till exempel när en leverantör levererar en produkt
+    till en kund. En part i en tjänsterelation kan vara antingen en person eller ett företag. Ett GSRN-nummer
+    kan kodas i en streckkod eller i en EPC/RFID-tagg, till exempel på ett id-kort eller en elmätare.
+- lang: en
+  text: GSRN is a GS1 identification standard used to assign a unique identifier to a service's customer,
+    business or user relationship. It can be used to identify both the recipient and the provider of a
+    service, and these are often registered simultaneously, for example when a supplier delivers a product
+    to a customer. A party to a service relationship can be either a person or a company. A GSRN can be
+    encoded in a barcode or in an EPC/RFID tag, for example on an ID card or an electricity meter.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

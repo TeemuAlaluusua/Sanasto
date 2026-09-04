@@ -1,0 +1,28 @@
+id: rakentamisen-lupapaatosten-tietomalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rakentamisen lupapäätösten tietomalli
+  type: Suositettava termi
+- lang: sv
+  label: datamodell för byggnadslovsbeslut
+  type: Suositettava termi
+- lang: en
+  label: data model for construction permit decisions
+  type: Suositettava termi
+definitions: []
+notes: []
+sources:
+- lang: fi
+  label: Sanastokeskus, RY-mallit -sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c9
+relations:
+  broader:
+  - rakennuskohteen-tietomalli
+  narrower: []
+  related:
+  - lupamalli
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-08-28T00:00

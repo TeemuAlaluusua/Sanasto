@@ -1,0 +1,65 @@
+id: tietokanta
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: tietokanta
+    type: Suositettava termi
+
+  - lang: sv
+    label: databas
+    type: Suositettava termi
+
+  - lang: en
+    label: database
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: kokoelma koneluettavaa tietoa, joka on järjestetty niin, että siihen on helppo pääsy ja sitä on helppo hallita ja päivittää
+
+  - lang: sv
+    text: samling maskinläsbar information organiserad så att den lätt kan nås, hanteras och uppdateras
+
+  - lang: en
+    text: collection of machine-readable information organized so that it can be easily accessed, managed and updated
+
+notes:
+  - lang: fi
+    text: |
+      Tietokanta on yleensä hallittu tietovaranto,
+      jota ylläpidetään tietokannanhallintajärjestelmän
+      (DBMS) avulla.
+
+  - lang: sv
+    text: |
+      En databas är vanligtvis ett informationslager
+      som hanteras med hjälp av ett databashanteringssystem
+      (DBMS).
+
+  - lang: en
+    text: |
+      A database is typically maintained using a
+      database management system (DBMS).
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+relations:
+  broader: []
+  narrower:
+  - tietue
+  - nosql-tietokanta
+  - relaatiotietokanta
+  related:
+  - tietomalli
+  - fyysinen-tietomalli
+  - tietopankki
+  - lohkoketju
+  - sql-kieli
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

@@ -1,0 +1,56 @@
+id: plm
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tuotteen elinkaaren hallinta
+  type: Suositettava termi
+- lang: fi
+  label: PLM
+  type: Lyhenne
+
+- lang: sv
+  label: livscykelhantering för produkter
+  type: Suositettava termi
+- lang: sv
+  label: PLM
+  type: Lyhenne
+
+- lang: en
+  label: product lifecycle management
+  type: Suositettava termi
+- lang: en
+  label: PLM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: tuotteeseen liittyvän tiedon hallintaa koko sen elinkaaren ajan
+
+- lang: sv
+  text: hantering av information om en produkt under hela dess livscykel
+
+- lang: en
+  text: management of product-related information throughout the entire lifecycle of a product
+
+notes:
+- lang: fi
+  text: PLM kattaa yleensä tuotesuunnittelun, valmistuksen, ylläpidon ja käytöstä poistamisen vaiheet.
+
+sources:
+- lang: en
+  label: ISO/TR 3151-1:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - mom
+  - bom
+  - bop
+  - mes
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-30T00:00

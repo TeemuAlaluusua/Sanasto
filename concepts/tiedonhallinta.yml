@@ -1,0 +1,49 @@
+id: tiedonhallinta
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tiedonhallinta
+  type: Suositettava termi
+
+- lang: sv
+  label: datahantering
+  type: Suositettava termi
+
+- lang: en
+  label: data management
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Tiedonhallinta on kattotermi, joka sisältää datan hyödyntämiseen liittyvän kehityksen, hallinnan, operaatiot sekä käytännöt koko tiedon elinkaaren ajan. Alueelle kuuluvat mm. datastrategia, data governance, käsitteiden mallintaminen, tietovarastointi, turvallisuusasiat, tietoarkkitehtuuri, talletusratkaisut ja tietojen laatu.
+
+- lang: sv
+  text: Datahantering är ett paraplybegrepp som omfattar utveckling, styrning, operativa aktiviteter och praxis kopplade till användning av data under hela dess livscykel. Området omfattar bland annat datastrategi, data governance, begreppsmodellering, datalagring, säkerhetsaspekter, informationsarkitektur, lagringslösningar och datakvalitet.
+
+- lang: en
+  text: Data management is an umbrella term that includes development, governance, operations and practices related to the use of data throughout its lifecycle. The area includes, among others, data strategy, data governance, conceptual modeling, data storage, security aspects, information architecture, storage solutions and data quality.
+
+notes: []
+
+sources:
+- lang: fi
+  label: "Ympäristöministeriö, RASTI-projekti: 2019"
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietomalli
+  - tietomallinnus
+  - tietoturva
+  - data
+  - digitalisaatio
+  - it
+  - koneluettavuus
+  - tietoarkkitehtuuri
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

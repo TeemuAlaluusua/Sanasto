@@ -1,0 +1,53 @@
+id: gs1-standardit
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: GS1-standardit
+  type: Suositettava termi
+- lang: sv
+  label: GS1-standarder
+  type: Suositettava termi
+- lang: en
+  label: global standard one
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: GS1 standardijärjestelmä perustuu tiedon (mm. asioiden, tavaroiden, paikkojen ja henkilöiden)
+    -yksilöintiin, näiden fyysiseen tunnistamiseen, sekä -jakamiseen digitaalisessa muodossa toimitusketjun
+    eri toimijoiden välillä.
+- lang: sv
+  text: GS1-standardsystemet bygger på individualisering av information (bland annat om saker, varor,
+    platser och personer), fysisk identifiering av dessa samt delning av informationen i digital form
+    mellan olika aktörer i leveranskedjan.
+- lang: en
+  text: The GS1 standards system is based on the individualization of information (e.g. about things,
+    goods, places and persons), their physical identification, and the sharing of that information in
+    digital form between different actors in the supply chain.
+notes: []
+sources:
+- lang: fi
+  label: GS1 Finland Oy
+  uri: https://gs1.fi/fi/standardit/gs1n-tiedonjakamisen-standardit
+relations:
+  broader: []
+  narrower:
+  - cpid
+  - epc
+  - epcis
+  - gdti
+  - giai
+  - ginc
+  - gln
+  - gmn
+  - grai
+  - gs1-digital-link
+  - gsin
+  - gsrn
+  - gtin-tunnus
+  - sgtin
+  - sscc
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

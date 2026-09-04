@@ -1,0 +1,91 @@
+id: attribuutti
+status: []
+schemeId: []
+terms:
+
+- lang: fi
+  label: attribuutti
+  type: Suositettava termi
+- lang: fi
+  label: attribuuttitieto
+  type: Synonyymi
+- lang: sv
+  label: attribut
+  type: Suositettava termi
+- lang: sv
+  label: attributdata
+  type: Synonyymi
+- lang: en
+  label: attribute
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    tietomallissa luokkaa luonnehtiva tai kuvaava ominaisuus
+- lang: sv
+  text: |
+    egenskap i en informationsmodell som beskriver eller kännetecknar en klass
+- lang: en
+  text: |
+    characteristic in an information model that describes or characterizes a class
+
+notes:
+- lang: fi
+  text: |
+    Attribuutti on tietomallissa objektin määrittelyyn
+    kuuluva rakenteellinen tietokenttä, joka kuvaa objektin ominaisuutta.
+    Attribuutti on osa objektin luokan rakennetta ja sillä on ennalta
+    määritelty merkitys ja tietotyyppi. Esimerkkejä ovat nimi, tunnus,
+    sijainti, tyyppi tai materiaali.
+
+    Tietomallinnuksessa attribuutti erotetaan usein ominaisuudesta
+    (engl. property). Attribuutti on objektin luokan sisäinen,
+    rakenteellinen kenttä, kun taas ominaisuus on yleensä erillinen,
+    laajennettava ominaisuustieto (esim. BIM-propertysetissä).
+- lang: sv
+  text: |
+    Ett attribut är i en informationsmodell ett strukturellt
+    datafält som ingår i definitionen av ett objekt och beskriver en egenskap
+    hos objektet. Attributet är en del av objektklassens struktur och har en
+    fördefinierad betydelse och datatyp. Exempel är namn, identifierare,
+    läge, typ eller material.
+
+    I informationsmodellering skiljer man ofta mellan attribut och egenskap
+    (eng. property). Ett attribut är ett internt, strukturellt fält i en
+    objektklass, medan en egenskap vanligtvis är en separat och utbyggbar
+    egenskapsuppgift (t.ex. i ett BIM-propertyset).
+- lang: en
+  text: |
+    An attribute is a structural data field in an information model that is
+    part of the definition of an object and describes a characteristic of that
+    object. An attribute belongs to the structure of an object class and has a
+    predefined meaning and data type. Examples include name, identifier,
+    location, type, or material.
+
+    In information modelling, an attribute is often distinguished from a
+    property. An attribute is an internal structural field of an object class,
+    whereas a property is typically a separate and extensible piece of
+    descriptive information (for example in a BIM property set).
+
+sources:
+- lang: fi
+  label: RYHTI-sanasto
+  url: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+- lang: fi
+  label: Sanastot.suomi.fi
+  url: https://sanastot.suomi.fi/terminology/yti/concept/concept-24
+
+relations:
+  broader: []
+  narrower:
+  - uda
+  related:
+  - assosiaatio
+  - looginen-tietomalli
+  - luokka
+  - property-set
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-27T00:00

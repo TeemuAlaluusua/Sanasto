@@ -1,0 +1,45 @@
+id: gdti
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: dokumentin tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GDTI
+  type: Lyhenne
+- lang: sv
+  label: global dokumenttypidentifierare
+  type: Suositettava termi
+- lang: sv
+  label: GDTI
+  type: Lyhenne
+- lang: en
+  label: Global Document Type Identifier
+  type: Suositettava termi
+- lang: en
+  label: GDTI
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GDTI on GS1:n yksilöinnin standardi, jota käytetään yksilöimään erilaisia dokumenttityyppejä,
+    kuten laskuja tai kuljetusasiakirjoja.
+- lang: sv
+  text: GDTI är en GS1-identifieringsstandard som används för att identifiera olika dokumenttyper, såsom
+    fakturor eller transportdokument.
+- lang: en
+  text: GDTI is a GS1 identification standard used to identify different document types, such as invoices
+    or transport documents.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

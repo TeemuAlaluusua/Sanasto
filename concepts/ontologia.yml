@@ -1,0 +1,55 @@
+id: ontologia
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: ontologia
+  type: Suositettava termi
+
+- lang: sv
+  label: ontologi
+  type: Suositettava termi
+
+- lang: en
+  label: ontology
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: koneen ja ihmisen tulkittavissa oleva, yhteisesti sovittu, täsmällinen kuvaus sovellusalueen käsitteistä ja näiden välisistä suhteista
+
+- lang: en
+  text: Representation of a set of concepts within a domain and the relationships between those concepts
+
+notes: []
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-40
+
+- lang: en
+  label: ISO 5127:2017
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - käsiteskeema
+  narrower: []
+  related:
+  - käsitemalli
+  - tietomalli
+  - rdf
+  - semanttinen-web
+  - rdf-kolmikko
+  - käsitteellinen-tietomalli
+  - linkitetty-data
+  - lokitiedosto
+  - luokitus
+  - mappaus
+  - nimiavaruus
+  - ifcowl
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

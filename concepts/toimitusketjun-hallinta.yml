@@ -1,0 +1,48 @@
+id: toimitusketjun-hallinta
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: toimitusketjun hallinta
+  type: Suositettava termi
+- lang: sv
+  label: hantering av leveranskedjan
+  type: Suositettava termi
+- lang: en
+  label: construction supply chain management
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Rakennusalan näkökulmasta tehdyn määritelmän mukaan toimitusketjun hallinnalla tarkoitetaan rakennusalan
+    tuotantoketjun alku- ja loppupäässä toimivien yritysten integrointia, joiden tavoitteena on luoda
+    arvoa asiakkaalle sekä muille toimitusketjun sidosryhmille tuotteiden, palveluiden, tiedon ja valuutan
+    muodossa. Toisin sanoen rakentamisen toimitusketjun hallinnan tavoitteena on integroida toimitusketjun
+    materiaali- ja tietovirrat toimitusketjun suorituskyvyn edistämiseksi toiminnallisista tai organisaatiorajoista
+    riippumatta.
+- lang: sv
+  text: Enligt en definition gjord ur byggbranschens perspektiv avser hantering av leveranskedjan integrationen
+    av företag som verkar i den inledande och avslutande delen av byggbranschens produktionskedja, i syfte
+    att skapa värde för kunden och för andra intressenter i leveranskedjan i form av produkter, tjänster,
+    information och kapital. Med andra ord är målet med hantering av leveranskedjan inom byggande att
+    integrera leveranskedjans material- och informationsflöden för att främja leveranskedjans prestanda,
+    oberoende av funktionella gränser eller organisationsgränser.
+- lang: en
+  text: According to a definition made from the construction industry's perspective, supply chain management
+    refers to the integration of companies operating at the beginning and end of the construction industry's
+    production chain, with the aim of creating value for the customer and for other supply chain stakeholders
+    in the form of products, services, information and capital. In other words, the goal of construction
+    supply chain management is to integrate the supply chain's material and information flows in order
+    to improve supply chain performance, regardless of functional or organizational boundaries.
+notes: []
+sources:
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+relations:
+  broader: []
+  narrower: []
+  related:
+  - logistiikka
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

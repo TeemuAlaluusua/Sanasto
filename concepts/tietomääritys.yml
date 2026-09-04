@@ -1,0 +1,57 @@
+id: tietomääritys
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tietomääritys
+  type: Suositettava termi
+
+- lang: sv
+  label: informationsspecifikation
+  type: Suositettava termi
+
+- lang: en
+  label: information specification
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tiedon täsmällinen kuvaus koodistona, sanastona tai tietomallina
+
+- lang: sv
+  text: noggrann beskrivning av information som kodsystem, terminologi eller datamodell
+
+- lang: en
+  text: precise description of information as a code list, vocabulary or data model
+
+notes:
+- lang: fi
+  text: Tietomääritys-käsitettä käytetään yläkäsitteenä erilaisista tietokuvauksista.
+
+- lang: sv
+  text: Begreppet informationsspecifikation används som ett överordnat begrepp för olika typer av informationsbeskrivningar.
+
+- lang: en
+  text: The concept of information specification is used as a general concept for different types of information descriptions.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-55
+
+relations:
+  broader: []
+  narrower:
+  - formaatti
+  - koodisto
+  - luokitus
+  - nimiavaruus
+  - sanasto
+  related:
+  - tietomalli
+  - metatieto
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

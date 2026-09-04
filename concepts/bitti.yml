@@ -1,0 +1,54 @@
+id: bitti
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: bitti
+  type: Suositettava termi
+
+- lang: sv
+  label: bit
+  type: Suositettava termi
+
+- lang: en
+  label: binary digit
+  type: Suositettava termi
+
+- lang: en
+  label: bit
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: Bitti on informaatioteoriassa informaation määrän mitta ja tietotekniikassa tiedon tai tietovuon pienin käsiteltävä osa. Sähköisen tiedon pienin yksikkö on bitti (b), yksi merkki, joka voi saada arvon 1 tai 0.
+
+- lang: sv
+  text: En bit är inom informationsteori ett mått på informationsmängd och inom datateknik den minsta enheten av data eller dataflöde som kan behandlas. Den minsta enheten för elektronisk information är bit (b), en symbol som kan anta värdet 1 eller 0.
+
+- lang: en
+  text: A bit is, in information theory, a unit of information and, in computing, the smallest unit of data or data stream that can be processed. The smallest unit of electronic information is the bit (b), a symbol that can take the value 1 or 0.
+
+notes: []
+
+sources:
+- lang: fi
+  label: EN 1556:1998
+  uri: https://sales.sfs.fi/fi/index/tuotteet/SFS/CEN/ID2/1/246564.html.stx
+
+- lang: fi
+  label: ISO/IEC 19762-1:2025
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+
+  narrower:
+  - bittitavu
+
+  related:
+  - data
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

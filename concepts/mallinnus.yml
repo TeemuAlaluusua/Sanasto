@@ -1,0 +1,63 @@
+id: mallinnus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: mallinnus
+  type: Suositettava termi
+
+- lang: sv
+  label: modellering
+  type: Suositettava termi
+
+- lang: en
+  label: modelling
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: prosessi, jossa kohteesta muodostetaan malli
+
+- lang: sv
+  text: process där en modell skapas av ett objekt eller fenomen
+
+- lang: en
+  text: process of creating a model of an object or phenomenon
+
+notes:
+- lang: fi
+  text: |
+    Mallinnusta käytetään esimerkiksi järjestelmien,
+    prosessien, rakenteiden tai tietojen kuvaamiseen.
+
+- lang: sv
+  text: |
+    Modellering används till exempel för att beskriva
+    system, processer, strukturer eller data.
+
+- lang: en
+  text: |
+    Modelling is used to describe systems, processes,
+    structures or data.
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – RY-mallit
+  uri: https://iri.suomi.fi/terminology/rymallit/c1
+
+relations:
+  broader: []
+
+  narrower:
+  - tietomallinnus
+  - informaatiomallinnus
+
+  related:
+  - malli
+  - tietomalli
+  - informaatiomalli
+
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-14T00:00

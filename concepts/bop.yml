@@ -1,0 +1,55 @@
+id: bop
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: valmistusprosessiluettelo
+  type: Suositettava termi
+- lang: fi
+  label: BOP
+  type: Lyhenne
+
+- lang: sv
+  label: processlista för tillverkning
+  type: Suositettava termi
+- lang: sv
+  label: BOP
+  type: Lyhenne
+
+- lang: en
+  label: bill of process
+  type: Suositettava termi
+- lang: en
+  label: BOP
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: luettelo tuotteen valmistamiseen tarvittavista valmistusvaiheista ja prosesseista
+
+- lang: sv
+  text: förteckning över de processer och arbetsmoment som krävs för att tillverka en produkt
+
+- lang: en
+  text: list of manufacturing processes and operations required to produce a product
+
+notes:
+- lang: fi
+  text: BOP kuvaa tuotteen valmistusprosessin rakenteen ja täydentää usein BOM-luetteloa.
+
+sources:
+- lang: en
+  label: ISO/TR 3151-1:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - bom
+  - mom
+  - plm
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-30T00:00

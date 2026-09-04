@@ -1,0 +1,36 @@
+id: syntaktinen-yhteentoimivuus
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: syntaktinen yhteentoimivuus
+  type: Suositettava termi
+- lang: sv
+  label: syntaktisk interoperabilitet
+  type: Suositettava termi
+- lang: en
+  label: syntactic interoperability
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Syntaktisella yhteentoimivuudella tarkoitetaan yhteentoimivuutta, jossa osalliset järjestelmät
+    kykenevät ymmärtämään siirrettyjen tietojen muotoilut.
+- lang: sv
+  text: Med syntaktisk interoperabilitet avses interoperabilitet där de deltagande systemen kan förstå
+    formateringen av den överförda informationen.
+- lang: en
+  text: Syntactic interoperability refers to interoperability in which the participating systems are able
+    to understand the formatting of the data being transferred.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22123-1:2023
+  uri: https://www.iso.org/standard/82758.html
+relations:
+  broader:
+  - yhteentoimivuus
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

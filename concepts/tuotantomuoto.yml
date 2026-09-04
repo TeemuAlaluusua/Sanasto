@@ -1,0 +1,70 @@
+id: tuotantomuoto
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: tuotantomuoto
+    type: Suositettava termi
+  - lang: sv
+    label: produktionsform
+    type: Suositettava termi
+  - lang: en
+    label: production strategy
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: Tuotteiden ja materiaalien valmistustapaa kuvaava luokittelu, joka perustuu varasto- ja tilausohjautuviin tuotantoprosesseihin tilauspisteen mukaisesti.
+  - lang: sv
+    text: Klassificering av hur produkter och material tillverkas baserat på lager- och kundorderstyrda produktionsprocesser enligt orderpunkt.
+  - lang: en
+    text: Classification describing how products and materials are manufactured based on stock-driven and order-driven production processes according to the order penetration point.
+notes:
+  - lang: fi
+    text: |
+      Tuotantomuodot eroavat toisistaan imu- ja työntöohjauksen sekä varasto- ja tilausohjauksen perusteella, mikä näkyy tuotteiden saatavuudessa.
+      Varasto-ohjautuvia tuotteita voidaan noutaa suoraan varastosta, kun taas tilausohjautuvat tuotteet valmistetaan asiakastilauksen perusteella.
+      Tuotantomuodot voidaan jakaa tilauspisteen (OPP, Order Penetration Point) mukaan viiteen kategoriaan:
+      1 Varasto-ohjautuva tuotanto (MTS)
+      2 Asiakasohjautuva kokoonpano (ATO)
+      3 Tilausohjautuva tuotanto (MTO)
+      4 Asiakasohjautuva tuotesuunnittelu (ETO)
+      5 Asiakasohjautuva tuotekehitys (DTO).
+  - lang: sv
+    text: |
+      Produktionsformer skiljer sig åt genom drag- och tryckstyrning samt lager- och kundorderstyrning, vilket återspeglas i produkternas tillgänglighet.
+      Lagerstyrda produkter kan tas direkt från lager, medan kundorderstyrda produkter tillverkas efter beställning.
+      Produktionsformer kan delas in enligt orderpunkten (OPP, Order Penetration Point) i fem kategorier:
+      1 Lagerstyrd produktion (MTS)
+      2 Kundorderstyrd montering (ATO)
+      3 Kundorderstyrd produktion (MTO)
+      4 Kundorderstyrd konstruktion (ETO)
+      5 Kundorderstyrd produktutveckling (DTO).
+  - lang: en
+    text: |
+      Production strategies differ based on push and pull control as well as stock-driven and order-driven approaches, which is reflected in product availability.
+      Stock-driven products can be taken directly from inventory, while order-driven products are manufactured upon customer request.
+      Production strategies can be categorized according to the order penetration point (OPP) into five categories:
+      1 Make-to-stock (MTS)
+      2 Assemble-to-order (ATO)
+      3 Make-to-order (MTO)
+      4 Engineer-to-order (ETO)
+      5 Develop-to-order (DTO).
+sources:
+  - lang: fi
+    label: Alaluusua 2023
+    uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+  - lang: fi
+    label: ISO 15489-1:2017
+    uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower:
+    - mts
+    - ato
+    - mto
+    - eto
+    - dto
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

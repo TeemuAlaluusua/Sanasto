@@ -1,0 +1,79 @@
+id: käsiteskeema
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: käsiteskeema
+    type: Suositettava termi
+
+  - lang: sv
+    label: begreppsschema
+    type: Suositettava termi
+
+  - lang: en
+    label: conceptual schema
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: |
+      Käsitemallin muodollinen kuvailu, joka esittää
+      kohdealueen käsitteet, niiden ominaisuudet ja
+      suhteet rakenteisessa muodossa.
+
+  - lang: sv
+    text: |
+      Formell beskrivning av en begreppsmodell som
+      anger begrepp i ett visst område samt deras
+      egenskaper och relationer i strukturerad form.
+
+  - lang: en
+    text: |
+      Formal description of a conceptual model that
+      specifies the concepts of a domain together
+      with their properties and relationships.
+
+notes:
+  - lang: fi
+    text: |
+      Käsiteskeema esittää käsitemallin muodollisessa
+      muodossa ja sitä voidaan käyttää tietomallien
+      suunnittelun ja tietojärjestelmien kehittämisen
+      lähtökohtana.
+
+  - lang: sv
+    text: |
+      Ett begreppsschema uttrycker en begreppsmodell
+      i formell form och används ofta som grund för
+      utveckling av informationsmodeller och
+      informationssystem.
+
+  - lang: en
+    text: |
+      A conceptual schema expresses a conceptual model
+      in a formalized structure and can serve as a basis
+      for designing information models and information
+      systems.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org/standard/59743.html
+
+relations:
+  broader:
+    - käsitemalli
+    - skeema
+  narrower:
+  - ontologia
+  related:
+    - tietomalli
+    - assosiaatio
+    - käsitteellinen-tietomalli
+    - looginen-tietomalli
+    - luokka
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

@@ -1,0 +1,45 @@
+id: grai
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: kiertävän kuormankantajan tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GRAI
+  type: Lyhenne
+- lang: sv
+  label: global identifierare för returtillgångar
+  type: Suositettava termi
+- lang: sv
+  label: GRAI
+  type: Lyhenne
+- lang: en
+  label: Global Returnable Asset Identifier
+  type: Suositettava termi
+- lang: en
+  label: GRAI
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GRAI on GS1:n yksilöinnin standardi kiertävien kuormankantajien (palautettavat kuormalavat, laatikot,
+    rullakot yms.) yksilöintiin.
+- lang: sv
+  text: GRAI är en GS1-identifieringsstandard för identifiering av returlastbärare i omlopp (returpallar,
+    backar, rullburar med mera).
+- lang: en
+  text: GRAI is a GS1 identification standard for identifying returnable transport items in circulation
+    (returnable pallets, crates, roll cages, etc.).
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

@@ -1,0 +1,43 @@
+id: alavirta
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: alavirta
+  type: Suositettava termi
+- lang: sv
+  label: nedströms
+  type: Suositettava termi
+- lang: en
+  label: downstream
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Toimitusketjun osa, joka kattaa vaiheet ja toimijat raaka-ainetoimittajista
+    kokoonpanevaan tai tuottavaan yksikköön. Vastakohta ylävirralle. Käytetään myös
+    nimitystä jakelumarkkinat.
+
+notes:
+- lang: fi
+  text: |
+    Termiä käytetään toimitusketjun tarkastelussa kuvaamaan virtausta kohti
+    kokoonpanoa tai tuotantoa. Rakentamisen kontekstissa alavirta voi tarkoittaa
+    esimerkiksi materiaalien ja komponenttien toimitusketjua työmaalle tai
+    elementtitehtaalle.
+
+sources:
+- lang:
+  label: Logistiikan maailma -termisanasto (2025)
+  url: https://www.logistiikanmaailma.fi/aineistot/sanastot/logistiikan-maailma-termisanasto/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - ylävirta
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-26T10:15:35

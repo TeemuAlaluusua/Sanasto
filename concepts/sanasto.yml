@@ -1,0 +1,58 @@
+id: sanasto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: sanasto
+  type: Suositettava termi
+
+- lang: sv
+  label: ordlista
+  type: Suositettava termi
+
+- lang: en
+  label: terminology
+  type: Suositettava termi
+
+- lang: en
+  label: glossary
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: jossakin kielessä tai ympäristössä käytettyjen sanojen tai termien luettelo sekä muiden kyseisen luettelon käyttötarkoituksen kannalta oleellisten tietojen muodostama kokonaisuus
+
+- lang: sv
+  text: helhet som omfattar en förteckning över godkända ord eller termer i ett visst språk eller sammanhang samt andra uppgifter som är väsentliga för användningen av förteckningen
+
+- lang: en
+  text: entity that contains a list of words or terms that are used in a certain language or environment as well as other pertinent information that is needed for the purposes of the list in question
+
+notes:
+- lang: fi
+  text: Sanastot voivat sisältää esimerkiksi määritelmiä, esimerkkejä tai kuvauksia termien keskinäisistä suhteista.
+
+- lang: sv
+  text: Ordlistor kan till exempel innehålla definitioner, exempel eller beskrivningar av inbördes förhållanden mellan termer.
+
+- lang: en
+  text: A glossary can contain e.g. definitions, examples or descriptions of the interrelationships between its terms.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-72
+
+relations:
+  broader:
+  - tietomääritys
+  narrower: []
+  related:
+  - tietomalli
+  - koodisto
+  - luokitus
+  - versio
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

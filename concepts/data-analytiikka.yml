@@ -1,0 +1,37 @@
+id: data-analytiikka
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: data analytiikka
+  type: Suositettava termi
+- lang: sv
+  label: dataanalytik
+  type: Suositettava termi
+- lang: en
+  label: data analytics
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Data analytiikka on prosessi, jossa analysoidaan, kerätään, järjestetään ja tallennetaan raakadataa
+    liiketoiminnan kannalta merkityksellisten havaintojen saamiseksi.
+- lang: sv
+  text: Dataanalytik är en process där rådata analyseras, samlas in, organiseras och lagras för att få
+    fram observationer som är relevanta för affärsverksamheten.
+- lang: en
+  text: Data analytics is a process in which raw data is analyzed, collected, organized and stored in
+    order to obtain observations relevant to business operations.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 24668:2022
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower:
+  - tiedon-louhinta
+  related:
+  - big-data
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

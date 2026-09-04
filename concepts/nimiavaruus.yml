@@ -1,0 +1,67 @@
+id: nimiavaruus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: nimiavaruus
+  type: Suositettava termi
+
+- lang: sv
+  label: namnrymd
+  type: Synonyymi
+
+- lang: en
+  label: namespace
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: nimeämiseen tietyssä asia- tai toimintayhteydessä käytettävissä olevien elementtien joukko
+
+- lang: sv
+  text: mängd av element som används för namngivning inom ett visst sak- eller verksamhetssammanhang
+
+- lang: en
+  text: set of elements available for naming within a specific context or domain of activity
+
+notes:
+- lang: fi
+  text: Elementit voivat olla esimerkiksi nimiä, sanoja tai teknisiä termejä.
+
+- lang: fi
+  text: Yhden nimiavaruuden sisällä yhdellä nimellä saa olla vain yksi merkitys, mutta eri nimiavaruuksissa samaa nimeä voi käyttää eri merkityksissä.
+
+- lang: sv
+  text: Elementen kan till exempel vara namn, ord eller tekniska termer.
+
+- lang: sv
+  text: Inom en och samma namnrymd får ett namn endast ha en betydelse, men i olika namnrymder kan samma namn användas med olika betydelser.
+
+- lang: en
+  text: Elements can be, for example, names, words or technical terms.
+
+- lang: en
+  text: Within a single namespace, a name can have only one meaning, but in different namespaces the same name can be used with different meanings.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-30
+
+relations:
+  broader:
+  - tietomääritys
+
+  narrower: []
+
+  related:
+  - tunniste
+  - uri
+  - ontologia
+  - skeema
+  - iri
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

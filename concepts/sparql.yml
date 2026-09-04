@@ -1,0 +1,64 @@
+id: sparql
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: SPARQL protocol and RDF query language
+  type: Suositettava termi
+- lang: fi
+  label: SPARQL
+  type: Lyhenne
+
+- lang: sv
+  label: SPARQL protocol and RDF query language
+  type: Suositettava termi
+- lang: sv
+  label: SPARQL
+  type: Lyhenne
+
+- lang: en
+  label: SPARQL protocol and RDF query language
+  type: Suositettava termi
+- lang: en
+  label: SPARQL
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    W3C:n standardoima kyselykieli ja protokolla, jolla haetaan ja
+    muokataan RDF-muodossa esitettyä tietoa.
+
+- lang: sv
+  text: |
+    Ett W3C-standardiserat frågespråk och protokoll för att hämta och
+    bearbeta data som representeras i RDF-format.
+
+- lang: en
+  text: |
+    A W3C-standardized query language and protocol for retrieving and
+    manipulating data represented in RDF format.
+
+notes:
+- lang: fi
+  text: |
+    SPARQL vastaa RDF-tietokantojen kyselykielenä samaa tarkoitusta
+    kuin SQL relaatiotietokannoissa.
+
+sources:
+- lang:
+  label: SPARQL 1.1 Query Language
+  uri: https://www.w3.org/TR/sparql11-query/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rdf
+  - owl
+  - semanttinen-web
+  - rdf-kolmikko
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

@@ -1,0 +1,51 @@
+id: ydintieto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: ydintieto
+  type: Suositettava termi
+
+- lang: sv
+  label: masterdata
+  type: Suositettava termi
+
+- lang: en
+  label: master data
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: organisaation toimintaan liittyvää kohdetta kuvaava tieto, jota useampi organisaation prosessi tai toiminto tarvitsee tai hyödyntää
+
+- lang: sv
+  text: information som beskriver ett objekt kopplat till organisationens verksamhet och som används eller behövs av flera processer eller funktioner inom organisationen
+
+- lang: en
+  text: the authoritative, most accurate data that is available about key business entities, used to establish the context for business transactions and transactional data
+
+notes:
+- lang: fi
+  text: Organisaation masterdataa voivat olla esimerkiksi asiakkaita, toimittajia, yhteistyökumppaneita, tuotteita, palveluita tai toimipaikkoja koskevat tiedot. Tavallisesti master data on hitaasti muuttuvaa ja sen tarve on pitkäaikaista.
+
+- lang: sv
+  text: Organisationens masterdata kan till exempel omfatta uppgifter om kunder, leverantörer, samarbetspartner, produkter, tjänster eller verksamhetsställen. Masterdata förändras vanligtvis långsamt och används under lång tid.
+
+- lang: en
+  text: Master data in an organization may include information about customers, suppliers, partners, products, services or locations. Master data is typically slowly changing and used over a long period.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-58
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietomalli
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

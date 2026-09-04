@@ -1,0 +1,56 @@
+id: logistiikka
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: logistiikka
+  type: Suositettava termi
+- lang: sv
+  label: logistik
+  type: Suositettava termi
+- lang: en
+  label: logistics
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Logistiikka-käsite tarkoittaa yhteyksien luomista ja parhaan tavan löytämistä päämäärän saavuttamiseksi,
+    jotta aineelliset esineet tai elävät olennot voidaan tuoda riittävässä määrin oikeaan paikkaan oikeaan
+    aikaan. Toimitusketjujen hallinta sekoitetaan usein logistiikka-käsitteeseen, vaikka ne tarkoittavat
+    vain osin samaa asiakokonaisuutta. Toimitusketjun hallinta on toimitusketjun toimijoiden välisiä keskinäisiä
+    riippuvuussuhteita strategisella tasolla kuvaava määritelmä, kun taas logistiikan hallinta keskittyy
+    projektikohteeseen toimitettavien materiaalivirtojen hallintaan operatiivisella tasolla, jossa tarkastellaan
+    yritysten hankintatoimitusprosessia (tulo-, sisä- ja lähtölogistiikkaa).
+- lang: sv
+  text: Begreppet logistik avser att skapa kopplingar och hitta det bästa sättet att nå ett mål, så att
+    materiella föremål eller levande varelser kan föras till rätt plats vid rätt tidpunkt i tillräcklig
+    mängd. Hantering av leveranskedjor blandas ofta ihop med begreppet logistik, även om de bara delvis
+    avser samma helhet. Hantering av leveranskedjan är en definition som på strategisk nivå beskriver
+    de ömsesidiga beroendeförhållandena mellan aktörerna i leveranskedjan, medan logistikhantering på
+    operativ nivå fokuserar på hanteringen av materialflöden som levereras till ett projektobjekt, där
+    man granskar företagens anskaffnings- och leveransprocess (ingående, intern och utgående logistik).
+- lang: en
+  text: The concept of logistics refers to creating connections and finding the best way of achieving
+    an objective, so that material goods or living beings can be brought to the right place at the right
+    time in sufficient quantity. Supply chain management is often confused with the concept of logistics,
+    even though the two terms only partly refer to the same subject matter. Supply chain management is
+    a definition describing, at a strategic level, the mutual interdependencies between actors in the
+    supply chain, whereas logistics management focuses, at an operational level, on managing the material
+    flows delivered to a project site, examining companies' procurement and delivery process (inbound,
+    internal and outbound logistics).
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2017
+  uri: https://www.iso.org/
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+relations:
+  broader: []
+  narrower:
+  - käänteinen-logistiikka
+  related:
+  - toimitusketjun-hallinta
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

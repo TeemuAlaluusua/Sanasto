@@ -1,0 +1,37 @@
+id: gdpr
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: GDPR
+  type: Suositettava termi
+- lang: sv
+  label: GDPR
+  type: Suositettava termi
+- lang: en
+  label: General Data Protection Regulation
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: EU:n tietosuoja-asetus eli GDPR säätää kansalaisten oikeuksista tietosuojaan ja omien henkilötietojen
+    luottamukselliseen käsittelyyn. Suomen tietosuojalaki täsmentää ja täydentää tietosuoja-asetusta.
+- lang: sv
+  text: EU:s dataskyddsförordning, dvs. GDPR, föreskriver medborgarnas rättigheter till dataskydd och
+    till konfidentiell behandling av sina egna personuppgifter. Finlands dataskyddslag preciserar och
+    kompletterar dataskyddsförordningen.
+- lang: en
+  text: The EU's General Data Protection Regulation, i.e. the GDPR, lays down citizens' rights to data
+    protection and to confidential processing of their own personal data. Finland's Data Protection Act
+    specifies and supplements the Regulation.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC TR 7052:2023
+  uri: https://www.iso.org
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

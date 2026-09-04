@@ -1,0 +1,48 @@
+id: lod
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: LOD
+  type: Suositettava termi
+- lang: sv
+  label: LOD
+  type: Suositettava termi
+- lang: en
+  label: Level of Development
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: 'Suunnittelun kehitystasomäärittely LOD on tietomallintamisen teoreettinen vertailumenetelmä,
+    jonka tarkoituksena on parantaa rakennustietomallien (BIM) käyttäjien välistä viestintää mallien elementtien
+    ominaisuuksista niiden kehitysvaiheen mukaan. LOD-kehitystasot perustuvat suunnittelun eri loppukäyttötarkoitusten
+    tietovaatimuksiin: lupaprosessi (LOD 100-300), hankinta (LOD 300-350), esivalmistus (LOD 350-400),
+    asennus ja elinkaaren aikainen hallinta (LOD 400). LOD kehitystasomäärittely siis ilmaisee projektitietojen
+    tarkkuutta tietomallissa.'
+- lang: sv
+  text: 'LOD (utvecklingsgradsspecifikation) är en teoretisk jämförelsemetod inom modellering som syftar
+    till att förbättra kommunikationen mellan användare av byggnadsinformationsmodeller (BIM) om modellelementens
+    egenskaper enligt deras utvecklingsskede. LOD-utvecklingsgraderna baseras på informationskraven för
+    olika slutanvändningsändamål inom projekteringen: tillståndsprocessen (LOD 100-300), upphandling (LOD
+    300-350), prefabricering (LOD 350-400), installation och förvaltning under livscykeln (LOD 400). LOD-utvecklingsgradsspecifikationen
+    anger alltså projektinformationens exakthet i informationsmodellen.'
+- lang: en
+  text: 'LOD (Level of Development) is a theoretical benchmarking method in modeling that aims to improve
+    communication between users of building information models (BIM) regarding the properties of model
+    elements according to their stage of development. The LOD levels are based on the information requirements
+    of different end uses within design: the permitting process (LOD 100-300), procurement (LOD 300-350),
+    prefabrication (LOD 350-400), and installation and lifecycle management (LOD 400). The LOD specification
+    thus indicates the level of accuracy of project information within the information model.'
+notes: []
+sources:
+- lang: fi
+  label: 'BIMForum: 2023'
+  uri: https://bimforum.org/resource/lod-level-of-development-lod-specification/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - loin
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,33 @@
+id: ifcspff
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ifcSPFF
+  type: Suositettava termi
+- lang: sv
+  label: ifcSPFF
+  type: Suositettava termi
+- lang: en
+  label: ifcSPFF
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: STEP-muotoinen IFC-tietoaineisto.
+- lang: sv
+  text: IFC-dataset i STEP-format.
+- lang: en
+  text: IFC dataset in STEP format.
+notes: []
+sources:
+- lang: fi
+  label: buildingSmart Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+relations:
+  broader:
+  - ifc
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

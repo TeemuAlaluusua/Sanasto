@@ -1,0 +1,137 @@
+id: rdf
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: resource description framework
+    type: Suositettava termi
+  - lang: fi
+    label: RDF
+    type: Lyhenne
+
+  - lang: sv
+    label: resource description framework
+    type: Suositettava termi
+  - lang: sv
+    label: RDF
+    type: Lyhenne
+
+  - lang: en
+    label: resource description framework
+    type: Suositettava termi
+  - lang: en
+    label: RDF
+    type: Lyhenne
+
+definitions:
+  - lang: fi
+    text: "viitekehys, jonka avulla luodaan loogisia kieliä, jotka ovat yhteentoimivia semanttisessa webissa"
+
+  - lang: sv
+    text: "ramverk för att konstruera logiska språk som kan fungera tillsammans i den semantiska webben"
+
+  - lang: en
+    text: "framework for constructing logical languages that can work together in the Semantic Web"
+
+notes:
+  - lang: fi
+    text: |
+      RDF on standardimalli datan vaihtamiseen webissä. Se mahdollistaa
+      eri lähteistä tulevan datan yhdistämisen myös silloin, kun käytetyt
+      skeemat eroavat toisistaan, sekä tukee skeemojen kehittymistä
+      ajan myötä ilman että kaikkia datan käyttäjiä tarvitsee muuttaa.
+
+  - lang: sv
+    text: |
+      RDF är en standardmodell för datautbyte på webben. Den möjliggör
+      sammanslagning av data från olika källor även när de underliggande
+      schemana skiljer sig åt och stödjer utveckling av scheman över tid
+      utan att alla datakonsumenter behöver ändras.
+
+  - lang: en
+    text: |
+      RDF is a standard model for data interchange on the Web. It enables
+      data from different schemas to be merged and supports schema
+      evolution over time without requiring all data consumers to change.
+
+  - lang: fi
+    text: |
+      RDF laajentaa webin linkkirakennetta käyttämällä URI-tunnisteita
+      nimeämään sekä linkin kohteet että niiden välisen suhteen.
+      Tämä esitetään yleensä kolmikkomallina (triple): subjekti,
+      predikaatti ja objekti.
+
+  - lang: sv
+    text: |
+      RDF utvidgar webbens länkstruktur genom att använda URI:er
+      för att namnge relationen mellan resurser samt länkens båda
+      ändpunkter. Detta uttrycks vanligtvis som en trippel:
+      subjekt, predikat och objekt.
+
+  - lang: en
+    text: |
+      RDF extends the linking structure of the Web by using URIs to name
+      relationships between resources. These relationships are typically
+      represented as triples consisting of a subject, predicate and object.
+
+  - lang: fi
+    text: |
+      RDF:n tietorakenne muodostaa suunnatun ja nimetyillä kaarilla
+      varustetun graafin, jossa solmut kuvaavat resursseja ja kaaret
+      niiden välisiä suhteita. RDF toimii perustana useille
+      semanttisen webin teknologioille, kuten OWL:lle ja SKOS:lle.
+
+  - lang: sv
+    text: |
+      RDF:s datastruktur bildar en riktad graf med märkta kanter,
+      där noder representerar resurser och kanter representerar
+      namngivna relationer mellan dem. RDF utgör grunden för flera
+      tekniker inom den semantiska webben, såsom OWL och SKOS.
+
+  - lang: en
+    text: |
+      RDF data forms a directed labeled graph in which nodes represent
+      resources and edges represent named relationships. RDF is the
+      foundation for other Semantic Web technologies such as OWL and SKOS.
+
+  - lang: fi
+    text: |
+      RDF:n avulla XML:ää voidaan käyttää myös datan
+      kuvaamiseen eikä pelkästään dokumenttien esittämiseen.
+
+  - lang: sv
+    text: |
+      RDF gör det möjligt att använda XML för att beskriva
+      data och inte enbart dokument.
+
+  - lang: en
+    text: |
+      RDF enables XML to be used for describing data rather
+      than only documents.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+  - lang: en
+    label: W3C RDF Overview
+    uri: https://www.w3.org/RDF/
+
+relations:
+  broader: []
+  narrower:
+  - rdf-kolmikko
+  related:
+    - ontologia
+    - semanttinen-web
+    - sparql
+    - owl
+    - skos
+    - iri
+    - linkitetty-data
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

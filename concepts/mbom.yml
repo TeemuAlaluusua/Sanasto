@@ -1,0 +1,88 @@
+id: mbom
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: valmistuksen tuoteosaluettelo
+  type: Suositettava termi
+- lang: fi
+  label: mBOM
+  type: Lyhenne
+
+- lang: sv
+  label: tillverkningsmateriallista
+  type: Suositettava termi
+- lang: sv
+  label: mBOM
+  type: Lyhenne
+
+- lang: en
+  label: manufacturing bill of material
+  type: Suositettava termi
+- lang: en
+  label: mBOM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Luettelo kaikista osista, tarroista, pakkauksista ja
+    kokoonpanoista, joita tarvitaan valmiin tuotteen
+    valmistamiseen ja toimittamiseen asiakkaalle.
+
+- lang: sv
+  text: |
+    Lista över alla delar, etiketter, förpackningar och
+    sammansättningar som krävs för att tillverka och leverera
+    en färdig produkt till kunden.
+
+- lang: en
+  text: |
+    List of all the parts, labels, packaging, and assemblies
+    required to build and ship a finished product to
+    customers.
+
+notes:
+- lang: fi
+  text: |
+    Valmistuksen tuoteosaluettelo kuvaa tuotteen
+    valmistuksessa ja toimituksessa tarvittavat
+    osat ja materiaalit (as-built). Se voi poiketa
+    suunnittelun tuoteosaluettelosta esimerkiksi
+    valmistusvaiheiden, pakkausten tai
+    tuotantokohtaisten komponenttien vuoksi.
+
+- lang: sv
+  text: |
+    Tillverkningsmateriallistan beskriver de delar
+    och material som används vid tillverkning och
+    leverans av produkten (as-built). Den kan skilja
+    sig från konstruktionsmateriallistan på grund
+    av produktionsprocesser, förpackningar eller
+    produktionsspecifika komponenter.
+
+- lang: en
+  text: |
+    A manufacturing bill of material describes the
+    components and materials used in manufacturing
+    and delivery of the finished product (as-built).
+    It may differ from the engineering bill of
+    material due to manufacturing processes,
+    packaging or production-specific components.
+
+sources:
+- lang: en
+  label: ISO/TR 3151-1:2023(E)
+  uri: 
+
+relations:
+  broader:
+  - bom
+  narrower: []
+  related:
+  - ebom
+
+metadata:
+  created: "2026-03-14T00:00"
+  modified: "2026-03-14T00:00"

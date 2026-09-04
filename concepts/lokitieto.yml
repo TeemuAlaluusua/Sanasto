@@ -1,0 +1,51 @@
+id: lokitieto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: lokitieto
+  type: Suositettava termi
+
+- lang: sv
+  label: loggdata
+  type: Suositettava termi
+
+- lang: en
+  label: log data
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tietojärjestelmän muistiin automaattisesti kirjautuva tapahtumatieto
+
+- lang: sv
+  text: händelseinformation som automatiskt registreras i ett informationssystems minne
+
+- lang: en
+  text: event information that is automatically recorded in the memory of an information system
+
+notes: []
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-59
+
+- lang: fi
+  label: ISO 26430-4:2009
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+
+  narrower: []
+
+  related:
+  - lokitiedosto
+  - tietoturva
+  - tapahtumatieto
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

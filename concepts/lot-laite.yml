@@ -1,0 +1,40 @@
+id: lot-laite
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: IoT-laite
+  type: Suositettava termi
+- lang: sv
+  label: IoT-enhet
+  type: Suositettava termi
+- lang: en
+  label: IoT device
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Termillä IoT-laite tarkoitetaan IoT-järjestelmän entiteettiä eli kohdeyksikköä, joka on vuorovaikutuksessa
+    ja viestii fyysisen maailman kanssa havainnoimalla tai aktivoimalla. IoT-laite voi olla sensori tai
+    toimilaite.
+- lang: sv
+  text: Med termen IoT-enhet avses en IoT-systementitet, det vill säga en målenhet, som interagerar och
+    kommunicerar med den fysiska världen genom att observera eller aktivera. En IoT-enhet kan vara en
+    sensor eller ett ställdon.
+- lang: en
+  text: The term IoT device refers to an entity of an IoT system, i.e. a target unit, that interacts and
+    communicates with the physical world by sensing or actuating. An IoT device can be a sensor or an
+    actuator.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org
+relations:
+  broader:
+  - lot-järjestelmä
+  narrower: []
+  related:
+  - anturi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

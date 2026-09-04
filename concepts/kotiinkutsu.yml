@@ -1,0 +1,38 @@
+id: kotiinkutsu
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: kotiinkutsu
+  type: Suositettava termi
+- lang: sv
+  label: hemkallelse
+  type: Suositettava termi
+- lang: en
+  label: delivery call-off
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tilaajan (usein työmaan) toimittajalle tekemä ilmoitus, jossa ennalta sovitusta toimituksesta
+    varmistetaan toimitussisältö ja toimitusajankohta. Kotiinkutsu voi koskea koko toimitusta tai sen
+    koostuessa useasta erästä, ainoastaan yhtä toimituserää.
+- lang: sv
+  text: Ett meddelande som beställaren (ofta arbetsplatsen) skickar till leverantören, genom vilket leveransens
+    innehåll och tidpunkt bekräftas för en tidigare avtalad leverans. Hemkallelsen kan gälla hela leveransen
+    eller, om den består av flera partier, endast ett leveransparti.
+- lang: en
+  text: A notice sent by the customer (often the worksite) to the supplier, confirming the delivery content
+    and timing of a previously agreed delivery. The call-off may concern the entire delivery or, if it
+    consists of several batches, only one delivery batch.
+notes: []
+sources:
+- lang: fi
+  label: Logistiikan maailma -termisanasto:2025
+  uri: https://www.logistiikanmaailma.fi/aineistot/sanastot/logistiikan-maailma-termisanasto/
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

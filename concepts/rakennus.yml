@@ -1,0 +1,90 @@
+id: rakennus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: rakennus
+  type: Suositettava termi
+
+- lang: sv
+  label: byggnad
+  type: Suositettava termi
+
+- lang: en
+  label: building
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: paikallaan pysyväksi tarkoitettu, omalla sisäänkäynnillä varustettu, katettu ja ulkoseinien rajaama rakennuskohde
+
+- lang: sv
+  text: byggnadsobjekt som är avsett att stå permanent på platsen, försett med egen ingång, täckt och avgränsat av ytterväggar
+
+- lang: en
+  text: built asset intended to remain in place, provided with its own entrance, covered and enclosed by external walls
+
+notes:
+- lang: fi
+  text: Toisistaan erillään olevat rakennukset ovat aina itsenäisiä rakennuksia. Kaikki itsenäiset rakennukset eivät kuitenkaan ole erillään muista rakennuksista esimerkiksi kadun varteen rakennettaessa. Esimerkiksi rivitalot, paritalot ja kerrostalot ovat itsenäisiä rakennuksia.
+
+- lang: fi
+  text: Rakennus on fyysinen kokonaisuus. Rakennusta koskevaa tietoa voidaan esittää rakennuskohdetietueessa.
+
+- lang: fi
+  text: Rakennuksen olosuhteiden ja mitoituksen tulisi pääasiallisesti mahdollistaa ihmisten toiminta ainakin osassa rakennuksen tiloista.
+
+- lang: fi
+  text: 'Käsitejärjestelmäkaavio: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+
+- lang: fi
+  text: Rakennuksen ulkovaipan sisäpuolella on sisätiloja. Rakennuksen ulkovaipan rajapintaan rajautuu välittömästi rakennuksen yhteydessä olevia ja rakennukseen kuuluvia ulkotiloja, kuten parvekkeet, terassit, katokset, lavat jne.
+
+- lang: fi
+  text: Sisäänkäynnillä tarkoitetaan ovea tai aukkoa, josta on kulku rakennukseen sen ulkopuolelta.
+
+- lang: sv
+  text: Byggnader som är åtskilda från varandra är alltid självständiga byggnader. Alla självständiga byggnader är dock inte nödvändigtvis separerade från andra byggnader, till exempel vid byggande längs en gata. Till exempel radhus, parhus och höghus är självständiga byggnader.
+
+- lang: sv
+  text: En byggnad är en fysisk helhet. Information om byggnaden kan presenteras i en byggnadsobjektpost.
+
+- lang: sv
+  text: Byggnadens förhållanden och dimensionering bör huvudsakligen möjliggöra mänsklig verksamhet åtminstone i en del av byggnadens utrymmen.
+
+- lang: sv
+  text: Innanför byggnadens ytterhölje finns inomhusutrymmen. Vid ytterhöljets gräns finns omedelbart utomhusutrymmen som hör till byggnaden och är i direkt anslutning till den, såsom balkonger, terrasser, skärmtak, plattformar osv.
+
+- lang: sv
+  text: Med ingång avses en dörr eller öppning genom vilken man kan komma in i byggnaden utifrån.
+
+- lang: en
+  text: Buildings that are separate from each other are always independent buildings. However, not all independent buildings are physically separated from others, for example when built along a street. Row houses, semi-detached houses and apartment buildings are examples of independent buildings.
+
+- lang: en
+  text: A building is a physical entity. Information concerning a building can be represented in a built asset record.
+
+- lang: en
+  text: The conditions and dimensions of a building should primarily enable human activity at least in part of the building’s spaces.
+
+- lang: en
+  text: Inside the building envelope there are interior spaces. At the boundary of the building envelope there are outdoor spaces directly associated with the building, such as balconies, terraces, canopies, platforms etc.
+
+- lang: en
+  text: An entrance means a door or opening that provides access to the building from outside.
+
+sources:
+- lang: fi
+  label: RY-mallit sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c27
+
+relations:
+  broader:
+  - rakennuskohde
+  narrower: []
+  related:
+  - digitaalinen-kaksonen
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-16T14:08

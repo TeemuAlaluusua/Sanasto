@@ -1,0 +1,44 @@
+id: giai
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: käyttöomaisuuden tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GIAI
+  type: Lyhenne
+- lang: sv
+  label: global tillgångsidentifierare
+  type: Suositettava termi
+- lang: sv
+  label: GIAI
+  type: Lyhenne
+- lang: en
+  label: Global Individual Asset Identifier
+  type: Suositettava termi
+- lang: en
+  label: GIAI
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GIAI on GS1:n yksilöinnin standardi, jota käytetään käyttöomaisuuden (esim. sähkömittareiden)
+    yksilöintiin.
+- lang: sv
+  text: GIAI är en GS1-identifieringsstandard som används för att identifiera anläggningstillgångar (t.ex.
+    elmätare).
+- lang: en
+  text: GIAI is a GS1 identification standard used to identify fixed assets (e.g. electricity meters).
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

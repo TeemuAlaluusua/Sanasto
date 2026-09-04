@@ -1,0 +1,40 @@
+id: rakennuskohteen-tietomallinnus
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rakennuskohteen tietomallinnus
+  type: Suositettava termi
+- lang: sv
+  label: datamodellering av byggnadsobjekt
+  type: Suositettava termi
+- lang: en
+  label: data modeling of construction entity
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: tietomallinnus, jonka tuloksena syntyy rakennuskohteen tietomalli
+- lang: sv
+  text: datamodellering som resulterar i en datamodell av byggnadsobjektet
+- lang: en
+  text: data modeling that results in a data model of the construction entity
+notes:
+- lang: fi
+  text: 'Käsitejärjestelmäkaavio: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: sv
+  text: 'Begreppssystemschema: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: en
+  text: 'Concept system diagram: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+sources:
+- lang: fi
+  label: Sanastokeskus, RY-mallit -sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c3
+relations:
+  broader:
+  - tietomallinnus
+  narrower: []
+  related:
+  - rakennuskohteen-tietomalli
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-08-28T00:00

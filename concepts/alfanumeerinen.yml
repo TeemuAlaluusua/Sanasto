@@ -1,0 +1,41 @@
+id: alfanumeerinen
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: alfanumeerinen
+  type: Suositettava termi
+- lang: fi
+  label: aakkosnumeerinen
+  type: Synonyymi
+- lang: sv
+  label: alfanumerisk
+  type: Suositettava termi
+- lang: en
+  label: alphanumeric
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    Aakkosista (A–Z) ja numeroista (0–9) koostuva tai niitä sisältävä merkistö, koodi tai tieto. Vastakohtana pelkästään aakkosellinen tai pelkästään numeerinen.
+
+notes:
+- lang: fi
+  text: Alfanumeerinen ei sisällä välimerkkejä tai erikoismerkkejä; jos myös niitä sallitaan, puhutaan esimerkiksi alfanumeerisesta ja erikoismerkkejä sisältävästä merkkijonosta tai laajennetusta merkistöstä.
+
+sources:
+- lang: 
+  label: ISO/IEC 19762:2025. Information technology — Automatic identification and data capture techniques — Harmonized vocabulary
+  url:
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - alfanumeerinen-koodi
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-26T10:33:00

@@ -1,0 +1,80 @@
+id: koneluettavuus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: koneluettavuus
+  type: Suositettava termi
+
+- lang: sv
+  label: maskinläsbarhet
+  type: Suositettava termi
+
+- lang: en
+  label: machine readability
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tieto on rakenteistettu systemaattiseen muotoon siten, että kone pystyy tulkitsemaan, käsittelemään ja siirtämään sitä tietojenkäsittelyjärjestelmään ilman käyttäjän toimenpiteitä
+
+- lang: sv
+  text: information är strukturerad i en systematisk form så att en maskin kan tolka, bearbeta och överföra den till ett informationssystem utan användarens åtgärder
+
+- lang: en
+  text: information is structured in a systematic form so that a machine can interpret, process and transfer it into an information system without user intervention
+
+notes:
+- lang: fi
+  text: |
+    Koneluettavia tekniikoita ovat esimerkiksi lineaariset (1D) viivakoodit,
+    kaksiulotteiset symbolit, magneettijuovakortit, RFID, biometria ja
+    optinen kirjaintunnistus.
+
+- lang: sv
+  text: |
+    Maskinläsbara tekniker är till exempel linjära (1D) streckkoder,
+    tvådimensionella symboler, magnetremskort, RFID, biometriska metoder
+    och optisk teckenigenkänning.
+
+- lang: en
+  text: |
+    Machine-readable technologies include, for example, linear (1D) barcodes,
+    two-dimensional symbols, magnetic stripe cards, RFID, biometrics and
+    optical character recognition.
+
+- lang: fi
+  text: |
+    Tiedot esitetään tyypillisesti tietovirrassa ennalta määritellyissä
+    paikoissa (kentissä), jolloin tietokoneohjelma voi tulkita ne.
+
+- lang: sv
+  text: |
+    Uppgifterna presenteras vanligtvis i en dataström på fördefinierade
+    platser (fält), vilket gör att ett datorprogram kan tolka dem.
+
+- lang: en
+  text: |
+    Data is typically presented in a data stream in predefined positions
+    (fields), enabling a computer program to interpret it.
+
+sources:
+- lang: fi
+  label: ISO/IEC 19762-1:2025
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - data
+  narrower: []
+  related:
+  - tietomalli
+  - metatieto
+  - tiedonhallinta
+  - automatisoitu
+  - digitointi
+  - koneluettava
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

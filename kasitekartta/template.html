@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sanaston käsitekartta</title>
+<style>
+  :root{
+    --bg:#F3F4F6; --bg-canvas:#F9FAFB; --surface:#FFFFFF; --surface-2:#F3F4F6;
+    --border:#E5E7EB; --ink:#111111; --ink-muted:#6B7280; --ink-faint:#9CA3AF;
+    --accent:#2563EB; --accent-strong:#1D4ED8; --accent-2:#B45309; --accent-3:#7C3AED;
+    --warn:#B91C1C; --node-fill:#FFFFFF; --node-stroke:#9CA3AF;
+    --shadow:none;
+    --font-display:system-ui,Arial,sans-serif;
+    --font-body:system-ui,Arial,sans-serif;
+    --font-mono:ui-monospace,SFMono-Regular,Consolas,monospace;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-body); font-size:14px; line-height:1.5;
+    overflow:hidden;
+  }
+  #app{ position:relative; width:100vw; height:100vh; display:flex; flex-direction:column; }
+
+  /* ---------- Topbar ---------- */
+  header{
+    flex:0 0 auto; display:flex; align-items:center; gap:18px;
+    padding:12px 18px; background:var(--surface); border-bottom:1px solid var(--border);
+    z-index:20; flex-wrap:wrap; row-gap:10px;
+  }
+  .headerBtn{
+    padding:6px 10px; border:1px solid var(--accent); border-radius:6px;
+    background:#fff; color:var(--accent); text-decoration:none; font-size:14px;
+    white-space:nowrap;
+  }
+  .headerBtn:hover{ background:#EFF6FF; border-color:var(--accent-strong); color:var(--accent-strong); }
+
+  .dropdown{ position:relative; display:inline-block; }
+  .dropbtn{
+    padding:6px 10px; border:1px solid var(--border); border-radius:6px;
+    background:var(--surface); color:var(--ink); font:500 13px var(--font-body); cursor:pointer;
+  }
+  .dropbtn:hover{ border-color:var(--accent); color:var(--accent-strong); }
+  .dropdown-content{
+    display:none; position:absolute; top:calc(100% + 4px); left:0; min-width:110px;
+    background:var(--surface); border:1px solid var(--border); border-radius:6px;
+    z-index:40; overflow:hidden;
+  }
+  .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content{ display:block; }
+  .dropdown-content div{ padding:7px 12px; font:400 13px var(--font-body); color:var(--ink); cursor:pointer; white-space:nowrap; }
+  .dropdown-content div:hover{ background:var(--surface-2); }
+  .dropdown-content div.active-lang{ color:var(--accent-strong); font-weight:600; }
+
+  .brand{ display:flex; flex-direction:column; gap:1px; margin-right:6px; }
+  .brand h1{
+    margin:0; font:600 16px/1.2 var(--font-display); letter-spacing:-0.01em; text-wrap:balance;
+  }
+  .brand span{ font:400 11px/1.2 var(--font-mono); color:var(--ink-muted); letter-spacing:0.02em; }
+
+  .search-wrap{ position:relative; }
+  .search-wrap input{
+    width:230px; padding:7px 10px 7px 30px; border-radius:6px; border:1px solid var(--border);
+    background:var(--bg-canvas); color:var(--ink); font:400 13px/1.3 var(--font-body);
+  }
+  .search-wrap input:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+  .search-wrap svg{ position:absolute; left:9px; top:50%; transform:translateY(-50%); width:14px; height:14px; color:var(--ink-faint); }
+  .search-results{
+    position:absolute; top:calc(100% + 6px); left:0; width:280px; max-height:280px; overflow-y:auto;
+    background:var(--surface); border:1px solid var(--border); border-radius:6px;
+    z-index:30; display:none;
+  }
+  .search-results.open{ display:block; }
+  .search-results button{
+    display:block; width:100%; text-align:left; padding:8px 12px; border:0; background:transparent;
+    color:var(--ink); font:400 13px var(--font-body); cursor:pointer; border-bottom:1px solid var(--border);
+  }
+  .search-results button:last-child{ border-bottom:none; }
+  .search-results button:hover{ background:var(--surface-2); }
+  .search-results .hit-meta{ display:block; font:400 11px var(--font-mono); color:var(--ink-muted); margin-top:1px; }
+
+  .seg{ display:flex; border:1px solid var(--border); border-radius:6px; overflow:hidden; }
+  .seg button{
+    padding:7px 12px; border:0; background:var(--surface); color:var(--ink-muted);
+    font:500 12px var(--font-body); cursor:pointer; border-right:1px solid var(--border);
+  }
+  .seg button:last-child{ border-right:none; }
+  .seg button.active{ background:var(--accent); color:#fff; }
+
+  .chip{
+    display:inline-flex; align-items:center; gap:6px; padding:6px 10px; border-radius:999px;
+    border:1px solid var(--border); background:var(--surface); color:var(--ink-muted);
+    font:500 12px var(--font-body); cursor:pointer; user-select:none; white-space:nowrap;
+  }
+  .chip .swatch{ width:10px; height:10px; border-radius:50%; flex:0 0 auto; }
+  .chip.off{ opacity:0.42; }
+  .chip .dash{ width:12px; height:0; border-top:2px dashed currentColor; display:inline-block; }
+
+  .topbar-group{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .spacer{ flex:1 1 auto; }
+  .icon-btn{
+    width:30px; height:30px; border-radius:6px; border:1px solid var(--border); background:var(--surface);
+    color:var(--ink-muted); cursor:pointer; display:flex; align-items:center; justify-content:center;
+    font:600 14px var(--font-mono);
+  }
+  .icon-btn:hover{ color:var(--ink); border-color:var(--accent); }
+
+  /* ---------- Canvas ---------- */
+  .canvas-wrap{ position:relative; flex:1 1 auto; background:var(--bg-canvas); overflow:hidden; }
+  svg#graph{ width:100%; height:100%; display:block; cursor:grab; }
+  svg#graph.grabbing{ cursor:grabbing; }
+
+  .node circle{ fill:var(--node-fill); stroke:var(--node-stroke); stroke-width:1.3; transition:stroke .15s, fill .15s; }
+  .node.isolated circle{ stroke-dasharray:2.5 2; }
+  .node text{
+    font:500 10px var(--font-mono); fill:var(--ink-muted); pointer-events:none; opacity:0;
+    transition:opacity .12s;
+  }
+  .node.show-label text{ opacity:1; }
+  .node.hub text{ opacity:1; }
+  .node.dim{ opacity:0.16; }
+  .node.selected circle{ stroke:var(--accent-strong); stroke-width:2.6; }
+  .node.match circle{ stroke:var(--accent-2); stroke-width:2.4; }
+  .node:hover circle{ stroke:var(--accent-strong); stroke-width:2.2; }
+
+  .link{ fill:none; }
+  .link.broader{ stroke:var(--accent); stroke-width:1.3; opacity:0.75; }
+  .link.related{ stroke:var(--accent-2); stroke-width:1.1; opacity:0.65; }
+  .link.candidate{ stroke:var(--accent-3); stroke-width:1; stroke-dasharray:4 3; opacity:0.5; }
+  .link.dim{ opacity:0.05 !important; }
+  .link.emph{ opacity:1 !important; stroke-width:2.2; }
+
+  /* ---------- Legend / stats (bottom-left) ---------- */
+  .hud{
+    position:absolute; left:16px; bottom:16px; z-index:15; display:flex; flex-direction:column; gap:8px;
+    max-width:300px;
+  }
+  .hud-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:10px 12px; font:400 12px var(--font-body); color:var(--ink-muted);
+  }
+  .hud-card b{ color:var(--ink); font-weight:600; }
+  .hud-stats{ font:500 12px var(--font-mono); color:var(--ink); display:flex; gap:12px; flex-wrap:wrap; }
+  .hud-stats span em{ display:block; font:400 10px var(--font-body); font-style:normal; color:var(--ink-muted); }
+  .methodology{ display:none; margin-top:8px; padding-top:8px; border-top:1px solid var(--border); line-height:1.55; }
+  .methodology.open{ display:block; }
+  .methodology a, .info-toggle{ color:var(--accent-strong); cursor:pointer; text-decoration:underline; background:none; border:0; font:inherit; padding:0; }
+
+  /* ---------- Detail panel ---------- */
+  #panel{
+    position:absolute; top:0; right:0; height:100%; width:360px; max-width:88vw;
+    background:var(--surface); border-left:1px solid var(--border);
+    transform:translateX(100%); transition:transform .22s ease; z-index:25;
+    display:flex; flex-direction:column;
+  }
+  #panel.open{ transform:translateX(0); }
+  #panel .panel-head{
+    padding:16px 18px 12px; border-bottom:1px solid var(--border); position:relative;
+  }
+  #panel .panel-close{
+    position:absolute; top:12px; right:12px; background:none; border:0; color:var(--ink-muted);
+    font:600 16px var(--font-mono); cursor:pointer; width:26px; height:26px; border-radius:6px;
+  }
+  #panel .panel-close:hover{ background:var(--surface-2); color:var(--ink); }
+  #panel h2{ margin:0 6px 2px 0; font:600 19px/1.25 var(--font-display); text-wrap:balance; }
+  #panel .translit{ font:400 12px var(--font-mono); color:var(--ink-muted); }
+  #panel .translit b{ color:var(--ink); font-weight:500; }
+  #panel .synonyms{ margin-top:8px; display:flex; flex-wrap:wrap; gap:5px; }
+  #panel .synonyms span{
+    font:400 11px var(--font-mono); color:var(--ink-muted); background:var(--surface-2);
+    border-radius:999px; padding:2px 8px;
+  }
+  #panel .panel-body{ padding:14px 18px 26px; overflow-y:auto; flex:1 1 auto; }
+  #panel section{ margin-bottom:18px; }
+  #panel section h3{
+    margin:0 0 8px; font:600 11px var(--font-body); text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--ink-muted);
+  }
+  #panel .def{ font:400 13.5px/1.6 var(--font-body); color:var(--ink); }
+  #panel .def + .def{ margin-top:8px; padding-top:8px; border-top:1px dashed var(--border); }
+  #panel .def .lang{ font:500 10px var(--font-mono); color:var(--ink-faint); text-transform:uppercase; margin-right:6px; }
+  #panel .rel-empty{ font:400 12.5px var(--font-body); color:var(--ink-faint); font-style:italic; }
+  #panel .pill{
+    display:inline-flex; align-items:center; gap:5px; margin:0 6px 6px 0; padding:5px 10px;
+    border-radius:999px; border:1px solid var(--border); background:var(--bg-canvas); color:var(--ink);
+    font:400 12.5px var(--font-body); cursor:pointer;
+  }
+  #panel .pill:hover{ border-color:var(--accent); color:var(--accent-strong); }
+  #panel .pill.candidate{ border-style:dashed; color:var(--ink-muted); }
+  #panel .pill .score{ font:500 10px var(--font-mono); color:var(--accent-3); }
+  #panel .sources{ font:400 12px var(--font-mono); color:var(--ink-muted); }
+  #panel .sources div{ margin-bottom:3px; }
+  #panel .isolated-flag{
+    display:inline-flex; align-items:center; gap:6px; font:500 11.5px var(--font-body); color:var(--warn);
+    background:#FEF2F2; padding:4px 9px; border-radius:999px; margin-top:8px;
+  }
+
+  ::-webkit-scrollbar{ width:9px; height:9px; }
+  ::-webkit-scrollbar-thumb{ background:var(--border); border-radius:6px; }
+
+  @media (max-width: 720px){
+    header{ gap:10px; }
+    .search-wrap input{ width:150px; }
+    #panel{ width:100vw; max-width:100vw; }
+  }
+</style>
+</head>
+<body>
+
+<div id="app">
+  <header>
+    <a href="../index.html" class="headerBtn" id="back-btn" title="Takaisin sanastoon">← Sanasto</a>
+
+    <div class="brand">
+      <h1 id="brand-title">Sanaston käsitekartta</h1>
+      <span id="brand-sub">235 käsitettä · SKOS-relaatiot + semanttiset ehdotukset</span>
+    </div>
+
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="search" type="text" placeholder="Hae käsitettä…" autocomplete="off">
+      <div class="search-results" id="search-results"></div>
+    </div>
+
+    <div class="topbar-group">
+      <div class="dropdown">
+        <button class="dropbtn" id="langBtn">FI</button>
+        <div class="dropdown-content">
+          <div data-lang="fi" onclick="setLang('fi')">Suomi</div>
+          <div data-lang="sv" onclick="setLang('sv')">Svenska</div>
+          <div data-lang="en" onclick="setLang('en')">English</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="topbar-group">
+      <div class="seg" id="layout-toggle">
+        <button data-mode="force" class="active" id="btn-force">Relaatiot</button>
+        <button data-mode="semantic" id="btn-semantic">Semantiikka</button>
+      </div>
+    </div>
+
+    <div class="topbar-group" id="edge-toggles">
+      <div class="chip" data-kind="broader"><span class="swatch" style="background:var(--accent)"></span><span class="chip-label" id="chip-broader-label">Ylä/alakäsitteet</span></div>
+      <div class="chip" data-kind="related"><span class="swatch" style="background:var(--accent-2)"></span><span class="chip-label" id="chip-related-label">Liittyvät</span></div>
+      <div class="chip" data-kind="candidate"><span class="dash" style="color:var(--accent-3)"></span><span class="chip-label" id="chip-candidate-label">Ehdotetut (semanttiset)</span></div>
+      <div class="chip" data-kind="isolated" id="chip-isolated"><span class="swatch" style="background:transparent;border:1.5px dashed var(--warn)"></span><span class="chip-label" id="chip-isolated-label">Vain relaatiottomat</span></div>
+    </div>
+
+    <div class="spacer"></div>
+    <button class="icon-btn" id="reset-view" title="Palauta näkymä">⤢</button>
+  </header>
+
+  <div class="canvas-wrap">
+    <svg id="graph"></svg>
+
+    <div class="hud">
+      <div class="hud-card">
+        <div class="hud-stats" id="hud-stats"></div>
+        <div style="margin-top:6px;"><button class="info-toggle" id="info-toggle">Tietoja menetelmästä</button></div>
+        <!-- methodology text below is populated/translated by setLang() in the script -->
+
+        <div class="methodology" id="methodology">
+          Käsitteet ja niiden <b>eksplisiittiset relaatiot</b> (ylä-/alakäsite, liittyvä käsite) on ladattu suoraan sanasto-repositorion <b>concepts/</b>-kansion SKOS-datasta sellaisenaan.
+          <br><br>
+          <b>Ehdotetut (semanttiset)</b> relaatiot eivät ole vahvistettua dataa: ne on laskettu suomenkielisten määritelmien kosinisamankaltaisuudesta kevyellä lexical-menetelmällä (TF-IDF, sana- ja merkki-n-grammit) — ei transformer-pohjaisella sentence-embedding-mallilla. Menetelmä vastaa aihepiirin kirjallisuudessa käytettyä "lexical" (v_lex) -perustason lähestymistapaa, ja sitä voi tarkentaa korvaamalla se monikielisellä sentence-transformers-mallilla (ks. tämän työkalun README). Kynnysarvo 0.35, enintään 3 ehdotusta / käsite. Käytä harkintaa ennen näiden lisäämistä viralliseen dataan.
+          <br><br>
+          <b>Semantiikka</b>-näkymässä käsitteet kelluvat kevyellä fysiikkasimulaatiolla kohti niiden 2D-projisoitua sijaintia (UMAP): ne väistävät toisiaan ja niitä voi raahata vapaasti, mutta ne pyrkivät aina takaisin samankaltaisuuteen perustuvalle paikalleen.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="panel">
+    <div class="panel-head">
+      <button class="panel-close" id="panel-close">✕</button>
+      <h2 id="p-label"></h2>
+      <div class="translit" id="p-translit"></div>
+      <div class="synonyms" id="p-synonyms"></div>
+      <div id="p-isolated"></div>
+    </div>
+    <div class="panel-body">
+      <section>
+        <h3 id="h-def">Määritelmä</h3>
+        <div id="p-defs"></div>
+      </section>
+      <section>
+        <h3 id="h-broader">Yläkäsitteet</h3>
+        <div id="p-broader"></div>
+      </section>
+      <section>
+        <h3 id="h-narrower">Alakäsitteet</h3>
+        <div id="p-narrower"></div>
+      </section>
+      <section>
+        <h3 id="h-related">Liittyvät käsitteet</h3>
+        <div id="p-related"></div>
+      </section>
+      <section>
+        <h3 id="h-candidates">Ehdotetut relaatiot</h3>
+        <div id="p-candidates"></div>
+      </section>
+      <section id="p-sources-sec">
+        <h3 id="h-sources">Lähteet</h3>
+        <div class="sources" id="p-sources"></div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script id="graph-data" type="application/json">__GRAPH_DATA__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function(){
+  "use strict";
+  const DATA = JSON.parse(document.getElementById('graph-data').textContent);
+  const nodesRaw = DATA.nodes;
+  const byId = new Map(nodesRaw.map(n => [n.id, n]));
+
+  // ---- build node objects for simulation ----
+  const nodes = nodesRaw.map(n => Object.assign({}, n));
+  const nodeById = new Map(nodes.map(n => [n.id, n]));
+
+  const explicitEdges = DATA.explicit_edges.map(e => Object.assign({}, e, {family:'explicit'}));
+  const candidateEdges = DATA.candidate_edges.map(e => Object.assign({}, e, {kind:'candidate', family:'candidate'}));
+
+  const maxDeg = d3.max(nodes, n => n.degree) || 1;
+  const rScale = d3.scaleSqrt().domain([0, maxDeg]).range([4.2, 15]);
+  const hubThreshold = d3.quantile(nodes.map(n=>n.degree).sort((a,b)=>a-b), 0.93) || 6;
+
+  nodes.forEach(n => {
+    n.r = rScale(n.degree);
+    n.isHub = n.degree >= hubThreshold && n.degree > 0;
+  });
+
+  // ---- state ----
+  const state = {
+    layout: 'force',
+    show: { broader:true, related:true, candidate:false },
+    isolatedOnly: false,
+    selected: null,
+  };
+
+  // ---- i18n ----
+  let currentLang = 'fi';
+  let lastVisibleEdgeCount = 0;
+
+  const UI = {
+    fi: {
+      back:"Sanasto", backTitle:"Takaisin sanastoon",
+      brandTitle:"Sanaston käsitekartta",
+      brandSubSuffix:"käsitettä · SKOS-relaatiot + semanttiset ehdotukset",
+      searchPlaceholder:"Hae käsitettä…",
+      layoutForce:"Relaatiot", layoutSemantic:"Semantiikka",
+      chipBroader:"Ylä/alakäsitteet", chipRelated:"Liittyvät",
+      chipCandidate:"Ehdotetut (semanttiset)", chipIsolated:"Vain relaatiottomat",
+      resetTitle:"Palauta näkymä", infoToggle:"Tietoja menetelmästä",
+      methodology:
+        'Käsitteet ja niiden <b>eksplisiittiset relaatiot</b> (ylä-/alakäsite, liittyvä käsite) on ladattu suoraan sanasto-repositorion <b>concepts/</b>-kansion SKOS-datasta sellaisenaan.' +
+        '<br><br>' +
+        '<b>Ehdotetut (semanttiset)</b> relaatiot eivät ole vahvistettua dataa: ne on laskettu suomenkielisten määritelmien kosinisamankaltaisuudesta kevyellä lexical-menetelmällä (TF-IDF, sana- ja merkki-n-grammit) — ei transformer-pohjaisella sentence-embedding-mallilla. Menetelmä vastaa aihepiirin kirjallisuudessa käytettyä "lexical" (v_lex) -perustason lähestymistapaa, ja sitä voi tarkentaa korvaamalla se monikielisellä sentence-transformers-mallilla (ks. tämän työkalun README). Kynnysarvo 0.35, enintään 3 ehdotusta / käsite. Käytä harkintaa ennen näiden lisäämistä viralliseen dataan.' +
+        '<br><br>' +
+        '<b>Semantiikka</b>-näkymässä käsitteet kelluvat kevyellä fysiikkasimulaatiolla kohti niiden 2D-projisoitua sijaintia (UMAP): ne väistävät toisiaan ja niitä voi raahata vapaasti, mutta ne pyrkivät aina takaisin samankaltaisuuteen perustuvalle paikalleen.',
+      secDef:"Määritelmä", secBroader:"Yläkäsitteet", secNarrower:"Alakäsitteet",
+      secRelated:"Liittyvät käsitteet", secCandidates:"Ehdotetut relaatiot", secSources:"Lähteet",
+      emptyRel:"Ei relaatioita.", emptyCand:"Ei semanttisia ehdotuksia (kynnysarvon yläpuolella).",
+      emptyDef:"Ei määritelmää.", emptySrc:"Ei merkittyä lähdettä.",
+      isolatedFlag:"⚠ Ei yhtään eksplisiittistä relaatiota", noHits:"Ei osumia.",
+      statConcepts:"käsitettä", statRelations:"relaatiota", statCandidates:"ehdotusta", statNoRel:"ilman relaatiota",
+      hitRelWord:"relaatiota", noteLabel:"Huom",
+    },
+    sv: {
+      back:"Ordlista", backTitle:"Tillbaka till ordlistan",
+      brandTitle:"Ordlistans begreppskarta",
+      brandSubSuffix:"begrepp · SKOS-relationer + semantiska förslag",
+      searchPlaceholder:"Sök begrepp…",
+      layoutForce:"Relationer", layoutSemantic:"Semantik",
+      chipBroader:"Över-/underordnade begrepp", chipRelated:"Relaterade",
+      chipCandidate:"Föreslagna (semantiska)", chipIsolated:"Endast utan relationer",
+      resetTitle:"Återställ vyn", infoToggle:"Om metoden",
+      methodology:
+        'Begreppen och deras <b>explicita relationer</b> (över-/underordnat begrepp, relaterat begrepp) är hämtade direkt från SKOS-datan i terminologirepositoriets mapp <b>concepts/</b>.' +
+        '<br><br>' +
+        '<b>Föreslagna (semantiska)</b> relationer är inte bekräftad data: de är beräknade utifrån den kosinuslikhet som de finska definitionerna uppvisar, med en lättviktig lexikal metod (TF-IDF, ord- och tecken-n-gram) — inte med en transformerbaserad sentence-embedding-modell. Metoden motsvarar den "lexikala" (v_lex) basnivåmetod som används i ämnesområdets litteratur, och kan förfinas genom att ersätta den med en flerspråkig sentence-transformers-modell (se detta verktygs README). Tröskelvärde 0,35, högst 3 förslag per begrepp. Använd omdöme innan dessa läggs till i den officiella datan.' +
+        '<br><br>' +
+        'I vyn <b>Semantik</b> flyter begreppen med en lättviktig fysiksimulering mot sin 2D-projicerade position (UMAP): de undviker varandra och kan dras fritt, men strävar alltid tillbaka mot sin likhetsbaserade plats.',
+      secDef:"Definition", secBroader:"Överordnade begrepp", secNarrower:"Underordnade begrepp",
+      secRelated:"Relaterade begrepp", secCandidates:"Föreslagna relationer", secSources:"Källor",
+      emptyRel:"Inga relationer.", emptyCand:"Inga semantiska förslag (över tröskelvärdet).",
+      emptyDef:"Ingen definition.", emptySrc:"Ingen angiven källa.",
+      isolatedFlag:"⚠ Inga explicita relationer alls", noHits:"Inga träffar.",
+      statConcepts:"begrepp", statRelations:"relationer", statCandidates:"förslag", statNoRel:"utan relationer",
+      hitRelWord:"relationer", noteLabel:"Anm",
+    },
+    en: {
+      back:"Glossary", backTitle:"Back to the glossary",
+      brandTitle:"Glossary concept map",
+      brandSubSuffix:"concepts · SKOS relations + semantic suggestions",
+      searchPlaceholder:"Search concepts…",
+      layoutForce:"Relations", layoutSemantic:"Semantic",
+      chipBroader:"Broader/narrower concepts", chipRelated:"Related",
+      chipCandidate:"Suggested (semantic)", chipIsolated:"Only without relations",
+      resetTitle:"Reset view", infoToggle:"About the method",
+      methodology:
+        "Concepts and their <b>explicit relations</b> (broader/narrower concept, related concept) are loaded directly from the SKOS data in the terminology repository's <b>concepts/</b> folder." +
+        '<br><br>' +
+        '<b>Suggested (semantic)</b> relations are not confirmed data: they are computed from the cosine similarity of the Finnish-language definitions, using a lightweight lexical method (TF-IDF, word and character n-grams) — not a transformer-based sentence-embedding model. The method corresponds to the "lexical" (v_lex) baseline approach used in the relevant literature, and can be refined by replacing it with a multilingual sentence-transformers model (see this tool\'s README). Threshold 0.35, at most 3 suggestions per concept. Use judgment before adding these to the official data.' +
+        '<br><br>' +
+        'In the <b>Semantic</b> view, concepts float using a lightweight physics simulation toward their 2D-projected position (UMAP): they avoid each other and can be dragged freely, but always drift back toward their similarity-based position.',
+      secDef:"Definition", secBroader:"Broader concepts", secNarrower:"Narrower concepts",
+      secRelated:"Related concepts", secCandidates:"Suggested relations", secSources:"Sources",
+      emptyRel:"No relations.", emptyCand:"No semantic suggestions (above threshold).",
+      emptyDef:"No definition.", emptySrc:"No source listed.",
+      isolatedFlag:"⚠ No explicit relations at all", noHits:"No matches.",
+      statConcepts:"concepts", statRelations:"relations", statCandidates:"suggestions", statNoRel:"without relations",
+      hitRelWord:"relations", noteLabel:"Note",
+    },
+  };
+
+  function nodeLabel(n){
+    if (currentLang === 'sv') return n.label_sv || n.label;
+    if (currentLang === 'en') return n.label_en || n.label;
+    return n.label;
+  }
+  function nodeSynonyms(n){
+    if (currentLang === 'sv' && n.synonyms_sv && n.synonyms_sv.length) return n.synonyms_sv;
+    if (currentLang === 'en' && n.synonyms_en && n.synonyms_en.length) return n.synonyms_en;
+    return n.synonyms_fi || [];
+  }
+  function defForLang(n){
+    if (currentLang === 'sv') return n.def_sv || n.def_fi || n.def_en;
+    if (currentLang === 'en') return n.def_en || n.def_fi || n.def_sv;
+    return n.def_fi || n.def_sv || n.def_en;
+  }
+
+  const svg = d3.select('#graph');
+  const zoomLayer = svg.append('g').attr('class', 'zoom-layer');
+  const linkLayer = zoomLayer.append('g').attr('class', 'links');
+  const nodeLayer = zoomLayer.append('g').attr('class', 'nodes');
+
+  let width = 0, height = 0;
+  function measure(){
+    const box = svg.node().getBoundingClientRect();
+    width = box.width; height = box.height;
+  }
+  measure();
+
+  const zoom = d3.zoom().scaleExtent([0.12, 7]).on('zoom', (ev) => {
+    zoomLayer.attr('transform', ev.transform);
+  });
+  svg.call(zoom);
+  svg.on('mousedown.grab', () => svg.classed('grabbing', true));
+  svg.on('mouseup.grab', () => svg.classed('grabbing', false));
+
+  function currentEdges(){
+    let edges = explicitEdges.filter(e => state.show[e.kind]);
+    if (state.show.candidate) edges = edges.concat(candidateEdges);
+    return edges;
+  }
+
+  function visibleNodeSet(){
+    if (!state.isolatedOnly) return null;
+    return new Set(nodes.filter(n => n.degree === 0).map(n => n.id));
+  }
+
+  let linkSel, nodeSel;
+  let simulation;
+
+  function resolvedEdges(edgeList){
+    return edgeList.map(e => ({ source: e.source, target: e.target, kind: e.kind || (e.family==='explicit'? e.kind : 'candidate'), score: e.score }));
+  }
+
+  function resolveEndpoints(edges){
+    edges.forEach(e => {
+      e.source = typeof e.source === 'object' ? e.source : nodeById.get(e.source);
+      e.target = typeof e.target === 'object' ? e.target : nodeById.get(e.target);
+    });
+    return edges;
+  }
+
+  // ---- force-mode forces: nodes arrange themselves by relation pull ----
+  function applyForceModeForces(){
+    simulation.force('charge', d3.forceManyBody().strength(-70).distanceMax(420));
+    simulation.force('center', d3.forceCenter(width/2, height/2));
+    simulation.force('collide', d3.forceCollide().radius(d => d.r + 3));
+    simulation.force('x', d3.forceX(width/2).strength(0.02));
+    simulation.force('y', d3.forceY(height/2).strength(0.02));
+  }
+
+  // ---- semantic-mode forces: nodes float around their 2D similarity projection ----
+  function computeSemanticTargets(){
+    const pad = 60;
+    nodes.forEach(n => {
+      n.semX = pad + n.semantic_x * (width - pad*2);
+      n.semY = pad + n.semantic_y * (height - pad*2);
+    });
+  }
+  function applySemanticModeForces(){
+    computeSemanticTargets();
+    simulation.force('charge', d3.forceManyBody().strength(-10).distanceMax(160));
+    simulation.force('center', null);
+    simulation.force('collide', d3.forceCollide().radius(d => d.r + 2));
+    simulation.force('x', d3.forceX(d => d.semX).strength(0.22));
+    simulation.force('y', d3.forceY(d => d.semY).strength(0.22));
+  }
+
+  function buildSimulation(){
+    simulation = d3.forceSimulation(nodes)
+      .alphaDecay(0.045)
+      .on('tick', ticked);
+    applyForceModeForces();
+  }
+
+  function releaseFixed(){
+    nodes.forEach(n => { n.fx = null; n.fy = null; });
+  }
+
+  function ticked(){
+    linkSel
+      .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+    nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  }
+
+  function render(){
+    const edges = resolveEndpoints(resolvedEdges(currentEdges()));
+    const isoSet = visibleNodeSet();
+
+    // ---- links ----
+    linkSel = linkLayer.selectAll('line.link').data(edges, d => d.source.id + '|' + d.target.id + '|' + d.kind);
+    linkSel.exit().remove();
+    const linkEnter = linkSel.enter().append('line')
+      .attr('class', d => 'link ' + d.kind);
+    linkSel = linkEnter.merge(linkSel);
+
+    // ---- nodes ----
+    nodeSel = nodeLayer.selectAll('g.node').data(nodes, d => d.id);
+    const nodeEnter = nodeSel.enter().append('g')
+      .attr('class', d => 'node' + (d.degree===0 ? ' isolated' : '') + (d.isHub ? ' hub' : ''))
+      .call(drag())
+      .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d.id); })
+      .on('mouseenter', (ev, d) => highlightNeighbors(d.id))
+      .on('mouseleave', () => highlightNeighbors(null));
+    nodeEnter.append('circle').attr('r', d => d.r);
+    nodeEnter.append('text').attr('x', d => d.r + 4).attr('y', 3).text(d => nodeLabel(d));
+    nodeSel = nodeEnter.merge(nodeSel);
+    nodeSel.classed('isolated', d => d.degree===0);
+
+    applyDimming(isoSet);
+
+    if (state.layout === 'force'){
+      simulation.force('link', d3.forceLink(edges).id(d => d.id).distance(l => l.kind==='broader'?46:64).strength(l => l.kind==='candidate'?0.15:0.5));
+    } else {
+      simulation.force('link', null);
+    }
+    simulation.alpha(0.7).restart();
+    updateStats(edges.length);
+  }
+
+  function applyDimming(isoSet){
+    nodeSel.classed('dim', d => isoSet ? !isoSet.has(d.id) : false);
+    linkSel.classed('dim', d => {
+      if (!isoSet) return false;
+      const s = typeof d.source==='object'?d.source.id:d.source;
+      const t = typeof d.target==='object'?d.target.id:d.target;
+      return !(isoSet.has(s) || isoSet.has(t));
+    });
+  }
+
+  function drag(){
+    function started(ev, d){
+      if (!ev.active) simulation.alphaTarget(0.25).restart();
+      d.fx = d.x; d.fy = d.y;
+    }
+    function dragged(ev, d){
+      d.fx = ev.x; d.fy = ev.y;
+    }
+    function ended(ev, d){
+      if (!ev.active) simulation.alphaTarget(0);
+      d.fx = null; d.fy = null;
+    }
+    return d3.drag().on('start', started).on('drag', dragged).on('end', ended);
+  }
+
+  function highlightNeighbors(id){
+    if (!id){
+      nodeSel.classed('dim', d => state.isolatedOnly ? !visibleNodeSet().has(d.id) : false);
+      linkSel.classed('emph', false);
+      return;
+    }
+    const neigh = new Set([id]);
+    linkSel.each(function(d){
+      const s = typeof d.source==='object'?d.source.id:d.source;
+      const t = typeof d.target==='object'?d.target.id:d.target;
+      if (s===id) neigh.add(t);
+      if (t===id) neigh.add(s);
+    });
+    nodeSel.classed('dim', d => !neigh.has(d.id));
+    linkSel.classed('emph', function(d){
+      const s = typeof d.source==='object'?d.source.id:d.source;
+      const t = typeof d.target==='object'?d.target.id:d.target;
+      return s===id || t===id;
+    });
+  }
+
+  function updateStats(visibleEdgeCount){
+    if (visibleEdgeCount != null) lastVisibleEdgeCount = visibleEdgeCount;
+    const l = UI[currentLang];
+    const isolatedCount = nodes.filter(n=>n.degree===0).length;
+    document.getElementById('hud-stats').innerHTML =
+      `<span><b>${nodes.length}</b><em>${l.statConcepts}</em></span>` +
+      `<span><b>${explicitEdges.length}</b><em>${l.statRelations}</em></span>` +
+      `<span><b>${candidateEdges.length}</b><em>${l.statCandidates}</em></span>` +
+      `<span><b>${isolatedCount}</b><em>${l.statNoRel}</em></span>`;
+  }
+
+  // ---------------- Detail panel ----------------
+  const panel = document.getElementById('panel');
+
+  function labelOf(id){ const n = nodeById.get(id); return n ? nodeLabel(n) : id; }
+
+  function relPills(ids, cls){
+    const l = UI[currentLang];
+    if (!ids || !ids.length) return `<div class="rel-empty">${l.emptyRel}</div>`;
+    return ids.map(id => `<span class="pill ${cls||''}" data-goto="${id}">${labelOf(id)}</span>`).join('');
+  }
+
+  function candidatePillsFor(id){
+    const l = UI[currentLang];
+    const matches = candidateEdges.filter(e => e.source===id || e.target===id)
+      .map(e => ({ other: e.source===id ? e.target : e.source, score: e.score }))
+      .sort((a,b)=>b.score-a.score);
+    if (!matches.length) return `<div class="rel-empty">${l.emptyCand}</div>`;
+    return matches.map(m => `<span class="pill candidate" data-goto="${m.other}">${labelOf(m.other)} <span class="score">${m.score.toFixed(2)}</span></span>`).join('');
+  }
+
+  function defsBlock(n){
+    const l = UI[currentLang];
+    const rows = [];
+    if (n.def_fi) rows.push(`<div class="def"><span class="lang">FI</span>${n.def_fi}</div>`);
+    if (n.def_sv) rows.push(`<div class="def"><span class="lang">SV</span>${n.def_sv}</div>`);
+    if (n.def_en) rows.push(`<div class="def"><span class="lang">EN</span>${n.def_en}</div>`);
+    if (n.note_fi) rows.push(`<div class="def"><span class="lang">${l.noteLabel}</span>${n.note_fi}</div>`);
+    return rows.join('') || `<div class="rel-empty">${l.emptyDef}</div>`;
+  }
+
+  function populatePanel(id){
+    const n = nodeById.get(id);
+    if (!n) return;
+    const l = UI[currentLang];
+
+    document.getElementById('p-label').textContent = nodeLabel(n);
+    const others = [
+      currentLang !== 'fi' && n.label ? `fi <b>${n.label}</b>` : null,
+      currentLang !== 'sv' && n.label_sv ? `sv <b>${n.label_sv}</b>` : null,
+      currentLang !== 'en' && n.label_en ? `en <b>${n.label_en}</b>` : null,
+    ].filter(Boolean).join('   ·   ');
+    document.getElementById('p-translit').innerHTML = others;
+    const syns = nodeSynonyms(n).filter(s => s !== nodeLabel(n));
+    document.getElementById('p-synonyms').innerHTML = syns.map(s=>`<span>${s}</span>`).join('');
+    document.getElementById('p-isolated').innerHTML = n.degree===0 ? `<div class="isolated-flag">${l.isolatedFlag}</div>` : '';
+    document.getElementById('p-defs').innerHTML = defsBlock(n);
+    document.getElementById('p-broader').innerHTML = relPills(n.broader);
+    document.getElementById('p-narrower').innerHTML = relPills(n.narrower);
+    document.getElementById('p-related').innerHTML = relPills(n.related);
+    document.getElementById('p-candidates').innerHTML = candidatePillsFor(id);
+    const srcHtml = (n.sources||[]).map(s=>`<div>${s}</div>`).join('');
+    document.getElementById('p-sources').innerHTML = srcHtml || `<div class="rel-empty">${l.emptySrc}</div>`;
+    document.getElementById('p-sources-sec').style.display = (n.sources||[]).length ? '' : 'none';
+  }
+
+  function selectNode(id){
+    const n = nodeById.get(id);
+    if (!n) return;
+    state.selected = id;
+    nodeSel.classed('selected', d => d.id === id);
+
+    populatePanel(id);
+
+    panel.classList.add('open');
+    focusOn(n);
+  }
+
+  function focusOn(n){
+    if (n.x == null) return;
+    const scale = 1.4;
+    const panelW = Math.min(360, window.innerWidth * 0.88);
+    const cx = (width - panelW) / 2;
+    const t = d3.zoomIdentity.translate(cx, height/2).scale(scale).translate(-n.x, -n.y);
+    svg.transition().duration(500).call(zoom.transform, t);
+  }
+
+  document.getElementById('panel-close').addEventListener('click', () => {
+    panel.classList.remove('open');
+    state.selected = null;
+    nodeSel.classed('selected', false);
+  });
+  document.getElementById('panel').addEventListener('click', (ev) => {
+    const goto = ev.target.closest('[data-goto]');
+    if (goto) selectNode(goto.getAttribute('data-goto'));
+  });
+  svg.on('click', () => {
+    panel.classList.remove('open');
+    state.selected = null;
+    nodeSel.classed('selected', false);
+  });
+
+  // ---------------- Search ----------------
+  const searchInput = document.getElementById('search');
+  const searchResults = document.getElementById('search-results');
+
+  function matchNodesAll(q){
+    const qq = q.trim().toLowerCase();
+    if (!qq) return [];
+    return nodes.filter(n => {
+      const fields = [n.label, n.label_sv, n.label_en]
+        .concat(n.synonyms_fi||[], n.synonyms_sv||[], n.synonyms_en||[]);
+      return fields.some(s => s && s.toLowerCase().includes(qq));
+    });
+  }
+  function matchNodes(q){
+    return matchNodesAll(q).slice(0, 8);
+  }
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value;
+    const trimmed = q.trim();
+    const allMatches = matchNodesAll(q);
+    const matchedIds = new Set(allMatches.map(n => n.id));
+    const hits = allMatches.slice(0, 8);
+    const l = UI[currentLang];
+    nodeSel.classed('match', d => trimmed && matchedIds.has(d.id));
+    if (!trimmed){
+      searchResults.classList.remove('open');
+      nodeSel.classed('dim', d => state.isolatedOnly ? !visibleNodeSet().has(d.id) : false);
+      return;
+    }
+    nodeSel.classed('dim', d => !matchedIds.has(d.id));
+    searchResults.innerHTML = hits.map(n => {
+      const def = defForLang(n);
+      return `<button data-id="${n.id}">${nodeLabel(n)}<span class="hit-meta">${n.degree} ${l.hitRelWord}${def ? ' · '+def.slice(0,60)+'…' : ''}</span></button>`;
+    }).join('') || `<div style="padding:10px 12px; color:var(--ink-faint); font-size:12px;">${l.noHits}</div>`;
+    searchResults.classList.add('open');
+  });
+  searchResults.addEventListener('click', (ev) => {
+    const btn = ev.target.closest('button[data-id]');
+    if (!btn) return;
+    selectNode(btn.getAttribute('data-id'));
+    searchResults.classList.remove('open');
+    searchInput.value = '';
+    nodeSel.classed('match', false).classed('dim', state.isolatedOnly ? (d=>!visibleNodeSet().has(d.id)) : false);
+  });
+  document.addEventListener('click', (ev) => {
+    if (!ev.target.closest('.search-wrap')) searchResults.classList.remove('open');
+  });
+
+  // ---------------- Toggles ----------------
+  document.getElementById('layout-toggle').addEventListener('click', (ev) => {
+    const btn = ev.target.closest('button[data-mode]');
+    if (!btn) return;
+    document.querySelectorAll('#layout-toggle button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    state.layout = btn.getAttribute('data-mode');
+    releaseFixed();
+    if (state.layout === 'semantic'){
+      applySemanticModeForces();
+    } else {
+      applyForceModeForces();
+    }
+    render();
+  });
+
+  document.getElementById('edge-toggles').addEventListener('click', (ev) => {
+    const chip = ev.target.closest('.chip');
+    if (!chip) return;
+    const kind = chip.getAttribute('data-kind');
+    if (kind === 'isolated'){
+      state.isolatedOnly = !state.isolatedOnly;
+      chip.classList.toggle('off', !state.isolatedOnly);
+      applyDimming(visibleNodeSet());
+      return;
+    }
+    state.show[kind] = !state.show[kind];
+    chip.classList.toggle('off', !state.show[kind]);
+    render();
+  });
+  // isolated chip starts inactive-looking (it's a filter, off by default)
+  document.getElementById('chip-isolated').classList.add('off');
+  document.querySelector('.chip[data-kind="candidate"]').classList.add('off');
+
+  document.getElementById('info-toggle').addEventListener('click', () => {
+    document.getElementById('methodology').classList.toggle('open');
+  });
+
+  document.getElementById('reset-view').addEventListener('click', () => {
+    svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
+  });
+
+  window.addEventListener('resize', () => {
+    measure();
+    if (state.layout === 'semantic'){
+      applySemanticModeForces();
+      simulation.alpha(0.5).restart();
+    } else {
+      simulation.force('center', d3.forceCenter(width/2, height/2));
+      simulation.alpha(0.3).restart();
+    }
+  });
+
+  // ---------------- i18n wiring ----------------
+  function relabelNodes(){
+    if (nodeSel) nodeSel.select('text').text(d => nodeLabel(d));
+  }
+
+  function applyI18nStrings(l){
+    const t = UI[l];
+    document.documentElement.lang = l;
+    document.title = t.brandTitle;
+    document.getElementById('back-btn').textContent = '← ' + t.back;
+    document.getElementById('back-btn').title = t.backTitle;
+    document.getElementById('brand-title').textContent = t.brandTitle;
+    document.getElementById('brand-sub').textContent = `${nodes.length} ${t.brandSubSuffix}`;
+    searchInput.placeholder = t.searchPlaceholder;
+    document.getElementById('btn-force').textContent = t.layoutForce;
+    document.getElementById('btn-semantic').textContent = t.layoutSemantic;
+    document.getElementById('chip-broader-label').textContent = t.chipBroader;
+    document.getElementById('chip-related-label').textContent = t.chipRelated;
+    document.getElementById('chip-candidate-label').textContent = t.chipCandidate;
+    document.getElementById('chip-isolated-label').textContent = t.chipIsolated;
+    document.getElementById('reset-view').title = t.resetTitle;
+    document.getElementById('info-toggle').textContent = t.infoToggle;
+    document.getElementById('methodology').innerHTML = t.methodology;
+    document.getElementById('h-def').textContent = t.secDef;
+    document.getElementById('h-broader').textContent = t.secBroader;
+    document.getElementById('h-narrower').textContent = t.secNarrower;
+    document.getElementById('h-related').textContent = t.secRelated;
+    document.getElementById('h-candidates').textContent = t.secCandidates;
+    document.getElementById('h-sources').textContent = t.secSources;
+    document.getElementById('langBtn').textContent = l.toUpperCase();
+    document.querySelectorAll('.dropdown-content [data-lang]').forEach(el => {
+      el.classList.toggle('active-lang', el.getAttribute('data-lang') === l);
+    });
+  }
+
+  function setLang(l){
+    if (!UI[l]) return;
+    currentLang = l;
+    applyI18nStrings(l);
+    relabelNodes();
+    updateStats(lastVisibleEdgeCount);
+    if (state.selected) populatePanel(state.selected);
+    if (searchInput.value.trim()) searchInput.dispatchEvent(new Event('input'));
+  }
+  window.setLang = setLang;
+
+  // ---------------- init ----------------
+  buildSimulation();
+  render();
+  applyI18nStrings(currentLang);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+id: ylävirta
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: ylävirta
+  type: Suositettava termi
+- lang: sv
+  label: uppströms
+  type: Suositettava termi
+- lang: en
+  label: upstream
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Toimitusketjun osa, joka kattaa vaiheet ja toimijat raaka-ainelähteistä
+    ja toimittajista kokoonpanevaan tai tuottavaan yksikköön. Vastakohta
+    alavirralle. Kutsutaan myös hankintapääksi tai hankintamarkkinoiksi.
+- lang: sv
+  text: Den del av leveranskedjan som omfattar skeden och aktörer från
+    råvarukällor och leverantörer till den producerande eller monterande
+    enheten. Motsats till nedströms.
+- lang: en
+  text: The part of a supply chain that includes the stages and actors from
+    raw material sources and suppliers to the producing or assembling unit.
+    The opposite of downstream.
+
+notes:
+- lang: fi
+  text: |
+    Termiä käytetään toimitusketjun tarkastelussa kuvaamaan virtausta kohti
+    tuotantoa tai kokoonpanoa. Rakentamisen kontekstissa ylävirta voi tarkoittaa
+    esimerkiksi materiaalien ja komponenttien toimitusketjua raaka-aineista
+    elementtitehtaalle tai työmaalle.
+- lang: sv
+  text: |
+    Termen används vid analys av leveranskedjor för att beskriva flödet mot
+    produktion eller montering. I byggsektorn kan uppströms till exempel
+    avse leveranskedjan för material och komponenter från råvaror till
+    elementfabrik eller byggarbetsplats.
+- lang: en
+  text: |
+    The term is used in supply chain analysis to describe the flow towards
+    production or assembly. In the construction context, upstream may refer
+    to the supply chain of materials and components from raw materials to a
+    prefabrication plant or construction site.
+
+sources:
+- lang: fi
+  label: Logistiikan maailma -termisanasto (2025)
+  url: https://www.logistiikanmaailma.fi/aineistot/sanastot/logistiikan-maailma-termisanasto/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - alavirta
+
+metadata:
+  created: 2026-02-26T10:25:00
+  modified: 2026-02-26T10:25:00

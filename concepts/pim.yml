@@ -1,0 +1,48 @@
+id: pim
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: PIM
+  type: Suositettava termi
+- lang: sv
+  label: PIM
+  type: Suositettava termi
+- lang: en
+  label: project information model
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Projektin toteutusvaiheeseen liittyvä informaatiomalli PIM on jäsennelty tietoarkisto, jota käytetään
+    päätöksenteossa rakennetun ympäristön kohteissa koko niiden elinkaaren aikana. Projektin informaatiomalli
+    (PIM) voi sisältää projektin toteuttamisen aikana esimerkiksi projektin geometrian yksityiskohtia,
+    laitteistojen sijainteja, projektin suunnittelun aikaisia ominaisuusvaatimuksia, rakentamistavan ja
+    aikatauluja, kustannuksia sekä yksityiskohtia asennetuista järjestelmistä, komponenteista ja laitteistoista,
+    mukaan lukien näiden kunnossapitovaatimuksia.
+- lang: sv
+  text: Informationsmodellen för projektets genomförandeskede, PIM, är ett strukturerat informationsarkiv
+    som används för beslutsfattande gällande objekt i den byggda miljön under hela deras livscykel. Projektinformationsmodellen
+    (PIM) kan under projektets genomförande innehålla till exempel detaljer om projektets geometri, placeringar
+    av utrustning, egenskapskrav från projekteringsskedet, byggmetod och tidsplaner, kostnader samt detaljer
+    om installerade system, komponenter och utrustning, inklusive deras underhållskrav.
+- lang: en
+  text: The project information model, PIM, related to the project's delivery phase, is a structured information
+    repository used for decision-making regarding built-environment assets throughout their lifecycle.
+    During project delivery, the project information model (PIM) may contain, for example, details of
+    the project's geometry, equipment locations, property requirements from the design stage, construction
+    method and schedules, costs, and details of installed systems, components and equipment, including
+    their maintenance requirements.
+notes: []
+sources:
+- lang: fi
+  label: EN/ISO 19650:2018
+  uri: https://www.iso.org/standard/68078.html
+relations:
+  broader:
+  - informaatiomalli
+  narrower: []
+  related:
+  - projektin-informaatiomalli
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

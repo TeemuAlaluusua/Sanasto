@@ -1,0 +1,53 @@
+id: digitointi
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: digitointi
+  type: Suositettava termi
+
+- lang: sv
+  label: digitalisering
+  type: Suositettava termi
+
+- lang: en
+  label: digitization
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: prosessi, jossa analoginen aineisto muunnetaan digitaaliseen muotoon
+
+- lang: sv
+  text: process där analogt material omvandlas till digital form
+
+- lang: en
+  text: process of converting analogue material into digital form
+
+notes:
+- lang: fi
+  text: Digitointi mahdollistaa aineiston tietoteknisen käsittelyn, tallennuksen ja siirron.
+
+- lang: sv
+  text: Digitalisering möjliggör databehandling, lagring och överföring av materialet.
+
+- lang: en
+  text: Digitization enables computational processing, storage and transfer of the material.
+
+sources:
+- lang: en
+  label: ISO 5127:2017
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - digitalisaatio
+  - data
+  - koneluettavuus
+  - OCR
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

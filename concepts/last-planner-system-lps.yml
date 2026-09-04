@@ -1,0 +1,32 @@
+id: last-planner-system-lps
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: Last Planner System (LPS)
+  type: Suositettava termi
+- lang: sv
+  label: Last Planner System (LPS)
+  type: Suositettava termi
+- lang: en
+  label: Last Planner System (LPS)
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Rakentamisen tuotannonohjauksen menetelmä.
+- lang: sv
+  text: En metod för produktionsstyrning inom byggande.
+- lang: en
+  text: A method for production control in construction.
+notes: []
+sources:
+- lang: fi
+  label: 'Lean Construction Institute: 2007'
+  uri: https://leanconstruction.org/lean-topics/last-planner-system/
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,55 @@
+id: sgtin
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: SGTIN-tunnus
+  type: Suositettava termi
+- lang: sv
+  label: serialiserat globalt handelsartikelnummer
+  type: Suositettava termi
+- lang: sv
+  label: SGTIN
+  type: Lyhenne
+- lang: en
+  label: Serialized Global Trade Item Number
+  type: Suositettava termi
+- lang: en
+  label: SGTIN
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: SGTIN-tunnus on GTIN-tunnuksen lisäosa, jonka avulla voidaan yksilöidä saman tuotteen eri yksiköt.
+    GTIN-numero ei itsessään tarjoa tuotteen jokaisen yksikön yksilöllistä tunnistamista, koska se ei
+    yksilöi fyysisen esineen jokaista yksikköä. GTIN-tunnuksella yksilöidään tietty ryhmä identtisiä tuotteita,
+    kun taas SGTIN-tunnuksella yksilöidään identtisten tuotteiden jokainen yksikkö sarjanumeroiden avulla.
+    Esimerkiksi valaisimella on GTIN-tunnus, ja kahden samanlaisen valaisimen erottamiseksi toisistaan
+    niillä on oltava oma SGTIN-tunnuksensa.
+- lang: sv
+  text: SGTIN-numret är ett tillägg till GTIN-numret som gör det möjligt att identifiera enskilda enheter
+    av samma produkt. GTIN-numret i sig ger inte en unik identifiering av varje enhet av en produkt, eftersom
+    det inte identifierar varje enskild fysisk artikel. Ett GTIN identifierar en viss grupp identiska
+    produkter, medan ett SGTIN identifierar varje enhet av identiska produkter med hjälp av serienummer.
+    Till exempel har en armatur ett GTIN, och för att skilja två identiska armaturer åt måste var och
+    en ha sitt eget SGTIN.
+- lang: en
+  text: The SGTIN is an extension of the GTIN that makes it possible to identify individual units of the
+    same product. The GTIN number alone does not provide unique identification for every unit of a product,
+    since it does not identify each individual physical item. A GTIN identifies a specific group of identical
+    products, whereas an SGTIN identifies every unit of identical products by means of serial numbers.
+    For example, a luminaire has a GTIN, and to distinguish between two identical luminaires, each must
+    have its own SGTIN.
+notes: []
+sources:
+- lang: fi
+  label: GS1 SGTIN Guideline
+  uri: https://www.gs1.org/docs/technical_industries/Construction/GS1%20Guideline%20unique%20ID%20for%20products%20in%20Construction%20v1.1%20-%202018.pdf
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related:
+  - gtin-tunnus
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

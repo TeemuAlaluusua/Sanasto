@@ -1,0 +1,35 @@
+id: ifcowl
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ifcOWL
+  type: Suositettava termi
+- lang: sv
+  label: ifcOWL
+  type: Suositettava termi
+- lang: en
+  label: ifcOWL
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: IFC:n OWL-ontologia.
+- lang: sv
+  text: IFC:s OWL-ontologi.
+- lang: en
+  text: IFC's OWL ontology.
+notes: []
+sources:
+- lang: fi
+  label: buildingSmart Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+relations:
+  broader:
+  - ifc
+  narrower: []
+  related:
+  - owl
+  - ontologia
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

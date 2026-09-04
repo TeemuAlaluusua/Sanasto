@@ -1,0 +1,71 @@
+id: edi
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: electronic data interchange
+  type: Suositettava termi
+- lang: fi
+  label: EDI
+  type: Lyhenne
+
+- lang: sv
+  label: electronic data interchange
+  type: Suositettava termi
+- lang: sv
+  label: EDI
+  type: Lyhenne
+
+- lang: en
+  label: electronic data interchange
+  type: Suositettava termi
+- lang: en
+  label: EDI
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: standardoitu tekniikka, jota käytetään organisaatioiden välisten tietojärjestelmien kommunikointiin
+
+- lang: sv
+  text: standardiserad teknik som används för kommunikation mellan informationssystem i olika organisationer
+
+- lang: en
+  text: standardized technique used for communication between information systems of different organizations
+
+notes:
+- lang: fi
+  text: |
+    EDI yhdistetään yleensä EDIFACT-sanomaformaattiin. Suurin osa esimerkiksi
+    kaupan, tukkukaupan, teollisuuden ja kuljetusalan sanomista on EDIFACT-standardin mukaisia sanomia.
+
+- lang: sv
+  text: |
+    EDI kopplas vanligtvis till EDIFACT-meddelandeformatet. En stor del av
+    meddelandena inom handel, grossisthandel, industri och transport följer EDIFACT-standarden.
+
+- lang: en
+  text: |
+    EDI is commonly associated with the EDIFACT message format. A large share of
+    messages in trade, wholesale, industry and transport sectors follow the EDIFACT standard.
+
+sources:
+- lang: fi
+  label: Sanastot.suomi.fi
+  uri: https://iri.suomi.fi/terminology/yritysdigi/concept-2003
+- lang: en
+  label: ISO/IEC 19762-1:2025
+  uri: https://www.iso.org
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - finvoice
+  - peppol-verkosto
+  - ubl
+  - hankintasanoma
+metadata:
+  created: 2026-03-17T00:00
+  modified: 2026-03-17T00:00

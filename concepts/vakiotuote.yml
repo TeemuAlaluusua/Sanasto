@@ -1,0 +1,47 @@
+id: vakiotuote
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: vakiotuote
+  type: Suositettava termi
+- lang: sv
+  label: standardprodukt
+  type: Suositettava termi
+- lang: en
+  label: standard product
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Vakiotuotteella tarkoitetaan valmistajan yleisesti saatavilla olevan tuotevalikoiman tuotteita,
+    jotka on suunniteltu yleisiin tarpeisiin ja valmistettu ennalta määritettyjen ominaisuuksien, mittojen
+    ja standardien mukaisesti. Vakiotuotteina on pidetty MTS-tuotantostrategian mukaisia standardoituja
+    vakiokauppatuotteita, sekä MTO-tuotantostrategian mukaisia tilaustuotteita.
+- lang: sv
+  text: Med standardprodukt avses produkter i tillverkarens allmänt tillgängliga produktsortiment, vilka
+    är utformade för allmänna behov och tillverkade enligt på förhand fastställda egenskaper, mått och
+    standarder. Standardprodukter har ansetts vara standardiserade handelsprodukter enligt MTS-produktionsstrategin
+    (make-to-stock) samt beställningsprodukter enligt MTO-produktionsstrategin (make-to-order).
+- lang: en
+  text: A standard product refers to products in the manufacturer's generally available product range,
+    designed for general needs and manufactured according to predefined properties, dimensions and standards.
+    Standard products have been regarded as standardized trade products under the make-to-stock (MTS)
+    production strategy, as well as order products under the make-to-order (MTO) production strategy.
+notes: []
+sources:
+- lang: fi
+  label: Alaluusua 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+- lang: fi
+  label: ISO 15489-1:2017
+  uri: https://www.iso.org/standard/73292.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - projektituote
+  - mts
+  - mto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

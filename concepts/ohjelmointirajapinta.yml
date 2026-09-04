@@ -1,0 +1,58 @@
+id: ohjelmointirajapinta
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: ohjelmointirajapinta
+    type: Suositettava termi
+  - lang: fi
+    label: API
+    type: Lyhenne
+  - lang: fi
+    label: rajapinta
+    type: Synonyymi
+  - lang: sv
+    label: programmeringsgränssnitt
+    type: Suositettava termi
+  - lang: sv
+    label: API
+    type: Lyhenne
+  - lang: en
+    label: application programming interface
+    type: Suositettava termi
+  - lang: en
+    label: API
+    type: Lyhenne
+definitions:
+  - lang: fi
+    text: Määritelmä, jonka mukaan eri sovellukset voivat tehdä pyyntöjä ja vaihtaa tietoja keskenään.
+  - lang: sv
+    text: Definition som gör det möjligt för olika applikationer att göra förfrågningar och utbyta data med varandra.
+  - lang: en
+    text: Definition that allows different applications to make requests and exchange data with each other.
+notes:
+  - lang: fi
+    text: |
+      Rajapinta voi olla pelkkä datarajapinta, jonka kautta voidaan lukea palvelun sisältämää dataa toisiin järjestelmiin.
+      Esimerkki ohjelmointirajapinnasta on käyttöjärjestelmän rajapinta, jolla ohjelmat voivat käyttää keskusmuistia ja tiedostoja.
+  - lang: sv
+    text: |
+      Gränssnittet kan vara ett rent datagränssnitt genom vilket data från en tjänst kan läsas till andra system.
+      Ett exempel är operativsystemets gränssnitt som gör det möjligt för program att använda minne och filer.
+  - lang: en
+    text: |
+      The interface may be a data interface through which data from a service can be accessed by other systems.
+      An example is an operating system interface that allows programs to use memory and files.
+sources:
+  - lang: fi
+    label: Sanastot.suomi.fi
+    uri: https://iri.suomi.fi/terminology/yritysdigi/concept-2000
+relations:
+  broader:
+  - rajapinta
+  narrower:
+  - rest-ohjelmistorajapinta
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

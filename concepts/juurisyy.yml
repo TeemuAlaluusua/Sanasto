@@ -1,0 +1,42 @@
+id: juurisyy
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: juurisyy
+    type: Suositettava termi
+  - lang: sv
+    label: grundorsak
+    type: Suositettava termi
+  - lang: en
+    label: root cause
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: Häiriön tai ongelman taustalla oleva alkuperäinen syy.
+  - lang: sv
+    text: Den ursprungliga orsaken bakom en störning eller ett problem.
+  - lang: en
+    text: The original cause underlying a disturbance or problem.
+notes:
+  - lang: fi
+    text: |
+      Juurisyy viittaa ongelman perimmäiseen syyhyn, jonka poistaminen estää ongelman toistumisen.
+  - lang: sv
+    text: |
+      Grundorsak avser den bakomliggande orsaken till ett problem, vars eliminering förhindrar att problemet upprepas.
+  - lang: en
+    text: |
+      Root cause refers to the underlying cause of a problem, the elimination of which prevents recurrence.
+sources:
+  - lang: fi
+    label: ISO/IEC/IEEE 24765:2017
+    uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - juurisyyanalyysi-rca
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

@@ -1,0 +1,83 @@
+id: ubl
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: Universal Business Language
+  type: Suositettava termi
+- lang: fi
+  label: UBL
+  type: Lyhenne
+
+- lang: sv
+  label: Universal Business Language
+  type: Suositettava termi
+- lang: sv
+  label: UBL
+  type: Lyhenne
+
+- lang: en
+  label: Universal Business Language
+  type: Suositettava termi
+- lang: en
+  label: UBL
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: XML-pohjainen standardi liiketoiminta-asiakirjojen tietojen esittämiseen ja vaihtoon
+
+- lang: sv
+  text: XML-baserad standard för att representera och utbyta affärsdokument
+
+- lang: en
+  text: XML-based standard for representing and exchanging business documents
+
+notes:
+- lang: fi
+  text: |
+    UBL määrittelee yhteisen tietorakenteen ja XML-skeemat asiakirjoille,
+    kuten tilauksille, laskuille ja toimitusilmoituksille.
+
+- lang: fi
+  text: |
+    UBL perustuu uudelleenkäytettäviin tietokomponentteihin (Business Information Entities, BIE)
+    ja mahdollistaa toimialakohtaiset laajennukset.
+
+- lang: fi
+  text: |
+    UBL:n tavoitteena on vähentää eri toimialojen välisten tiedonsiirtomuotojen
+    moninaisuutta ja helpottaa järjestelmien välistä yhteentoimivuutta.
+
+- lang: sv
+  text: |
+    UBL definierar gemensamma datastrukturer och XML-scheman för dokument som
+    beställningar, fakturor och leveransaviseringar.
+
+- lang: en
+  text: |
+    UBL defines common data structures and XML schemas for documents such as
+    orders, invoices and despatch advice.
+
+sources:
+- lang: en
+  label: ISO/IEC 19845:2015 Information technology — Universal business language version 2.1
+  uri: https://www.iso.org/obp/ui/en/#iso:std:66370:en
+
+relations:
+  broader:
+  - vaihtoformaatti
+
+  narrower: []
+
+  related:
+  - edi
+  - xml
+  - tietomalli
+  - finvoice
+  - peppol-verkosto
+
+metadata:
+  created: 2026-03-17T00:00
+  modified: 2026-03-17T00:00

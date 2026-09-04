@@ -1,0 +1,45 @@
+id: sql-kieli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: SQL-kieli
+  type: Suositettava termi
+- lang: sv
+  label: SQL-språk
+  type: Suositettava termi
+- lang: en
+  label: SQL language
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Rakenteellinen kyselykieli SQL on tietokannan kyselyt määrittelevä kansainvälinen standardi. SQL
+    on käytännössä ainoa kieli relaatiotietokantojen kyselyihin ja käsittelyyn. Hadoopin ja monien NoSQL-tietokantojen
+    päälle on tehty SQL-liittymiä. SQL kyselykieli toimii hyvänä rajapintana relaatiokantojen ja lukemattomien
+    työkalujen välissä (esim. BI-tuotteet).
+- lang: sv
+  text: Det strukturerade frågespråket SQL är en internationell standard som definierar databasfrågor.
+    SQL är i praktiken det enda språket för att fråga och bearbeta relationsdatabaser. SQL-gränssnitt
+    har byggts ovanpå Hadoop och många NoSQL-databaser. SQL-frågespråket fungerar som ett bra gränssnitt
+    mellan relationsdatabaser och ett stort antal verktyg (t.ex. BI-produkter).
+- lang: en
+  text: The structured query language SQL is an international standard that defines database queries.
+    SQL is, in practice, the only language for querying and processing relational databases. SQL interfaces
+    have been built on top of Hadoop and many NoSQL databases. The SQL query language serves as a good
+    interface between relational databases and countless tools (e.g. BI products).
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC/IEEE 24765:2017
+  uri: https://www.iso.org
+relations:
+  broader:
+  - standardi
+  narrower: []
+  related:
+  - nosql-tietokanta
+  - relaatiotietokanta
+  - tietokanta
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

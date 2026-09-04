@@ -1,0 +1,48 @@
+id: käänteinen-logistiikka
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: käänteinen logistiikka
+  type: Suositettava termi
+- lang: sv
+  label: omvänd logistik
+  type: Suositettava termi
+- lang: en
+  label: reverse logistics
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Käänteisellä logistiikalla tarkoitetaan tuotteiden liikkumista kulutuspisteistä kohti lähtöpisteitä.
+    Käänteisen logistiikan viitataan usein kierrätykseen ja vastuulliseen jätehuoltoon. Sen voidaan kuitenkin
+    katsoa liittyvän tuotantoprosessissa syntyneiden tuotteiden palauttamiseen (mm. asennusten ylijäämämateriaali
+    sekä vialliset tai väärät tuotteet), uusiokäyttöön tai kierrättämiseen alkuperäisestä kulutuspisteestä
+    takaisin tuotantoketjuun, sisältäen myös tuotteiden elinkaaren aikaiset huolto, korjaus ja kunnostustoimenpiteet
+    sekä asianmukaisen hävittämisen.
+- lang: sv
+  text: Med omvänd logistik avses produkters förflyttning från konsumtionsställen mot ursprungsställen.
+    Omvänd logistik hänvisar ofta till återvinning och ansvarsfull avfallshantering. Den kan dock även
+    anses omfatta returnering av produkter som uppstått i produktionsprocessen (bland annat överskottsmaterial
+    från installationer samt felaktiga eller fel produkter), återanvändning eller återvinning från det
+    ursprungliga konsumtionsstället tillbaka till produktionskedjan, inklusive service-, reparations-
+    och renoveringsåtgärder under produkternas livscykel samt ändamålsenlig kassering.
+- lang: en
+  text: Reverse logistics refers to the movement of products from points of consumption back towards points
+    of origin. Reverse logistics is often associated with recycling and responsible waste management.
+    However, it can also be seen as covering the return of products generated during the production process
+    (including surplus installation material and defective or incorrect products), their reuse or recycling
+    from the original point of consumption back into the production chain, including maintenance, repair
+    and refurbishment activities throughout the products' lifecycle, as well as proper disposal.
+notes: []
+sources:
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+relations:
+  broader:
+  - logistiikka
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

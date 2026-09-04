@@ -1,0 +1,49 @@
+id: tuotetieto
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: tuotetieto
+    type: Suositettava termi
+  - lang: sv
+    label: produktdata
+    type: Suositettava termi
+  - lang: en
+    label: product data
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: Tuotetta koskevan tiedon esittäminen muodollisella tavalla, joka soveltuu ihmisten tai tietokoneiden välitettäväksi, tulkittavaksi tai käsiteltäväksi.
+  - lang: sv
+    text: Formell representation av information om en produkt som kan överföras, tolkas eller behandlas av människor eller datorer.
+  - lang: en
+    text: Formal representation of information about a product suitable for communication, interpretation or processing by humans or computers.
+notes:
+  - lang: fi
+    text: |
+      Rakennusalalla tuotetieto kattaa laajasti tuotteisiin liittyvän tiedon, kuten esitteet, tekniset ja toiminnalliset ominaisuudet, suunnitelmat, asennus-, käyttö- ja huolto-ohjeet, tuoterakenteet, osaluettelot, testaustulokset, ympäristövaikutukset sekä turvallisuusnäkökohdat.
+      Tuotteisiin liittyvä tieto voidaan jakaa vakiotietoihin, instanssitietoihin ja prosessitietoihin.
+  - lang: sv
+    text: |
+      Inom byggsektorn omfattar produktdata ett brett spektrum av produktrelaterad information, såsom broschyrer, tekniska och funktionella egenskaper, ritningar, installations-, drift- och underhållsanvisningar, produktstrukturer, stycklistor, testresultat, miljöpåverkan samt säkerhetsaspekter.
+      Produktinformation kan delas in i standarddata, instansdata och processdata.
+  - lang: en
+    text: |
+      In the construction sector, product data covers a wide range of product-related information such as brochures, technical and functional properties, designs, installation, operation and maintenance instructions, product structures, bills of materials, test results, environmental impacts and safety aspects.
+      Product-related information can be divided into standard data, instance data and process data.
+sources:
+  - lang: fi
+    label: Peltokorpi 2020
+    uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+  - lang: fi
+    label: ISO 10303-1:1994
+    uri: https://www.iso.org
+relations:
+  broader: []
+  narrower:
+  - instanssitieto
+  - prosessitieto
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

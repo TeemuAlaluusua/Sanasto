@@ -1,0 +1,42 @@
+id: epc
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: EPC
+  type: Suositettava termi
+- lang: sv
+  label: EPC
+  type: Suositettava termi
+- lang: en
+  label: Electronic Product Code
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: EPC on GS1:n standardi RFID:lle. Sillä yksilöidään esimerkiksi logistiset yksiköt, sijainnit ja
+    muut toimitusketjun tiedot RFID-teknologiaan soveltuviksi. EPC:tä voidaan käyttää eri yhteyksissä,
+    esimerkiksi binäärimuodossa RFIDtunnisteisiin koodattuna tai tekstimuodossa tietojen jakamiseksi yritysten
+    järjestelmien välillä.
+- lang: sv
+  text: EPC är GS1:s standard för RFID. Med den identifieras till exempel logistiska enheter, platser
+    och andra uppgifter i leveranskedjan så att de lämpar sig för RFID-teknik. EPC kan användas i olika
+    sammanhang, till exempel kodad i binärt format på RFID-taggar eller i textformat för att dela information
+    mellan företagens system.
+- lang: en
+  text: EPC is GS1's standard for RFID. It is used to identify, for example, logistics units, locations
+    and other supply chain information in a form suitable for RFID technology. EPC can be used in various
+    contexts, for example encoded in binary form on RFID tags or in text form to share information between
+    companies' systems.
+notes: []
+sources:
+- lang: fi
+  label: GS1 Finland:2025
+  uri: https://gs1.fi/fi/standardit/tunnistamisen-standardit/epcrfid
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

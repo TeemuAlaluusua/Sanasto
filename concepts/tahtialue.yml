@@ -1,0 +1,38 @@
+id: tahtialue
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tahtialue
+  type: Suositettava termi
+- lang: sv
+  label: taktområde
+  type: Suositettava termi
+- lang: en
+  label: takt area
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tahtialue kuvaa tilaa, jossa tietty tehtäväkokonaisuus on tarkoitus suorittaa yhden tahtiajan
+    aikana.
+- lang: sv
+  text: Taktområdet beskriver det utrymme inom vilket en viss uppgiftshelhet är avsedd att utföras under
+    en taktid.
+- lang: en
+  text: A takt area describes the space within which a specific set of tasks is intended to be carried
+    out during one takt time.
+notes: []
+sources:
+- lang: fi
+  label: RIL, Tahtituotanto:2024
+  uri: https://view.taiqa.com/ril/tahtituotanto-opas-2-2024#/page=1
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tahtiaika
+  - tahtivaunu-työpaketti
+  - tahtituotanto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

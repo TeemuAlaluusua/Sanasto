@@ -1,0 +1,51 @@
+id: pilvipalvelu
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: pilvipalvelu
+  type: Suositettava termi
+- lang: sv
+  label: molntjänst
+  type: Suositettava termi
+- lang: en
+  label: cloud Service
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: pilvipalvelu on yksi tai useampi toiminnallisuus, jota tarjotaan pilvilaskennan mukaisesti ja
+    käytetään määritellyn rajapinnan kautta. Yksinkertaisesti sanottuna pilvipalvelut mahdollistavat tietojen
+    tallentamisen ja käsittelemisen internetissä sijaitsevilla palvelimilla sen sijaan, että ne olisivat
+    paikallisesti omassa tietokoneessa tai organisaatioiden omilla palvelimilla. Näitä palveluita voivat
+    olla esimerkiksi tiedostojen tallennus, sähköposti, verkkosovellukset ja tietokantapalvelut. Pilvipalveluiden
+    avulla käyttäjät voivat käyttää tietoja ja sovelluksia mistä tahansa, missä on internet-yhteys, mikä
+    tekee niistä käteviä ja joustavia käyttää.
+- lang: sv
+  text: En molntjänst är en eller flera funktioner som tillhandahålls enligt principerna för molntjänstbaserad
+    databehandling och som används via ett definierat gränssnitt. Enkelt uttryckt gör molntjänster det
+    möjligt att lagra och behandla information på servrar som finns på internet, i stället för lokalt
+    på en egen dator eller på organisationens egna servrar. Sådana tjänster kan till exempel vara fillagring,
+    e-post, webbapplikationer och databastjänster. Med hjälp av molntjänster kan användarna använda information
+    och applikationer var som helst där det finns internetuppkoppling, vilket gör dem praktiska och flexibla
+    att använda.
+- lang: en
+  text: A cloud service is one or more functionalities provided in accordance with cloud computing and
+    accessed through a defined interface. Simply put, cloud services allow data to be stored and processed
+    on servers located on the internet, rather than locally on one's own computer or on an organization's
+    own servers. Such services may include, for example, file storage, email, web applications and database
+    services. Cloud services allow users to access data and applications from anywhere with an internet
+    connection, making them convenient and flexible to use.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22123-1:2023
+  uri: https://www.iso.org/standard/82758.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - pilvilaskenta
+  - rajapinta
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

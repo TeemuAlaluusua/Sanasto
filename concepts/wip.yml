@@ -1,0 +1,37 @@
+id: wip
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: WIP
+  type: Suositettava termi
+- lang: sv
+  label: WIP
+  type: Suositettava termi
+- lang: en
+  label: work in progress
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: WIP-termi kuvaa työn vaihetta tai tilaa, joka tarkoittaa, että toimenpiteet ovat alkaneet, mutta
+    niitä ei ole vielä saatettu päätökseen. Käytetään yleisesti häiriöiden, ongelmien, muutosten jne.
+    tilana.
+- lang: sv
+  text: Termen WIP beskriver ett skede eller tillstånd i arbetet som innebär att åtgärderna har påbörjats
+    men ännu inte slutförts. Används allmänt för att beskriva tillståndet för störningar, problem, ändringar
+    med mera.
+- lang: en
+  text: The term WIP describes a stage or state of work meaning that activities have begun but have not
+    yet been completed. Commonly used to describe the state of disturbances, problems, changes, etc.
+notes: []
+sources:
+- lang: fi
+  label: ISO 22468:2020
+  uri: https://www.iso.org/standard/73292.html
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

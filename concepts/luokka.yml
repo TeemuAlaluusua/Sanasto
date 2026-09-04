@@ -1,0 +1,58 @@
+id: luokka
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: luokka
+  type: Suositettava termi
+
+- lang: sv
+  label: klass
+  type: Suositettava termi
+
+- lang: en
+  label: class
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: attribuuteista koostuva reaalimaailman kohteen vastine tietomallissa
+
+- lang: sv
+  text: en motsvarighet i en datamodell till ett verkligt objekt som består av attribut
+
+- lang: en
+  text: representation in a data model of a real-world object composed of attributes
+
+notes:
+- lang: en
+  text: Description of a set of objects that share the same properties, constraints, and semantics
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-25
+
+- lang: en
+  label: UML 2.1.2 (modified)
+  uri: https://www.omg.org/spec/UML/2.1.2/
+
+relations:
+  broader:
+  - tietomalli
+
+  narrower: []
+
+  related:
+  - attribuutti
+  - entiteetti
+  - käsiteskeema
+  - assosiaatio
+  - käsitteellinen-tietomalli
+  - looginen-tietomalli
+  - luokitus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

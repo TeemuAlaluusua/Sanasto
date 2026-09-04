@@ -1,0 +1,57 @@
+id: tietomallinnus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tietomallinnus
+  type: Suositettava termi
+
+- lang: sv
+  label: datamodellering
+  type: Suositettava termi
+
+- lang: en
+  label: data modeling
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: mallinnus, jonka tuloksena syntyy tietomalli
+
+- lang: sv
+  text: modellering vars resultat är en datamodell
+
+- lang: en
+  text: modelling whose result is a data model
+
+notes:
+- lang: fi
+  text: Tietomallinnus on yleensä vaiheittain etenevä prosessi.
+
+- lang: fi
+  text: |
+    Käsitejärjestelmäkaavio:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – RY-mallit
+  uri: https://iri.suomi.fi/terminology/rymallit/c2
+
+relations:
+  broader:
+  - mallinnus
+  narrower:
+  - rakennuskohteen-tietomallinnus
+  related:
+  - tietomalli
+  - käsitemalli
+  - skeema
+  - informaatiomalli
+  - informaatiomallinnus
+  - käsitteellinen-tietomalli
+  - tiedonhallinta
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-14T00:00

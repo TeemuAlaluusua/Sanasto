@@ -1,0 +1,76 @@
+id: informaatiomallinnus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: informaatiomallinnus
+  type: Suositettava termi
+
+- lang: sv
+  label: informationsmodellering
+  type: Suositettava termi
+
+- lang: en
+  label: information modeling
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: mallinnus, jonka tuloksena syntyy informaatiomalli
+
+- lang: sv
+  text: modellering vars resultat är en informationsmodell
+
+- lang: en
+  text: modelling whose result is an information model
+
+notes:
+- lang: fi
+  text: |
+    Osa informaatiomallinnuksessa syntyvästä tiedosta on
+    koneluettavassa, tietomallien mukaisessa muodossa.
+
+- lang: sv
+  text: |
+    En del av den information som skapas vid
+    informationsmodellering är maskinläsbar och
+    följer datamodeller.
+
+- lang: en
+  text: |
+    Part of the information produced in information
+    modelling is machine-readable and follows data models.
+
+- lang: fi
+  text: |
+    Käsitejärjestelmäkaavio:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+- lang: sv
+  text: |
+    Begreppssystemdiagram:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+- lang: en
+  text: |
+    Concept system diagram:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – RY-mallit
+  uri: https://iri.suomi.fi/terminology/rymallit/c4
+
+relations:
+  broader:
+  - mallinnus
+  narrower:
+  - rakennuskohteen-informaatiomallinnus
+  related:
+  - informaatiomalli
+  - tietomalli
+  - tietomallinnus
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-14T00:00

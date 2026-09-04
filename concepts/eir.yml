@@ -1,0 +1,55 @@
+id: eir
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: informaation vaihdon vaatimukset
+  type: Suositettava termi
+- lang: fi
+  label: EIR
+  type: Lyhenne
+
+- lang: sv
+  label: krav för informationsutbyte
+  type: Suositettava termi
+- lang: sv
+  label: EIR
+  type: Lyhenne
+
+- lang: en
+  label: exchange information requirements
+  type: Suositettava termi
+- lang: en
+  label: EIR
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: Informaation vaihdon vaatimukset suhteessa toimeksiantoon.
+
+- lang: sv
+  text: Krav för informationsutbyte i förhållande till uppdraget.
+
+- lang: en
+  text: Information exchange requirements in relation to the assignment.
+
+notes: []
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – EN 19650 käsitteet
+  uri: https://iri.suomi.fi/terminology/en19650/concept-22
+
+relations:
+  broader:
+  - informaatiovaatimus
+  narrower: []
+  related:
+  - idm
+  - oir
+  - pir
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

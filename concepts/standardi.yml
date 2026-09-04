@@ -1,0 +1,42 @@
+id: standardi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: standardi
+  type: Suositettava termi
+- lang: sv
+  label: standard
+  type: Suositettava termi
+- lang: en
+  label: standard
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Standardi on tekninen dokumentti, jota on tarkoitus käyttää sääntönä, ohjeena tai määritelmänä.
+    Standardi laaditaan kaikille ymmärrettävässä muodossa ja se on mahdollista ottaa käyttöön dokumentin
+    pohjalta.
+- lang: sv
+  text: En standard är ett tekniskt dokument avsett att användas som regel, anvisning eller definition.
+    En standard utarbetas i en form som är begriplig för alla, och det är möjligt att ta den i bruk utifrån
+    dokumentet.
+- lang: en
+  text: A standard is a technical document intended to be used as a rule, guideline or definition. A standard
+    is drawn up in a form that is understandable to everyone, and it can be put into use on the basis
+    of the document.
+notes: []
+sources:
+- lang: fi
+  label: Sanastot
+  uri: https://sanastot.suomi.fi/
+relations:
+  broader: []
+  narrower:
+  - etim-standardi
+  - de-facto-standardi
+  - sql-kieli
+  related:
+  - standardointi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

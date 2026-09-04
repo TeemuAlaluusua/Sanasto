@@ -1,0 +1,54 @@
+id: yksilöinti
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: yksilöinti
+  type: Suositettava termi
+
+- lang: sv
+  label: identifiering
+  type: Suositettava termi
+
+- lang: en
+  label: identification
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Toimijan, kohteen tai tietomallin objektin yksiselitteinen tunnistaminen ja erottaminen muista samaan joukkoon kuuluvista.
+
+- lang: sv
+  text: Entydig identifiering av en aktör, ett objekt eller ett objekt i en informationsmodell samt särskiljning från andra som tillhör samma mängd.
+
+- lang: en
+  text: Unambiguous identification of an actor, an object or an object in an information model and distinguishing it from others belonging to the same set.
+
+notes:
+- lang: fi
+  text: Yksilöinti toteutetaan liittämällä kohteeseen yksilöintitieto, kuten tunnus, koodi tai globaalitunniste (esim. GUID). Rakentamisen tietomalleissa yksilöinti mahdollistaa objektien elinkaaren aikaisen viittauksen, jäljitettävyyden ja tiedonhallinnan.
+
+- lang: sv
+  text: Identifiering genomförs genom att koppla en identifieringsuppgift till objektet, såsom en beteckning, kod eller global identifierare (t.ex. GUID). I byggandets informationsmodeller möjliggör identifiering livscykelbaserad referens, spårbarhet och informationshantering av objekt.
+
+- lang: en
+  text: Identification is implemented by associating identifying information with the object, such as an identifier, code or global identifier (e.g. GUID). In construction information models, identification enables lifecycle referencing, traceability and information management of objects.
+
+sources:
+- lang: fi
+  label: "Suomi.fi-sanastot: Yritysdigi – yksilöinti"
+  url: https://sanastot.suomi.fi/terminology/yritysdigi/concept/concept-2065
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - yksilöintitieto
+  - tunniste
+  - guid-tunniste
+  - digitaalinen-identiteetti
+  - instanssitieto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T10:55:00

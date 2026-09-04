@@ -1,0 +1,61 @@
+id: tietopankki
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: tietopankki
+    type: Suositettava termi
+  - lang: sv
+    label: databank
+    type: Suositettava termi
+  - lang: en
+    label: data repository
+    type: Suositettava termi
+  - lang: en
+    label: data bank
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: "joukko tiedostoja tai tietokantoja, joilla on yhteinen varastointijärjestelmä, käsittelyjärjestelmä ja hakujärjestelmä"
+  - lang: sv
+    text: "samling filer eller databaser som har ett gemensamt lagringssystem, behandlingssystem och söksystem"
+  - lang: en
+    text: "set of files or databases combined with a storage system, a processing system and a retrieval system"
+
+notes:
+  - lang: fi
+    text: |
+      Tietopankki tarkoittaa järjestettyä kokonaisuutta, jossa tietoa
+      tallennetaan, ylläpidetään ja haetaan yhtenäisen järjestelmän avulla.
+      Termiä käytetään usein yleisnimityksenä järjestelmälle, joka kokoaa
+      useita tietokantoja tai tiedostoja yhteen hallittuun tietovarastoon.
+  - lang: sv
+    text: |
+      En databank är en organiserad helhet där information lagras, underhålls
+      och hämtas med hjälp av ett enhetligt system. Termen används ofta som
+      en allmän beteckning för ett system som samlar flera databaser eller
+      filer i ett gemensamt hanterat informationslager.
+  - lang: en
+    text: |
+      A data repository or data bank refers to an organised collection in
+      which information is stored, maintained and retrieved through a
+      unified system. The term is often used as a general designation for a
+      system that brings together several databases or files into a managed
+      information storage environment.
+
+sources:
+  - lang: en
+    label: "ISO 5127:2022 Information and documentation — Foundation and vocabulary"
+    url: https://www.iso.org/standard/59743.html
+
+relations:
+  broader: []
+  narrower: []
+  related:
+    - tietokanta
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

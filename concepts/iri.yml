@@ -1,0 +1,68 @@
+id: iri
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: internationalized resource identifier
+  type: Suositettava termi
+- lang: fi
+  label: IRI
+  type: Lyhenne
+
+- lang: sv
+  label: internationalized resource identifier
+  type: Suositettava termi
+- lang: sv
+  label: IRI
+  type: Lyhenne
+
+- lang: en
+  label: internationalized resource identifier
+  type: Suositettava termi
+- lang: en
+  label: IRI
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: merkkijonosta muodostuva tunnus, joka yksikäsitteisesti yksilöi tietyn verkkoresurssin noudattaen sovittua syntaksia ja kattaa URI-tunnusta laajemman merkkivalikoiman
+
+- lang: en
+  text: a global identifier in the context of the World Wide Web which builds on the Uniform Resource Identifier (URI) protocol by expanding the set of permitted characters
+
+- lang: sv
+  text: en global identifierare i World Wide Web som bygger på URI-protokollet (Uniform Resource Identifier) genom att utöka uppsättningen tillåtna tecken
+
+notes:
+- lang: fi
+  text: IRI-tunnistetta käytetään tyypillisesti World Wide Webin verkkoresurssien yksilöimisessä.
+
+- lang: sv
+  text: IRI-identifierare används typiskt för att identifiera webbresurser på World Wide Web.
+
+- lang: en
+  text: A string of characters that unambiguously identifies a particular resource. To guarantee uniformity, all IRIs follow a predefined set of syntax rules, but also maintain extensibility through a separately defined hierarchical naming scheme.
+
+- lang: en
+  text: While URIs are limited to a subset of the US-ASCII character set, IRIs may additionally contain most characters from the Universal Character Set, including Chinese, Japanese, Korean, and Cyrillic characters.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-98
+
+relations:
+  broader:
+  - uri
+
+  narrower: []
+
+  related:
+  - linkitetty-data
+  - rdf
+  - nimiavaruus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

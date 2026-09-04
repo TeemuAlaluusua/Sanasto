@@ -1,0 +1,56 @@
+id: oikeudellinen-yhteentoimivuus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: oikeudellinen yhteentoimivuus
+  type: Suositettava termi
+
+- lang: sv
+  label: rättslig interoperabilitet
+  type: Suositettava termi
+
+- lang: en
+  label: legal interoperability
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: yhteentoimivuus, joka mahdollistaa tiedonsiirrot eri lainsäädännöllisten alueiden välillä ilman, että asiaankuuluvaa lainsäädäntöä rikotaan
+
+- lang: sv
+  text: interoperabilitet som gör det möjligt att överföra information mellan områden med olika lagstiftning utan att relevanta lagar bryts
+
+- lang: en
+  text: form of interoperability that enables data transfers between different legislative regions without violating any pertinent legislation
+
+notes:
+- lang: fi
+  text: Oikeudellinen yhteentoimivuus liittyy erityisesti tietojärjestelmissä käsiteltävien tietojen luonteeseen ja tapoihin, joilla tietoja kerätään, järjestetään ja siirretään.
+
+- lang: sv
+  text: Rättslig interoperabilitet anknyter speciellt till information i informationssystem samt till informationens art och hur man samlar in, ordnar och överför informationen.
+
+- lang: en
+  text: Legal interoperability is connected especially to the nature of the data that is contained in the information systems and how this data is collected, arranged and transferred.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-71
+
+relations:
+  broader:
+  - yhteentoimivuus
+
+  narrower: []
+
+  related:
+  - tekninen-yhteentoimivuus
+  - semanttinen-yhteentoimivuus
+  - organisatorinen-yhteentoimivuus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

@@ -1,0 +1,68 @@
+id: malli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: malli
+  type: Suositettava termi
+
+- lang: sv
+  label: modell
+  type: Suositettava termi
+
+- lang: en
+  label: model
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    Fyysinen, matemaattinen tai muuten looginen esitys
+    järjestelmästä, entiteetistä, ilmiöstä, prosessista
+    tai datasta.
+
+- lang: sv
+  text: |
+    Fysisk, matematisk eller på annat sätt logisk
+    representation av ett system, en entitet, ett
+    fenomen, en process eller data.
+
+- lang: en
+  text: |
+    Physical, mathematical or otherwise logical
+    representation of a system, entity, phenomenon,
+    process or data.
+
+notes:
+- lang: fi
+  text: |
+    Mallia käytetään kohteen kuvaamiseen, analysointiin,
+    simulointiin tai suunnitteluun.
+
+- lang: sv
+  text: |
+    En modell används för att beskriva, analysera,
+    simulera eller planera ett system eller fenomen.
+
+- lang: en
+  text: |
+    A model is commonly used to describe, analyze,
+    simulate or design a system or phenomenon.
+
+sources:
+- lang: en
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org
+
+relations:
+  broader: []
+  narrower:
+    - käsitemalli
+    - tietomalli
+  related:
+  - mallinnus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

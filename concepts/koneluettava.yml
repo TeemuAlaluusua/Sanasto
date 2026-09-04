@@ -1,0 +1,59 @@
+id: koneluettava
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: koneluettava
+  type: Suositettava termi
+- lang: sv
+  label: maskinläsbar
+  type: Suositettava termi
+- lang: en
+  label: machine-readable
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tietosisällön esittäminen rakenteellisessa muodossa, esimerkiksi taulukoissa. Koneluettavuudella
+    pyritään yksinkertaistamaan tulkinnanvaraisia asioita sekä yhtenäistämään tiedon muotoa. Tietojärjestelmissä
+    konemuotoista tietoa voidaan yhdistellä olemassa olevaan tietosisältöön, jossa monisanaiset tai tulkinnanvaraiset
+    tietokohteet on korvattu yksiselitteisillä merkinnöillä, koodeilla tai niihin verrattavilla ilmaisuilla.
+    Koneluettavuus on tiedon rakenteellistamista taulukoihin tai muuten jaoteltuihin tiedostoihin, joista
+    ohjelma on helpompi poimia samaan kohteeseen tai asiaan liittyvää tietoa. Oleellista konemuodossa
+    on eri lähteistä tulevien tietojen yhdisteleminen ja yhtenäinen muoto.
+- lang: sv
+  text: Presentation av informationsinnehåll i strukturerad form, till exempel i tabeller. Med maskinläsbarhet
+    strävar man efter att förenkla tolkningsbara frågor samt förenhetliga informationens form. I informationssystem
+    kan maskinformad information kombineras med befintligt informationsinnehåll, där mångordiga eller
+    tolkningsbara informationsobjekt har ersatts med entydiga anteckningar, koder eller jämförbara uttryck.
+    Maskinläsbarhet innebär att strukturera information i tabeller eller på annat sätt indelade filer,
+    ur vilka ett program lättare kan hämta information som hänför sig till samma objekt eller sak. Väsentligt
+    i maskinformen är att kombinera information från olika källor till en enhetlig form.
+- lang: en
+  text: Presentation of information content in structured form, for example in tables. Machine-readability
+    aims to simplify matters that are otherwise open to interpretation and to standardize the form of
+    information. In information systems, machine-form data can be combined with existing information content,
+    where verbose or ambiguous data items have been replaced with unambiguous notations, codes or comparable
+    expressions. Machine-readability means structuring information into tables or otherwise categorized
+    files, from which a program can more easily extract information relating to the same object or matter.
+    What is essential in the machine form is combining information from different sources into a uniform
+    format.
+notes:
+- lang: fi
+  text: vrt. ihmisluettava
+- lang: sv
+  text: jfr. mänskligt läsbar
+- lang: en
+  text: cf. human-readable
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - ihmisluettava
+  - koneluettavuus
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

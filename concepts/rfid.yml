@@ -1,0 +1,39 @@
+id: rfid
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: RFID
+  type: Suositettava termi
+- lang: sv
+  label: RFID
+  type: Suositettava termi
+- lang: en
+  label: RFID
+  type: Suositettava termi
+- lang: en
+  label: radio frequency identification
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: langaton radiotaajuinen tunnistusjärjestelmä, joka käyttää elektromagneettista kenttää siirtämään
+    dataa aineelliseen objektiin kiinnitetystä tarrasta automaattista tunnistusta ja seurantaa varten
+- lang: sv
+  text: trådlöst radiofrekvensbaserat identifieringssystem som använder ett elektromagnetiskt fält för
+    att överföra data från en etikett fäst på ett fysiskt objekt, i syfte att automatiskt identifiera
+    och spåra objektet
+- lang: en
+  text: wireless radio-frequency identification system that uses an electromagnetic field to transfer
+    data from a tag attached to a physical object, for the purpose of automatic identification and tracking
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2022
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tunnistus--ja-tiedonkeruutekniikat
+metadata:
+  created: 2026-03-05T12:00
+  modified: 2026-08-28T00:00

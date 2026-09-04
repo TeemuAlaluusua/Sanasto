@@ -1,0 +1,55 @@
+id: anturi
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: anturi
+  type: Suositettava termi
+- lang: fi
+  label: sensori
+  type: Synonyymi
+- lang: sv
+  label: sensor
+  type: Suositettava termi
+- lang: sv
+  label: givare
+  type: Synonyymi
+- lang: en
+  label: sensor
+  type: Suositettava termi
+- lang: en
+  label: transducer
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: |
+    Anturi on laite, joka reagoi fyysiseen ärsykkeeseen kuten lämpöön, valoon,
+    ääneen, paineeseen, vetovoimaan tai liikkeeseen ja välittää sen arvon eteenpäin.
+    Antureita hyödynnetään esimerkiksi erilaisissa IoT-ratkaisuissa.
+- lang: sv
+  text: |
+    En sensor är en anordning som reagerar på en fysisk påverkan såsom värme, ljus,
+    ljud, tryck, gravitation eller rörelse och vidarebefordrar dess värde.
+    Sensorer används till exempel i olika IoT-lösningar.
+- lang: en
+  text: |
+    A sensor is a device that responds to a physical stimulus such as heat, light,
+    sound, pressure, gravity or motion and transmits its value onward. Sensors are
+    used, for example, in various IoT solutions.
+    
+notes: []
+
+sources: []
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - iot
+  - lot-järjestelmä
+  - lot-laite
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-27T00:00

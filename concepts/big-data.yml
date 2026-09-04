@@ -1,0 +1,72 @@
+id: big-data
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: suurdata
+  type: Suositettava termi
+- lang: fi
+  label: massadata
+  type: Synonyymi
+- lang: fi
+  label: suuraineisto
+  type: Synonyymi
+- lang: sv
+  label: stordata
+  type: Suositettava termi
+- lang: en
+  label: big data
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    Laajoja ja monimuotoisia tietokokonaisuuksia, joiden käsittely,
+    tallentaminen ja analysointi edellyttävät skaalautuvaa teknologiaa.
+- lang: sv
+  text: |
+    Stora och mångsidiga datamängder vars lagring, bearbetning och
+    analys kräver skalbar teknik.
+- lang: en
+  text: |
+    Large and diverse datasets whose storage, processing and
+    analysis require scalable technologies.
+
+notes:
+- lang: fi
+  text: |
+    Suurdataa kuvataan usein niin sanotulla 4V-mallilla:
+    määrä (volume), monimuotoisuus (variety), nopeus (velocity)
+    ja vaihtelevuus (variability). Data voi olla rakenteista,
+    puolirakenteista tai rakenteetonta, kuten tekstiä, kuvia,
+    videoita tai ääntä.
+- lang: sv
+  text: |
+    Stordata beskrivs ofta genom den så kallade 4V-modellen:
+    volym, variation, hastighet och variabilitet. Data kan vara
+    strukturerad, semistrukturerad eller ostrukturerad.
+- lang: en
+  text: |
+    Big data is often characterized by the 4V model:
+    volume, variety, velocity and variability. Data may be
+    structured, semi-structured or unstructured.
+
+sources:
+- lang: en
+  label: ISO/IEC 30105-9:2023
+  uri: 
+
+relations:
+  broader:
+  - data
+  narrower: []
+  related:
+  - data-analytiikka
+  - dataformaatti
+  - tekoäly
+  - iot
+  - tiedon-louhinta
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

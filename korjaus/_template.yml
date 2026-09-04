@@ -1,0 +1,34 @@
+id: ""
+status: Luonnos
+schemeId: rakentamisen-tieto-ja-informaatiomallit
+
+terms:
+  - lang: fi
+    label: ""
+    type: Suositettava termi
+  - lang: sv
+    label: ""
+    type: Suositettava termi
+  - lang: en
+    label: ""
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: ""
+
+notes: []
+
+sources:
+  - lang: fi
+    label: ISO 12345:2020 Example standard
+    url: 
+
+relations:
+  broader: []
+  narrower: []
+  related: []
+
+metadata:
+  created: "YYYY-MM-DDThh:mm"
+  modified: "YYYY-MM-DDThh:mm"

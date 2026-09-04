@@ -1,0 +1,92 @@
+id: dto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: asiakasohjautuva tuotekehitys
+  type: Suositettava termi
+- lang: fi
+  label: DTO
+  type: Lyhenne
+
+- lang: sv
+  label: kundstyrd produktutveckling
+  type: Suositettava termi
+- lang: sv
+  label: DTO
+  type: Lyhenne
+
+- lang: en
+  label: design-to-order
+  type: Suositettava termi
+- lang: en
+  label: DTO
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Tuotantotapa, jossa tuotteen suunnittelu, tuotekehitys ja
+    valmistus käynnistyvät asiakaskohtaisen tilauksen perusteella.
+
+- lang: sv
+  text: |
+    Produktionssätt där produktens konstruktion, produktutveckling
+    och tillverkning inleds utifrån en kundspecifik beställning.
+
+- lang: en
+  text: |
+    Production strategy in which product design, development
+    and manufacturing are initiated based on a specific
+    customer order.
+
+notes:
+- lang: fi
+  text: |
+    DTO-tuotteet ovat asiakasräätälöityjä projektituotteita,
+    jotka suunnitellaan ja valmistetaan tilauskohtaisesti.
+    Toisin kuin ETO-tuotteissa, DTO-toimitus voi sisältää
+    merkittävää tuotekehitystä, mikä yleensä pidentää
+    toimitusaikoja.
+
+- lang: sv
+  text: |
+    DTO-produkter är kundanpassade projektprodukter som
+    konstrueras och tillverkas baserat på en specifik order.
+    Till skillnad från ETO-produkter kan DTO-leveranser
+    inkludera omfattande produktutveckling, vilket ofta
+    leder till längre leveranstider.
+
+- lang: en
+  text: |
+    DTO products are typically customized project products
+    designed and manufactured for a specific order.
+    Deliveries may include significant product development,
+    which often results in longer lead times.
+
+sources:
+- lang: fi
+  label: Alaluusua 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+
+- lang: fi
+  label: Peltokorpi 2020
+  uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+
+- lang: en
+  label: ISO/TR 3151-1:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - tuotantomuoto
+  narrower: []
+  related:
+  - eto
+  - mto
+  - ato
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

@@ -1,0 +1,68 @@
+id: projektin-informaatiomalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: projektin informaatiomalli
+  type: Suositettava termi
+- lang: sv
+  label: projektinformationsmodell
+  type: Suositettava termi
+- lang: en
+  label: project information model
+  type: Suositettava termi
+- lang: en
+  label: PIR
+  type: Synonyymi
+definitions:
+- lang: fi
+  text: rakennuskohteen informaatiomalli, joka sisältää rakennusprojektin suunnittelu- ja rakennusvaiheen
+    toteutukseen tarvittavat tiedot
+- lang: sv
+  text: informationsmodell av byggnadsobjekt som innehåller de uppgifter som behövs för genomförandet
+    av byggprojektets projekterings- och byggskede
+- lang: en
+  text: information model of a construction entity that contains the information needed for carrying out
+    the design and construction stages of a building project
+notes:
+- lang: fi
+  text: Projektin informaatiomalli sisältää suunnitelmamallin ja toteumamallin tietojen lisäksi esimerkiksi
+    aikataulutietoja sekä hankintoihin ja työmaalogistiikkaan liittyviä tietoja.
+- lang: fi
+  text: Projektin informaatiomalli tukee projektin toteutusta ja vaikuttaa omaisuuskohteen informaatiomalliin.
+    Projektin informaatiomalli tarvitaan myös pitkäaikaista projektiarkistointia ja auditointia varten.
+- lang: fi
+  text: 'Käsitejärjestelmäkaavio: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: sv
+  text: Utöver uppgifterna i projekteringsmodellen och as-built-modellen innehåller projektinformationsmodellen
+    till exempel tidsplaneuppgifter samt uppgifter kopplade till upphandlingar och arbetsplatslogistik.
+- lang: sv
+  text: Projektinformationsmodellen stödjer genomförandet av projektet och påverkar tillgångsobjektets
+    informationsmodell. Projektinformationsmodellen behövs även för långsiktig projektarkivering och revision.
+- lang: sv
+  text: 'Begreppssystemschema: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: en
+  text: In addition to the information in the design model and the as-built model, the project information
+    model contains, for example, schedule information and information related to procurement and site
+    logistics.
+- lang: en
+  text: The project information model supports project delivery and affects the asset's information model.
+    The project information model is also needed for long-term project archiving and auditing.
+- lang: en
+  text: 'Concept system diagram: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+sources:
+- lang: fi
+  label: Sanastokeskus, RY-mallit -sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c21
+relations:
+  broader:
+  - rakennuskohteen-informaatiomalli
+  narrower: []
+  related:
+  - omaisuuskohteen-informaatiomalli
+  - pim
+  - suunnitelmamalli
+  - toteumamalli
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-08-28T00:00

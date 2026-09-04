@@ -1,0 +1,95 @@
+id: tietomalli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tietomalli
+  type: Suositettava termi
+
+- lang: sv
+  label: datamodell
+  type: Suositettava termi
+
+- lang: en
+  label: data model
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: malli, joka kuvaa tiedot ja tietojen väliset suhteet rakenteisessa muodossa
+
+- lang: sv
+  text: modell som beskriver data och relationerna mellan data i strukturerad form
+
+- lang: en
+  text: model that describes data and the relationships between data in a structured form
+
+notes:
+- lang: fi
+  text: |
+    Käsitejärjestelmäkaavio:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – RY-mallit
+  uri: https://iri.suomi.fi/terminology/rymallit/c6
+
+- lang: fi
+  label: Yhteentoimivuusalusta (YTI)
+  uri: https://iri.suomi.fi/terminology/yti/concept-22
+
+- lang: fi
+  label: Rakennetun ympäristön sanasto
+  uri: https://iri.suomi.fi/terminology/rakymp/c97
+
+relations:
+  broader:
+  - malli
+  narrower:
+  - käsitemalli
+  - looginen-tietomalli
+  - fyysinen-tietomalli
+  - assosiaatio
+  - informaatiomalli
+  - kaavatietomalli
+  - käsitteellinen-tietomalli
+  - luokka
+  - rakennuskohteen-tietomalli
+  - relaatiotietomalli
+  related:
+  - skeema
+  - ontologia
+  - metatietoskeema
+  - bcf
+  - data
+  - idm
+  - informaatio
+  - informaatiomallinnus
+  - informaatiovaatimus
+  - koneluettavuus
+  - koodisto
+  - käsiteskeema
+  - lokitiedosto
+  - mallinnus
+  - mappaus
+  - metatieto
+  - property-set
+  - sanasto
+  - tiedonhallinta
+  - tietokanta
+  - tietomallinnus
+  - tietomääritys
+  - ubl
+  - uda
+  - xbrl
+  - ydintieto
+  - kardinaliteetti
+  - vdc
+  - versio
+  - yhteentoimivuusalusta
+  - ylläpitomalli
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-14T00:00

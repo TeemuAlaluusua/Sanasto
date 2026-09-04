@@ -1,0 +1,37 @@
+id: rajapinta
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rajapinta
+  type: Suositettava termi
+- lang: sv
+  label: gränssnitt
+  type: Suositettava termi
+- lang: en
+  label: application programming interface
+  type: Suositettava termi
+- lang: en
+  label: API
+  type: Synonyymi
+definitions:
+- lang: fi
+  text: Rajapinta tarkoittaa kahden järjestelmän välille rakennettua kommunikointiyhteyttä.
+- lang: sv
+  text: Med gränssnitt avses en kommunikationsförbindelse som byggts upp mellan två system.
+- lang: en
+  text: An interface refers to a communication connection built between two systems.
+notes: []
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader: []
+  narrower:
+  - ohjelmointirajapinta
+  related:
+  - pilvipalvelu
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

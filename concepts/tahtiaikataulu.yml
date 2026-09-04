@@ -1,0 +1,38 @@
+id: tahtiaikataulu
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tahtiaikataulu
+  type: Suositettava termi
+- lang: sv
+  label: taktschema
+  type: Suositettava termi
+- lang: en
+  label: takt schedule
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tahtiaikataulu on tahtisuunnittelun tuotoksena syntyvä ja tahtiohjauksen kautta ohjattava aikataulu,
+    joka kertoo missä, miten ja millä resusseilla hankkeen ja tuotannon eri tehtäviä toteutetaan.
+- lang: sv
+  text: Taktschemat är ett tidsschema som tas fram som ett resultat av taktplaneringen och som styrs genom
+    taktstyrning. Det anger var, hur och med vilka resurser projektets och produktionens olika uppgifter
+    genomförs.
+- lang: en
+  text: A takt schedule is a schedule produced as a result of takt planning and controlled through takt
+    control. It indicates where, how and with what resources the various tasks of the project and production
+    are carried out.
+notes: []
+sources:
+- lang: fi
+  label: RIL, Tahtituotanto:2024
+  uri: https://view.taiqa.com/ril/tahtituotanto-opas-2-2024#/page=1
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tahtituotanto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

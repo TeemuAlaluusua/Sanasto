@@ -1,0 +1,70 @@
+id: rdf-kolmikko
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: RDF-kolmikko
+    type: Suositettava termi
+
+  - lang: sv
+    label: RDF-trippel
+    type: Suositettava termi
+
+  - lang: en
+    label: RDF triple
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: |
+      RDF:ssä käytetty lauseen esitystapa, joka koostuu
+      subjektista, predikaatista ja objektista.
+
+  - lang: sv
+    text: |
+      Representation av ett påstående i RDF som består
+      av subjekt, predikat och objekt.
+
+  - lang: en
+    text: |
+      Representation of a statement in RDF consisting
+      of a subject, predicate and object.
+
+notes:
+  - lang: fi
+    text: |
+      RDF-kolmikko muodostaa RDF-tiedon perusrakenteen.
+      Subjekti ja objekti kuvaavat resursseja ja
+      predikaatti niiden välistä suhdetta.
+
+  - lang: sv
+    text: |
+      En RDF-trippel utgör den grundläggande strukturen
+      för RDF-data. Subjekt och objekt representerar
+      resurser och predikat beskriver relationen mellan dem.
+
+  - lang: en
+    text: |
+      An RDF triple is the fundamental structure of RDF
+      data. The subject and object denote resources,
+      while the predicate expresses the relationship
+      between them.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+relations:
+  broader:
+    - rdf
+  narrower: []
+  related:
+    - ontologia
+    - semanttinen-web
+    - sparql
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

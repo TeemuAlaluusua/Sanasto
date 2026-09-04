@@ -1,0 +1,44 @@
+id: keskeinensuorituskykymittari-kpi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: keskeinensuorituskykymittari (KPI)
+  type: Suositettava termi
+- lang: sv
+  label: nyckeltal för prestanda
+  type: Suositettava termi
+- lang: en
+  label: key performance indicator
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: KPI on mittari, jota käytetään arvioimaan organisaation tai yrityksen suorituskykyä tietyllä alueella
+    tai tavoitteen saavuttamisessa. Se auttaa organisaatiota mittaamaan, seuraamaan ja analysoimaan, kuinka
+    hyvin se on onnistunut saavuttamaan asetetut tavoitteet. KPI:t voivat vaihdella organisaation ja sen
+    tavoitteiden mukaan, ja ne voivat kattaa esimerkiksi myyntiä, markkinointia, asiakastyytyväisyyttä,
+    tuottavuutta ja muita toiminnan osa-alueita.
+- lang: sv
+  text: KPI är ett mått som används för att bedöma en organisations eller ett företags prestanda inom
+    ett visst område eller för att uppnå ett mål. Det hjälper organisationen att mäta, följa upp och analysera
+    hur väl den har lyckats nå uppställda mål. KPI:er kan variera beroende på organisationen och dess
+    mål och kan omfatta till exempel försäljning, marknadsföring, kundnöjdhet, produktivitet och andra
+    delområden av verksamheten.
+- lang: en
+  text: A KPI is a metric used to assess an organization's or a company's performance in a particular
+    area or in achieving a goal. It helps the organization measure, monitor and analyze how well it has
+    succeeded in reaching its set objectives. KPIs may vary depending on the organization and its goals,
+    and may cover areas such as sales, marketing, customer satisfaction, productivity and other aspects
+    of operations.
+notes: []
+sources:
+- lang: fi
+  label: ISO/TS 23686:2022
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,35 @@
+id: tahtiaika
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tahtiaika
+  type: Suositettava termi
+- lang: sv
+  label: taktid
+  type: Suositettava termi
+- lang: en
+  label: takt time
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tahtiaika kuvaa sitä aikaa, jossa tietty työtehtävä on tarkoitus suorittaa.
+- lang: sv
+  text: Taktiden beskriver den tid inom vilken en viss arbetsuppgift är avsedd att utföras.
+- lang: en
+  text: Takt time describes the time within which a particular work task is intended to be completed.
+notes: []
+sources:
+- lang: fi
+  label: RIL, Tahtituotanto:2024
+  uri: https://view.taiqa.com/ril/tahtituotanto-opas-2-2024#/page=1
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tahtialue
+  - tahtivaunu-työpaketti
+  - tahtituotanto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

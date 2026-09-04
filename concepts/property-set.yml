@@ -1,0 +1,56 @@
+id: property-set
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: ominaisuusjoukko
+  type: Suositettava termi
+
+- lang: sv
+  label: egenskapsuppsättning
+  type: Suositettava termi
+
+- lang: en
+  label: property set
+  type: Suositettava termi
+
+- lang: en
+  label: Pset
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: joukko ominaisuuksia, jotka liitetään tiettyyn objektiin tai objektityyppiin
+
+- lang: sv
+  text: uppsättning egenskaper som kopplas till ett visst objekt eller en objekttyp
+
+- lang: en
+  text: set of properties assigned to a specific object or object type
+
+notes:
+- lang: fi
+  text: Ominaisuusjoukko voi olla standardoitu tai projektikohtaisesti määritelty.
+
+- lang: sv
+  text: Egenskapsuppsättningen kan vara standardiserad eller projektspecifik.
+
+- lang: en
+  text: A property set can be standardized or defined for a specific project.
+
+sources:
+- lang: en
+  label: buildingSMART Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietomalli
+  - attribuutti
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

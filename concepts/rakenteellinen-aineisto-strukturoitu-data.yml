@@ -1,0 +1,48 @@
+id: rakenteellinen-aineisto-strukturoitu-data
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rakenteellinen aineisto / strukturoitu data
+  type: Suositettava termi
+- lang: sv
+  label: strukturerad data
+  type: Suositettava termi
+- lang: en
+  label: structured data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Strukturoitu data tarkoittaa tietoa, joka on järjestetty määrättyyn muotoon tai skeemaan, tyypillisesti
+    riveihin ja sarakkeisiin, kuten relaatiotietokannoissa tai taulukkolaskentaohjelmissa. Nämä tiedot
+    noudattavat ennalta määriteltyä mallia, jossa on selkeät säännöt siitä, miten yksittäiset tiedot tallennetaan
+    ja miten ne liittyvät toisiinsa. Strukturoitu tieto on hyvin järjestettyä ja sitä on helppo hakea,
+    käyttää ja käsitellä tietokannan hallintajärjestelmien ja muiden työkalujen avulla. Esimerkkejä strukturoidusta
+    datasta ovat tietokannat, taulukkolaskentaohjelmat ja tietyllä tavalla muotoillut tiedostot kuten
+    XML ja JSON.
+- lang: sv
+  text: Strukturerad data avser information som är organiserad enligt ett bestämt format eller schema,
+    vanligtvis i rader och kolumner, som i relationsdatabaser eller kalkylprogram. Denna information följer
+    en fördefinierad modell med tydliga regler för hur enskilda uppgifter lagras och hur de förhåller
+    sig till varandra. Strukturerad information är väl organiserad och lätt att söka, använda och bearbeta
+    med hjälp av databashanteringssystem och andra verktyg. Exempel på strukturerad data är databaser,
+    kalkylprogram och filer formaterade på ett visst sätt, såsom XML och JSON.
+- lang: en
+  text: Structured data refers to information organized according to a defined format or schema, typically
+    in rows and columns, as in relational databases or spreadsheets. This data follows a predefined model
+    with clear rules on how individual items are stored and how they relate to one another. Structured
+    data is well organized and easy to search, use and process with the help of database management systems
+    and other tools. Examples of structured data include databases, spreadsheets and files formatted in
+    a certain way, such as XML and JSON.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rakenteeton-aineisto--strukturoimaton-data
+  - xml
+  - json
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

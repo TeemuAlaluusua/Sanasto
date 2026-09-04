@@ -1,0 +1,56 @@
+id: organisatorinen-yhteentoimivuus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: organisatorinen yhteentoimivuus
+  type: Suositettava termi
+
+- lang: sv
+  label: organisatorisk interoperabilitet
+  type: Suositettava termi
+
+- lang: en
+  label: organisational interoperability
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: yhteentoimivuus, joka mahdollistaa organisaatioiden yhteisesti sovittujen päämäärien tavoittelun niitä tukevien käytäntöjen avulla
+
+- lang: sv
+  text: interoperabilitet som gör det möjligt för organisationer att uppnå gemensamt överenskomna mål genom metoder som stöder dessa mål
+
+- lang: en
+  text: form of interoperability that enables organisations to achieve commonly agreed objectives through practices that support those objectives
+
+notes:
+- lang: fi
+  text: Organisatorinen yhteentoimivuus liittyy erityisesti tietoprosessien järjestämiseen siten, että tietoa tuotetaan ja jaetaan sovittua päämäärää parhaiten edistävällä tavalla. Sovittu päämäärä voi olla esimerkiksi yhteisesti tuotettava palvelu.
+
+- lang: sv
+  text: Organisatorisk interoperabilitet avser särskilt organiseringen av informationsprocesser så att information produceras och delas på ett sätt som bäst stöder det överenskomna målet. Målet kan till exempel vara en gemensamt producerad tjänst.
+
+- lang: en
+  text: Organisational interoperability is particularly related to the organisation of information processes so that information is produced and shared in a way that best supports the agreed objective. The objective may be, for example, a jointly delivered service.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-70
+
+relations:
+  broader:
+  - yhteentoimivuus
+
+  narrower: []
+
+  related:
+  - tekninen-yhteentoimivuus
+  - semanttinen-yhteentoimivuus
+  - oikeudellinen-yhteentoimivuus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

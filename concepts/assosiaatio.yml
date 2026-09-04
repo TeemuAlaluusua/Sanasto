@@ -1,0 +1,49 @@
+id: assosiaatio
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: assosiaatio
+  type: Suositettava termi
+
+- lang: sv
+  label: association
+  type: Suositettava termi
+
+- lang: en
+  label: association
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tietomallissa kahden luokan välillä oleva ei-hierarkkinen asiayhteys
+
+- lang: sv
+  text: ett icke-hierarkiskt samband mellan två klasser i en datamodell
+
+- lang: en
+  text: non-hierarchical relationship between two classes in a data model
+
+notes: []
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-23
+
+relations:
+  broader:
+  - tietomalli
+
+  narrower: []
+
+  related:
+  - luokka
+  - attribuutti
+  - käsiteskeema
+  - looginen-tietomalli
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

@@ -1,0 +1,64 @@
+id: url
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: yhtenäinen resurssin sijainti
+  type: Suositettava termi
+- lang: fi
+  label: URL
+  type: Lyhenne
+
+- lang: sv
+  label: enhetlig resurslokaliserare
+  type: Suositettava termi
+- lang: sv
+  label: URL
+  type: Lyhenne
+
+- lang: en
+  label: uniform resource locator
+  type: Suositettava termi
+- lang: en
+  label: URL
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    URI-merkkijono, joka yksilöi resurssin ja samalla kertoo, miten
+    ja mistä verkko-osoitteesta resurssi on saatavissa (esim. sen
+    verkkoprotokolla ja sijainti).
+
+- lang: sv
+  text: |
+    En URI-sträng som identifierar en resurs och samtidigt anger hur
+    och varifrån resursen kan hämtas (t.ex. protokoll och plats).
+
+- lang: en
+  text: |
+    A URI string that identifies a resource while also specifying the
+    means of locating it, such as its network protocol and address.
+
+notes:
+- lang: fi
+  text: |
+    URL on yksi URI:n muoto; kaikki URL:t ovat URI:ita, mutta kaikki
+    URI:t eivät ole URL:eja (esim. pelkkä nimeävä URN ei kerro
+    resurssin sijaintia).
+
+sources:
+- lang:
+  label: RFC 3986 - Uniform Resource Identifier (URI)
+  uri: https://www.rfc-editor.org/rfc/rfc3986
+
+relations:
+  broader:
+  - uri
+  narrower: []
+  related: []
+
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

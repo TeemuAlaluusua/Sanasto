@@ -1,0 +1,42 @@
+id: vertailuanalysointi
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: vertailuanalysointi
+  type: Suositettava termi
+
+- lang: sv
+  label: benchmarking
+  type: Suositettava termi
+
+- lang: en
+  label: benchmarking
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Vertailuanalysointi tarkoittaa oman toiminnan vertaamista toisten toimintaan, usein parhaaseen vastaavaan käytäntöön. Vertailuanalysoinnin perusidea on toisilta oppiminen ja oman toiminnan kyseenalaistaminen.
+
+- lang: sv
+  text: Benchmarking innebär att jämföra den egna verksamheten med andras verksamhet, ofta med bästa motsvarande praxis. Grundidén med benchmarking är att lära av andra och att ifrågasätta den egna verksamheten.
+
+- lang: en
+  text: Benchmarking refers to comparing one's own activities with those of others, often with the best corresponding practices. The basic idea of benchmarking is learning from others and questioning one's own operations.
+
+notes: []
+
+sources:
+- lang: fi
+  label: ISO/IEC 29155-1:2011
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related: []
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

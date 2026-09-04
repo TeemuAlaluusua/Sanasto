@@ -1,0 +1,59 @@
+id: uda
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: UDA
+  type: Lyhenne
+
+- lang: fi
+  label: käyttäjän määrittelemä attribuutti
+  type: Suositettava termi
+
+- lang: sv
+  label: användardefinierat attribut
+  type: Suositettava termi
+
+- lang: sv
+  label: UDA
+  type: Lyhenne
+
+- lang: en
+  label: user defined attribute
+  type: Suositettava termi
+
+- lang: en
+  label: UDA
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: käyttäjän määrittelemällä attribuutilla tarkoitetaan suunnitteluohjelmistoissa mallin objekteille talletettavaa liitännäistietoa (metatieto).
+
+- lang: sv
+  text: Med UDA avses tilläggsinformation (metadata) som lagras för modellobjekt i designprogramvara.
+
+- lang: en
+  text: A user defined attribute (UDA) refers to additional information (metadata) stored for model objects in design software.
+
+notes: []
+
+sources:
+- lang: fi
+  label: BEC:2023
+  uri: https://www.elementtisuunnittelu.fi/Download/23982/BEC2012%20Elementtisuunnittelun%20mallinnusohje_v110.pdf
+
+relations:
+  broader:
+  - attribuutti
+
+  narrower: []
+
+  related:
+  - metatieto
+  - tietomalli
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

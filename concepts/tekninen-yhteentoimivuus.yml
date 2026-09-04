@@ -1,0 +1,56 @@
+id: tekninen-yhteentoimivuus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tekninen yhteentoimivuus
+  type: Suositettava termi
+
+- lang: sv
+  label: teknisk interoperabilitet
+  type: Suositettava termi
+
+- lang: en
+  label: technical interoperability
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: yhteentoimivuus, joka mahdollistaa tietotekniikan avulla tehtävät tiedonsiirrot
+
+- lang: sv
+  text: interoperabilitet som gör det möjligt att överföra information med hjälp av informationsteknik
+
+- lang: en
+  text: form of interoperability that enables the transfer of data via information technology
+
+notes:
+- lang: fi
+  text: Tekninen yhteentoimivuus liittyy tekniseen, laitteista ja ohjelmista koostuvaan osaan tietojärjestelmiä. Teknisellä yhteentoimivuudella saavutettavat edut ovat rajallisia, jos tietojärjestelmien välillä ei ole semanttista, organisatorista tai oikeudellista yhteentoimivuutta.
+
+- lang: sv
+  text: Teknisk interoperabilitet hänför sig till den tekniska delen av informationssystem, dvs. hårdvara och programvara. Fördelarna med teknisk interoperabilitet är begränsade om det inte finns semantisk, organisatorisk eller juridisk interoperabilitet mellan informationssystemen.
+
+- lang: en
+  text: Technical interoperability is connected to the technical part of information systems, i.e. hardware and software. However, the benefits of technical interoperability are limited if there is no semantic, organisational or legal interoperability between the information systems.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-42
+
+relations:
+  broader:
+  - yhteentoimivuus
+
+  narrower: []
+
+  related:
+  - semanttinen-yhteentoimivuus
+  - organisatorinen-yhteentoimivuus
+  - oikeudellinen-yhteentoimivuus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

@@ -1,0 +1,71 @@
+id: arvoketju
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: arvoketju
+  type: Suositettava termi
+- lang: fi
+  label: arvoverkko
+  type: Suositettava termi
+- lang: sv
+  label: värdekedja
+  type: Suositettava termi
+- lang: sv
+  label: värdenätverk
+  type: Suositettava termi
+- lang: en
+  label: value chain
+  type: Suositettava termi
+- lang: en
+  label: value network
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    Toimintojen ja toimijoiden muodostama kokonaisuus,
+    jossa tuotteen tai palvelun arvo kasvaa vaiheittain.
+- lang: sv
+  text: |
+    Helhet av aktiviteter eller aktörer som skapar eller mottar värde i form
+    av produkter eller tjänster.
+- lang: en
+  text: |
+    Range of activities or parties that create or receive value in the form of products or services.
+
+notes:
+- lang: fi
+  text: |
+    Arvoketju tarkoittaa tuotteen tai palvelun vaiheittaista jalostumista valmiiksi tuotteeksi tai palveluksi, jossa jokainen vaihe lisää arvoa lopulliseen tuotteeseen tai palveluun.
+    Arvoketju kuvaa tyypillisesti lineaarista prosessia, jossa toiminta etenee vaiheesta toiseen kohti lopputuotetta tai -palvelua. Sitä käytetään usein analysoimaan, missä prosessin vaiheissa arvo syntyy ja miten toimintaa voidaan kehittää tehokkaammaksi.
+notes:
+- lang: fi
+  text: |
+    Arvoverkosto tarkoittaa toimijoiden välisten suhteiden muodostamaa kokonaisuutta, jossa arvo syntyy useiden toimijoiden välisestä vuorovaikutuksesta ja vaihdannasta. Arvoverkostossa organisaatiot, ryhmät tai yksilöt tuottavat toisilleen sekä aineellista arvoa (esim. tuotteet, palvelut, raha) että aineetonta arvoa (esim. tieto, osaaminen, luottamus ja yhteistyö).
+    Toisin kuin arvoketju, arvoverkosto ei ole lineaarinen prosessi, vaan monisuuntainen ja dynaaminen verkosto, jossa toimijat ovat keskenään yhteydessä useilla eri tavoilla. Arvo syntyy toimijoiden välisissä suhteissa, yhteistyössä ja tiedonvaihdossa. Arvoverkosto voi muodostua esimerkiksi yritysten, julkisen sektorin toimijoiden, järjestöjen ja yksilöiden välisestä yhteistyöstä.
+- lang: sv
+  text: |
+    Ett värdenätverk avser en helhet av relationer mellan aktörer där värde uppstår genom interaktion och utbyte mellan flera deltagare. I ett värdenätverk skapar organisationer, grupper eller individer både materiellt värde (t.ex. produkter, tjänster, pengar) och immateriellt värde (t.ex. information, kunskap, förtroende och samarbete) för varandra.
+    Till skillnad från en värdekedja är ett värdenätverk inte en linjär process utan ett mångriktat och dynamiskt nätverk där aktörerna är förbundna med varandra på flera olika sätt. Värde uppstår genom relationer, samarbete och informationsutbyte mellan deltagarna. Ett värdenätverk kan till exempel bestå av samarbete mellan företag, aktörer inom den offentliga sektorn, organisationer och individer.
+- lang: en
+  text: |
+    A value network refers to a set of relationships between actors in which value is created through interaction and exchange among multiple participants. In a value network, organizations, groups, or individuals create both tangible value (e.g. products, services, money) and intangible value (e.g. information, knowledge, trust, and collaboration) for one another.
+    Unlike a value chain, a value network is not a linear process but a multidirectional and dynamic network in which actors are connected in multiple ways. Value emerges through relationships, collaboration, and the exchange of information among participants. A value network may consist, for example, of cooperation between companies, public sector actors, organizations, and individuals.
+
+sources:
+- lang: en
+  label: ISO/PAS 24644-1:2023
+  uri: https://standards.globalspec.com/std/14629302/pas-24644-1
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - toimitusketju
+  - asiakastilauksen-kytkeytymiskohta
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-27T00:00

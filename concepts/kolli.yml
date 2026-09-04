@@ -1,0 +1,39 @@
+id: kolli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: kolli
+  type: Suositettava termi
+- lang: sv
+  label: kolli
+  type: Suositettava termi
+- lang: en
+  label: package
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Kollilla tarkoitetaan matka- tai rahtitavaran lähetyksen pienintä (tarkemmin määrittelemätöntä)
+    kuljetusyksikköä. Jokainen kolli on varustettava niin sanotulla kolliosoitelapulla. Kolliosoitelapussa
+    mainitaan muun muassa lähetyksen toimitusosoite, SSCC-koodi, kollin järjestysnumero ja paino sekä
+    lähetyksen kokonaiskollimäärä ja kollien yhteispaino.
+- lang: sv
+  text: Med kolli avses den minsta (närmare obestämda) transportenheten i en rese- eller fraktgodssändning.
+    Varje kolli ska förses med en så kallad kollietikett. På kollietiketten anges bland annat sändningens
+    leveransadress, SSCC-kod, kollits löpnummer och vikt samt sändningens totala antal kollin och kollinas
+    sammanlagda vikt.
+- lang: en
+  text: A package refers to the smallest (not more precisely defined) shipping unit of a passenger or
+    freight consignment. Each package must be fitted with a so-called package label. The package label
+    states, among other things, the consignment's delivery address, SSCC code, the package's sequence
+    number and weight, as well as the consignment's total number of packages and their combined weight.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - sscc
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

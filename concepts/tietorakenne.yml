@@ -1,0 +1,33 @@
+id: tietorakenne
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tietorakenne
+  type: Suositettava termi
+- lang: sv
+  label: datastruktur
+  type: Suositettava termi
+- lang: en
+  label: data structure
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Ennalta määritelty struktuuri, johon informaatio voidaan tallentaa.
+- lang: sv
+  text: En fördefinierad struktur i vilken information kan lagras.
+- lang: en
+  text: A predefined structure in which information can be stored.
+notes: []
+sources:
+- lang: fi
+  label: 'Ympäristöministeriö, Yleiset tietomallivaatimukset: 2022'
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietue
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

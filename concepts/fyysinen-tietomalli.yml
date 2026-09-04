@@ -1,0 +1,68 @@
+id: fyysinen-tietomalli
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: fyysinen tietomalli
+    type: Suositettava termi
+
+  - lang: sv
+    label: fysisk datamodell
+    type: Suositettava termi
+
+  - lang: en
+    label: physical data model
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: tietomalli, joka kuvaa tietojen tallentamisen teknisellä tasolla tietokantarakenteena
+
+  - lang: sv
+    text: datamodell som beskriver lagringen av data på teknisk nivå som en databasstruktur
+
+  - lang: en
+    text: data model describing the storage of data at a technical level as a database structure
+
+notes:
+  - lang: fi
+    text: |
+      Fyysinen tietomalli on loogisesta tietomallista
+      tarkemmalle tasolle viety kuvaus, jossa otetaan
+      kantaa tietokannan käytännön tekniseen toteutukseen
+      valitulla teknologialla.
+
+  - lang: sv
+    text: |
+      En fysisk datamodell är en mer detaljerad
+      beskrivning av en logisk datamodell där den
+      praktiska tekniska implementeringen i en databas
+      med vald teknologi specificeras.
+
+  - lang: en
+    text: |
+      A physical data model is a more detailed
+      representation of a logical data model specifying
+      the practical technical implementation in a
+      database using a chosen technology.
+
+sources:
+  - lang: fi
+    label: Suomi.fi-sanasto – RY-mallit
+    uri: https://iri.suomi.fi/terminology/rymallit/c14
+
+relations:
+  broader:
+    - tietomalli
+    - looginen-tietomalli
+
+  narrower: []
+
+  related:
+    - käsitemalli
+    - tietokanta
+
+metadata:
+  created: "2025-12-23T14:08"
+  modified: "2026-03-14T00:00"

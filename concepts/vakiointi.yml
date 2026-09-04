@@ -1,0 +1,31 @@
+id: vakiointi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: vakiointi
+  type: Suositettava termi
+- lang: sv
+  label: enhetliggörande
+  type: Suositettava termi
+- lang: en
+  label: standardization (of practices)
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Vakioinnilla tarkoitetaan tiedonhallinnan ja toimintatapojen yhdenmukaistamista ja vakiinnuttamista.
+- lang: sv
+  text: Med enhetliggörande avses harmonisering och etablering av informationshantering och tillvägagångssätt.
+- lang: en
+  text: Standardization (of practices) refers to the harmonization and establishment of information management
+    and operating methods.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - standardointi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

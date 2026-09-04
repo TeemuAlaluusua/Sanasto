@@ -1,0 +1,49 @@
+id: avoin-data
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: avoin data
+  type: Suositettava termi
+
+- lang: sv
+  label: öppna data
+  type: Suositettava termi
+
+- lang: en
+  label: open data
+  type: Suositettava termi
+  
+definitions:
+- lang: fi
+  text: |
+    data, joka on tarjolla muille ja jota kuka tahansa saa vapaasti
+    käyttää, kierrättää, julkaista uudelleen ja levittää edelleen.
+
+- lang: sv
+  text: |
+    data som är tillgängliga för andra och som vem som helst fritt
+    får använda, återanvända, publicera på nytt och vidareförmedla.
+
+- lang: en
+  text: |
+    data that are available to others and that anyone may freely
+    use, reuse, republish and redistribute.
+
+notes: []
+
+sources:
+- lang: en
+  label: ISO 5127:2022
+  uri: 
+
+relations:
+  broader:
+  - data
+  narrower: []
+  related: []
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

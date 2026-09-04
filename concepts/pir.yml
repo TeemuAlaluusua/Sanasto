@@ -1,0 +1,65 @@
+id: pir
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: projektin informaatiovaatimukset
+  type: Suositettava termi
+- lang: fi
+  label: PIR
+  type: Lyhenne
+
+- lang: sv
+  label: projektets informationskrav
+  type: Suositettava termi
+- lang: sv
+  label: PIR
+  type: Lyhenne
+
+- lang: en
+  label: project information requirements
+  type: Suositettava termi
+- lang: en
+  label: PIR
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: Informaatiovaatimukset, jotka kuvaavat mitä tietoa tarvitaan tukemaan projektin tavoitteisiin liittyvää päätöksentekoa projektin eri vaiheissa.
+
+- lang: sv
+  text: Informationskrav som beskriver vilken information som behövs för att stödja beslutsfattande relaterat till projektets mål under projektets olika skeden.
+
+- lang: en
+  text: Information requirements describing what information is needed to support decision-making related to the project's objectives at each project stage.
+
+notes:
+- lang: fi
+  text: |
+    PIR johdetaan organisaation informaatiovaatimuksista (OIR) ja
+    omaisuuskohteen informaatiovaatimuksista (AIR), ja se puolestaan
+    ohjaa vaihekohtaisten informaation vaihdon vaatimusten (EIR)
+    määrittelyä ISO 19650 -standardin mukaisessa mallissa.
+
+sources:
+- lang: fi
+  label: EN ISO 19650-1:2018
+  uri: https://www.iso.org/standard/68078.html
+
+- lang: fi
+  label: Suomi.fi-sanasto EN 19650
+  uri: https://sanastot.suomi.fi/terminology/en19650/concept-21
+
+relations:
+  broader:
+  - informaatiovaatimus
+  narrower: []
+  related:
+  - oir
+  - air
+  - eir
+
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

@@ -1,0 +1,36 @@
+id: tapahtumatieto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tapahtumatieto
+  type: Suositettava termi
+- lang: sv
+  label: händelsedata
+  type: Suositettava termi
+- lang: en
+  label: event data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tapahtumatiedot ovat eräänlaisia tietoja, joita kerätään ja tallennetaan erilaisilla seurantatyökaluilla
+    tai -menetelmillä, jotta saadaan tietoa toimitusketjun tapahtumista.
+- lang: sv
+  text: Händelsedata är en typ av information som samlas in och lagras med olika uppföljningsverktyg eller
+    -metoder för att få information om händelser i leveranskedjan.
+- lang: en
+  text: Event data is a type of information collected and stored using various monitoring tools or methods
+    in order to obtain information on events within the supply chain.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 14478-2:1998
+  uri: https://www.iso.org
+relations:
+  broader: []
+  narrower: []
+  related:
+  - lokitieto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

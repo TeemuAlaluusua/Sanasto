@@ -1,0 +1,60 @@
+id: vdc
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: virtuaalinen suunnittelu ja rakentaminen
+    type: Suositettava termi
+  - lang: fi
+    label: VDC
+    type: Lyhenne
+  - lang: sv
+    label: virtuell projektering och byggande
+    type: Suositettava termi
+  - lang: sv
+    label: VDC
+    type: Lyhenne
+  - lang: en
+    label: virtual design and construction
+    type: Suositettava termi
+  - lang: en
+    label: VDC
+    type: Lyhenne
+definitions:
+  - lang: fi
+    text: Toimintatapa (VDC), jossa rakennushanketta ja sen toteutusprosessia tarkastellaan virtuaalisesti rakennustietomallien avulla ennen toteutusta.
+  - lang: sv
+    text: Arbetssätt (VDC) där byggprojekt och dess genomförandeprocess analyseras virtuellt med hjälp av byggnadsinformationsmodeller före utförande.
+  - lang: en
+    text: Practice (VDC) of using building information modeling to virtually analyze a construction project and its process before execution.
+notes:
+  - lang: fi
+    text: |
+      VDC perustuu rakennustietomallien hyödyntämiseen ensimmäisenä simulaationa rakennusprosessista.
+      Suunnittelijat ja rakentajat testaavat sekä tuotetta että rakentamisprosessia virtuaalisesti ennen työmaan toteutusta.
+      Menetelmässä tarkastellaan monialaisia suorituskykymalleja, jotka kattavat tilat, työprosessit, toimitusketjut ja projektiorganisaation.
+      Tavoitteena on tunnistaa ja poistaa rajoitteita sekä parantaa hankkeen suorituskykyä ja lopputulosta.
+  - lang: sv
+    text: |
+      VDC bygger på användning av byggnadsinformationsmodeller som en första simulering av byggprocessen.
+      Projektörer och byggare testar både produkt och process virtuellt före genomförandet.
+      Metoden omfattar integrerade tvärdisciplinära prestandamodeller som inkluderar anläggningar, arbetsprocesser, leveranskedjor och projektteam.
+      Syftet är att identifiera och eliminera begränsningar samt förbättra projektets resultat och den färdiga anläggningen.
+  - lang: en
+    text: |
+      VDC uses building information modeling as a first-run study of the construction process.
+      Designers and builders test both the product and the construction process virtually before field execution.
+      It involves integrated multidisciplinary performance models of facilities, work processes, supply chains, and project teams.
+      The goal is to identify and remove constraints and improve project performance and outcomes.
+sources:
+  - lang: en
+    label: BIM Handbook, Fourth Edition – A Guide to Building Information Modeling for Owners, Designers, Engineers, Contractors, and Facility Managers (Sacks, Lee, Burdi, Bolpagni)
+    uri: ""
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietomalli
+metadata:
+  created: 2026-03-19T00:00
+  modified: 2026-03-22T00:00

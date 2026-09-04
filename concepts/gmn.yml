@@ -1,0 +1,45 @@
+id: gmn
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tuotemallin tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GMN
+  type: Lyhenne
+- lang: sv
+  label: globalt modellnummer
+  type: Suositettava termi
+- lang: sv
+  label: GMN
+  type: Lyhenne
+- lang: en
+  label: Global Model Number
+  type: Suositettava termi
+- lang: en
+  label: GMN
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GMN on GS1:n yksilöinnin standardi, jonka käyttökohteena on laskentaryhmän, tuotetyyppien tai
+    tuotteen mallin yksilöinti.
+- lang: sv
+  text: GMN är en GS1-identifieringsstandard som används för att identifiera en produktmodell, en produkttyp
+    eller en grupp av handelsvaror.
+- lang: en
+  text: GMN is a GS1 identification standard used to identify a product model, a product type, or a group
+    of trade items.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

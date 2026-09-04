@@ -1,0 +1,34 @@
+id: de-facto-standardi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: de-facto standardi
+  type: Suositettava termi
+- lang: sv
+  label: de facto-standard
+  type: Suositettava termi
+- lang: en
+  label: de facto standard
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Käytännön standardin aseman saavuttanut menetelmä tms., jota ei ole standardoitu virallisessa
+    standardointiorganisaatiossa.
+- lang: sv
+  text: En metod eller liknande som har uppnått ställning som praktisk standard utan att ha standardiserats
+    av en officiell standardiseringsorganisation.
+- lang: en
+  text: A method or similar that has achieved the status of a practical standard without having been standardized
+    by an official standards organization.
+notes: []
+sources: []
+relations:
+  broader:
+  - standardi
+  narrower: []
+  related:
+  - etim-standardi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

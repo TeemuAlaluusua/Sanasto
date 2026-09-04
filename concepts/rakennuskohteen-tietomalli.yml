@@ -1,0 +1,55 @@
+id: rakennuskohteen-tietomalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rakennuskohteen tietomalli
+  type: Suositettava termi
+- lang: sv
+  label: datamodell av byggnadsobjekt
+  type: Suositettava termi
+- lang: en
+  label: data model for construction entity
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: tietomalli, joka on tarkoitettu rakennuskohteen tietojen kuvaamiseen
+- lang: sv
+  text: datamodell avsedd för att beskriva uppgifter om byggnadsobjektet
+- lang: en
+  text: data model intended for describing information on the construction entity
+notes:
+- lang: fi
+  text: 'Käsitejärjestelmäkaavio: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: fi
+  text: Sekä talonrakennuksen että infrarakentamisen kohteet ovat rakennuskohteita.
+- lang: fi
+  text: Rakennuskohteen tietomalli esitetään usein koneluettavassa muodossa.
+- lang: sv
+  text: 'Begreppssystemschema: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: sv
+  text: Både husbyggnads- och infrastrukturobjekt är byggnadsobjekt.
+- lang: sv
+  text: Byggnadsobjektets datamodell presenteras ofta i maskinläsbar form.
+- lang: en
+  text: 'Concept system diagram: https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg'
+- lang: en
+  text: Both building construction and infrastructure construction entities are construction entities.
+- lang: en
+  text: A construction entity's data model is often presented in machine-readable form.
+sources:
+- lang: fi
+  label: Sanastokeskus, RY-mallit -sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c8
+relations:
+  broader:
+  - tietomalli
+  narrower:
+  - rakentamisen-lupapaatosten-tietomalli
+  related:
+  - rakennuskohde
+  - rakennuskohteen-tietomallinnus
+  - toteutusmalli--tuotantomalli
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-08-28T00:00

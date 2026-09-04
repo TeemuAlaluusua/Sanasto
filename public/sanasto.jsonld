@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "https://w3id.org/betk/sanasto/digitaalinen-kaksonen",
+      "@type": "skos:Concept",
+      "skos:prefLabel": [
+        {
+          "@value": "digitaalinen kaksonen",
+          "@language": "fi"
+        },
+        {
+          "@value": "digital twin",
+          "@language": "en"
+        }
+      ],
+      "skos:definition": [
+        {
+          "@value": "Digitaalinen esitys, joka mahdollistaa fyysisen ja digitaalisen kohteen tilan synkronoinnin.",
+          "@language": "fi"
+        }
+      ]
+    }
+  ],
+  "skos:prefLabel": [
+    {
+      "@value": "Rakentamisen tieto- ja informaatiomallien sanasto",
+      "@language": "fi"
+    },
+    {
+      "@value": "Ordlista för data- och informationsmodeller inom byggande (utkast)",
+      "@language": "sv"
+    },
+    {
+      "@value": "Glossary of Data and Information Models in Construction (draft)",
+      "@language": "en"
+    }
+  ]
+}

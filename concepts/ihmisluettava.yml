@@ -1,0 +1,45 @@
+id: ihmisluettava
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ihmisluettava
+  type: Suositettava termi
+- lang: sv
+  label: mänskligt läsbar
+  type: Suositettava termi
+- lang: en
+  label: human-readable
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Ihmisten käyttötarkoituksiin luotua tietoa. Esimerkiksi kaksiulotteiset kartat, piirrokset ja
+    sanalliset selostukset. Käytetään kuvaamaan tiedon muotoa, josta voi lukea suoraan ja ymmärrettävästi
+    asioiden merkityksen.
+- lang: sv
+  text: Information som skapats för mänskliga användningsändamål. Till exempel tvådimensionella kartor,
+    ritningar och verbala beskrivningar. Används för att beskriva en informationsform som direkt och begripligt
+    kan läsas för att förstå innebörden av saker.
+- lang: en
+  text: Information created for human purposes. For example, two-dimensional maps, drawings and verbal
+    descriptions. Used to describe a form of information that can be read directly and understandably
+    to grasp the meaning of things.
+notes:
+- lang: fi
+  text: vrt. koneluettava
+- lang: sv
+  text: jfr. maskinläsbar
+- lang: en
+  text: cf. machine-readable
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - koneluettava
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

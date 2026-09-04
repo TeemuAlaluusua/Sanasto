@@ -1,0 +1,52 @@
+id: yksilöintitieto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: yksilöintitieto
+  type: Suositettava termi
+
+- lang: sv
+  label: identifieringsuppgift
+  type: Suositettava termi
+
+- lang: en
+  label: identifying information
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Tieto tai tietojoukko, jonka avulla toimija, kohde tai tietomallin objekti voidaan yksiselitteisesti tunnistaa ja erottaa muista.
+
+- lang: sv
+  text: Uppgift eller uppsättning uppgifter med vilka en aktör, ett objekt eller ett objekt i en informationsmodell kan identifieras entydigt och särskiljas från andra.
+
+- lang: en
+  text: Information or a set of information by which an actor, an object or an object in an information model can be uniquely identified and distinguished from others.
+
+notes:
+- lang: fi
+  text: Yksilöintitieto voi olla yksittäinen tunniste (esim. tunnus, koodi, GUID) tai tunnisteiden yhdistelmä. Rakentamisen tietomalleissa yksilöintitieto liitetään esimerkiksi rakennusosiin, järjestelmiin, tiloihin ja laitteisiin elinkaaren aikaisen jäljitettävyyden ja hallinnan varmistamiseksi.
+
+- lang: sv
+  text: Identifieringsuppgifter kan vara en enskild identifierare (t.ex. beteckning, kod, GUID) eller en kombination av identifierare. I byggandets informationsmodeller kopplas identifieringsuppgifter till exempel till byggnadsdelar, system, utrymmen och utrustning för att säkerställa spårbarhet och hantering under livscykeln.
+
+- lang: en
+  text: Identifying information can consist of a single identifier (e.g. identifier, code, GUID) or a combination of identifiers. In construction information models, identifying information is associated for example with building elements, systems, spaces and equipment to ensure lifecycle traceability and management.
+
+sources:
+- lang: fi
+  label: "Suomi.fi-sanastot: Yritysdigi – yksilöintitieto"
+  url: https://sanastot.suomi.fi/terminology/yritysdigi/concept/concept-2062
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - uri
+  - yksilöinti
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-27T10:48:00

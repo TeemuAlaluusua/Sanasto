@@ -1,0 +1,65 @@
+id: peppol-verkosto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: Peppol-verkosto
+  type: Suositettava termi
+
+- lang: sv
+  label: Peppol-nätverk
+  type: Suositettava termi
+
+- lang: en
+  label: Peppol network
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: sähköisten sanomien välitysverkosto, joka perustuu yhteisesti sovituille tiedonsiirtotavoille, tietomalleille ja liiketoimintasäännöille
+
+- lang: sv
+  text: nätverk för överföring av elektroniska meddelanden som bygger på gemensamt överenskomna överföringssätt, datamodeller och affärsregler
+
+- lang: en
+  text: network for exchanging electronic messages based on commonly agreed transmission methods, data models and business rules
+
+notes:
+- lang: fi
+  text: |
+    PEPPOL-verkoston käyttäjät vaihtavat verkostossa keskenään muun muassa
+    hankintasanomia, verkkolaskuja ja viranomaisraportteja.
+
+- lang: fi
+  text: |
+    PEPPOL-verkostoa hallinnoi OpenPEPPOL-yhdistys.
+
+- lang: sv
+  text: |
+    Användare av PEPPOL-nätverket utbyter bland annat upphandlingsmeddelanden,
+    e-fakturor och myndighetsrapporter.
+
+- lang: en
+  text: |
+    Users of the PEPPOL network exchange procurement messages, e-invoices
+    and regulatory reports.
+
+sources:
+- lang: fi
+  label: YTI – PEPPOL-verkosto
+  uri: https://iri.suomi.fi/terminology/yritysdigi/concept-2087
+
+relations:
+  broader: []
+
+  narrower: []
+
+  related:
+  - edi
+  - finvoice
+  - ubl
+
+metadata:
+  created: 2026-03-17T00:00
+  modified: 2026-03-17T00:00

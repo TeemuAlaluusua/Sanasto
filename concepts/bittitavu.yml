@@ -1,0 +1,54 @@
+id: bittitavu
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: bittitavu
+  type: Suositettava termi
+
+- lang: fi
+  label: tavu
+  type: Synonyymi
+
+- lang: sv
+  label: byte
+  type: Suositettava termi
+
+- lang: en
+  label: byte
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Tavu on tietotekniikassa käytettävä mittayksikkö sellaiselle tallennuskapasiteetille, joka on riippumaton tallennetun datan tyypistä. Bitin jälkeen seuraavaksi pienin yksikkö on tavu (t), joka on kahdeksan bittiä, eli esimerkiksi merkkijono 00010101.
+
+- lang: sv
+  text: En byte är en måttenhet inom datateknik för lagringskapacitet som är oberoende av typen av lagrad data. Näst efter biten är byten den minsta enheten och motsvarar åtta bitar, till exempel bitsekvensen 00010101.
+
+- lang: en
+  text: A byte is a unit of storage capacity in computing that is independent of the type of stored data. The byte is the next smallest unit after the bit and consists of eight bits, for example the bit sequence 00010101.
+
+notes: []
+
+sources:
+- lang: fi
+  label: EN 1556:1998
+  uri: https://sales.sfs.fi/fi/index/tuotteet/SFS/CEN/ID2/1/246564.html.stx
+
+- lang: fi
+  label: ISO/IEC 19762-1:2025
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - bitti
+
+  narrower: []
+
+  related:
+  - data
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

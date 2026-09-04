@@ -1,0 +1,61 @@
+id: esitysformaatti
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: esitysformaatti
+    type: Suositettava termi
+  - lang: sv
+    label: presentationsformat
+    type: Suositettava termi
+  - lang: en
+    label: presentation format
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: "dataformaatti, jonka avulla digitaalinen data esitetään näyttöruudulla niin, että ihmiset pystyvät tulkitsemaan sitä"
+  - lang: sv
+    text: "dataformat som används för att presentera digital data på en skärm så att människor kan tolka informationen"
+  - lang: en
+    text: "data format for the configuration of the display of digital data on the screen interface in a manner interpretable for human users"
+
+notes:
+  - lang: fi
+    text: |
+      Esitysformaatti määrittelee, miten digitaalinen tieto esitetään
+      käyttäjälle visuaalisessa käyttöliittymässä. Se voi sisältää esimerkiksi
+      tekstin, taulukoiden, kuvien, karttojen tai muiden graafisten elementtien
+      esitystavan. Esitysformaatti eroaa tallennusformaatista siinä, että se
+      keskittyy tiedon esittämiseen ihmiselle eikä sen tekniseen tallennukseen.
+  - lang: sv
+    text: |
+      Presentationsformat anger hur digital information visas för användaren
+      i ett visuellt gränssnitt. Det kan omfatta till exempel hur text,
+      tabeller, bilder, kartor eller andra grafiska element presenteras.
+      Presentationsformat skiljer sig från lagringsformat genom att fokus
+      ligger på hur informationen presenteras för människor snarare än hur
+      den lagras tekniskt.
+  - lang: en
+    text: |
+      A presentation format defines how digital information is displayed to
+      users in a visual interface. It may include the presentation of text,
+      tables, images, maps, or other graphical elements. A presentation
+      format differs from a storage format in that it focuses on how data is
+      presented to humans rather than how it is technically stored.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022 Information and documentation — Foundation and vocabulary
+    url: 
+
+relations:
+  broader:
+    - dataformaatti
+  narrower: []
+  related: []
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

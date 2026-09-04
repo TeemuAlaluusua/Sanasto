@@ -1,0 +1,55 @@
+id: mom
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tuotannon operatiivinen hallinta
+  type: Suositettava termi
+- lang: fi
+  label: MOM
+  type: Lyhenne
+
+- lang: sv
+  label: operativ produktionsstyrning
+  type: Suositettava termi
+- lang: sv
+  label: MOM
+  type: Lyhenne
+
+- lang: en
+  label: manufacturing operations management
+  type: Suositettava termi
+- lang: en
+  label: MOM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: tuotannon operatiivisten toimintojen hallintaa tukeva järjestelmien ja prosessien kokonaisuus
+
+- lang: sv
+  text: helhet av system och processer för styrning och hantering av operativa produktionsaktiviteter
+
+- lang: en
+  text: set of systems and processes used to manage and control manufacturing operations
+
+notes:
+- lang: fi
+  text: MOM yhdistää tuotannon suunnittelun, toteutuksen, seurannan ja analysoinnin tuotantoympäristössä.
+
+sources:
+- lang: en
+  label: ISO/TR 3151-1:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - plm
+  - mes
+  - bop
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-30T00:00

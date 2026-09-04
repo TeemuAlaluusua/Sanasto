@@ -1,0 +1,42 @@
+id: epcis
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: EPCIS
+  type: Suositettava termi
+- lang: sv
+  label: EPCIS
+  type: Suositettava termi
+- lang: en
+  label: Electronic Product Code Information Services
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: EPCIS on GS1-standardi, joka on suunniteltu helpottamaan tapahtumatietojen luomista, tallentamista
+    ja jakamista organisaatioiden välillä koko toimitusketjussa. EPCIS tarjoaa yhtenäisen tietorakenteen
+    ja formaatin tapahtumien kuvaamiseen, mikä mahdollistaa tuotteiden ja omaisuuden tilan, sijainnin,
+    liikkeiden ja alkuperän seuraamisen.
+- lang: sv
+  text: EPCIS är en GS1-standard som är utformad för att underlätta skapande, lagring och delning av händelsedata
+    mellan organisationer i hela leveranskedjan. EPCIS erbjuder en enhetlig datastruktur och ett enhetligt
+    format för att beskriva händelser, vilket möjliggör spårning av produkters och tillgångars status,
+    plats, rörelser och ursprung.
+- lang: en
+  text: EPCIS is a GS1 standard designed to facilitate the creation, storage and sharing of event data
+    between organizations throughout the supply chain. EPCIS provides a uniform data structure and format
+    for describing events, enabling tracking of the status, location, movements and origin of products
+    and assets.
+notes: []
+sources:
+- lang: fi
+  label: GS1 Finland:2025
+  uri: https://gs1.fi/fi/standardit/gs1n-tiedon-jakamisen-standardit
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

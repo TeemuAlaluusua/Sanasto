@@ -1,0 +1,67 @@
+id: bom
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tuoteosaluettelo
+  type: Suositettava termi
+- lang: fi
+  label: BOM
+  type: Lyhenne
+
+- lang: sv
+  label: materiaalilista
+  type: Suositettava termi
+- lang: sv
+  label: BOM
+  type: Lyhenne
+
+- lang: en
+  label: bill of material
+  type: Suositettava termi
+- lang: en
+  label: BOM
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Luettelo kaikista osakokoonpanoista, osista ja/tai
+    materiaaleista, joita käytetään tuotteen valmistuksessa,
+    mukaan lukien kunkin materiaalin määrä tuotteen
+    valmistamiseksi.
+
+- lang: sv
+  text: |
+    Lista över alla delmonteringar, delar och/eller material
+    som används vid produktion av en produkt, inklusive den
+    mängd av varje material som behövs för att tillverka
+    produkten.
+
+- lang: en
+  text: |
+    Listing of all the subassemblies, parts, and/or materials
+    that are used in the production of a product, including
+    the quantity of each material required to make a product.
+
+notes: []
+
+sources:
+- lang: en
+  label: ISO/TR 3151-1:2023(E)
+  uri: 
+
+relations:
+  broader: []
+  narrower:
+  - ebom
+  - mbom
+  related:
+  - komponentti
+  - bop
+  - plm
+
+metadata:
+  created: "2026-03-14T00:00"
+  modified: "2026-03-14T00:00"

@@ -1,0 +1,60 @@
+id: data
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: data
+  type: Suositettava termi
+
+- lang: sv
+  label: data
+  type: Suositettava termi
+
+- lang: en
+  label: data
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Datalla tarkoitetaan informaation uudelleen tulkittavissa olevaa esitystapaa virallistetulla tavalla, joka soveltuu viestintään, tulkintaan tai käsittelyyn.
+
+- lang: sv
+  text: Data avser en formaliserad representation av information som kan tolkas på nytt och som lämpar sig för kommunikation, tolkning eller behandling.
+
+- lang: en
+  text: Data refers to a formalized representation of information that can be reinterpreted and is suitable for communication, interpretation or processing.
+
+notes: []
+
+sources:
+- lang: fi
+  label: ISO 5127:2017
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - informaatio
+
+  narrower:
+  - avoin-data
+  - big-data
+  - informaatio
+  - koneluettavuus
+  - linkitetty-data
+
+  related:
+  - metatieto
+  - tietue
+  - tietomalli
+  - tiedonhallinta
+  - bitti
+  - bittitavu
+  - digitalisaatio
+  - digitointi
+  - it
+  - koneoppiminen
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

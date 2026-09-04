@@ -1,0 +1,42 @@
+id: gtin-tunnus
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: GTIN-tunnus
+  type: Suositettava termi
+- lang: fi
+  label: kansainvälinen tuotenumero
+  type: Suositettava termi
+- lang: sv
+  label: GTIN
+  type: Suositettava termi
+- lang: en
+  label: GTIN
+  type: Suositettava termi
+- lang: en
+  label: Global Trade Item Number
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: standardi koodin ainutkertainen numero, jota käytetään kansainvälisesti tunnistamaan tuotteita
+    ja pakkauksia
+- lang: sv
+  text: ett unikt nummer i en standardiserad kod som används internationellt för att identifiera produkter
+    och förpackningar
+- lang: en
+  text: a unique number in a standard code used internationally to identify products and packages
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2022
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related:
+  - cpid
+  - sgtin
+metadata:
+  created: 2026-03-05T12:00
+  modified: 2026-08-28T00:00

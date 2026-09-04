@@ -1,0 +1,105 @@
+id: json
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: JSON
+  type: Suositettava termi
+- lang: sv
+  label: JSON
+  type: Suositettava termi
+- lang: en
+  label: JavaScript Object Notation
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: JSON on yksinkertainen ja kevyt tietojen vaihtoon tarkoitettu avoimen standardin tiedostomuoto
+    tiedonvälitykseen, joka perustuu JavaScriptiin. Se on ihmisen luettavissa oleva ja koneiden helppokäyttöinen
+    formaatti, jota käytetään usein tietojen tallentamiseen ja välittämiseen web-sovellusten välillä.
+    JSON-muotoa käytetään yleisesti RESTful-rajapintojen yhteydessä, jolloin tietoja lähetetään ja vastaanotetaan
+    HTTP-pyyntöjen ja -vastausten kautta. JSON-rakenteet koostuvat avain-arvo-pareista, jotka voidaan
+    sisällyttää objekteihin ja taulukoihin.
+- lang: sv
+  text: JSON är ett enkelt och lätt filformat med öppen standard avsett för datautbyte, baserat på JavaScript.
+    Det är ett format som är läsbart för människor och lätthanterligt för maskiner, och som ofta används
+    för att lagra och förmedla data mellan webbapplikationer. JSON-formatet används vanligen i samband
+    med RESTful-gränssnitt, där data skickas och tas emot via HTTP-förfrågningar och -svar. JSON-strukturer
+    består av nyckel-värde-par som kan ingå i objekt och tabeller.
+- lang: en
+  text: JSON is a simple and lightweight open-standard file format for data interchange, based on JavaScript.
+    It is a human-readable and machine-friendly format that is often used to store and transmit data between
+    web applications. JSON is commonly used with RESTful interfaces, where data is sent and received via
+    HTTP requests and responses. JSON structures consist of key-value pairs, which can be nested in objects
+    and arrays.
+notes:
+- lang: fi
+  text: |-
+    JSON-notaatio määrittelee olion alkavaksi aaltosululla {, jota seuraa oliomuuttujien nimet ja niiden arvot. Lopulta olio päätetään sulkevaan aaltosulkuun }. Oliomuuttujien nimet ovat lainausmerkeissä ", sillä ne käsitellään merkkijonoina. Muuttujien arvot ovat arvon tyypistä riippuen lainausmerkeissä. Esimerkiksi:
+
+    ```
+    {
+      "tuote": {
+        "nimi": "Ruuvi",
+        "materiaali": "Teräs",
+        "koko": {
+          "pituus": "3 cm",
+          "halkaisija": "2 mm"
+        },
+        "hinta": "0.05 euroa/kpl"
+      }
+    }
+    ```
+
+    Tässä JSON-esimerkissä on objekti, joka kuvaa ruuvia. Objekti sisältää avain-arvo-pareja, kuten "nimi", "materiaali", "koko" ja "hinta". Ruuvin koko on esitetty toisessa objektissa, joka sisältää avain-arvo-pareja pituudelle ja halkaisijalle.
+- lang: sv
+  text: |-
+    JSON-notationen inleder ett objekt med en klammerparentes {, följd av objektvariablernas namn och deras värden. Till sist avslutas objektet med en klammerparentes }. Objektvariablernas namn står inom citattecken ", eftersom de behandlas som strängar. Variablernas värden står inom citattecken beroende på värdets typ. Exempel:
+
+    ```
+    {
+      "tuote": {
+        "nimi": "Ruuvi",
+        "materiaali": "Teräs",
+        "koko": {
+          "pituus": "3 cm",
+          "halkaisija": "2 mm"
+        },
+        "hinta": "0.05 euroa/kpl"
+      }
+    }
+    ```
+
+    I detta JSON-exempel finns ett objekt som beskriver en skruv. Objektet innehåller nyckel-värde-par, såsom "nimi" (namn), "materiaali" (material), "koko" (storlek) och "hinta" (pris). Skruvens storlek presenteras i ett underordnat objekt som innehåller nyckel-värde-par för längd och diameter.
+- lang: en
+  text: |-
+    JSON notation defines an object starting with an opening curly brace {, followed by the object's member names and their values. The object is finally closed with a closing curly brace }. Member names are enclosed in quotation marks ", since they are treated as strings. Depending on the value's type, values may also be enclosed in quotation marks. For example:
+
+    ```
+    {
+      "tuote": {
+        "nimi": "Ruuvi",
+        "materiaali": "Teräs",
+        "koko": {
+          "pituus": "3 cm",
+          "halkaisija": "2 mm"
+        },
+        "hinta": "0.05 euroa/kpl"
+      }
+    }
+    ```
+
+    This JSON example contains an object describing a screw ("tuote"). The object contains key-value pairs such as "nimi" (name), "materiaali" (material), "koko" (size) and "hinta" (price). The screw's size is presented in a nested object containing key-value pairs for length and diameter.
+sources:
+- lang: fi
+  label: 'Ympäristöministeriö, RASTI-projekti: 2019'
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+relations:
+  broader: []
+  narrower: []
+  related:
+  - xpath
+  - ifcjson
+  - rakenteellinen-aineisto-strukturoitu-data
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,50 @@
+id: rakenteeton-aineisto--strukturoimaton-data
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rakenteeton aineisto / strukturoimaton data
+  type: Suositettava termi
+- lang: sv
+  label: ostrukturerad data
+  type: Suositettava termi
+- lang: en
+  label: unstructured data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Strukturoimaton data on aineiston laji, jossa kullakin tietoaineiston tapauksella voi olla oma
+    sisäinen rakenteensa eli kunkin tapauksen rakenne ei välttämättä ole sama. Esimerkiksi tekstiaineistot
+    ovat usein rakenteettomia ja kunkin tapauksen rakenteellisen esityksen eristäminen edellyttää toimintojen
+    sarjan soveltamista. Rakennusalalla rakenteeton aineisto on paljon yleisempää kuin rakenteellinen.
+    Esimerkiksi ihmisen tuottamat tiedot kuten sähköpostit, pdf tiedostot ja kuvat ovat rakenteetonta
+    aineistoa koska aineiston osien rakenne muuntelee voimakkaasti. Rakenteetonta aineistoa on vaikea
+    analysoida raa'assa muodossa, mikä edellyttää ihmisen tulkitsemaan sekä välittämään tietoa toimitusketjussa.
+- lang: sv
+  text: Ostrukturerad data är en typ av material där varje enskilt fall i datamaterialet kan ha sin egen
+    inre struktur, det vill säga strukturen är inte nödvändigtvis densamma i varje fall. Textmaterial
+    är till exempel ofta ostrukturerat, och för att urskilja en strukturerad representation av varje fall
+    krävs att en serie åtgärder tillämpas. Inom byggbranschen är ostrukturerat material betydligt vanligare
+    än strukturerat. Till exempel mänskligt genererad information såsom e-post, pdf-filer och bilder är
+    ostrukturerat material, eftersom strukturen hos materialets delar varierar kraftigt. Ostrukturerat
+    material är svårt att analysera i rå form, vilket kräver att en människa tolkar och förmedlar informationen
+    i leveranskedjan.
+- lang: en
+  text: Unstructured data is a type of material in which each individual case in the data set may have
+    its own internal structure, i.e. the structure is not necessarily the same from case to case. Text
+    data, for example, is often unstructured, and isolating a structured representation of each case requires
+    applying a series of operations. In the construction industry, unstructured material is far more common
+    than structured material. For example, human-generated data such as emails, PDF files and images are
+    unstructured material, because the structure of the parts of the material varies greatly. Unstructured
+    material is difficult to analyze in its raw form, which requires a person to interpret and communicate
+    the information within the supply chain.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rakenteellinen-aineisto-strukturoitu-data
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

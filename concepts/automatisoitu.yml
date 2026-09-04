@@ -1,0 +1,68 @@
+id: automatisoitu
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: automatisoitu
+  type: Suositettava termi
+  
+- lang: fi
+  label: automaattinen
+  type: Suositettava termi
+  
+- lang: fi
+  label: automaatio
+  type: Suositettava termi
+
+- lang: sv
+  label: automatiserad
+  type: Suositettava termi
+
+- lang: sv
+  label: automatisk
+  type: Suositettava termi
+
+- lang: sv
+  label: automatik
+  type: Suositettava termi
+
+- lang: en
+  label: automatic
+  type: Suositettava termi
+
+- lang: en
+  label: automation
+  type: Suositettava termi
+
+- lang: en
+  label: automated
+  type: Suositettava termi
+  
+definitions:
+- lang: fi
+  text: |
+    Prosessi tai järjestelmä, joka tietyissä olosuhteissa toimii ilman ihmisen puuttumista.
+- lang: sv
+  text: |
+    process eller system som under angivna förhållanden fungerar utan mänsklig inblandning
+- lang: en
+  text: |
+    Pertaining to a process or system that, under specified conditions, functions without human intervention
+    
+notes: []
+
+sources:
+- lang:
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - koneluettavuus
+  
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

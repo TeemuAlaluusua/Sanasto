@@ -1,0 +1,50 @@
+id: mrp
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: MRP
+    type: Lyhenne
+  - lang: fi
+    label: materiaalitarvelaskenta
+    type: Suositettava termi
+  - lang: sv
+    label: MRP
+    type: Lyhenne
+  - lang: sv
+    label: materialbehovsplanering
+    type: Suositettava termi
+  - lang: en
+    label: MRP
+    type: Lyhenne
+  - lang: en
+    label: Manufacturing Resource Planning
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: MRP-ohjelmistosovellus, joka ohjaa ja aikatauluttaa materiaalivirtoja tuotannon vaatimusten mukaisesti.
+  - lang: sv
+    text: MRP-programvaruapplikation som styr och schemalägger materialflöden enligt produktionskrav.
+  - lang: en
+    text: Software application (MRP) that controls and schedules material flows according to production requirements.
+notes:
+  - lang: fi
+    text: |
+      Materiaalitarvelaskenta (MRP) ohjaa materiaalien hankintaa ja tuotannon ajoitusta tuotantosuunnitelmien perusteella.
+  - lang: sv
+    text: |
+      Materialbehovsplanering (MRP) styr materialanskaffning och produktionsplanering baserat på produktionsplaner.
+  - lang: en
+    text: |
+      Manufacturing Resource Planning (MRP) supports material procurement and production scheduling based on production plans.
+sources:
+  - lang: fi
+    label: ISO 10303-240:2005
+    uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

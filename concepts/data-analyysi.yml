@@ -1,0 +1,35 @@
+id: data-analyysi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: data-analyysi
+  type: Suositettava termi
+- lang: sv
+  label: dataanalys
+  type: Suositettava termi
+- lang: en
+  label: data analysis
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Data-analyysillä tarkoitetaan datan elinkaaren vaihetta, joka käsittää tekniikat, joita käytetään
+    analyytikon tavoitteiden saavuttamiseen eli informatiivisen tiedon tuottamiseen organisoidusta datasta.
+- lang: sv
+  text: Med dataanalys avses ett skede i datans livscykel som omfattar de tekniker som används för att
+    uppnå analytikerns mål, det vill säga för att producera informativ kunskap ur organiserad data.
+- lang: en
+  text: Data analysis refers to a stage in the data lifecycle comprising the techniques used to achieve
+    the analyst's objectives, i.e. to produce informative knowledge from organized data.
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2017
+  uri: https://www.iso.org
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

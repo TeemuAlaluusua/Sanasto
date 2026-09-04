@@ -1,0 +1,48 @@
+id: semanttinen-yhteentoimivuus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: semanttinen yhteentoimivuus
+  type: Suositettava termi
+
+- lang: sv
+  label: semantisk interoperabilitet
+  type: Suositettava termi
+
+- lang: en
+  label: semantic interoperability
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: yhteentoimivuus, joka mahdollistaa tiedon siirtämisen ja käsittelyn tavalla, jossa tiedon merkitys säilyy muuttumattomana ja ymmärrettävänä kaikille osapuolille
+
+- lang: sv
+  text: interoperabilitet som gör det möjligt att överföra och behandla information så att dess innebörd bevaras oförändrad och begriplig för alla parter
+
+- lang: en
+  text: form of interoperability that enables the transfer and processing of data in a way that retains the meaning of the data so that it remains unchanged and understandable for all parties
+
+notes: []
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-27
+
+relations:
+  broader:
+  - yhteentoimivuus
+
+  narrower: []
+
+  related:
+  - tekninen-yhteentoimivuus
+  - organisatorinen-yhteentoimivuus
+  - oikeudellinen-yhteentoimivuus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

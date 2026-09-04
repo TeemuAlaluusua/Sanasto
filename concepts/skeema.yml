@@ -1,0 +1,64 @@
+id: skeema
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: skeema
+    type: Suositettava termi
+
+  - lang: sv
+    label: schema
+    type: Suositettava termi
+
+  - lang: en
+    label: schema
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: rakennekuvaus, jonka mukaisella sanastolla voidaan kuvailla sillä tarkkuudella, että myös tietokoneet ymmärtävät sen
+
+  - lang: sv
+    text: strukturdefinition vars vokabulär gör det möjligt att beskriva information med sådan precision att även datorer kan tolka den
+
+  - lang: en
+    text: structural specification that defines a vocabulary enabling information to be described with sufficient precision for computer interpretation
+
+notes:
+  - lang: fi
+    text: |
+      looginen suunnitelma, jossa esitetään metatietoelementtien väliset yhteydet
+      yleensä määrittämällä säännöt metatietojen käytölle ja hallinnalle erityisesti
+      semantiikan, syntaksin ja arvojen valinnaisuuden (pakollisuusasteen) osalta
+
+  - lang: en
+    text: |
+      logical plan showing the relationships between metadata elements, normally
+      through establishing rules for the use and management of metadata specifically
+      as regards the semantics, the syntax and the optionality (obligation level) of values
+
+sources:
+  - lang: fi
+    label: Sanastot.fi – Yrityksen digitalous
+    uri: https://iri.suomi.fi/terminology/yritysdigi/concept-2021
+
+  - lang: en
+    label: ISO 23081-1:2006
+    uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower:
+    - käsiteskeema
+    - metatietoskeema
+  related:
+    - tietomalli
+    - käsitemalli
+    - mappaus
+    - nimiavaruus
+    - tietomallinnus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

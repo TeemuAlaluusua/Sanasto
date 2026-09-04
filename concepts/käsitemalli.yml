@@ -1,0 +1,75 @@
+id: käsitemalli
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: käsitemalli
+    type: Suositettava termi
+
+  - lang: sv
+    label: begreppsmodell
+    type: Suositettava termi
+
+  - lang: en
+    label: conceptual schema
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: |
+      Tietomalli, joka määrittelee kohdealueen käsitteet
+      ja niiden väliset suhteet.
+
+  - lang: sv
+    text: |
+      Informationsmodell som definierar begreppen
+      i ett visst verksamhetsområde och relationerna
+      mellan dem.
+
+  - lang: en
+    text: |
+      Model that defines the concepts of a universe
+      of discourse and the relationships between them.
+
+notes:
+  - lang: fi
+    text: |
+      Käsitemalli kuvaa kohdealueen keskeiset käsitteet
+      ja niiden väliset suhteet riippumatta
+      tietojärjestelmien teknisestä toteutuksesta.
+
+  - lang: sv
+    text: |
+      En begreppsmodell beskriver centrala begrepp i ett
+      verksamhetsområde och relationerna mellan dem
+      oberoende av teknisk implementation.
+
+  - lang: en
+    text: |
+      A conceptual schema describes the core concepts
+      of a domain and the relationships between them
+      independent of technical implementation.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+relations:
+  broader:
+    - tietomalli
+    - malli
+  narrower:
+  - käsiteskeema
+  - lokitiedosto
+  related:
+    - ontologia
+    - skeema
+    - fyysinen-tietomalli
+    - looginen-tietomalli
+    - tietomallinnus
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

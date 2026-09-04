@@ -1,0 +1,58 @@
+id: cpid
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: komponentti-/osatunniste
+  type: Suositettava termi
+- lang: fi
+  label: CPID
+  type: Lyhenne
+- lang: sv
+  label: komponent-/artikelidentifierare
+  type: Suositettava termi
+- lang: sv
+  label: CPID
+  type: Lyhenne
+- lang: en
+  label: Component/Part Identifier
+  type: Suositettava termi
+- lang: en
+  label: CPID
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: CPID on GTIN-koodia vastaava GS1:n tuoteyksilöintistandardi ostajalähtöisen yksilöinnin tarpeisiin,
+    rajoittumatta kuitenkaan GTIN-standardin tapaan tuotevalmistajien määrittämään tuoteyksilöintiin.
+    CPID-tunnistetta käytetään, kun valmistajat kokoavat eri yritysten valmistamia osia ja komponentteja
+    lopputuotteiksi. CPID-tunnuksen käyttö on rajoitettu osapuolten keskinäisellä sopimuksella. Se ei
+    ole avoin toimitusketjun standardi, koska tunnuksen todellinen rakenne riippuu valmistajien ja niiden
+    toimittajien välisistä kauppasuhteista.
+- lang: sv
+  text: CPID är en GS1-produktidentifieringsstandard som motsvarar GTIN-koden, avsedd för köpardrivna
+    identifieringsbehov, utan att - till skillnad från GTIN-standarden - vara begränsad till produktidentifiering
+    fastställd av tillverkarna. CPID-identifieraren används när tillverkare sätter samman delar och komponenter
+    tillverkade av olika företag till slutprodukter. Användningen av en CPID-kod är begränsad genom ett
+    ömsesidigt avtal mellan parterna. Det är inte en öppen standard för leveranskedjan, eftersom identifierarens
+    faktiska struktur beror på handelsrelationerna mellan tillverkare och deras leverantörer.
+- lang: en
+  text: CPID is a GS1 product identification standard equivalent to the GTIN code, intended for buyer-driven
+    identification needs, without being limited - unlike the GTIN standard - to product identification
+    defined by product manufacturers. The CPID identifier is used when manufacturers assemble parts and
+    components made by different companies into end products. The use of a CPID code is restricted by
+    mutual agreement between the parties. It is not an open supply chain standard, since the identifier's
+    actual structure depends on the trading relationships between manufacturers and their suppliers.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related:
+  - gtin-tunnus
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

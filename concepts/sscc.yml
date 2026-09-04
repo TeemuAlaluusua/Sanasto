@@ -1,0 +1,45 @@
+id: sscc
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: sarjatoimitusyksikkökoodi
+  type: Suositettava termi
+- lang: fi
+  label: SSCC
+  type: Lyhenne
+- lang: sv
+  label: serienummer för transportenhet
+  type: Suositettava termi
+- lang: sv
+  label: SSCC
+  type: Lyhenne
+- lang: en
+  label: Serial Shipping Container Code
+  type: Suositettava termi
+- lang: en
+  label: SSCC
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: SSCC on GS1:n yksilöintitunnus logististen yksiköiden, kuten lavojen ja kuljetuspakkausten, tunnistamiseen.
+- lang: sv
+  text: SSCC är ett GS1-identifieringsnummer som används för att identifiera logistiska enheter, såsom
+    lastpallar och transportförpackningar.
+- lang: en
+  text: SSCC is a GS1 identification number used to identify logistics units such as pallets and transport
+    packages.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related:
+  - kolli
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

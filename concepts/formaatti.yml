@@ -1,0 +1,48 @@
+id: formaatti
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: formaatti
+  type: Suositettava termi
+
+- lang: sv
+  label: dataformat
+  type: Suositettava termi
+
+- lang: en
+  label: data format
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: datan esitysmuoto jonkin määritellyn enkoodaustavan mukaisesti
+
+- lang: sv
+  text: datas representationsform enligt en definierad kodningsmetod
+
+- lang: en
+  text: representation of data according to a defined encoding method
+
+notes: []
+
+sources:
+- lang: fi
+  label: Helsingin yliopisto:2024
+  uri: https://wiki.helsinki.fi/xwiki/bin/view/stemmatology/Data%20formats/
+
+relations:
+  broader:
+  - tietomääritys
+
+  narrower: []
+
+  related:
+  - dataformaatti
+  - vaihtoformaatti
+  - säilytysformaatti
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

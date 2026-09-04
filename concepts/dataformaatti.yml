@@ -1,0 +1,55 @@
+id: dataformaatti
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: dataformaatti
+    type: Suositettava termi
+  - lang: sv
+    label: dataformat
+    type: Suositettava termi
+  - lang: en
+    label: data format
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: "datan ennalta määritelty järjestys tallennusmedialla"
+  - lang: sv
+    text: "förutbestämd ordning av data på ett datamedium"
+  - lang: en
+    text: "predetermined arrangement of data on a data medium"
+
+notes:
+  - lang: fi
+    text: |
+      Dataformaatti määrittelee, miten data esitetään ja
+      jäsennetään tallennuksessa tai tiedonsiirrossa.
+  - lang: sv
+    text: |
+      Dataformat anger hur data representeras och struktureras
+      vid lagring eller överföring.
+  - lang: en
+    text: |
+      A data format specifies how data is represented and
+      structured for storage or transmission.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: 
+
+relations:
+  broader: []
+  narrower:
+  - esitysformaatti
+  - säilytysformaatti
+  - vaihtoformaatti
+  related:
+  - big-data
+  - formaatti
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

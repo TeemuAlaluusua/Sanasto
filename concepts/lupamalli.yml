@@ -1,0 +1,100 @@
+id: lupamalli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: lupamalli
+  type: Suositettava termi
+
+- lang: sv
+  label: informationsmodell för byggnadslov
+  type: Suositettava termi
+
+- lang: en
+  label: information model for building permit
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: rakennuskohteen informaatiomalli, joka sisältää ne suunnitelmamallin tiedot, joita tarvitaan rakentamislupaprosessin aikana
+
+- lang: sv
+  text: informationsmodell för ett byggnadsobjekt som innehåller de uppgifter ur en projekteringsmodell som behövs under bygglovsprocessen
+
+- lang: en
+  text: information model of a building asset containing the information from the design model required during the building permit process
+
+notes:
+- lang: fi
+  text: |
+    Rakentamislupahakemuksessa ei välttämättä toimiteta
+    erityissuunnitelmia, mutta niitä voidaan edellyttää
+    toimitettavaksi rakentamislupaprosessin aikana ennen
+    rakennustyön aloittamista.
+
+- lang: sv
+  text: |
+    Särskilda projekteringshandlingar behöver inte alltid
+    lämnas in tillsammans med bygglovsansökan, men de kan
+    krävas under bygglovsprocessen innan byggarbetet påbörjas.
+
+- lang: en
+  text: |
+    Detailed discipline design documents may not always be
+    submitted with the building permit application, but they
+    may be required during the permit process before
+    construction work begins.
+
+- lang: fi
+  text: |
+    Lupamallin tulee noudattaa rakentamisen lupapäätösten
+    tietomallia. Lupamalli voidaan toimittaa esimerkiksi
+    SFS-EN ISO 16739-1 -standardin mukaisessa IFC-muodossa
+    (Industry Foundation Classes).
+
+- lang: sv
+  text: |
+    Informationsmodellen för bygglov ska följa datamodellen
+    för bygglovsbeslut. Den kan till exempel levereras i
+    IFC-format enligt standarden SFS-EN ISO 16739-1.
+
+- lang: en
+  text: |
+    The building permit information model shall follow the
+    data model for building permit decisions. It may be
+    delivered for example in IFC format according to
+    SFS-EN ISO 16739-1 (Industry Foundation Classes).
+
+- lang: fi
+  text: |
+    Käsitejärjestelmäkaavio:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+- lang: sv
+  text: |
+    Begreppssystemdiagram:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+- lang: en
+  text: |
+    Concept system diagram:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – RY-mallit
+  uri: https://iri.suomi.fi/terminology/rymallit/c18
+
+relations:
+  broader:
+  - rakennuskohteen-informaatiomalli
+  narrower: []
+  related:
+  - suunnitelmamalli
+  - ifc
+  - loppukatselmusmalli
+  - rakentamisen-lupapaatosten-tietomalli
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-14T00:00

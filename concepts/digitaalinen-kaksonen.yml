@@ -1,0 +1,60 @@
+id: digitaalinen-kaksonen
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: digitaalinen kaksonen
+  type: Suositettava termi
+- lang: fi
+  label: digikaksonen
+  type: Synonyymi
+- lang: sv
+  label: digital tvilling
+  type: Suositettava termi
+- lang: en
+  label: digital twin
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: digitaalinen esitys, joka mahdollistaa tietojen synkronisoinnin kohteen fyysisen ja digitaalisen
+    tilan välillä tarpeen mukaan
+- lang: sv
+  text: digital representation som möjliggör synkronisering av information mellan objektets fysiska och
+    digitala tillstånd vid behov
+- lang: en
+  text: digital representation that enables synchronization of information between an object's physical
+    and digital state as needed
+notes:
+- lang: fi
+  text: Digitaalisen kaksosen avulla voi hallita, muuttaa ja jakaa sen fyysiseen vastineeseen liittyvää
+    tietoa erilaisia käyttötarkoituksia varten. Rakennuskohteen digitaalinen kaksonen voi sisältää kohteen
+    elinkaaren eri vaiheissa käytettävien rakennuskohteen informaatiomallien tietoja. Rakennuksen käyttövaiheen
+    digitaalinen kaksonen voi sisältää esimerkiksi rakennuksen ajantasaiset kulutustiedot ja -historian
+    sekä tietoa rakennukseen tehdyistä korjauksista ja muutostöistä koko rakennuksen elinkaaren ajalta.
+- lang: sv
+  text: Med hjälp av den digitala tvillingen kan man hantera, ändra och dela information om dess fysiska
+    motsvarighet för olika användningsändamål. Ett byggnadsobjekts digitala tvilling kan innehålla information
+    från de informationsmodeller av byggnadsobjektet som används i objektets olika livscykelskeden. Den
+    digitala tvillingen för en byggnads bruksskede kan till exempel innehålla byggnadens aktuella och
+    historiska förbrukningsuppgifter samt information om reparationer och ändringsarbeten som utförts
+    på byggnaden under hela dess livscykel.
+- lang: en
+  text: A digital twin can be used to manage, modify and share information related to its physical counterpart
+    for various purposes. The digital twin of a construction object can contain information from the information
+    models of the construction object used during its various lifecycle stages. The digital twin of a
+    building's operational stage may, for example, contain the building's up-to-date and historical consumption
+    data as well as information on repairs and alterations made to the building throughout its lifecycle.
+sources:
+- lang: fi
+  label: Sanastokeskus, RY-mallit -sanasto
+  uri: https://iri.suomi.fi/terminology/rymallit/c26
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rakennuskohteen-informaatiomalli
+  - rakennuskohde
+  - rakennus
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-08-28T00:00

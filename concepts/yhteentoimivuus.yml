@@ -1,0 +1,60 @@
+id: yhteentoimivuus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: yhteentoimivuus
+  type: Suositettava termi
+
+- lang: sv
+  label: interoperabilitet
+  type: Suositettava termi
+
+- lang: en
+  label: interoperability
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: toimintaan liittyvien toimijoiden, prosessien ja tietojärjestelmien kyky toimia ja viestiä keskenään sellaisella tavalla tai siinä laajuudessa, että ne voivat rutiininomaisesti käyttää ja ymmärtää toistensa tietoja
+
+- lang: sv
+  text: förmåga hos aktörer, processer och informationssystem som är kopplade till en verksamhet att fungera och kommunicera med varandra på ett sådant sätt eller i sådan omfattning att de rutinmässigt kan använda och förstå varandras information
+
+- lang: en
+  text: ability of actors, processes and information systems that are connected to an activity to act and communicate together in such a way or scope that they can routinely use and understand each other's data
+
+notes:
+- lang: fi
+  text: Yhteentoimivuus voi olla luonteeltaan teknistä, semanttista, organisatorista tai oikeudellista.
+
+- lang: sv
+  text: Interoperabilitet kan vara teknisk, semantisk, organisatorisk eller juridisk till sin natur.
+
+- lang: en
+  text: Interoperability can be technical, semantic, organisational or legal in nature.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-9
+
+- lang: en
+  label: ISO/IEC 22123-1:2023
+  uri: https://www.iso.org/standard/82758.html
+
+relations:
+  broader: []
+  narrower:
+  - oikeudellinen-yhteentoimivuus
+  - organisatorinen-yhteentoimivuus
+  - semanttinen-yhteentoimivuus
+  - syntaktinen-yhteentoimivuus
+  - tekninen-yhteentoimivuus
+  - tiedonsiirron-yhteentoimivuus
+  related:
+  - yhteentoimivuusalusta
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

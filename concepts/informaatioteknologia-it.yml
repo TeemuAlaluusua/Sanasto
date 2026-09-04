@@ -1,0 +1,41 @@
+id: informaatioteknologia-it
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: informaatioteknologia (IT)
+  type: Suositettava termi
+- lang: sv
+  label: informationsteknik
+  type: Suositettava termi
+- lang: en
+  label: information technology
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Informaatioteknologia tarkoittaa teknologian käyttöä informaation varastointiin, välitykseen tai
+    käsittelyyn. Teknologia sisältää tyypillisesti tietokoneet, tietoliikenteen, sovellukset ja muut ohjelmistot.
+    Informaatio voi sisältää liiketoimintatietoa, ääntä, kuvia, videoita jne. Informaatioteknologiaa käytetään
+    usein tukemaan liiketoimintaprosesseja IT-palveluilla.
+- lang: sv
+  text: Informationsteknik avser användningen av teknik för lagring, förmedling eller behandling av information.
+    Tekniken omfattar vanligen datorer, telekommunikation, applikationer och annan programvara. Information
+    kan omfatta affärsdata, ljud, bilder, video med mera. Informationsteknik används ofta för att stödja
+    affärsprocesser med hjälp av IT-tjänster.
+- lang: en
+  text: Information technology refers to the use of technology for the storage, transmission or processing
+    of information. The technology typically includes computers, telecommunications, applications and
+    other software. Information may include business data, sound, images, video, etc. Information technology
+    is often used to support business processes through IT services.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 38500:2015
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

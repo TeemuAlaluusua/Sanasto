@@ -1,0 +1,52 @@
+id: tietojärjestelmä
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tietojärjestelmä
+  type: Suositettava termi
+- lang: sv
+  label: informationssystem
+  type: Suositettava termi
+- lang: en
+  label: information system
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tietojärjestelmä on yleiskäsite, joka sisältää digitaalisen aineiston käsittelyn toimenpiteet,
+    laitteet ja ohjelmistot.
+- lang: sv
+  text: Informationssystem är ett brett allmänbegrepp som syftar på de anordningar, metoder och programvaror
+    som används vid behandling av digitalt material.
+- lang: en
+  text: Information system is a broad, generic concept referring to the devices, methods and software
+    used in the processing of digital material.
+notes:
+- lang: fi
+  text: Tietojärjestelmä on laaja yleiskäsite, jolla tarkoitetaan digitaalisen aineiston käsittelyssä
+    käytettäviä laitteita, menetelmiä ja ohjelmistoja. Tietojärjestelmä voi siis olla yksittäinen ohjelmiston
+    ja laitteiston kokonaisuus. Samaa käsitettä käytetään myös kuvaamaan kansallisia, monialaisia ja monien
+    eri tahojen yhdessä käyttämiä kokonaisuuksia.
+- lang: sv
+  text: Informationssystem är ett brett allmänbegrepp som avser de anordningar, metoder och programvaror
+    som används vid behandling av digitalt material. Ett informationssystem kan alltså vara en enskild
+    helhet av programvara och maskinvara. Samma begrepp används även för att beskriva nationella, sektorsövergripande
+    helheter som används gemensamt av många olika aktörer.
+- lang: en
+  text: Information system is a broad, generic concept referring to the devices, methods and software
+    used in the processing of digital material. An information system can therefore be a single combination
+    of software and hardware. The same concept is also used to describe national, cross-sectoral entities
+    used jointly by many different parties.
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - digitalisaatio
+  - it
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

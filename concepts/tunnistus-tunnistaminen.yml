@@ -1,0 +1,36 @@
+id: tunnistus-tunnistaminen
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tunnistus; tunnistaminen
+  type: Suositettava termi
+- lang: sv
+  label: identifiering; igenkänning
+  type: Suositettava termi
+- lang: en
+  label: recognition; identification
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tunnistamisella tarkoitetaan menettelyä, jolla varmistetaan mm. henkilön identiteetti tai esineen
+    tai asian tunniste.
+- lang: sv
+  text: Med identifiering avses ett förfarande genom vilket man bland annat säkerställer en persons identitet
+    eller ett föremåls eller en sak identifierare.
+- lang: en
+  text: Identification refers to a procedure used to confirm, among other things, a person's identity
+    or the identifier of an object or item.
+notes: []
+sources:
+- lang: fi
+  label: Sanastot
+  uri: https://sanastot.suomi.fi/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tunniste
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,76 @@
+id: finvoice
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: Finvoice
+  type: Suositettava termi
+
+- lang: sv
+  label: Finvoice
+  type: Suositettava termi
+
+- lang: en
+  label: Finvoice
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: suomalaisten pankkien määrittelemä verkkolaskun esitystapa
+
+- lang: sv
+  text: presentationsformat för e-faktura definierat av finländska banker
+
+- lang: en
+  text: e-invoice presentation format defined by Finnish banks
+
+notes:
+- lang: fi
+  text: |
+    Finvoice on sähköisen laskutuksen muoto, jota käytetään erityisesti
+    verkkopankeissa ja pankkien välityspalveluissa.
+
+- lang: fi
+  text: |
+    Suomessa on käytössä myös muita verkkolaskuformaatteja, kuten TEAPPS.
+
+- lang: fi
+  text: |
+    Finvoice-version 3.0 avulla voidaan muodostaa Eurooppa-normin (EN 16931)
+    mukaisia sähköisiä laskuja.
+
+- lang: fi
+  text: |
+    Lisätiedot ja tekniset kuvaukset ovat saatavilla Finvoice-infosivustolla:
+    https://www.finvoice.info
+
+- lang: sv
+  text: |
+    Finvoice är ett format för elektroniska fakturor som används särskilt
+    i nätbanker och bankernas förmedlingstjänster.
+
+- lang: en
+  text: |
+    Finvoice is an electronic invoicing format used especially in online banking
+    and bank-mediated services.
+
+sources:
+- lang: fi
+  label: YTI – Finvoice
+  uri: https://iri.suomi.fi/terminology/yritysdigi/concept-2006
+
+relations:
+  broader: []
+
+  narrower: []
+
+  related:
+  - edi
+  - ubl
+  - xml
+  - peppol-verkosto
+
+metadata:
+  created: 2026-03-17T00:00
+  modified: 2026-03-17T00:00

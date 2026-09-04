@@ -1,0 +1,63 @@
+id: laajat-kielimallit-llm
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: laajat kielimallit (LLM)
+  type: Suositettava termi
+- lang: sv
+  label: stora språkmodeller
+  type: Suositettava termi
+- lang: en
+  label: large language models, LLM
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Laajat kielimallit on tekoälyyn perustuva järjestelmä, jota käytetään esimerkiksi ennustamaan
+    todennäköisyyttä lauseen seuraavasta sanasta, kääntämisessä ja vastausten tuottamisessa annetun syötteen
+    perusteella. Laajat kielimallit perustuvat koneoppimiseen, ja erityisesti syväoppimiseen. Tämä tarkoittaa
+    sitä, että kielimalli hyödyntää ja kehittää itsenäisesti eräänlaista ihmisen aivojen toimintaa jäljittelevää
+    järjestelmää, joka oppii käsillä olevia konteksteja, merkityksiä ja asiayhteyksiä. Tällaiset kielimallit
+    vaativat myös oppiakseen ja kehittyäkseen suuria tietokantoja, joita kutsutaan myös koulutusdataksi.
+    Kielimallin hyödyntämä koulutusdata voi olla esimerkiksi internetistä kerättyä tietoa. Mitä suuremman
+    ja tarkemman tietokannan kielimalli saa käyttöönsä ja mitä kauemmin sen annetaan oppia ja tehdä virheitä,
+    on yleensä sen kyky ennustaa ja tuottaa tekstiä parempi. Kielimallin tehtävä on siis generoida ihmismäistä
+    sujuvaa tekstiä sille annetun syötteen (prompt) perusteella. Yleisin syötteen antotapa tekoälysovellukselle
+    on tekstikenttään kirjoitettu teksti. Maailmalla tunnettuja kielimalleja ovat mm. OpenAI:n ChatGPT
+    ja Googlen Gemini.
+- lang: sv
+  text: Stora språkmodeller är AI-baserade system som används till exempel för att förutsäga sannolikheten
+    för nästa ord i en mening, för översättning och för att generera svar utifrån given indata. Stora
+    språkmodeller bygger på maskininlärning, i synnerhet djupinlärning. Detta innebär att språkmodellen
+    självständigt utnyttjar och utvecklar ett slags system som efterliknar den mänskliga hjärnans funktion
+    och som lär sig aktuella sammanhang och betydelser. Sådana språkmodeller kräver också stora databaser,
+    så kallad träningsdata, för att lära sig och utvecklas. Träningsdatan som språkmodellen utnyttjar
+    kan till exempel vara information som samlats in från internet. Ju större och mer exakt databas språkmodellen
+    får tillgång till och ju längre den får lära sig och göra misstag, desto bättre blir i regel dess
+    förmåga att förutsäga och generera text. Språkmodellens uppgift är alltså att generera mänskligt flytande
+    text utifrån den indata (prompt) som ges. Det vanligaste sättet att ge indata till en AI-applikation
+    är text skriven i ett textfält. Kända språkmodeller i världen är bland annat OpenAI:s ChatGPT och
+    Googles Gemini.
+- lang: en
+  text: Large language models are AI-based systems used, for example, to predict the probability of the
+    next word in a sentence, for translation, and for generating responses based on a given input. Large
+    language models are based on machine learning, and in particular deep learning. This means that the
+    language model independently utilizes and develops a system that mimics the workings of the human
+    brain, learning the contexts and meanings at hand. Such language models also require large databases,
+    known as training data, in order to learn and develop. The training data used by a language model
+    may, for example, be information collected from the internet. The larger and more accurate the database
+    the language model has access to, and the longer it is allowed to learn and make mistakes, the better
+    its ability to predict and generate text generally becomes. The task of the language model is thus
+    to generate human-like, fluent text based on the input (prompt) given to it. The most common way of
+    providing input to an AI application is text typed into a text field. Well-known language models worldwide
+    include OpenAI's ChatGPT and Google's Gemini.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - koneoppiminen
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,35 @@
+id: validointi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: validointi
+  type: Suositettava termi
+- lang: sv
+  label: validering
+  type: Suositettava termi
+- lang: en
+  label: validation
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Validointi tarkoittaa objektiiviseen näyttöön perustuvaa varmistumista siitä, että tiettyä aiottua
+    käyttö- tai sovellustarkoitusta koskevat vaatimukset on täytetty.
+- lang: sv
+  text: Validering innebär en objektivt underbyggd bekräftelse av att kraven för en viss avsedd användning
+    eller tillämpning har uppfyllts.
+- lang: en
+  text: Validation means objective-evidence-based confirmation that the requirements for a particular
+    intended use or application have been met.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

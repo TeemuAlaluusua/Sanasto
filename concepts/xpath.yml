@@ -1,0 +1,78 @@
+id: xpath
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: XML Path Language
+  type: Suositettava termi
+- lang: fi
+  label: XPath
+  type: Suositettava termi
+
+- lang: sv
+  label: XML Path Language
+  type: Suositettava termi
+- lang: sv
+  label: XPath
+  type: Suositettava termi
+
+- lang: en
+  label: XML Path Language
+  type: Suositettava termi
+- lang: en
+  label: XPath
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: lausekieli, jolla osoitetaan ja käsitellään XML- ja JSON-rakenteiden solmuja
+
+- lang: sv
+  text: uttrycksspråk för att adressera och bearbeta noder i XML- och JSON-strukturer
+
+- lang: en
+  text: expression language for addressing and processing nodes in XML and JSON data structures
+
+notes:
+- lang: fi
+  text: |
+    XPath käyttää polkulausekkeita (path expressions), joilla voidaan navigoida
+    XML-dokumentin hierarkkisessa rakenteessa.
+
+- lang: fi
+  text: |
+    XPath toimii tyypillisesti osana muita kieliä, kuten XSLT ja XQuery,
+    eikä sitä yleensä käytetä itsenäisenä ohjelmointikielenä.
+
+- lang: fi
+  text: |
+    XPath 3.1 tukee XML:n lisäksi myös JSON-rakenteita sekä tietomallia,
+    joka sisältää solmuja, atomisia arvoja, funktioita ja sekvenssejä.
+
+- lang: sv
+  text: |
+    XPath använder sökuttryck (path expressions) för att navigera i hierarkiska
+    XML-strukturer.
+
+- lang: en
+  text: |
+    XPath uses path expressions to navigate hierarchical structures of XML documents.
+
+sources:
+- lang: en
+  label: W3C XPath 3.1 Recommendation
+  uri: https://www.w3.org/TR/xpath-31/
+
+relations:
+  broader: []
+
+  narrower: []
+
+  related:
+  - xml
+  - json
+
+metadata:
+  created: 2026-03-17T00:00
+  modified: 2026-03-17T00:00

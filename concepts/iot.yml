@@ -1,0 +1,88 @@
+id: iot
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: esineiden internet
+  type: Suositettava termi
+- lang: fi
+  label: IoT
+  type: Lyhenne
+
+- lang: sv
+  label: sakernas internet
+  type: Suositettava termi
+- lang: sv
+  label: IoT
+  type: Lyhenne
+
+- lang: en
+  label: internet of things
+  type: Suositettava termi
+- lang: en
+  label: IoT
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    Infrastruktuuri, joka koostuu toisiinsa yhdistetyistä
+    entiteeteistä, kuten kohdeyksiköistä, ihmisistä,
+    järjestelmistä ja informaatioresursseista, sekä
+    palveluista, jotka käsittelevät fyysisestä ja
+    virtuaalimaailmasta tulevaa informaatiota ja
+    reagoivat siihen.
+
+- lang: sv
+  text: |
+    Infrastruktur som består av sammankopplade entiteter,
+    såsom enheter, människor, system och
+    informationsresurser, samt tjänster som behandlar
+    information från den fysiska och virtuella världen
+    och reagerar på den.
+
+- lang: en
+  text: |
+    Infrastructure consisting of interconnected entities
+    such as devices, people, systems and information
+    resources, together with services that process and
+    respond to information originating from the physical
+    and virtual world.
+
+notes:
+- lang: fi
+  text: |
+    IoT viittaa usein laitteiden ja koneiden
+    yhdistämiseen internetiin sekä niiden tuottaman
+    datan hyödyntämiseen yhdessä muiden tietolähteiden
+    kanssa.
+
+- lang: sv
+  text: |
+    IoT avser ofta sammankoppling av maskiner och
+    enheter till internet samt användning av data
+    som genereras av dessa tillsammans med andra
+    datakällor.
+
+- lang: en
+  text: |
+    IoT commonly refers to connecting devices and
+    machines to the internet and integrating the
+    data they generate with other data sources.
+
+sources:
+- lang: en
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org/standard/74296.html
+
+relations:
+  broader: []
+  narrower:
+  - lot-järjestelmä
+  related:
+  - anturi
+  - big-data
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

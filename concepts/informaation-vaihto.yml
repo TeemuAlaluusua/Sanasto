@@ -1,0 +1,33 @@
+id: informaation-vaihto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: informaation vaihto
+  type: Suositettava termi
+- lang: sv
+  label: informationsutbyte
+  type: Suositettava termi
+- lang: en
+  label: information exchange
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Informaation vaihto toimenpiteet informaatiovaatimuksen tai sen osan täyttämiseksi.
+- lang: sv
+  text: Åtgärder för att uppfylla ett informationskrav eller en del av det.
+- lang: en
+  text: Actions to fulfil an information requirement or part of it.
+notes: []
+sources:
+- lang: fi
+  label: EN/ISO 19650:2018
+  uri: https://www.iso.org/standard/68078.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - informaatiovaatimus
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

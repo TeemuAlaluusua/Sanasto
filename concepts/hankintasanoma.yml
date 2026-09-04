@@ -1,0 +1,48 @@
+id: hankintasanoma
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: hankintasanoma
+  type: Suositettava termi
+- lang: sv
+  label: upphandlingsmeddelande
+  type: Suositettava termi
+- lang: en
+  label: procurement message
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Hankintasanoma on kaupankäyntiin liittyvä sanoma, joka on rakenteellisessa ja koneellisesti käsiteltävässä
+    muodossa. Yleisesti rakennusalalla käytetty vakioitu toimitusketjun sähköisen tiedonsiirron menetelmä
+    on ns. verkkolasku, jossa toimittajan järjestelmästä välitetään määrämuotoinen sähköinen sanoma (lasku)
+    suoraan asiakkaan järjestelmään. Rakennustoimialan kannalta tärkeitä sanomamäärittelyjä verkkolaskun
+    lisäksi on olemassa myös toimitusten ohjaukseen esim. tilauksille, tilausvahvistuksille sekä toimituksille
+    (sähköinen rahtikirja).
+- lang: sv
+  text: Ett upphandlingsmeddelande är ett meddelande i samband med handel som förekommer i strukturerad
+    och maskinellt hanterbar form. En allmänt använd standardiserad metod för elektronisk dataöverföring
+    i leveranskedjan inom byggbranschen är den så kallade e-fakturan, där ett elektroniskt meddelande
+    i fast format (fakturan) förmedlas direkt från leverantörens system till kundens system. Ur byggbranschens
+    synvinkel finns det förutom e-fakturan även andra viktiga meddelandedefinitioner för styrning av leveranser,
+    till exempel för beställningar, orderbekräftelser och leveranser (elektronisk fraktsedel).
+- lang: en
+  text: A procurement message is a trade-related message in a structured, machine-processable form. A
+    commonly used standardized method for electronic data interchange in the construction industry's supply
+    chain is the so-called e-invoice, in which a fixed-format electronic message (the invoice) is transmitted
+    directly from the supplier's system to the customer's system. From the construction industry's point
+    of view, in addition to the e-invoice there are also other important message definitions for controlling
+    deliveries, for example for orders, order confirmations and deliveries (electronic waybill).
+notes: []
+sources:
+- lang: fi
+  label: Sanastot
+  uri: https://sanastot.suomi.fi/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - edi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

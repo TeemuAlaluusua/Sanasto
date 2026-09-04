@@ -1,0 +1,39 @@
+id: tunniste
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tunniste
+  type: Suositettava termi
+- lang: sv
+  label: tagg
+  type: Suositettava termi
+- lang: en
+  label: tag
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: merkkijono hakemistokirjauksessa, jota käytetään tunnistamaan kenttää tai siihen liittyvää datan
+    kuvailukenttää
+- lang: sv
+  text: en teckensträng i en registerpost som används för att identifiera ett fält eller det tillhörande
+    databeskrivningsfältet
+- lang: en
+  text: a character string in an index entry used to identify a field or its associated data description
+    field
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2022
+relations:
+  broader: []
+  narrower: []
+  related:
+  - nimiavaruus
+  - uri
+  - yksilöinti
+  - loki-
+  - tunnistus-tunnistaminen
+metadata:
+  created: 2026-03-05T12:00
+  modified: 2026-08-28T00:00

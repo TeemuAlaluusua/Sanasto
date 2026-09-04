@@ -1,0 +1,42 @@
+id: tahtituotanto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tahtituotanto
+  type: Suositettava termi
+- lang: sv
+  label: taktproduktion
+  type: Suositettava termi
+- lang: en
+  label: takt production
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tahtituotanto on rakennushankkeiden johtamismenetelmä, joka pyrkii radikaalisti parempaan tuotantosysteemin
+    rytmiin ja virtaukseen, tarkalla tuotannon suunnittelulla (tahtisuunnittelu), rytmitetyllä tuotannon
+    ohjauksella (tahtiohjaus) sekä yli projektien tapahtuvalla jatkuvalla parantamisella.
+- lang: sv
+  text: Taktproduktion är en ledningsmetod för byggprojekt som strävar efter en radikalt bättre rytm och
+    ett bättre flöde i produktionssystemet, genom exakt produktionsplanering (taktplanering), rytmiserad
+    produktionsstyrning (taktstyrning) samt kontinuerlig förbättring över projektgränserna.
+- lang: en
+  text: Takt production is a management method for construction projects that seeks a radically better
+    rhythm and flow in the production system, through precise production planning (takt planning), rhythmic
+    production control (takt control), and continuous improvement across projects.
+notes: []
+sources:
+- lang: fi
+  label: RIL, Tahtituotanto:2024
+  uri: https://view.taiqa.com/ril/tahtituotanto-opas-2-2024#/page=1
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tahtiaika
+  - tahtialue
+  - tahtiaikataulu
+  - tahtivaunu-työpaketti
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

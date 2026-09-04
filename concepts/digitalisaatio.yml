@@ -1,0 +1,54 @@
+id: digitalisaatio
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: digitalisaatio
+  type: Suositettava termi
+
+- lang: sv
+  label: digital transformation
+  type: Suositettava termi
+
+- lang: en
+  label: digital transformation
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: toimintakulttuurin systeeminen muutos, jossa digitaalisia teknologioita hyödynnetään toiminnan tehostamiseksi ja kehittämiseksi
+
+- lang: sv
+  text: systemisk förändring av verksamhetskultur där digital teknik används för att effektivisera och utveckla verksamheten
+
+- lang: en
+  text: systemic change of operational culture in which digital technologies are used to improve and transform activities
+
+notes:
+- lang: fi
+  text: Digitalisaatio perustuu usein datan hyödyntämiseen ja analysointiin.
+
+- lang: sv
+  text: Digital transformation baseras ofta på användning och analys av data.
+
+- lang: en
+  text: Digital transformation is often based on the use and analysis of data.
+
+sources:
+- lang: en
+  label: ISO/IEC TS 30105-9:2023
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - data
+  - tiedonhallinta
+  - tietojärjestelmä
+  - digitointi
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

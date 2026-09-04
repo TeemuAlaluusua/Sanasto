@@ -1,0 +1,37 @@
+id: toteutusmalli--tuotantomalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: toteutusmalli / tuotantomalli
+  type: Suositettava termi
+- lang: sv
+  label: genomförandemodell / produktionsmodell
+  type: Suositettava termi
+- lang: en
+  label: as-planned model
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Toteutusmalli on rakennustietomallin tietosisällön vaihe, joka pitää sisällään kaikki suunnitelman
+    mukaiset tiedot, kuten rakennuksen mitat, materiaalit, rakenteet ja järjestelmät.
+- lang: sv
+  text: Genomförandemodellen är ett skede i byggnadsinformationsmodellens datainnehåll som omfattar alla
+    uppgifter enligt planen, såsom byggnadens mått, material, konstruktioner och system.
+- lang: en
+  text: The as-planned model is a stage in the data content of a building information model that contains
+    all the information according to the plan, such as the building's dimensions, materials, structures
+    and systems.
+notes: []
+sources:
+- lang: fi
+  label: 'Ympäristöministeriö, RASTI-projekti: 2019'
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rakennuskohteen-tietomalli
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

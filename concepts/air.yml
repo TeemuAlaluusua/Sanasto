@@ -1,0 +1,58 @@
+id: air
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: omaisuuskohteen informaatiovaatimukset
+  type: Suositettava termi
+- lang: fi
+  label: AIR
+  type: Lyhenne
+
+- lang: sv
+  label: informationskrav för tillgång
+  type: Suositettava termi
+- lang: sv
+  label: AIR
+  type: Lyhenne
+
+- lang: en
+  label: asset information requirements
+  type: Suositettava termi
+- lang: en
+  label: AIR
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: Omaisuuskohteen informaatiovaatimukset kuvaavat informaatiovaatimukset suhteessa omaisuuskohteen käyttöön. Omaisuuskohteen informaatiovaatimuksissa (AIR) esitetään omaisuuskohteen informaation tuottamiseen tarvittavat liikkeenjohdolliset, kaupalliset ja tekniset näkökohdat.
+
+- lang: sv
+  text: Informationskrav för en tillgång beskriver informationskraven i förhållande till användningen av tillgången. I tillgångens informationskrav (AIR) anges de ledningsmässiga, kommersiella och tekniska aspekter som behövs för att producera information om tillgången.
+
+- lang: en
+  text: Asset information requirements describe the information requirements in relation to the use of an asset. The asset information requirements (AIR) present the managerial, commercial and technical aspects required to produce information about the asset.
+
+notes: []
+
+sources:
+- lang: fi
+  label: EN/ISO 19650:2018
+  uri: https://www.iso.org/standard/68078.html
+
+- lang: fi
+  label: Suomi.fi-sanasto EN 19650
+  uri: https://iri.suomi.fi/terminology/en19650/concept-20
+
+relations:
+  broader:
+  - informaatiovaatimus
+  narrower: []
+  related:
+  - oir
+  - pir
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

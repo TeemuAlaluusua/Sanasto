@@ -1,0 +1,42 @@
+id: viivakoodi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: viivakoodi
+  type: Suositettava termi
+- lang: sv
+  label: streckkod
+  type: Suositettava termi
+- lang: en
+  label: bar code
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: digitaalinen koodausjärjestelmä, joka muodostuu silmin havaittavasta kuviosta, jossa on pystysuoria
+    (mahdollisesti) erilevyisiä, erikorkuisia ja eritasoisia viivoja erotettuna (mahdollisesti) erilevyisillä
+    väleillä, ja jossa tätä merkkien ja välien sijoittelua käytetään koodaamaan tietoa erityyppisten aineellisten
+    objektien tunnistamiseksi
+- lang: sv
+  text: ett digitalt kodningssystem som består av ett synligt mönster med lodräta, eventuellt olika breda,
+    olika höga och olika nivåer av streck, åtskilda med eventuellt olika breda mellanrum, där denna placering
+    av tecken och mellanrum används för att koda information i syfte att identifiera olika typer av materiella
+    objekt
+- lang: en
+  text: a digital coding system consisting of a visually perceptible pattern of vertical, possibly variable-width,
+    variable-height and variable-level bars, separated by possibly variable-width spaces, where this arrangement
+    of bars and spaces is used to encode information for the purpose of identifying different types of
+    tangible objects
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2022
+relations:
+  broader: []
+  narrower: []
+  related:
+  - gs1-digital-link
+  - tunnistus--ja-tiedonkeruutekniikat
+metadata:
+  created: 2026-03-05T12:00
+  modified: 2026-08-28T00:00

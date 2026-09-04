@@ -1,0 +1,37 @@
+id: rest-ohjelmistorajapinta
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: REST-ohjelmistorajapinta
+  type: Suositettava termi
+- lang: sv
+  label: REST
+  type: Suositettava termi
+- lang: en
+  label: representational state transfer application programming interface; REST API
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: REST on ohjelmointirajapintojen toteuttamiseen tarkoitettu arkkitehtuurimalli (tai tyyli), jota
+    käytetään hajautettujen järjestelmien väliseen kommunikaatioon. REST-malli määrittelee sovellukset
+    tietoa käsittelevien osien (komponentit), tietokohteiden (resurssit), sekä näiden yhteyksien kautta.
+- lang: sv
+  text: REST är en arkitekturmodell (eller stil) avsedd för att implementera programmeringsgränssnitt,
+    som används för kommunikation mellan distribuerade system. REST-modellen definierar applikationer
+    med hjälp av databehandlande delar (komponenter), dataobjekt (resurser) samt förbindelserna mellan
+    dessa.
+- lang: en
+  text: REST is an architectural model (or style) intended for implementing programming interfaces, used
+    for communication between distributed systems. The REST model defines applications through data-processing
+    parts (components), data objects (resources), and the connections between them.
+notes: []
+sources: []
+relations:
+  broader:
+  - ohjelmointirajapinta
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

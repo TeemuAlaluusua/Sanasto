@@ -1,0 +1,51 @@
+id: guid-tunniste
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: GUID-tunniste
+  type: Suositettava termi
+- lang: sv
+  label: GUID
+  type: Suositettava termi
+- lang: en
+  label: Globally Unique IDentifier
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: GUID on mallinnusohjelman antama kullekin osalle yksilöllinen tunniste. GUID-tunnisteen avulla
+    sama osa voidaan tunnistaa eri malleista ja näin osaan sidottu tieto säilyy mallin päivityksen yhteydessä
+    tai tieto saadaan siirtymään mallista toiseen. Kun elementille on annettu säilytettävää tietoa, esim.
+    asennus päivämäärä, on GUID-tunnisteet pyrittävä säilyttämään muokkaamalla jo luotuja rakennusosia
+    niiden tuhoamisen ja uuden osan luomisen sijaan. GUID-tunnukset muodostuvat 128 bitin satunnaisnumerosarjasta,
+    jotka esitetään yleensä 32na heksadesimaalilukuina yhdysmerkein ryhmiteltynä. GUID-tunnuksissa käytetään
+    numeroita 0-9 ja kirjaimia A-F.
+- lang: sv
+  text: GUID är en unik identifierare som modelleringsprogrammet ger varje del. Med hjälp av GUID-identifieraren
+    kan samma del identifieras i olika modeller, vilket gör att den information som är kopplad till delen
+    bevaras vid modelluppdateringar eller kan överföras från en modell till en annan. När ett element
+    har försetts med information som ska bevaras, t.ex. installationsdatum, bör GUID-identifierarna bevaras
+    genom att redigera redan skapade byggdelar i stället för att förstöra dem och skapa en ny del. GUID-koder
+    bildas av en slumpmässig talserie på 128 bitar, som vanligen representeras som 32 hexadecimala tal
+    grupperade med bindestreck. I GUID-koder används siffrorna 0-9 och bokstäverna A-F.
+- lang: en
+  text: GUID is a unique identifier assigned by the modeling software to each part. The GUID identifier
+    makes it possible to identify the same part across different models, so that information linked to
+    the part is retained when the model is updated, or can be transferred from one model to another. Once
+    an element has been given information that must be preserved, e.g. an installation date, the GUID
+    identifiers should be preserved by editing already created building components instead of deleting
+    them and creating a new part. GUIDs are formed from a random 128-bit number sequence, usually represented
+    as 32 hexadecimal digits grouped with hyphens. GUIDs use the digits 0-9 and the letters A-F.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 9834-8:2014
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - yksilöinti
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,73 @@
+id: tietoturva
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tietoturva
+  type: Suositettava termi
+
+- lang: sv
+  label: informationssäkerhet
+  type: Suositettava termi
+
+- lang: en
+  label: information security
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    Tietoturvalla tarkoitetaan fyysistä ja digitaalista
+    tiedon suojaamista. Fyysinen suojaaminen voi pitää sisällään toimenpiteitä, jotka
+    suojaavat tietokoneita varastavalta murtovarkaalta. Digitaalinen suojaaminen eli
+    kyberturvallisuus (engl. cyber security) tarkoittaa suojautumista verkon kautta
+    tulevilta hyökkäyksiltä ja tietomurroilta. Tietoturvalla on kolme päätavoitetta:
+    Tiedon luottamuksellisuuden, eheyden ja saatavuuden varmistaminen.
+
+    1 Luottamuksellisuus (engl. confidentiality) tarkoittaa, ettei tieto saa vuotaa
+    ulkopuolisille.
+
+    2 Eheys (engl. integrity) tarkoittaa, että järjestelmät ovat luotettavia ja että
+    tieto säilyy muuttumattomana ja on ajantasaisesti varmuuskopioitu.
+
+    3 Saatavuus (engl. availability) tarkoittaa pääsyä tietoon silloin, kun sitä tarvitaan.
+
+- lang: sv
+  text: |
+    Informationssäkerhet avser skydd av information både fysiskt och digitalt. Fysiskt skydd kan omfatta åtgärder som skyddar datorer mot stöld. Digitalt skydd, det vill säga cybersäkerhet, avser skydd mot attacker och dataintrång via nätverk. Informationssäkerhet har tre huvudmål: att säkerställa informationens konfidentialitet, integritet och tillgänglighet.
+
+    1 Konfidentialitet innebär att information inte får spridas till obehöriga.
+
+    2 Integritet innebär att system är tillförlitliga och att informationen förblir oförändrad samt är korrekt säkerhetskopierad.
+
+    3 Tillgänglighet innebär att information är åtkomlig när den behövs.
+
+- lang: en
+  text: |
+    Information security refers to the protection of information both physically and digitally. Physical protection may include measures that protect computers from theft. Digital protection, i.e. cybersecurity, refers to protection against attacks and data breaches via networks. Information security has three main objectives: ensuring the confidentiality, integrity and availability of information.
+
+    1 Confidentiality means that information must not be disclosed to unauthorized parties.
+
+    2 Integrity means that systems are reliable and that information remains unaltered and is properly backed up.
+
+    3 Availability means that information is accessible when needed.
+
+notes: []
+
+sources:
+- lang: fi
+  label: ISO/IEC 27000:2020
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - lokitieto
+  - tiedonhallinta
+  - loki-
+  - tietoarkkitehtuuri
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T17:35

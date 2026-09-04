@@ -1,0 +1,39 @@
+id: digitaalinen-identiteetti
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: digitaalinen identiteetti
+  type: Suositettava termi
+- lang: sv
+  label: digital identitet
+  type: Suositettava termi
+- lang: en
+  label: digital identity
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Identiteetti, joka muodostuu digitaalisista yksilöintitiedoista. Digitaalisen identiteetin avulla
+    yritys (tai muu toimija tai objekti) voidaan tunnistaa luotettavasti ja yritys voi toimia täysipainoisesti
+    jakaen verkossa itseään koskevia vahvistettuja tietoja.
+- lang: sv
+  text: En identitet som består av digitala individualiseringsuppgifter. Med hjälp av den digitala identiteten
+    kan ett företag (eller en annan aktör eller ett objekt) identifieras på ett tillförlitligt sätt, och
+    företaget kan fullt ut agera genom att dela verifierade uppgifter om sig själv på nätet.
+- lang: en
+  text: An identity formed of digital identification data. A digital identity enables a company (or another
+    actor or object) to be reliably identified, and allows the company to operate fully by sharing verified
+    information about itself online.
+notes: []
+sources:
+- lang: fi
+  label: Sanastot
+  uri: https://sanastot.suomi.fi/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - yksilöinti
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

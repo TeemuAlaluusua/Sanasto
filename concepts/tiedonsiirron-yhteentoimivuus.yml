@@ -1,0 +1,36 @@
+id: tiedonsiirron-yhteentoimivuus
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tiedonsiirron yhteentoimivuus
+  type: Suositettava termi
+- lang: sv
+  label: transportinteroperabilitet
+  type: Suositettava termi
+- lang: en
+  label: transport interoperability
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tiedonsiirron yhteentoimivuudella tarkoitetaan yhteentoimivuutta, jossa osallisten järjestelmien
+    välisessä tiedonsiirrossa käytetään sovittua viestintäinfrastruktuuria.
+- lang: sv
+  text: Med transportinteroperabilitet avses interoperabilitet där dataöverföringen mellan de deltagande
+    systemen sker via en överenskommen kommunikationsinfrastruktur.
+- lang: en
+  text: Transport interoperability refers to interoperability in which data transfer between the participating
+    systems uses an agreed communication infrastructure.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22123-1:2023
+  uri: https://www.iso.org/standard/82758.html
+relations:
+  broader:
+  - yhteentoimivuus
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

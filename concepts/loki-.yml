@@ -1,0 +1,50 @@
+id: loki-
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: loki-
+  type: Suositettava termi
+- lang: sv
+  label: logg
+  type: Suositettava termi
+- lang: en
+  label: log
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Lokitus tarkoittaa digitaalisen jalanjäljen kirjaamista tiedostoon. Lokiin kirjataan ainakin ajankohta,
+    käyttäjän tunniste ja mitä tietoa käyttö on koskenut. Loki voi tallentaa myös tiedon siitä, miten
+    tietoa on käytetty (esim. lukeminen ja muutokset). Lokin kerääminen on osa järjestelmän tietoturvaa.
+- lang: sv
+  text: Loggning avser registrering av ett digitalt fotspår i en fil. I loggen registreras åtminstone
+    tidpunkten, användarens identifierare och vilken information användningen har gällt. Loggen kan även
+    lagra information om hur informationen har använts (t.ex. läsning och ändringar). Insamling av loggar
+    är en del av systemets informationssäkerhet.
+- lang: en
+  text: Logging refers to recording a digital footprint in a file. The log records at least the time,
+    the user's identifier, and what information the use concerned. The log can also store information
+    on how the data was used (e.g. reading and changes). Collecting logs is part of a system's information
+    security.
+notes:
+- lang: fi
+  text: Lokimerkintä, lokitiedosto, lokitus, engl. log, log file, digitaalinen merkintä tapahtumista ja
+    tekijöistä.
+- lang: sv
+  text: Loggpost, loggfil, loggning, eng. log, log file, digital anteckning om händelser och aktörer.
+- lang: en
+  text: Log entry, log file, logging, digital record of events and actors.
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - lokitiedosto
+  - tunniste
+  - tietoturva
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

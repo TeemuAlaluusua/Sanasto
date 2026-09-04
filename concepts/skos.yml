@@ -1,0 +1,88 @@
+id: skos
+status: []
+schemeId: []
+
+terms:
+
+- lang: fi
+  label: simple knowledge organization system
+  type: Suositettava termi
+
+- lang: fi
+  label: SKOS
+  type: Lyhenne
+
+- lang: sv
+  label: simple knowledge organization system
+  type: Suositettava termi
+
+- lang: sv
+  label: SKOS
+  type: Lyhenne
+
+- lang: en
+  label: simple knowledge organization system
+  type: Suositettava termi
+
+- lang: en
+  label: SKOS
+  type: Lyhenne
+
+
+definitions:
+
+- lang: fi
+  text: |
+    Yleinen tietomalli, jonka avulla jaetaan ja linkitetään
+    tietämysalkioita internetissä.
+
+- lang: sv
+  text: |
+    En gemensam datamodell för att dela och länka
+    kunskapsobjekt på internet.
+
+- lang: en
+  text: |
+    Common data model for sharing and linking
+    knowledge items via the internet.
+
+
+notes:
+
+- lang: fi
+  text: |
+    SKOS on W3C:n suositus sanastojen, tesaurusten ja
+    luokitusjärjestelmien esittämiseen RDF-muodossa.
+
+- lang: sv
+  text: |
+    SKOS är en W3C-rekommendation för att representera
+    tesaurer, klassifikationssystem och andra vokabulärer i RDF.
+
+- lang: en
+  text: |
+    SKOS is a W3C recommendation used to represent
+    thesauri, classification schemes and other vocabularies in RDF.
+
+
+sources:
+- lang:
+  label: SKOS Simple Knowledge Organization System Reference
+  uri: https://www.w3.org/TR/skos-reference/
+- lang:
+  label: ISO 5127:2022
+  url:
+
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rdf
+  - owl
+  - semanttinen-web
+
+
+metadata:
+  created: 2026-03-05T12:00
+  modified: 2026-03-05T12:00

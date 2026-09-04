@@ -1,0 +1,39 @@
+id: suljettu-toimintaympäristö
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: suljettu toimintaympäristö
+  type: Suositettava termi
+- lang: sv
+  label: sluten verksamhetsmiljö
+  type: Suositettava termi
+- lang: en
+  label: closed operating environment
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Sovellus, joka on tarkoitettu suljetun käyttäjäryhmän käyttöön, yleensä yhden organisaation sisällä
+    tai tietyn sopimuksen mukaisesti.
+- lang: sv
+  text: En tillämpning avsedd för en sluten användargrupp, vanligtvis inom en och samma organisation eller
+    enligt ett visst avtal.
+- lang: en
+  text: An application intended for use by a closed user group, usually within a single organization or
+    in accordance with a specific agreement.
+notes: []
+sources:
+- lang: fi
+  label: EN 1556:1998
+  uri: https://sales.sfs.fi/fi/index/tuotteet/SFS/CEN/ID2/1/246564.html.stx
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+relations:
+  broader: []
+  narrower: []
+  related:
+  - avoin-toimintaympäristö
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

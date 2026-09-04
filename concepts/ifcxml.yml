@@ -1,0 +1,34 @@
+id: ifcxml
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ifcXML
+  type: Suositettava termi
+- lang: sv
+  label: ifcXML
+  type: Suositettava termi
+- lang: en
+  label: ifcXML
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: XML-muotoinen IFC-tietoaineisto.
+- lang: sv
+  text: IFC-dataset i XML-format.
+- lang: en
+  text: IFC dataset in XML format.
+notes: []
+sources:
+- lang: fi
+  label: buildingSmart Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+relations:
+  broader:
+  - ifc
+  narrower: []
+  related:
+  - xml
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

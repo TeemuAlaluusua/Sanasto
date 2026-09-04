@@ -1,0 +1,35 @@
+id: lähtötiedot
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: lähtötiedot
+  type: Suositettava termi
+- lang: sv
+  label: utgångsuppgifter
+  type: Suositettava termi
+- lang: en
+  label: initial data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Lähtötiedot ovat eri tietolähteistä saatua tai mitattua tuotteiden, toiminnan ja palveluiden suunnittelua
+    varten hankittua informaatiota.
+- lang: sv
+  text: Utgångsuppgifter är information som erhållits från eller mätts upp via olika informationskällor
+    och som anskaffats för projektering av produkter, verksamhet och tjänster.
+- lang: en
+  text: Initial data is information obtained from or measured via various data sources, acquired for the
+    design of products, operations and services.
+notes: []
+sources:
+- lang: fi
+  label: 'Ympäristöministeriö, RASTI-projekti: 2019'
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

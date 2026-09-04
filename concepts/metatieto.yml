@@ -1,0 +1,58 @@
+id: metatieto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: metatieto
+  type: Suositettava termi
+
+- lang: sv
+  label: metadata
+  type: Suositettava termi
+
+- lang: en
+  label: metadata
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tieto, joka kuvaa aineiston kontekstia, sisältöä tai rakennetta sekä ohjaa ja dokumentoi sen käsittelyä ja hallintaa
+
+- lang: sv
+  text: information som beskriver ett materials kontext, innehåll eller struktur samt styr och dokumenterar dess hantering och förvaltning
+
+- lang: en
+  text: information that describes the context, content or structure of a resource and guides and documents its processing and management
+
+notes:
+- lang: fi
+  text: Metatieto on tietoa tiedosta.
+
+- lang: sv
+  text: Metadata är data om data.
+
+- lang: en
+  text: Metadata is data about data.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-76
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - metatietoskeema
+  - tietomääritys
+  - tietomalli
+  - tietue
+  - data
+  - koneluettavuus
+  - koodisto
+  - uda
+  - konenäkö
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

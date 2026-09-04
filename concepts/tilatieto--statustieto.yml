@@ -1,0 +1,48 @@
+id: tilatieto--statustieto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tilatieto / statustieto
+  type: Suositettava termi
+- lang: sv
+  label: tillståndsuppgift / statusuppgift
+  type: Suositettava termi
+- lang: en
+  label: status information
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: 'Statustieto käsitteenä kuvaa rakennusosan valmiusastetta tai jonkin toimitusketjussa esiintyvän
+    toiminnon senhetkistä tilaa. Statustietoja voidaan kirjata jokaisesta rakennusosasta useita. Esimerkiksi
+    betonielementillä voi olla statustoimintoja: suunnittelu, valu, varastointi, toimitus ja asennus.
+    Näitä statustoimintoja on mahdollista kirjata useita erilaisia aina kohteesta ja tarpeista riippuen.
+    Jokaiselle statustoiminnolle puolestaan voidaan antaa statusarvoja, jotka kuvaavat tarkemmin rakennusosan
+    senhetkistä tilaa. Statusarvot voivat olla esimerkiksi aloitettu, keskeytetty ja valmis.'
+- lang: sv
+  text: 'Statusuppgift som begrepp beskriver en byggdels färdighetsgrad eller det aktuella läget för en
+    funktion som förekommer i leveranskedjan. Flera statusuppgifter kan registreras för varje byggdel.
+    Till exempel kan ett betongelement ha statusfunktioner som: projektering, gjutning, lagring, leverans
+    och installation. Det är möjligt att registrera flera olika sådana statusfunktioner beroende på objekt
+    och behov. För varje statusfunktion kan i sin tur statusvärden anges, som mer i detalj beskriver byggdelens
+    aktuella läge. Statusvärden kan till exempel vara påbörjad, avbruten och klar.'
+- lang: en
+  text: 'As a concept, status information describes the degree of completion of a building component or
+    the current state of an activity occurring within the supply chain. Multiple status data items can
+    be recorded for each building component. For example, a concrete element may have status activities
+    such as: design, casting, storage, delivery and installation. It is possible to record several different
+    such status activities depending on the object and the need. In turn, each status activity can be
+    assigned status values that describe the building component''s current state in more detail. Status
+    values may, for example, be started, paused and completed.'
+notes: []
+sources:
+- lang: fi
+  label: ISO 9241-13:1998
+  uri: https://www.iso.org/
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

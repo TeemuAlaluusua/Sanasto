@@ -1,0 +1,68 @@
+id: owl
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: web ontology language
+  type: Suositettava termi
+- lang: fi
+  label: OWL
+  type: Lyhenne
+
+- lang: sv
+  label: web ontology language
+  type: Suositettava termi
+- lang: sv
+  label: OWL
+  type: Lyhenne
+
+- lang: en
+  label: web ontology language
+  type: Suositettava termi
+- lang: en
+  label: OWL
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: |
+    W3C:n suosittelema kieli ontologioiden kuvaamiseen; mahdollistaa
+    RDF-tietoa rikkaamman luokkien, ominaisuuksien ja niiden välisten
+    suhteiden ja päättelysääntöjen määrittelyn.
+
+- lang: sv
+  text: |
+    Ett W3C-rekommenderat språk för att beskriva ontologier; möjliggör
+    en rikare definition av klasser, egenskaper och relationer samt
+    slutledningsregler än vad RDF ensamt medger.
+
+- lang: en
+  text: |
+    A W3C-recommended language for describing ontologies; enables
+    richer definitions of classes, properties, relationships and
+    inference rules than RDF alone provides.
+
+notes:
+- lang: fi
+  text: |
+    OWL rakentuu RDF:n ja RDF Scheman päälle ja sitä käytetään yhdessä
+    SPARQL-kyselykielen kanssa semanttisen webin sovelluksissa.
+
+sources:
+- lang:
+  label: OWL 2 Web Ontology Language Document Overview
+  uri: https://www.w3.org/TR/owl2-overview/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rdf
+  - sparql
+  - skos
+  - semanttinen-web
+  - ifcowl
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

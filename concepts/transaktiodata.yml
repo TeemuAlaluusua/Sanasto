@@ -1,0 +1,37 @@
+id: transaktiodata
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: transaktiodata
+  type: Suositettava termi
+- lang: sv
+  label: transaktionsdata
+  type: Suositettava termi
+- lang: en
+  label: transactional data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Transaktiodata syntyy yritystoiminnassa ja sisältää liiketapahtumakohtaisia tietoja. Transaktiodataa
+    on esimerkiksi ostoista ja tilauksista saatava data.
+- lang: sv
+  text: Transaktionsdata uppstår i affärsverksamheten och innehåller uppgifter kopplade till enskilda
+    affärshändelser. Transaktionsdata kan till exempel vara data som fås från inköp och beställningar.
+- lang: en
+  text: Transactional data is generated in the course of business operations and contains information
+    related to individual business transactions. Examples of transactional data include data obtained
+    from purchases and orders.
+notes: []
+sources:
+- lang: fi
+  label: Sanastot
+  uri: https://sanastot.suomi.fi/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - lohkoketju
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

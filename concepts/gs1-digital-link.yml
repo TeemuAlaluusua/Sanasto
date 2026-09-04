@@ -1,0 +1,47 @@
+id: gs1-digital-link
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: GS1 Digital Link
+  type: Suositettava termi
+- lang: sv
+  label: GS1 Digital Link
+  type: Suositettava termi
+- lang: en
+  label: GS1 Digital Link
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: GS1 Digital Link määrittää, miten GS1:n viivakoodit ohjataan eri verkkolinkkeihin standardoidulla
+    tavalla. Se on esimerkiksi GS1 2D-koodin taustalla oleva standardi, joka mahdollistaa yhteydet sekä
+    toimitusketjun tunnisteisiin että kuluttajaviestinnän sisältöihin. Kun tuotteessa on EAN-, QR-, NFC-koodi
+    tai GS1 DataMatrix, ohjataan se GS1 Digital Linkin avulla eri url-osoitteisiin ja GS1:n toimitusketjun
+    tunnisteisiin. Tuotemerkin omistaja määrittää, minne kyseinen koodi ohjaa.
+- lang: sv
+  text: GS1 Digital Link fastställer, på ett standardiserat sätt, hur GS1:s streckkoder länkas till olika
+    webblänkar. Det är till exempel den standard som ligger bakom GS1:s 2D-kod och som möjliggör kopplingar
+    både till leveranskedjans identifierare och till innehåll riktat mot konsumenter. När en produkt har
+    en EAN-, QR-, NFC-kod eller en GS1 DataMatrix, styrs den med hjälp av GS1 Digital Link till olika
+    url-adresser och till GS1:s identifierare för leveranskedjan. Varumärkesinnehavaren bestämmer vart
+    koden i fråga länkar.
+- lang: en
+  text: GS1 Digital Link defines, in a standardized way, how GS1 barcodes are linked to different web
+    addresses. It is, for example, the standard underlying the GS1 2D barcode, enabling connections both
+    to supply chain identifiers and to consumer-facing content. When a product carries an EAN, QR or NFC
+    code, or a GS1 DataMatrix, GS1 Digital Link is used to direct it to various URLs and to GS1 supply
+    chain identifiers. The brand owner determines where a given code links to.
+notes: []
+sources:
+- lang: fi
+  label: GS1 Finland:2025
+  uri: https://gs1.fi/fi/standardit/gs1n-tiedon-jakamisen-standardit
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related:
+  - viivakoodi
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

@@ -1,0 +1,51 @@
+id: etim-standardi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ETIM-standardi
+  type: Suositettava termi
+- lang: sv
+  label: ETIM-standard
+  type: Suositettava termi
+- lang: en
+  label: European Technical Information Model
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: ETIM on kansainvälinen de facto teollisuusstandardi, joka määrittelee sen, miten sähkö-, LVI-
+    ja rakennusalan tuotteiden tekniset ominaisuudet tulee ilmoittaa ja välittää koko toimitusketjussa
+    yhdenmukaisella tavalla. ETIM International hallinnoi ja kehittää jäsenistönsä kautta rakennus-, lvi-
+    ja sähköalan teknisten tuotteiden yhtenäistä ja kielestä riippumatonta tuoteluokittelua. ETIM ei ole
+    tuotetietokanta tai ohjelmisto vaan looginen malli tuotteiden jaottelemiseksi erilaisiin tuoteluokkiin
+    sekä listaus eri tuoteluokkien tärkeimmistä teknisistä ominaisuuksista.
+- lang: sv
+  text: ETIM är en internationell de facto-branschstandard som fastställer hur de tekniska egenskaperna
+    hos el-, VVS- och byggprodukter ska anges och förmedlas på ett enhetligt sätt genom hela leveranskedjan.
+    ETIM International förvaltar och utvecklar tillsammans med sina medlemmar en enhetlig och språkoberoende
+    produktklassificering för tekniska produkter inom bygg-, VVS- och elbranschen. ETIM är inte en produktdatabas
+    eller programvara utan en logisk modell för att indela produkter i olika produktklasser samt en förteckning
+    över de viktigaste tekniska egenskaperna för respektive produktklass.
+- lang: en
+  text: ETIM is an international de facto industry standard that defines how the technical properties
+    of electrical, HVAC and construction products must be stated and communicated in a consistent way
+    throughout the supply chain. Together with its members, ETIM International maintains and develops
+    a uniform, language-independent product classification for technical products in the construction,
+    HVAC and electrical sectors. ETIM is not a product database or software but a logical model for dividing
+    products into different product classes, together with a list of the key technical properties of each
+    product class.
+notes: []
+sources:
+- lang: fi
+  label: ETIM
+  uri: https://etim.stkliitto.fi/
+relations:
+  broader:
+  - standardi
+  - nimikkeistö-tai-luokitus
+  narrower: []
+  related:
+  - de-facto-standardi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

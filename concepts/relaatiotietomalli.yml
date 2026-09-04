@@ -1,0 +1,52 @@
+id: relaatiotietomalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: relaatiotietomalli
+  type: Suositettava termi
+- lang: sv
+  label: relationsdatamodell
+  type: Suositettava termi
+- lang: en
+  label: primary key
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tietomallimuoto, joka muodostuu tauluista, riveistä ja sarakkeista.
+- lang: sv
+  text: En datamodellform som består av tabeller, rader och kolumner.
+- lang: en
+  text: A data model format consisting of tables, rows and columns.
+notes:
+- lang: fi
+  text: IBM:n kehittämä tietomallimuoto on nykyisin hyvin yleinen. Sen perusosia ovat tietokantataulut,
+    jotka koostuvat riveistä ja sarakkeista. Jokaisessa taulussa on taulun sisäinen, uniikki pääavain,
+    joka erottaa taulun rivit toisistaan. Lisäksi taulussa on toiseen tauluun viittaava viiteavain. Taulujen
+    sisältö voidaan linkittää toisiinsa viiteavaimilla. Nämä taulujen väliset suhteet ovat relaatiotietomallin
+    keskeinen osa.
+- lang: sv
+  text: Denna av IBM utvecklade datamodellform är numera mycket vanlig. Dess grundläggande delar är databastabeller,
+    som består av rader och kolumner. Varje tabell har en tabellintern, unik primärnyckel som skiljer
+    tabellens rader åt. Dessutom har tabellen en främmande nyckel som hänvisar till en annan tabell. Tabellernas
+    innehåll kan länkas samman med hjälp av främmande nycklar. Dessa relationer mellan tabellerna är en
+    central del av relationsdatamodellen.
+- lang: en
+  text: This data model format, developed by IBM, is now very common. Its basic components are database
+    tables, consisting of rows and columns. Each table has a table-internal, unique primary key that distinguishes
+    the table's rows from one another. In addition, a table has a foreign key referring to another table.
+    The content of tables can be linked to one another via foreign keys. These relationships between tables
+    are a central part of the relational data model.
+sources:
+- lang: fi
+  label: RYHTI, Sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+relations:
+  broader:
+  - tietomalli
+  narrower: []
+  related:
+  - relaatiotietokanta
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

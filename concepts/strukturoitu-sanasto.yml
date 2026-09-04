@@ -1,0 +1,37 @@
+id: strukturoitu-sanasto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: strukturoitu sanasto
+  type: Suositettava termi
+- lang: fi
+  label: rakenteinen sanasto
+  type: Suositettava termi
+- lang: sv
+  label: strukturerad vokabulär
+  type: Suositettava termi
+- lang: en
+  label: structured vocabulary
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: tiedonhakua tukeva järjestetty joukko termejä, kirjauksia tai koodeja, jotka edustavat käsitteitä
+    ja niiden keskinäisiä suhteita
+- lang: sv
+  text: en organiserad uppsättning termer, poster eller koder som stödjer informationssökning och som
+    representerar begrepp och relationerna mellan dem
+- lang: en
+  text: an organized set of terms, entries or codes that supports information retrieval and represents
+    concepts and the relationships between them
+notes: []
+sources:
+- lang: fi
+  label: ISO 5127:2022
+relations:
+  broader: []
+  narrower: []
+  related: []
+metadata:
+  created: 2026-03-05T12:00
+  modified: 2026-08-28T00:00

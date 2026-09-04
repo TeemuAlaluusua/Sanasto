@@ -1,0 +1,38 @@
+id: prosessitieto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: prosessitieto
+  type: Suositettava termi
+- lang: sv
+  label: processdata
+  type: Suositettava termi
+- lang: en
+  label: process data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Prosessitiedolla tarkoitetaan tuoteyksilön ja toimituserän käsittelyyn, jakeluun, sijaintiin,
+    käyttöön yms. liittyvä prosessitietoa, kuten aikaleimoja, sijaintikoodeja ja työntekijätietoja. On
+    siis oleellista huomata, että prosessitieto syntyy vasta projektissa ja sen eri toiminnoissa.
+- lang: sv
+  text: Med processdata avses processrelaterad information kopplad till hanteringen, distributionen, placeringen
+    och användningen med mera av en produktindivid och ett leveransparti, såsom tidsstämplar, platskoder
+    och information om anställda. Det är alltså viktigt att notera att processdata uppstår först i projektet
+    och i dess olika funktioner.
+- lang: en
+  text: Process data refers to process-related information linked to the handling, distribution, location,
+    use, etc. of a product unit and a delivery batch, such as timestamps, location codes and employee
+    data. It is thus important to note that process data is only generated within the project and its
+    various functions.
+notes: []
+sources: []
+relations:
+  broader:
+  - tuotetieto
+  narrower: []
+  related: []
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

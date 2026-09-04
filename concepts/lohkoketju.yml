@@ -1,0 +1,43 @@
+id: lohkoketju
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: lohkoketju
+  type: Suositettava termi
+- lang: sv
+  label: blockkedja
+  type: Suositettava termi
+- lang: en
+  label: blockchain
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Lohkoketjulla tarkoitetaan teknologiaa, jonka avulla toisilleen vieraat toimijat voivat yhdessä
+    tuottaa ja ylläpitää tietokantoja hajautetusti. Lohkoketju toteutetaan listana tai lokina transaktioista,
+    joka jaetaan osallistujien kesken, jolloin sen voi todentaa monesta lähteestä ja koostaa sen perusteella
+    tietokannan.
+- lang: sv
+  text: Med blockkedja avses en teknik som gör det möjligt för aktörer som är främmande för varandra att
+    gemensamt producera och upprätthålla databaser på ett decentraliserat sätt. Blockkedjan genomförs
+    som en lista eller logg över transaktioner som delas mellan deltagarna, vilket gör att den kan verifieras
+    från flera källor och en databas kan sammanställas utifrån den.
+- lang: en
+  text: Blockchain refers to a technology that enables mutually unrelated actors to jointly produce and
+    maintain databases in a decentralized manner. A blockchain is implemented as a list or log of transactions
+    shared among the participants, which allows it to be verified from multiple sources and a database
+    to be compiled from it.
+notes: []
+sources:
+- lang: fi
+  label: Sanastot
+  uri: https://sanastot.suomi.fi/
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietokanta
+  - transaktiodata
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

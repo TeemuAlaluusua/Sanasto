@@ -1,0 +1,71 @@
+id: mappaus
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: vastaavuusmäärittely
+    type: Suositettava termi
+  - lang: fi
+    label: mappaus
+    type: Synonyymi
+  - lang: fi
+    label: semanttinen mappaus
+    type: Synonyymi
+
+  - lang: sv
+    label: mappning
+    type: Suositettava termi
+  - lang: sv
+    label: semantisk mappning
+    type: Synonyymi
+
+  - lang: en
+    label: mapping
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: |
+      Yhteen joukkoon kuuluvan elementin rinnastaminen
+      toisen joukon elementtiin semanttisen vastaavuuden
+      perusteella.
+  - lang: sv
+    text: |
+      Koppling av ett element i en mängd till ett element
+      i en annan mängd baserat på semantisk motsvarighet.
+  - lang: en
+    text: |
+      Assigning an element in one set to an element in
+      another set through semantic correspondence.
+
+notes:
+  - lang: fi
+    text: |
+      Vastaavuusmäärittelyssä selvitetään kahden eri
+      joukon elementtien väliset semanttiset vastaavuudet.
+  - lang: sv
+    text: |
+      Vid mappning fastställs de semantiska
+      motsvarigheterna mellan element i två olika mängder.
+  - lang: en
+    text: |
+      Mapping establishes the semantic correspondence
+      between elements of two different sets.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org/standard/59743.html
+
+relations:
+  broader: []
+  narrower: []
+  related:
+    - ontologia
+    - tietomalli
+    - skeema
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

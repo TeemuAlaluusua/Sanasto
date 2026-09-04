@@ -1,0 +1,59 @@
+id: asiakastilauksen-kytkeytymiskohta
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: asiakastilauksen kytkeytymiskohta
+  type: Suositettava termi
+- lang: fi
+  label: tilauskytkentäpiste
+  type: Synonyymi
+- lang: fi
+  label: tilauksen kytkeytymispiste
+  type: Synonyymi
+- lang: sv
+  label: kundorderpunkt
+  type: Suositettava termi
+- lang: sv
+  label: kundorderkopplingspunkt
+  type: Synonyymi
+- lang: en
+  label: customer order decoupling point
+  type: Suositettava termi
+- lang: en
+  label: order penetration point
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: |
+    Se toimitusketjun kohta, jossa tuote tai palvelu liitetään asiakkaan tekemään
+    tilaukseen ja jossa toiminta muuttuu ennusteohjautuvasta tilausohjautuvaksi.
+- lang: sv
+  text: |
+    Den punkt i leveranskedjan där en produkt eller tjänst kopplas till en kundorder
+    och där styrningen övergår från prognosbaserad till orderstyrd.
+- lang: en
+  text: |
+    The point in the supply chain where a product or service is linked to a specific
+    customer order and operations shift from forecast-driven to order-driven.
+
+notes: []
+sources:
+- lang: fi
+  label: Logistiikan maailma -termisanasto:2025
+  uri: https://www.logistiikanmaailma.fi/aineistot/sanastot/logistiikan-maailma-termisanasto/
+
+relations:
+  broader:
+  - toimitusketju
+  narrower: []
+  related:
+  - arvoketju
+  - mto
+  - ato
+  
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-27T00:00

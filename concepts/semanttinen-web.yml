@@ -1,0 +1,66 @@
+id: semanttinen-web
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: semanttinen web
+  type: Suositettava termi
+
+- lang: sv
+  label: semantisk webb
+  type: Suositettava termi
+
+- lang: en
+  label: semantic web
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: |
+    W3C:n visio ja joukko standardeja (mm. RDF, RDFS, OWL, SPARQL,
+    SKOS), joiden avulla webin tieto kuvataan koneellisesti
+    tulkittavassa, linkitetyssä muodossa siten, että ohjelmistot
+    voivat päätellä ja yhdistellä tietoa eri lähteistä.
+
+- lang: sv
+  text: |
+    W3C:s vision och en uppsättning standarder (bl.a. RDF, RDFS, OWL,
+    SPARQL, SKOS) för att beskriva webbens data i en maskinläsbar,
+    länkad form så att program kan sluta sig till och kombinera
+    information från olika källor.
+
+- lang: en
+  text: |
+    A W3C vision and set of standards (including RDF, RDFS, OWL,
+    SPARQL and SKOS) for describing web data in a machine-readable,
+    linked form so that software can reason over and combine
+    information from different sources.
+
+notes:
+- lang: fi
+  text: |
+    Semanttinen web -teknologioita hyödynnetään myös rakennusalan
+    tiedonhallinnassa esimerkiksi linkitetyn datan ja ontologioiden
+    avulla, kun tietomallien sisältöä yhdistetään eri järjestelmien
+    ja lähteiden kesken.
+
+sources:
+- lang:
+  label: Semantic Web - W3C
+  uri: https://www.w3.org/standards/semanticweb/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - rdf
+  - owl
+  - sparql
+  - skos
+  - ontologia
+  - linkitetty-data
+  - rdf-kolmikko
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

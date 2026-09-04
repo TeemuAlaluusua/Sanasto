@@ -1,0 +1,52 @@
+id: gln
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: sijainti- ja osapuolitunniste
+  type: Suositettava termi
+- lang: fi
+  label: GLN
+  type: Lyhenne
+- lang: sv
+  label: globalt lokaliseringsnummer
+  type: Suositettava termi
+- lang: sv
+  label: GLN
+  type: Lyhenne
+- lang: en
+  label: Global Location Number
+  type: Suositettava termi
+- lang: en
+  label: GLN
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GLN on GS1:n yksilöinnin standardi, jolla voidaan yksilöidä yritys, sen sisäisiä toimintoja tai
+    toimipisteitä. Sähköisen kaupan sanomissa GLN:ää käytetään yksilöimään liiketapahtuman osapuolia esim.
+    tilaamisen, toimittamisen, laskuttamisen ja sanomavälityksen tarpeisiin. GLN-tunnuksen kautta varmistetaan,
+    että verkkolaskut ja muut sähköiset asiakirjat saapuvat oikealle vastaanottajalle yritysverkoissa.
+- lang: sv
+  text: GLN är en GS1-identifieringsstandard som kan användas för att identifiera ett företag, dess interna
+    funktioner eller dess verksamhetsställen. I meddelanden för elektronisk handel används GLN för att
+    identifiera parterna i en affärstransaktion, till exempel för beställning, leverans, fakturering och
+    meddelandeförmedling. GLN bidrar till att säkerställa att e-fakturor och andra elektroniska dokument
+    når rätt mottagare i företagsnätverk.
+- lang: en
+  text: GLN is a GS1 identification standard used to identify a company, its internal functions, or its
+    locations. In e-commerce messages, the GLN is used to identify the parties to a transaction, for example
+    for ordering, delivery, invoicing and message exchange. The GLN helps ensure that e-invoices and other
+    electronic documents reach the correct recipient within business networks.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

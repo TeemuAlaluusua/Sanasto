@@ -1,0 +1,37 @@
+id: tunnistus--ja-tiedonkeruutekniikat
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tunnistus- ja tiedonkeruutekniikat
+  type: Suositettava termi
+- lang: sv
+  label: identifierings- och datainsamlingstekniker
+  type: Suositettava termi
+- lang: en
+  label: identification and data capture techniques
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Tarkoittaa menetelmiä, joilla kohteet tunnistetaan automaattisesti, kerätään niitä koskevia tietoja
+    ja syötetään nämä tiedot suoraan tietokonejärjestelmiin (eli ilman ihmisen osallistumista) - esimerkiksi
+    viivakoodien, RFID:n jne. käyttö.
+- lang: sv
+  text: Avser metoder med vilka objekt identifieras automatiskt, uppgifter om dem samlas in och dessa
+    uppgifter matas in direkt i datorsystem (det vill säga utan mänsklig medverkan) - till exempel användning
+    av streckkoder, RFID med mera.
+- lang: en
+  text: Refers to methods by which objects are automatically identified, data about them is collected,
+    and this data is entered directly into computer systems (i.e. without human involvement) - for example,
+    the use of barcodes, RFID, etc.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - viivakoodi
+  - rfid
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

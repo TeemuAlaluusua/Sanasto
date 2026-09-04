@@ -1,0 +1,42 @@
+id: valintalista
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: valintalista
+  type: Suositettava termi
+
+- lang: sv
+  label: valbar lista
+  type: Suositettava termi
+
+- lang: en
+  label: pick list
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: Valintalista on digitaalisen graafisen käyttöliittymän elementti, joka tarjoaa käyttäjälle mahdollisuuden valita vaihtoehtoja, kuten termejä valmiilta listalta.
+
+- lang: sv
+  text: En vallista är ett element i ett digitalt grafiskt användargränssnitt som ger användaren möjlighet att välja alternativ, såsom termer, från en fördefinierad lista.
+
+- lang: en
+  text: A pick list is an element of a digital graphical user interface that allows the user to select options, such as terms, from a predefined list.
+
+notes: []
+
+sources:
+- lang: fi
+  label: ISO 5127:2017
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related: []
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

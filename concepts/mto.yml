@@ -1,0 +1,69 @@
+id: mto
+status: []
+schemeId: []
+terms:
+  - lang: fi
+    label: MTO
+    type: Lyhenne
+  - lang: fi
+    label: tilausohjautuva tuotanto
+    type: Suositettava termi
+  - lang: sv
+    label: MTO
+    type: Lyhenne
+  - lang: sv
+    label: kundorderstyrd produktion
+    type: Suositettava termi
+  - lang: en
+    label: MTO
+    type: Lyhenne
+  - lang: en
+    label: make-to-order
+    type: Suositettava termi
+definitions:
+  - lang: fi
+    text: Tuotantomuoto, jossa tuotteet valmistetaan asiakaskohtaisten tilausten perusteella ennalta määriteltyjen tuotesuunnitelmien mukaisesti.
+  - lang: sv
+    text: Produktionsform där produkter tillverkas utifrån kundspecifika beställningar enligt fördefinierade produktplaner.
+  - lang: en
+    text: Production strategy in which products are manufactured based on customer-specific orders according to predefined product designs.
+notes:
+  - lang: fi
+    text: |
+      MTO-tuotteet ovat usein pitkälti kustomoituja ja niiden tuotantoajat ovat MTS-tuotteita pidempiä, koska tuotanto aloitetaan tilauksesta.
+      Tuotantomuotoa käytetään, kun tuotevalikoima on laaja ja yksittäisten tuotteiden kysyntä on vähäistä.
+      Vähäisen kysynnän vuoksi tuotteet ovat tyypillisesti kalliimpia kuin MTS-tuotannossa, mutta tarjoavat enemmän joustavuutta ja kustomointimahdollisuuksia.
+      Rakentamisessa MTO-tuotteet voivat olla lähellä standardoituja tuotteita, mutta sisältää asiakaskohtaisia muokkauksia, kuten värivaihtoehtoja, jotka toteutetaan vasta tilauksen jälkeen.
+  - lang: sv
+    text: |
+      MTO-produkter är ofta i hög grad kundanpassade och har längre ledtider än MTS-produkter eftersom produktionen startar först efter beställning.
+      Produktionsformen används när produktutbudet är brett och efterfrågan per produkt är låg.
+      Produkterna är typiskt dyrare än i MTS-produktion men möjliggör större flexibilitet och kundanpassning.
+      Inom byggsektorn kan MTO-produkter likna standardprodukter men inkludera kundspecifika variationer, såsom färgval som produceras efter beställning.
+  - lang: en
+    text: |
+      MTO products are often highly customized and have longer lead times than MTS products because production starts upon order.
+      The strategy is used when the product range is wide and demand per item is low.
+      Products are typically more expensive than in MTS production but offer greater flexibility and customization possibilities.
+      In construction, MTO products may resemble standard products but include customer-specific modifications such as color variants produced after ordering.
+sources:
+  - lang: fi
+    label: Alaluusua 2023
+    uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+  - lang: fi
+    label: Peltokorpi 2020
+    uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+relations:
+  broader:
+  - tuotantomuoto
+  narrower: []
+  related:
+  - mts
+  - eto
+  - asiakastilauksen-kytkeytymiskohta
+  - ato
+  - dto
+  - vakiotuote
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-19T00:00

@@ -1,0 +1,41 @@
+id: rakentamiskohteiden-informaation-mallinnus
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: rakentamiskohteiden informaation mallinnus
+  type: Suositettava termi
+- lang: sv
+  label: informationsmodellering av byggobjekt
+  type: Suositettava termi
+- lang: en
+  label: BIM
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Rakentamiskohteiden informaation mallinnuksella tarkoitetaan rakennetun ympäristön omaisuuskohteen
+    yhteisen digitaalisen esityksen käyttöä suunnittelun, rakentamisen ja käytön helpottamiseksi, jotta
+    päätöksenteolle saadaan luotettava perusta HUOM. Rakennettuja omaisuuskohteita ovat mm. rakennukset,
+    sillat, tiet ja tuotantolaitokset.
+- lang: sv
+  text: Med informationsmodellering av byggobjekt avses användningen av en gemensam digital representation
+    av ett byggt tillgångsobjekt för att underlätta projektering, byggande och drift, så att beslutsfattandet
+    får en tillförlitlig grund. OBS. Byggda tillgångsobjekt är bland annat byggnader, broar, vägar och
+    produktionsanläggningar.
+- lang: en
+  text: 'Building information modelling refers to the use of a shared digital representation of a built
+    asset to facilitate design, construction and operation, so as to provide a reliable basis for decision-making.
+    NOTE: Built assets include, among others, buildings, bridges, roads and production facilities.'
+notes: []
+sources:
+- lang: fi
+  label: EN/ISO 19650:2018
+  uri: https://www.iso.org/standard/68078.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - bcf
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

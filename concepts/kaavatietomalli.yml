@@ -1,0 +1,79 @@
+id: kaavatietomalli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: kaavatietomalli
+  type: Suositettava termi
+
+- lang: sv
+  label: plandatamodell
+  type: Suositettava termi
+
+- lang: en
+  label: data model for land use plans
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tietomalli, joka on tarkoitettu kaavan tietojen kuvaamiseen
+
+- lang: sv
+  text: datamodell som är avsedd för att beskriva information i en plan
+
+- lang: en
+  text: data model intended for describing the information of a land use plan
+
+notes:
+- lang: fi
+  text: |
+    Valtakunnallinen kaavatietomalli koostuu kaavaa,
+    kaavakohteita ja kaavamääräyksiä kuvaavista osista.
+
+- lang: sv
+  text: |
+    Den nationella plandatamodellen består av delar
+    som beskriver planen, planobjekt och planbestämmelser.
+
+- lang: en
+  text: |
+    The national data model for land use plans consists
+    of parts describing the plan, plan objects and
+    planning regulations.
+
+- lang: fi
+  text: |
+    Käsitejärjestelmäkaavio:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+- lang: sv
+  text: |
+    Begreppssystemdiagram:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+- lang: en
+  text: |
+    Concept system diagram:
+    https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – RY-mallit
+  uri: https://iri.suomi.fi/terminology/rymallit/c10
+
+- lang: fi
+  label: Rakennetun ympäristön sanasto
+  uri: https://iri.suomi.fi/terminology/rakymp/c782
+
+relations:
+  broader:
+  - tietomalli
+
+  narrower: []
+
+  related: []
+
+metadata:
+  created: 2025-12-23T14:08
+  modified: 2026-03-14T00:00

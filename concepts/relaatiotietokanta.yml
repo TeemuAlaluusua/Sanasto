@@ -1,0 +1,45 @@
+id: relaatiotietokanta
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: relaatiotietokanta
+  type: Suositettava termi
+- lang: sv
+  label: relationsdatabas
+  type: Suositettava termi
+- lang: en
+  label: relational database
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Relaatiotietokanta on tietokantajärjestelmä, joka perustuu relaatiomalliin. Relaatiomalli kuvaa
+    tietokannan tietorakenteen taulukoiden ja niiden välillä olevien suhteiden avulla. Jokainen tietokannan
+    taulu sisältää rivejä, joista jokainen edustaa yhtä tietueetta, ja sarakkeita, jotka määrittävät tietueen
+    ominaisuudet. Relaatiotietokannat käyttävät SQL-kieltä tietojen kyselyyn ja hallintaan. Yleisiä relaatiotietokantoja
+    ovat esimerkiksi PostgreSQL, MySQL, Oracle Database ja Microsoft SQL Server.
+- lang: sv
+  text: En relationsdatabas är ett databassystem som bygger på relationsmodellen. Relationsmodellen beskriver
+    databasens datastruktur med hjälp av tabeller och relationerna mellan dem. Varje tabell i databasen
+    innehåller rader, där varje rad representerar en post, och kolumner, som definierar postens egenskaper.
+    Relationsdatabaser använder SQL-språket för att fråga och hantera data. Vanliga relationsdatabaser
+    är till exempel PostgreSQL, MySQL, Oracle Database och Microsoft SQL Server.
+- lang: en
+  text: A relational database is a database system based on the relational model. The relational model
+    describes the database's data structure using tables and the relationships between them. Each table
+    in the database contains rows, each representing one record, and columns, which define the record's
+    properties. Relational databases use the SQL language to query and manage data. Common relational
+    databases include PostgreSQL, MySQL, Oracle Database and Microsoft SQL Server.
+notes: []
+sources: []
+relations:
+  broader:
+  - tietokanta
+  narrower: []
+  related:
+  - nosql-tietokanta
+  - sql-kieli
+  - relaatiotietomalli
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,108 @@
+id: xml
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: XML
+  type: Suositettava termi
+- lang: sv
+  label: XML
+  type: Suositettava termi
+- lang: en
+  label: eXtensible Markup Language
+  type: Suositettava termi
+- lang: en
+  label: XML
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: XML on merkintäkieli, jota käytetään tietojen tallentamiseen ja välittämiseen hierarkkisessa muodossa.
+    Se on suunniteltu helpottamaan tietojen vaihtoa eri järjestelmien välillä, koska se on ihmisen ja
+    koneen luettavissa oleva tekstimuotoinen tiedosto. XML tukee tietojen vaihtoa tietokonejärjestelmien,
+    kuten verkkosivustojen, tietokantojen ja kolmansien osapuolten sovellusten välillä. XML-formaattia
+    käytetään esimerkiksi verkkosivujen rakenteen määrittelyssä (HTML), tietokantojen varmuuskopioinnissa,
+    tiedonsiirrossa ja konfiguraatiotiedostoina.
+- lang: sv
+  text: XML är ett märkspråk som används för att lagra och förmedla data i hierarkisk form. Det är utformat
+    för att underlätta datautbyte mellan olika system, eftersom det är en textbaserad fil som är läsbar
+    för både människor och maskiner. XML stöder datautbyte mellan datorsystem, såsom webbplatser, databaser
+    och tredjepartsapplikationer. XML-formatet används till exempel för att definiera webbsidors struktur
+    (HTML), för säkerhetskopiering av databaser, för dataöverföring och som konfigurationsfiler.
+- lang: en
+  text: XML is a markup language used to store and transmit data in hierarchical form. It is designed
+    to facilitate data exchange between different systems, since it is a text-based file that is readable
+    by both humans and machines. XML supports data exchange between computer systems, such as websites,
+    databases and third-party applications. The XML format is used, for example, to define the structure
+    of web pages (HTML), for database backups, for data transfer, and as configuration files.
+notes:
+- lang: fi
+  text: |-
+    XML:ssä tietoja kuvataan tagien avulla, jotka määrittelevät tietojen rakenteen ja hierarkian. Esimerkiksi:
+
+    ```
+    <tuote>
+      <nimi>Naula</nimi>
+      <materiaali>Teräs</materiaali>
+      <koko>
+        <pituus>5 cm</pituus>
+        <halkaisija>3 mm</halkaisija>
+      </koko>
+      <hinta>0.10 euroa/kpl</hinta>
+    </tuote>
+    ```
+
+    Tässä esimerkissä <tuote> on pääelementti, joka sisältää alielementtejä kuten <nimi>, <materiaali>, <koko> ja <hinta>. <koko>-elementti puolestaan sisältää alielementtejä <pituus> ja <halkaisija>, jotka määrittelevät naulan mitat.
+- lang: sv
+  text: |-
+    I XML beskrivs data med hjälp av taggar som definierar datans struktur och hierarki. Exempel:
+
+    ```
+    <tuote>
+      <nimi>Naula</nimi>
+      <materiaali>Teräs</materiaali>
+      <koko>
+        <pituus>5 cm</pituus>
+        <halkaisija>3 mm</halkaisija>
+      </koko>
+      <hinta>0.10 euroa/kpl</hinta>
+    </tuote>
+    ```
+
+    I detta exempel är <tuote> (produkt) huvudelementet, som innehåller underelement såsom <nimi> (namn), <materiaali> (material), <koko> (storlek) och <hinta> (pris). <koko>-elementet innehåller i sin tur underelementen <pituus> (längd) och <halkaisija> (diameter), som anger spikens mått.
+- lang: en
+  text: |-
+    In XML, data is described using tags that define the data's structure and hierarchy. For example:
+
+    ```
+    <tuote>
+      <nimi>Naula</nimi>
+      <materiaali>Teräs</materiaali>
+      <koko>
+        <pituus>5 cm</pituus>
+        <halkaisija>3 mm</halkaisija>
+      </koko>
+      <hinta>0.10 euroa/kpl</hinta>
+    </tuote>
+    ```
+
+    In this example, <tuote> (product) is the root element, containing child elements such as <nimi> (name), <materiaali> (material), <koko> (size) and <hinta> (price). The <koko> element in turn contains the child elements <pituus> (length) and <halkaisija> (diameter), which specify the nail's dimensions.
+sources:
+- lang: fi
+  label: ISO 5127:2017
+  uri: https://www.iso.org
+- lang: fi
+  label: ISO/IEC 15909-2:2011
+  uri: https://www.iso.org/standard/43538.html#:~:text=ISO%2FIEC%2015909%2D2%3A2011%20defines%20an%20XML%2D,tools%20and%20among%20different%20parties.
+relations:
+  broader: []
+  narrower: []
+  related:
+  - finvoice
+  - ubl
+  - xbrl
+  - xpath
+  - ifcxml
+  - rakenteellinen-aineisto-strukturoitu-data
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

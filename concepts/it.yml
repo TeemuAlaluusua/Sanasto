@@ -1,0 +1,57 @@
+id: it
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: tietotekniikka
+  type: Suositettava termi
+
+- lang: fi
+  label: IT
+  type: Lyhenne
+
+- lang: sv
+  label: informationsteknik
+  type: Suositettava termi
+
+- lang: sv
+  label: IT
+  type: Lyhenne
+
+- lang: en
+  label: information technology
+  type: Suositettava termi
+
+- lang: en
+  label: IT
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: tietokoneiden ja tietoliikennejärjestelmien käyttö tiedon tallentamiseen, käsittelyyn ja siirtämiseen
+
+- lang: sv
+  text: användning av datorer och datakommunikationssystem för att lagra, behandla och överföra information
+
+- lang: en
+  text: use of computers and telecommunications systems for storing, processing and transmitting information
+
+notes: []
+
+sources:
+- lang: en
+  label: ISO/IEC 30071-1:2019
+  uri: https://www.iso.org/
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - data
+  - tietojärjestelmä
+  - tiedonhallinta
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

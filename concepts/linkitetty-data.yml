@@ -1,0 +1,61 @@
+id: linkitetty-data
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: linkitetty data
+  type: Suositettava termi
+
+- lang: sv
+  label: länkade data
+  type: Suositettava termi
+
+- lang: en
+  label: linked data
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: rakenteinen data, joka on yhdistetty useiden tietoaineistojen sisältämään dataan linkkien avulla
+
+- lang: sv
+  text: strukturerade data som har kombinerats med data i andra datauppsättningar med hjälp av länkar
+
+- lang: en
+  text: structured data that is connected to the data in several datasets with the help of links
+
+notes:
+- lang: fi
+  text: Linkitetty data voi olla avointa dataa, jolloin sitä kutsutaan avoimeksi linkitetyksi dataksi.
+
+- lang: sv
+  text: Länkade data kan vara öppna data, och kallas i sådant fall länkade öppna data.
+
+- lang: en
+  text: Linked data can be open data, in which case it is referred to as linked open data.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-7
+- lang: en
+  label: ISO 5127:2017
+  uri: https://www.iso.org
+
+relations:
+  broader:
+  - data
+
+  narrower: []
+
+  related:
+  - rdf
+  - uri
+  - ontologia
+  - semanttinen-web
+  - iri
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

@@ -1,0 +1,94 @@
+id: uri
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: Uniform Resource Identifier
+  type: Suositettava termi
+- lang: fi
+  label: URI
+  type: Lyhenne
+
+- lang: sv
+  label: Uniform Resource Identifier
+  type: Suositettava termi
+- lang: sv
+  label: URI
+  type: Lyhenne
+
+- lang: en
+  label: Uniform Resource Identifier
+  type: Suositettava termi
+- lang: en
+  label: URI
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: merkkijonosta muodostuva tunnus, joka yksikäsitteisesti yksilöi tietyn verkkoresurssin noudattaen sovittua syntaksia
+
+- lang: sv
+  text: en teckensträng som entydigt identifierar en specifik nätverksresurs enligt en överenskommen syntax
+
+- lang: en
+  text: a global identifier in the context of the World Wide Web
+
+notes:
+- lang: fi
+  text: URI-tunnistetta käytetään tyypillisesti World Wide Webin verkkoresurssien yksilöimisessä.
+
+- lang: fi
+  text: |
+    URI on verkossa olevan sisällön yksilöllinen tunniste. URI:lle on määritetty muoto,
+    joka toimii samalla tavalla kuin URL. URI-muodossa määritellään sisällön muoto
+    (esim. ”http:” verkkosivulle tai ”mailto:” sähköpostille) ja sisällön sijainti
+    (esim. ”ym.fi” verkkosivulle tai sähköpostiosoite). URI-muodon tarkoituksena on
+    ilmaista mistä ja missä muodossa haettu tieto löytyy. Tietomallin sisällöissä
+    URI-muoto viittaa usein liitetiedostojen sijaintiin palvelimella.
+
+- lang: sv
+  text: URI används vanligtvis för att identifiera resurser på World Wide Web.
+
+- lang: sv
+  text: |
+    URI är en unik identifierare för innehåll på nätet. URI har ett definierat format
+    som liknar URL. I URI-formatet anges innehållets typ (t.ex. ”http:” för webbsidor
+    eller ”mailto:” för e-post) och dess plats. Syftet med URI är att ange var och i
+    vilken form information finns. I informationsmodeller används URI ofta för att
+    referera till bilagors placering på en server.
+
+- lang: en
+  text: URI is typically used to identify resources on the World Wide Web.
+
+- lang: en
+  text: |
+    A URI is a unique identifier for content on the web. It follows a defined format
+    similar to a URL. A URI specifies both the type of the resource (e.g. “http:” or
+    “mailto:”) and its location. The purpose of a URI is to indicate where and in
+    what form information can be found. In data models, URIs often refer to the
+    location of attachments on a server.
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-32
+
+- lang: fi
+  label: RYHTI-sanasto
+  uri: https://ryhti.syke.fi/ohjeet-ja-tuki/ryhti-sanasto/
+
+relations:
+  broader: []
+  narrower:
+  - iri
+  - url
+  related:
+  - tunniste
+  - yksilöintitieto
+  - linkitetty-data
+  - nimiavaruus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

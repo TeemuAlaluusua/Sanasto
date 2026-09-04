@@ -1,0 +1,57 @@
+id: informaatio
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: informaatio
+  type: Suositettava termi
+
+- lang: sv
+  label: information
+  type: Suositettava termi
+
+- lang: en
+  label: information
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: datan uudelleen tulkittavissa oleva sovitun muotoinen esitystapa, joka sopii tiedonsiirtoon, viestintään, tulkintaan tai käsittelyyn
+
+- lang: sv
+  text: överenskommen form av data som kan tolkas på nytt och som lämpar sig för överföring, kommunikation, tolkning eller behandling
+
+- lang: en
+  text: agreed form of data that can be reinterpreted and that is suitable for transmission, communication, interpretation or processing
+
+notes:
+- lang: fi
+  text: Informaatiota voi käsitellä ihminen tai sitä voidaan käsitellä automaattisin menetelmin.
+
+- lang: sv
+  text: Information kan behandlas av människor eller automatiskt med tekniska metoder.
+
+- lang: en
+  text: Information may be processed by humans or automatically by technical means.
+
+sources:
+- lang: fi
+  label: Suomi.fi-sanasto – EN 19650 käsitteet
+  uri: https://iri.suomi.fi/terminology/en19650/concept-17
+- lang: 
+  label: ISO 19650-1:2019
+  uri:
+
+relations:
+  broader:
+  - data
+  narrower:
+  - data
+  related:
+  - tietomalli
+  - informaatiomalli
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

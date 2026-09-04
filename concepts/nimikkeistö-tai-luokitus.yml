@@ -1,0 +1,41 @@
+id: nimikkeistö-tai-luokitus
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: Nimikkeistö (tai luokitus)
+  type: Suositettava termi
+- lang: sv
+  label: nomenklatur (eller klassificering)
+  type: Suositettava termi
+- lang: en
+  label: classification
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Nimikkeistöillä tarkoitetaan tässä yhteydessä (nimikkeiden muodostama kokonaisuus) systemaattista
+    ja standardisoitua luokittelua, jolla identifioidaan, koodataan ja nimetään fyysinen tuote, tuotteen
+    osa tai komponentti, materiaali tai palvelu.
+- lang: sv
+  text: Med nomenklaturer avses i detta sammanhang (den helhet som nomenklaturerna bildar) en systematisk
+    och standardiserad klassificering med vilken en fysisk produkt, produktdel eller komponent, ett material
+    eller en tjänst identifieras, kodas och namnges.
+- lang: en
+  text: In this context, classification refers to (the set formed by the classification items) a systematic
+    and standardized categorization used to identify, code and name a physical product, product part or
+    component, material or service.
+notes: []
+sources:
+- lang: fi
+  label: 'Ympäristöministeriö, RASTI-projekti: 2019'
+  uri: https://rastiprojekti.com/wp-content/uploads/2019/02/RASTI-strategia-v1.pdf
+relations:
+  broader: []
+  narrower:
+  - etim-standardi
+  related:
+  - komponentti
+  - luokitus
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

@@ -1,0 +1,56 @@
+id: entiteetti
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: entiteetti
+    type: Suositettava termi
+  - lang: sv
+    label: entitet
+    type: Suositettava termi
+  - lang: en
+    label: entity
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: jokin, joka voidaan tunnistaa yksikäsitteisesti
+  - lang: sv
+    text: något som kan identifieras entydigt
+  - lang: en
+    text: something capable of being uniquely identified
+
+notes:
+  - lang: fi
+    text: |
+      Entiteetit käsittävät aineelliset objektit, digitaaliset dokumentit,
+      abstraktit kohteet (kuten ajat ja paikat), toimijat (luonnolliset ja
+      juridiset henkilöt) sekä kaiken muun, mikä voidaan identifioida.
+  - lang: sv
+    text: |
+      Entiteter omfattar materiella objekt, digitala dokument,
+      abstrakta företeelser (såsom tider och platser), aktörer
+      (naturliga och juridiska personer) samt allt annat som kan
+      identifieras entydigt.
+  - lang: en
+    text: |
+      Entities include material objects, electronic representations
+      of content, abstract items (such as times and places), parties
+      (human and corporate), as well as anything else that can be
+      uniquely identified.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    url:
+
+relations:
+  broader: []
+  narrower: []
+  related:
+  - luokka
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-14T00:00"

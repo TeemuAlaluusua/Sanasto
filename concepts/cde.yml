@@ -1,0 +1,88 @@
+id: cde
+status: []
+schemeId: []
+
+
+terms:
+- lang: fi
+  label: yhteinen tietoympäristö
+  type: Suositettava termi
+- lang: fi
+  label: CDE
+  type: Lyhenne
+  
+- lang: sv
+  label: gemensam datamiljö
+  type: Suositettava termi
+- lang: sv
+  label: CDE
+  type: Lyhenne
+
+- lang: en
+  label: common data environment
+  type: Suositettava termi
+- lang: en
+  label: CDE
+  type: Lyhenne
+
+
+definitions:
+
+- lang: fi
+  text: |
+    Sovittu informaation lähde minkä tahansa projektin tai omaisuuskohteen
+    jokaisen informaatiokoosteen keräämiseksi, hallitsemiseksi ja
+    levittämiseksi hallinnoidun prosessin kautta.
+
+- lang: sv
+  text: |
+    En överenskommen informationskälla för att samla in, hantera och
+    distribuera varje informationsmängd i ett projekt eller en tillgång
+    genom en kontrollerad process.
+
+- lang: en
+  text: |
+    Agreed source of information for collecting, managing and
+    disseminating each information container through a managed process
+    for a given project or asset.
+
+
+notes:
+
+- lang: fi
+  text: |
+    Yhteisen tietoympäristön työnkulku kuvaa käytettävät prosessit ja
+    yhteisen tietoympäristön (CDE) sovellus voi tarjota näitä prosesseja
+    tukevaa teknologiaa.
+
+- lang: sv
+  text: |
+    Arbetsflödet i den gemensamma datamiljön beskriver de processer
+    som används och CDE-applikationen kan erbjuda teknik som stöder
+    dessa processer.
+
+- lang: en
+  text: |
+    The workflow of the common data environment describes the processes
+    used and the CDE application can provide technology supporting
+    those processes.
+
+
+sources:
+
+- label: EN ISO 19650-1:2018
+
+- label: Suomi.fi terminologia – EN 19650
+  uri:
+    - https://sanastot.suomi.fi/terminology/en19650/concept/concept-32
+
+
+relations:
+  broader: []
+  narrower: []
+  related: []
+
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-02-24T17:35

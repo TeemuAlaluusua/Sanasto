@@ -1,0 +1,62 @@
+id: säilytysformaatti
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: säilytysformaatti
+    type: Suositettava termi
+
+  - lang: sv
+    label: lagringsformat
+    type: Suositettava termi
+
+  - lang: en
+    label: storage format
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: dataformaatti, jossa digitaalista dataa säilytetään tietokoneella tai pitkäaikaiseen varastointiin tarkoitetussa tietopankissa
+
+  - lang: sv
+    text: dataformat där digital data lagras i en dators primärminne eller i ett arkiv för långtidslagring
+
+  - lang: en
+    text: data format for the hosting of digital data in the main store of a computer or in a long-term storage data repository
+
+notes:
+  - lang: fi
+    text: |
+      Säilytysformaatti määrittelee, miten data
+      tallennetaan ja säilytetään tietojärjestelmissä
+      tai pitkäaikaissäilytyksessä.
+
+  - lang: sv
+    text: |
+      Ett lagringsformat anger hur data lagras
+      och bevaras i informationssystem eller
+      i långtidslagring.
+
+  - lang: en
+    text: |
+      A storage format specifies how digital
+      data is stored and preserved in computer
+      systems or long-term storage repositories.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org/standard/59743.html
+
+relations:
+  broader:
+    - dataformaatti
+  narrower: []
+  related:
+  - formaatti
+  - vaihtoformaatti
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

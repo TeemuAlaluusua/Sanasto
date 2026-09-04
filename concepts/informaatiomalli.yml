@@ -1,0 +1,111 @@
+id: informaatiomalli
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: informaatiomalli
+    type: Suositettava termi
+
+  - lang: sv
+    label: informationsmodell
+    type: Suositettava termi
+
+  - lang: en
+    label: information model
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: tiettyä kohdetta kuvaava malli, jossa joukko tulkittavissa olevaa dataa on esitetty jäsennetyssä muodossa
+
+  - lang: sv
+    text: modell som beskriver ett visst objekt där en mängd tolkbar data presenteras i strukturerad form
+
+  - lang: en
+    text: model describing a particular object in which a set of interpretable data is presented in a structured form
+
+notes:
+  - lang: fi
+    text: Informaatiomalli on ihmisen tulkittavissa ja tietomallien mukaiselta osaltaan koneluettavassa muodossa.
+  - lang: sv
+    text: Informationsmodellen är tolkbar för människor och i den del som följer datamodeller även maskinläsbar.
+  - lang: en
+    text: An information model is interpretable by humans and, where it follows data models, also machine-readable.
+
+  - lang: fi
+    text: |
+      Informaatiomalli voi sisältää esimerkiksi geometrisia malleja,
+      luetteloita, tietokantoja, kirjallisia dokumentteja, kuvia,
+      videoleikkeitä ja äänitteitä. Geometrisia malleja voidaan
+      esittää 2- tai 3-ulotteisina ja niihin sisältyy usein sijaintitietoa.
+  - lang: sv
+    text: |
+      En informationsmodell kan innehålla till exempel geometriska modeller,
+      listor, databaser, skriftliga dokument, bilder, videoklipp och
+      ljudinspelningar. Geometriska modeller kan presenteras i två eller
+      tre dimensioner och innehåller ofta positionsinformation.
+  - lang: en
+    text: |
+      An information model may include, for example, geometric models,
+      lists, databases, textual documents, images, video clips and
+      audio recordings. Geometric models may be represented in two or
+      three dimensions and often include spatial information.
+
+  - lang: fi
+    text: |
+      SFS-EN ISO 19650 -standardissa informaatiomalli-käsitteen
+      määritelmässä viitataan informaatiokoosteeseen, koska määritelmä
+      on laadittu mallin muodostamisen näkökulmasta. Informaatiokooste
+      on nimetty pysyvä joukko informaatiota, joka on noudettavissa
+      tiedoston, järjestelmän tai sovelluksen tallennushierarkiasta.
+  - lang: sv
+    text: |
+      I standarden SFS-EN ISO 19650 hänvisar definitionen av
+      informationsmodell till ett informationssammanhang
+      (information container), eftersom definitionen är formulerad
+      ur perspektivet att skapa en modell. Ett informationssammanhang
+      är en namngiven beständig uppsättning information som kan hämtas
+      från ett fil-, system- eller applikationsbaserat lagringshierarki.
+  - lang: en
+    text: |
+      In the SFS-EN ISO 19650 standard the definition of an
+      information model refers to an information container,
+      because the definition is formulated from the perspective
+      of creating the model. An information container is a named
+      persistent set of information retrievable from a file,
+      system or application storage hierarchy.
+
+  - lang: fi
+    text: |
+      Käsitejärjestelmäkaavio:
+      https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+  - lang: sv
+    text: |
+      Begreppssystemdiagram:
+      https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+  - lang: en
+    text: |
+      Concept system diagram:
+      https://sanastokeskus.fi/suomi.fi/rymallit/tietomalli.svg
+
+sources:
+  - lang: fi
+    label: ISO 19650 – RY-mallit sanasto
+    uri: https://iri.suomi.fi/terminology/rymallit/c15
+
+relations:
+  broader:
+  - tietomalli
+  narrower:
+  - pim
+  - rakennuskohteen-informaatiomalli
+  related:
+  - informaatio
+  - tietomallinnus
+  - informaatiomallinnus
+  - informaatiovaatimus
+  - mallinnus
+metadata:
+  created: "2025-12-23T14:08"
+  modified: "2026-03-14T00:00"

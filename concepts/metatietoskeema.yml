@@ -1,0 +1,65 @@
+id: metatietoskeema
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: metatietoskeema
+    type: Suositettava termi
+
+  - lang: sv
+    label: metadataschema
+    type: Suositettava termi
+
+  - lang: en
+    label: metadata schema
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: looginen kaavio, joka osoittaa metatiedon elementtien väliset suhteet
+
+  - lang: sv
+    text: logiskt schema som visar relationerna mellan metadataelement
+
+  - lang: en
+    text: logical plan showing the relationships between metadata elements
+
+notes:
+  - lang: fi
+    text: |
+      Metatietoskeema määrittelee metatiedon elementit,
+      niiden merkitykset ja rakenteen, ja sitä käytetään
+      metatiedon järjestämiseen ja yhteentoimivuuden
+      tukemiseen tietojärjestelmissä.
+
+  - lang: sv
+    text: |
+      Ett metadataschema anger metadataelementen,
+      deras betydelse och struktur och används för
+      att organisera metadata och stödja
+      interoperabilitet mellan informationssystem.
+
+  - lang: en
+    text: |
+      A metadata schema specifies metadata elements,
+      their meaning and structure, and supports
+      organization and interoperability of metadata
+      in information systems.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org
+
+relations:
+  broader:
+  - skeema
+  narrower: []
+  related:
+  - metatieto
+  - tietomalli
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

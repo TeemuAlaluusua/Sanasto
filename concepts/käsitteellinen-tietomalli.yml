@@ -1,0 +1,55 @@
+id: käsitteellinen-tietomalli
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: käsitteellinen tietomalli
+  type: Suositettava termi
+
+- lang: fi
+  label: käsitemalli
+  type: Synonyymi
+
+- lang: sv
+  label: konceptuell datamodell
+  type: Suositettava termi
+
+- lang: en
+  label: conceptual model
+  type: Suositettava termi
+
+definitions:
+- lang: fi
+  text: tietomalli, joka kuvaa tarkastelun kohteena olevat kohdemaailman käsitteet ja niiden väliset suhteet
+
+- lang: en
+  text: Model that defines concepts of a universe of discourse
+
+notes: []
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-65
+
+- lang: en
+  label: ISO 19101
+  uri: https://www.iso.org/
+
+relations:
+  broader:
+  - tietomalli
+
+  narrower:
+  - looginen-tietomalli
+
+  related:
+  - käsiteskeema
+  - luokka
+  - ontologia
+  - tietomallinnus
+
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

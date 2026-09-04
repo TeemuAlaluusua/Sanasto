@@ -1,0 +1,35 @@
+id: ylläpitomalli
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: ylläpitomalli
+  type: Suositettava termi
+- lang: sv
+  label: underhållsmodell
+  type: Suositettava termi
+- lang: en
+  label: maintenance model
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Ylläpitomalli on rakenteen tai järjestelmän tietomallin tietosisällön osajoukko (vaiheistus),
+    joka kattaa ylläpidon näkökulman eli käytön ja ylläpidon aikaiset tehtävät, muutokset jne.
+- lang: sv
+  text: En underhållsmodell är en delmängd (fas) av datainnehållet i en konstruktions eller ett systems
+    datamodell som täcker underhållsperspektivet, det vill säga uppgifter, ändringar med mera som sker
+    under användning och underhåll.
+- lang: en
+  text: A maintenance model is a subset (phase) of the data content of a structure's or system's data
+    model that covers the maintenance perspective, i.e. tasks, changes, etc. occurring during use and
+    maintenance.
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tietomalli
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

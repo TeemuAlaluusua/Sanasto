@@ -1,0 +1,38 @@
+id: lot-järjestelmä
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: IoT-järjestelmä
+  type: Suositettava termi
+- lang: sv
+  label: IoT-system
+  type: Suositettava termi
+- lang: en
+  label: IoT system
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Termillä IoT-järjestelmä tarkoitetaan järjestelmää, joka tarjoaa esineiden internetin toiminnallisuuksia.
+    IoT-järjestelmä voi sisältää muun muassa IoT-laitteita, IoT-yhdyskäytäviä, sensoreita ja toimilaitteita.
+- lang: sv
+  text: Med termen IoT-system avses ett system som erbjuder funktioner för sakernas internet. Ett IoT-system
+    kan bland annat innehålla IoT-enheter, IoT-gateways, sensorer och ställdon.
+- lang: en
+  text: The term IoT system refers to a system that provides Internet of Things functionalities. An IoT
+    system may include, among other things, IoT devices, IoT gateways, sensors and actuators.
+notes: []
+sources:
+- lang: fi
+  label: ISO/IEC 22989:2023
+  uri: https://www.iso.org
+relations:
+  broader:
+  - iot
+  narrower:
+  - lot-laite
+  related:
+  - anturi
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

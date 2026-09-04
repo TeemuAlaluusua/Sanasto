@@ -1,0 +1,47 @@
+id: luokitus
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: luokitus
+  type: Suositettava termi
+
+- lang: sv
+  label: klassificering
+  type: Synonyymi
+
+- lang: en
+  label: classification
+  type: Synonyymi
+
+definitions:
+- lang: fi
+  text: looginen järjestelmä, jossa asiat tai esineet on jaettu luokkiin niiden yhteisten tunnusmerkkien ja eroavaisuuksien mukaisesti
+
+- lang: sv
+  text: logiskt system där saker eller objekt delas in i klasser enligt deras gemensamma kännetecken och skillnader
+
+- lang: en
+  text: logical system in which things or objects are divided into classes according to their shared characteristics and differences
+
+notes: []
+
+sources:
+- lang: fi
+  label: Yhteentoimivuusalustan sanasto
+  uri: https://iri.suomi.fi/terminology/yti/concept-17
+
+relations:
+  broader:
+  - tietomääritys
+  narrower: []
+  related:
+  - luokka
+  - ontologia
+  - sanasto
+  - koodisto
+  - nimikkeistö-tai-luokitus
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-17T00:00

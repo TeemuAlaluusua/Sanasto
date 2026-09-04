@@ -1,0 +1,64 @@
+id: oir
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: organisatoriset informaatiovaatimukset
+  type: Suositettava termi
+- lang: fi
+  label: OIR
+  type: Lyhenne
+
+- lang: sv
+  label: organisatoriska informationskrav
+  type: Suositettava termi
+- lang: sv
+  label: OIR
+  type: Lyhenne
+
+- lang: en
+  label: organizational information requirements
+  type: Suositettava termi
+- lang: en
+  label: OIR
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: Organisaation strategisiin tavoitteisiin perustuvat informaatiovaatimukset, joilla kuvataan mitä tietoa organisaatio tarvitsee omaisuuskohteidensa ja toimintansa johtamiseen.
+
+- lang: sv
+  text: Informationskrav som grundar sig på organisationens strategiska mål och som beskriver vilken information organisationen behöver för att leda sina tillgångar och sin verksamhet.
+
+- lang: en
+  text: Information requirements in relation to organizational objectives, describing what information an organization needs to manage its assets and operations.
+
+notes:
+- lang: fi
+  text: |
+    OIR on ISO 19650 -standardin mukaisen informaatiovaatimushierarkian
+    ylin taso, josta johdetaan omaisuuskohteen informaatiovaatimukset
+    (AIR) ja projektin informaatiovaatimukset (PIR).
+
+sources:
+- lang: fi
+  label: EN ISO 19650-1:2018
+  uri: https://www.iso.org/standard/68078.html
+
+- lang: fi
+  label: Suomi.fi-sanasto EN 19650
+  uri: https://sanastot.suomi.fi/terminology/en19650/concept-19
+
+relations:
+  broader:
+  - informaatiovaatimus
+  narrower: []
+  related:
+  - air
+  - pir
+  - eir
+
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

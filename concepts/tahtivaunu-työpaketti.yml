@@ -1,0 +1,35 @@
+id: tahtivaunu-työpaketti
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: tahtivaunu (työpaketti)
+  type: Suositettava termi
+- lang: sv
+  label: taktvagn (arbetspaket)
+  type: Suositettava termi
+- lang: en
+  label: takt wagon (work package)
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: ”Arvoa tuottava prosessi”. Kuvaa sitä tehtäväkokonaisuutta, jonka työryhmä suorittaa yhdellä tahtialueella
+    yhden tahtiajan aikana.
+- lang: sv
+  text: '"En värdeskapande process." Beskriver den uppgiftshelhet som en arbetsgrupp utför inom ett taktområde
+    under en taktid.'
+- lang: en
+  text: '"A value-adding process." Describes the set of tasks that a work crew performs within one takt
+    area during one takt time.'
+notes: []
+sources: []
+relations:
+  broader: []
+  narrower: []
+  related:
+  - tahtialue
+  - tahtiaika
+  - tahtituotanto
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

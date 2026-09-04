@@ -1,0 +1,40 @@
+id: instanssitieto
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: instanssitieto
+  type: Suositettava termi
+- lang: sv
+  label: instansdata
+  type: Suositettava termi
+- lang: en
+  label: instance data
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Instanssitiedoilla tarkoitetaan tietyn tuoteyksilön yksilöivää tunnistetta ja tämän yksilön tarkempaa
+    yksilöllistä tuotetietoa. Esimerkiksi valaisimeen liittyvä instanssitieto auttaa yksilöimään mihin
+    tilaan kyseinen valaisinyksilö on suunniteltu asennettavaksi.
+- lang: sv
+  text: Med instansdata avses en unik identifierare för en viss produktindivid samt mer detaljerad individuell
+    produktinformation om denna individ. Till exempel instansdata kopplad till en armatur hjälper till
+    att identifiera i vilket utrymme just den armaturen är avsedd att installeras.
+- lang: en
+  text: Instance data refers to a unique identifier for a specific product unit and the more detailed,
+    individual product information related to that unit. For example, instance data associated with a
+    luminaire helps to identify the space in which that particular luminaire is intended to be installed.
+notes: []
+sources:
+- lang: fi
+  label: Peltokorpi, 2020
+  uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+relations:
+  broader:
+  - tuotetieto
+  narrower: []
+  related:
+  - yksilöinti
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

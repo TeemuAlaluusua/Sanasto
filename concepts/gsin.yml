@@ -1,0 +1,57 @@
+id: gsin
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: logistisen toimituksen tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GSIN
+  type: Lyhenne
+- lang: sv
+  label: globalt sändningsidentifieringsnummer
+  type: Suositettava termi
+- lang: sv
+  label: GSIN
+  type: Lyhenne
+- lang: en
+  label: Global Shipment Identification Number
+  type: Suositettava termi
+- lang: en
+  label: GSIN
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GSIN on GS1:n yksilöinnin standardi, jota käytetään tunnistamaan samaan toimitukseen kuuluvat
+    logistiset yksiköt. Logististen yksiköiden muodostama toimitus dokumentoidaan samalle lähetysasiakirjalle
+    ja/tai konossementille saman GSIN-tunnuksen alle. GSIN-tunnisteen avulla logistiset yksiköt voidaan
+    seurata ja jäljittää kuljetusketjussa rahdinlähettäjältä vastaanottajalle, ja ketjun osapuolet voivat
+    hyödyntää samaa tunnistetta esim. kuljetuksen ohjeistuksen tai tilanteen viestimisessä. Tunnistetta
+    voidaan käyttää myös EDI-sanomissa toimituksen viitenumerona.
+- lang: sv
+  text: GSIN är en GS1-identifieringsstandard som används för att identifiera de logistiska enheter som
+    hör till samma sändning. En sändning som bildas av logistiska enheter dokumenteras på samma fraktsedel
+    och/eller konossement under samma GSIN-identifierare. Med hjälp av GSIN kan logistiska enheter spåras
+    genom hela transportkedjan, från avsändare till mottagare, och parterna i kedjan kan använda samma
+    identifierare för att t.ex. förmedla transportinstruktioner eller statusinformation. Identifieraren
+    kan även användas som sändningens referensnummer i EDI-meddelanden.
+- lang: en
+  text: GSIN is a GS1 identification standard used to identify the logistics units belonging to the same
+    shipment. A shipment formed of logistics units is documented on the same consignment note and/or bill
+    of lading under the same GSIN identifier. GSIN makes it possible to track and trace logistics units
+    throughout the transport chain, from consignor to consignee, and parties in the chain can use the
+    same identifier to, for example, convey transport instructions or status information. The identifier
+    can also be used as a shipment reference number in EDI messages.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

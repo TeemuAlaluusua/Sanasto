@@ -1,0 +1,63 @@
+id: vaihtoformaatti
+status: []
+schemeId: []
+
+terms:
+  - lang: fi
+    label: vaihtoformaatti
+    type: Suositettava termi
+
+  - lang: sv
+    label: utbytesformat
+    type: Suositettava termi
+
+  - lang: en
+    label: exchange format
+    type: Suositettava termi
+
+definitions:
+  - lang: fi
+    text: koneluettava dataformaatti, jonka avulla tieto esitetään sellaisessa muodossa, jossa sitä voidaan vaihtaa eri sovellusten välillä
+
+  - lang: sv
+    text: maskinläsbart dataformat som används för att representera information i en form som möjliggör utbyte mellan olika applikationer
+
+  - lang: en
+    text: machine-readable data format for representing information that is intended to facilitate exchange of the information between different applications
+
+notes:
+  - lang: fi
+    text: |
+      Vaihtoformaatteja käytetään tietojen siirtämiseen
+      eri tietojärjestelmien tai ohjelmistojen välillä
+      yhteentoimivuuden varmistamiseksi.
+
+  - lang: sv
+    text: |
+      Utbytesformat används för att överföra information
+      mellan olika informationssystem eller programvara
+      för att möjliggöra interoperabilitet.
+
+  - lang: en
+    text: |
+      Exchange formats are used to transfer information
+      between different information systems or software
+      applications to enable interoperability.
+
+sources:
+  - lang: en
+    label: ISO 5127:2022
+    uri: https://www.iso.org/standard/59743.html
+
+relations:
+  broader:
+    - dataformaatti
+  narrower:
+  - ubl
+  related:
+    - säilytysformaatti
+    - formaatti
+
+metadata:
+  created: "2026-03-05T12:00"
+  modified: "2026-03-05T12:00"

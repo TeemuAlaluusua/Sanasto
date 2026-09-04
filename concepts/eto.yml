@@ -1,0 +1,81 @@
+id: eto
+status: []
+schemeId: []
+
+terms:
+- lang: fi
+  label: asiakasohjautuva tuotesuunnittelu
+  type: Suositettava termi
+- lang: fi
+  label: ETO
+  type: Lyhenne
+
+- lang: sv
+  label: kundorderstyrd konstruktion
+  type: Suositettava termi
+- lang: sv
+  label: ETO
+  type: Lyhenne
+
+- lang: en
+  label: engineer-to-order
+  type: Suositettava termi
+- lang: en
+  label: ETO
+  type: Lyhenne
+
+definitions:
+- lang: fi
+  text: tuotantomenetelmä, jossa tuote suunnitellaan ja valmistetaan asiakaskohtaisen tilauksen perusteella
+
+- lang: sv
+  text: produktionsmetod där produkten konstrueras och tillverkas utifrån en kundspecifik beställning
+
+- lang: en
+  text: production strategy in which a product is designed and manufactured based on a specific customer order
+
+notes:
+- lang: fi
+  text: |
+    ETO-mallissa asiakastilauksen kytkentäpiste sijaitsee
+    tuotesuunnitteluvaiheessa. Tuotteet ovat yleensä
+    asiakaskohtaisesti kustomoituja, mikä johtaa
+    pidempiin toimitusaikoihin ja korkeampiin
+    tuotantokustannuksiin.
+
+- lang: sv
+  text: |
+    I ETO-modellen ligger kundorderpunkten i
+    konstruktionsfasen. Produkterna är vanligtvis
+    kundanpassade, vilket ofta innebär längre
+    leveranstider och högre produktionskostnader.
+
+- lang: en
+  text: |
+    In the ETO model the customer order decoupling
+    point occurs in the design phase. Products are
+    typically customised, which often results in
+    longer lead times and higher production costs.
+
+sources:
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+
+- lang: fi
+  label: Peltokorpi, 2020
+  uri: https://www.aalto.fi/sites/default/files/2020-11/Loppuraportti_Tuotetiedon%20hallinta%20ja%20hyo%CC%88dynta%CC%88minen_2.11.2020_0.pdf
+
+relations:
+  broader:
+  - tuotantomuoto
+  narrower: []
+  related:
+  - dto
+  - mto
+  - ato
+  - mts
+  - projektituote
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-03-14T00:00

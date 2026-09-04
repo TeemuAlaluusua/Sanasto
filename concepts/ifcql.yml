@@ -1,0 +1,34 @@
+id: ifcql
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: IfcQL
+  type: Suositettava termi
+- lang: sv
+  label: IfcQL
+  type: Suositettava termi
+- lang: en
+  label: Industry Foundation Classes Query Language
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Standardikyselykieli IFC-tietueiden suodattamiseen.
+- lang: sv
+  text: Standardiserat frågespråk för att filtrera IFC-poster.
+- lang: en
+  text: Standard query language for filtering IFC records.
+notes: []
+sources:
+- lang: fi
+  label: buildingSmart Terminology
+  uri: https://user.buildingsmart.org/knowledge-base/terminology/
+relations:
+  broader:
+  - ifc
+  narrower: []
+  related:
+  - tietue
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

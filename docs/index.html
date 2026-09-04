@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sanasto</title>
+
+<style>
+body{font-family:system-ui,Arial;margin:0;background:#f3f4f6;color:#111}
+header{background:#fff;border-bottom:1px solid #e5e7eb;padding:12px 18px;display:flex;justify-content:space-between;align-items:center}
+.layout{display:grid;grid-template-columns:320px 1fr;gap:16px;padding:16px}
+.panel{background:#fff;border:1px solid #e5e7eb;border-radius:10px}
+.list{max-height:80vh;overflow:auto}
+.item{padding:10px 12px;border-bottom:1px solid #eee}
+.item a{text-decoration:none;color:#2563eb;font-weight:600}
+.concept{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:18px}
+h1{margin:0 0 6px;font-size:24px}
+.section{margin-top:18px}
+.infoBox{border:1px solid #e5e7eb;border-radius:6px;background:#f9fafb;padding:10px 12px;margin-top:6px}
+.infoRow{margin-bottom:6px}
+.infoLang{font-weight:600;margin-right:6px}
+.search{padding:6px 10px;border:1px solid #d1d5db;border-radius:6px}
+.dropdown{display:inline-block;margin-left:8px}
+.headerBtn{
+  padding:6px 10px;
+  border:1px solid #2563eb;
+  border-radius:6px;
+  background:#2563eb;
+  text-decoration:none;
+  color:#fff;
+  margin-right:8px;
+  font-size:14px;
+}
+.headerBtn:hover{
+  background:#1d4ed8;
+  border-color:#1d4ed8;
+}
+.headerBtn.outline{
+  background:#fff;
+  color:#2563eb;
+}
+.headerBtn.outline:hover{
+  background:#eff6ff;
+  border-color:#1d4ed8;
+  color:#1d4ed8;
+}
+
+.dropbtn{padding:6px 10px;border:1px solid #d1d5db;border-radius:6px;background:#fff;cursor:pointer}
+.dropdown-content{display:none;position:absolute;background:#fff;border:1px solid #d1d5db;border-radius:6px}
+.dropdown:hover .dropdown-content{display:block}
+.dropdown-content div{padding:6px;cursor:pointer}
+.dropdown-content div:hover{background:#f3f4f6}
+.link{color:#2563eb;text-decoration:none}
+.feedbackBox{margin-top:24px;padding-top:12px;border-top:1px solid #e5e7eb}
+.feedbackHint{color:#6b7280;font-size:14px;margin-bottom:6px}
+
+table{width:100%;border-collapse:collapse}
+th,td{border-bottom:1px solid #eee;padding:8px;font-size:13px}
+th{background:#f9fafb;text-align:left}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div>
+    <a href="#" onclick="location.hash='';renderHome();return false;" class="headerBtn" id="homeBtn">
+Etusivu
+</a>
+    <a href="./kasitekartta/index.html" target="_blank" rel="noopener" class="headerBtn outline" id="kasitekarttaBtn">
+Käsitekartta ↗
+</a>
+  </div>
+  <div>
+    <input id="search" class="search" placeholder="Search">
+
+    <div class="dropdown">
+      <button id="langBtn" class="dropbtn">FI</button>
+      <div class="dropdown-content">
+        <div onclick="setLang('fi')">Suomi</div>
+        <div onclick="setLang('sv')">Svenska</div>
+        <div onclick="setLang('en')">English</div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Export</button>
+      <div class="dropdown-content">
+        <div onclick="exportJSONLD()">JSON-LD</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+  <div class="panel"><div id="list" class="list"></div></div>
+  <div id="view" class="concept"></div>
+</div>
+
+<script>
+const UI={
+  fi:{
+    select:"Valitse käsite",
+    terms:"Termit",lang:"Kieli",term:"Termi",type:"Tyyppi",termType:{
+      "Suositettava termi":"Suositettava termi",
+      "Synonyymi":"Synonyymi",
+      "Lyhenne":"Lyhenne"
+    },
+    def:"Määritelmä",note:"Huomautus",src:"Lähteet",
+    broaderLabel:"Yläkäsitteet",narrowerLabel:"Alakäsitteet",
+    rel:"Liittyvät käsitteet",
+    kasitekarttaBtn:"Käsitekartta",
+    fb:"Voit antaa palautetta käsitteestä sanaston vastuuorganisaatiolle.",
+    fbLink:"Anna palautetta käsitteestä",
+    homeTitle:"Rakennusalan digisanasto",
+    homeAbout:"Tietoa sanastosta",
+    homeText1:"Rakennusalan digisanasto kokoaa digitaaliseen rakennettuun ympäristöön liittyviä keskeisiä käsitteitä ja termejä.",
+    homeText2:"Sanasto on epävirallinen ja se on laadittu osana väitöskirjatutkimusta.",
+    homeAuthor:"Tekijä",
+    homeUsage:"Sanaston käyttö",
+    homeScope:"Sanaston laajuus",
+    homeFeedback:"Voit antaa palautetta sanastosta tai ehdottaa uusia käsitteitä.",
+    homeFeedbackBtn:"Anna palautetta sanastosta",
+    homeBtn:"Etusivu",
+  },
+  sv:{
+    select:"Välj begrepp",
+    terms:"Termer",lang:"Språk",term:"Term",type:"Typ",termType:{
+      "Suositettava termi":"Rekommenderad term",
+      "Synonyymi":"Synonym",
+      "Lyhenne":"Förkortning"
+    },
+    def:"Definition",note:"Anmärkning",src:"Källor",
+    broaderLabel:"Överordnade begrepp",narrowerLabel:"Underordnade begrepp",
+    rel:"Relaterade begrepp",
+    kasitekarttaBtn:"Begreppskarta",
+    fb:"Du kan ge respons om begreppet till terminologins ansvariga organisation.",
+    fbLink:"Ge respons om begreppet",
+    homeTitle:"Byggbranschens digitala ordlista",
+    homeAbout:"Om ordlistan",
+    homeText1:"Den digitala ordlistan för byggbranschen samlar centrala begrepp och termer kopplade till den digitala byggda miljön.",
+    homeText2:"Ordlistan är informell och har skapats som en del av en doktorsavhandling.",
+    homeAuthor:"Författare",
+    homeUsage:"Hur ordlistan används",
+    homeScope:"Ordlistans omfattning",
+    homeFeedback:"Du kan ge respons på ordlistan eller föreslå nya begrepp.",
+    homeFeedbackBtn:"Ge respons om ordlistan",
+    homeBtn:"Hem",
+  },
+  en:{
+    select:"Select concept",
+    terms:"Terms",lang:"Language",term:"Term",type:"Type",termType:{
+      "Suositettava termi":"Preferred term",
+      "Synonyymi":"Synonym",
+      "Lyhenne":"Abbreviation"
+    },
+    def:"Definition",note:"Note",src:"Sources",
+    broaderLabel:"Broader concepts",narrowerLabel:"Narrower concepts",
+    rel:"Related concepts",
+    kasitekarttaBtn:"Concept map",
+    fb:"You can give feedback on the concept to the terminology owner.",
+    fbLink:"Give feedback on the concept",
+    homeTitle:"Digital Construction Glossary",
+    homeAbout:"About the glossary",
+    homeText1:"The digital construction glossary collects key concepts and terms related to the digital built environment.",
+    homeText2:"The glossary is informal and created as part of a doctoral research project.",
+    homeAuthor:"Author",
+    homeUsage:"Using the glossary",
+    homeScope:"Glossary scope",
+    homeFeedback:"You can give feedback on the glossary or suggest new concepts.",
+    homeFeedbackBtn:"Give feedback on the glossary",
+    homeBtn:"Home",
+  }
+};
+
+const SCHEME_LABELS = {
+  sanasto: {
+    fi: "Sanasto",
+    sv: "Terminologi",
+    en: "Vocabulary"
+  }
+};
+
+
+const ISSUE_REPO="https://github.com/TeemuAlaluusua/sanasto1/issues/new";
+const BASE_URI="https://teemualaluusua.github.io/sanasto1/#/concept/";
+
+let currentLang="fi";
+let concepts=[];
+let map={};
+
+const toArray=v=>v==null?[]:(Array.isArray(v)?v:[v]);
+const asId=x=>typeof x==="object"?x["@id"]||"":x||"";
+const esc=s=>String(s||"").replace(/[&<>"']/g,a=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[a]));
+
+/* LOAD */
+fetch("./sanasto.jsonld")
+.then(r=>r.json())
+.then(j=>{
+  const graph=j["@graph"]||[];
+
+  concepts=graph
+    .filter(n=>{
+      const t=toArray(n["@type"]);
+      return t.includes("skos:Concept") || t.includes("http://www.w3.org/2004/02/skos/core#Concept");
+    })
+    .map(n=>{
+      const uri=asId(n["@id"]);
+      if(!uri.includes("#/concept/")) return null;
+      const id=uri.split("#/concept/").pop();
+
+      return{
+        id,
+
+        scheme: toArray(n["skos:inScheme"])
+          .map(u=>asId(u))
+          .map(u=>u.includes("#") ? u.split("#").pop() : u.split("/").pop())[0] || "default",
+
+        terms:[
+          ...toArray(n["skos:prefLabel"]).map(t=>({
+          lang:t["@language"],
+          label:t["@value"],
+          type:t.termType || "Suositettava termi"
+        })),
+
+          ...toArray(n["skos:altLabel"]).map(t=>({
+          lang:t["@language"],
+          label:t["@value"],
+          type:t.termType || "Synonyymi"
+        }))
+        ],
+
+        defs:toArray(n["skos:definition"]).map(d=>({lang:d["@language"],text:d["@value"]})),
+        notes:toArray(n["skos:note"]).map(d=>({lang:d["@language"],text:d["@value"]})),
+
+        sources:toArray(n["dcterms:source"]).map(s=>({
+          lang:s["@language"]||"",
+          label:s["@value"]||"",
+          url:s["@id"]||s["uri"]||""
+        })),
+
+        broader:toArray(n["skos:broader"])
+          .map(u=>asId(u))
+          .filter(u=>u.includes("#/concept/"))
+          .map(u=>u.split("#/concept/").pop()),
+
+        narrower:toArray(n["skos:narrower"])
+          .map(u=>asId(u))
+          .filter(u=>u.includes("#/concept/"))
+          .map(u=>u.split("#/concept/").pop()),
+
+        related:toArray(n["skos:related"])
+          .map(u=>asId(u))
+          .filter(u=>u.includes("#/concept/"))
+          .map(u=>u.split("#/concept/").pop())
+      };
+    })
+    .filter(Boolean);
+
+  concepts.forEach((c,i)=>map[c.id]=i);
+
+  renderHome();
+
+  renderList();
+  openFromHash();
+});
+
+/* LANG */
+function setLang(l){
+  currentLang = l;
+
+  document.getElementById("langBtn").textContent = l.toUpperCase();
+  document.getElementById("homeBtn").textContent = UI[l].homeBtn;
+  document.getElementById("kasitekarttaBtn").textContent = UI[l].kasitekarttaBtn + " ↗";
+
+  renderList();
+
+  // jos käsite on auki -> renderöi uudelleen
+  const m = location.hash.match(/^#\/concept\/(.+)$/);
+  if(m){
+    const id = decodeURIComponent(m[1]);
+    renderConcept(id);
+  }else{
+    renderHome();
+  }
+}
+
+/* TERM PICK */
+function term(c){
+  return c.terms.find(t=>t.lang===currentLang) || c.terms[0];
+}
+
+/* LIST */
+function renderList(){
+  const q=document.getElementById("search").value.toLowerCase();
+  const el=document.getElementById("list");
+  el.innerHTML="";
+
+  const groups={};
+
+  concepts.forEach(c=>{
+    const termsInLang = c.terms.filter(t=>t.lang===currentLang);
+
+    if(termsInLang.length===0) return;
+
+    const match = termsInLang.some(t =>
+    t.label.toLowerCase().includes(q));
+
+if(!match) return;
+
+    if(!groups[c.scheme]) groups[c.scheme]=[];
+    groups[c.scheme].push(c);
+  });
+
+  Object.keys(groups).sort().forEach(scheme=>{
+    const header=document.createElement("div");
+    header.className="item";
+    header.style.fontWeight="700";
+    header.textContent = SCHEME_LABELS[scheme]?.[currentLang] || scheme;
+    el.appendChild(header);
+
+    groups[scheme]
+      .sort((a,b)=>term(a).label.localeCompare(term(b).label,currentLang))
+      .forEach(c=>{
+        const div=document.createElement("div");
+        div.className="item";
+        const a=document.createElement("a");
+        a.href="#/concept/"+encodeURIComponent(c.id);
+        a.onclick=e=>{
+          e.preventDefault();
+          location.hash="#/concept/"+encodeURIComponent(c.id);
+          renderConcept(c.id);
+        };
+        const mainTerm = term(c).label;
+
+        const abbr = c.terms.find(t =>
+          t.lang === currentLang && t.type === "Lyhenne"
+        );
+
+        a.textContent = abbr
+          ? `${mainTerm} (${abbr.label})`
+          : mainTerm;
+
+        div.appendChild(a);
+        el.appendChild(div);
+      });
+  });
+}
+function renderHome(){
+
+  const t = UI[currentLang];
+  const issueURL = ISSUE_REPO + "?title=Glossary feedback";
+
+  const html = `
+<h1>${t.homeTitle}</h1>
+
+<div class="section">
+<h3>${t.homeAbout}</h3>
+<p>${t.homeText1}</p>
+<p><b>${t.homeText2}</b></p>
+</div>
+
+<div class="section">
+<h3>${t.homeAuthor}</h3>
+<p>Teemu Alaluusua</p>
+</div>
+
+<div class="section">
+<h3>${t.homeUsage}</h3>
+<ul>
+<li>Valitse käsite vasemman reunan listasta</li>
+<li>Voit hakea käsitteitä hakukentällä</li>
+<li>Käsitteestä näet termit eri kielillä</li>
+<li>Määritelmät ja huomautukset näkyvät käsitenäkymässä</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>${t.homeScope}</h3>
+<p>${concepts.length}</p>
+</div>
+
+<div class="feedbackBox">
+<div class="feedbackHint">
+${t.homeFeedback}
+</div>
+<div>
+<a class="link" href="${issueURL}" target="_blank">
+${t.homeFeedbackBtn} ↗
+</a>
+</div>
+</div>
+`;
+
+  document.getElementById("view").innerHTML = html;
+}
+/* VIEW */
+/* VIEW */
+function renderConcept(id){
+  const c = concepts[map[id]];
+  if(!c) return;
+
+  const t = UI[currentLang];
+  const label = term(c)?.label || id;
+
+  const LANG_ORDER = {
+    fi:["fi","sv","en"],
+    sv:["sv","fi","en"],
+    en:["en","fi","sv"]
+  };
+
+  const order = LANG_ORDER[currentLang] || ["fi","sv","en"];
+
+  const termsRows = [...c.terms]
+    .sort((a,b)=>{
+      const ai = order.indexOf(a.lang);
+      const bi = order.indexOf(b.lang);
+      return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi);
+    })
+    .map(tr=>`
+<tr>
+<td>${esc(tr.lang)}</td>
+<td>${esc(tr.label)}</td>
+<td>${esc(UI[currentLang].termType[tr.type] || tr.type)}</td>
+</tr>
+`).join("");
+
+  const defs = c.defs.length ? `
+<table>
+<tr><th>${t.lang}</th><th>${t.def}</th></tr>
+${c.defs.map(d=>`
+<tr>
+<td style="width:60px">${esc(d.lang)}</td>
+<td>${esc(d.text)}</td>
+</tr>
+`).join("")}
+</table>
+` : "—";
+
+  const notes = c.notes.length ? `
+<table>
+<tr><th>${t.lang}</th><th>${t.note}</th></tr>
+${c.notes.map(d=>`
+<tr>
+<td style="width:60px">${esc(d.lang)}</td>
+<td>${esc(d.text)}</td>
+</tr>
+`).join("")}
+</table>
+` : "—";
+
+  const srcList = c.sources.map(s=>{
+    if(s.url){
+      return `<div><a class="link" href="${esc(s.url)}" target="_blank">${esc(s.label)}</a></div>`;
+    }
+    return `<div>${esc(s.label)}</div>`;
+  });
+
+  const src = srcList.length ? srcList.join("") : "—";
+
+  const relLink = r=>{
+    const rc = concepts[map[r]];
+    if(!rc) return "";
+    return `<li><a class="link" href="#/concept/${encodeURIComponent(r)}">${esc(term(rc).label)}</a></li>`;
+  };
+
+  const broaderList = (c.broader||[]).map(relLink).filter(Boolean);
+  const narrowerList = (c.narrower||[]).map(relLink).filter(Boolean);
+  const relList = (c.related||[]).map(relLink).filter(Boolean);
+
+  const broaderHtml = broaderList.length ? `<ul>${broaderList.join("")}</ul>` : "—";
+  const narrowerHtml = narrowerList.length ? `<ul>${narrowerList.join("")}</ul>` : "—";
+  const relHtml = relList.length ? `<ul>${relList.join("")}</ul>` : "—";
+
+  const issueURL = ISSUE_REPO + "?title=" + encodeURIComponent(label);
+
+  document.getElementById("view").innerHTML = `
+<h1>${esc(label)}</h1>
+
+<div class="section">
+<b>URI</b><br>
+<a class="link" href="${BASE_URI}${encodeURIComponent(id)}">${BASE_URI}${esc(id)}</a>
+</div>
+
+<div class="section">
+<h3>${t.terms}</h3>
+<table>
+<tr><th>${t.lang}</th><th>${t.term}</th><th>${t.type}</th></tr>
+${termsRows}
+</table>
+</div>
+
+<div class="section">
+<h3>${t.def}</h3>
+<div class="infoBox">${defs}</div>
+</div>
+
+<div class="section">
+<h3>${t.note}</h3>
+<div class="infoBox">${notes}</div>
+</div>
+
+<div class="section">
+<h3>${t.src}</h3>
+<div class="infoBox">${src}</div>
+</div>
+
+<div class="section">
+<h3>${t.broaderLabel}</h3>
+<div class="infoBox">${broaderHtml}</div>
+</div>
+
+<div class="section">
+<h3>${t.narrowerLabel}</h3>
+<div class="infoBox">${narrowerHtml}</div>
+</div>
+
+<div class="section">
+<h3>${t.rel}</h3>
+<div class="infoBox">${relHtml}</div>
+</div>
+
+<div class="feedbackBox">
+<div class="feedbackHint">${t.fb}</div>
+<div>
+<a class="link" href="${issueURL}" target="_blank">
+${t.fbLink} ↗
+</a>
+</div>
+</div>
+`;
+}
+
+/* HASH */
+function openFromHash(){
+  const h=location.hash;
+  const m=h.match(/^#\/concept\/(.+)$/);
+  if(!m) return;
+
+  let id=decodeURIComponent(m[1]).trim();
+  if(map[id]!==undefined){renderConcept(id);return;}
+
+  const slug=id.replace(/\s+/g,"-");
+  if(map[slug]!==undefined){renderConcept(slug);}
+}
+
+window.addEventListener("hashchange",openFromHash);
+document.getElementById("search").addEventListener("input",renderList);
+
+/* EXPORT */
+function exportJSONLD(){
+  const a = document.createElement("a");
+  a.href = "sanasto.jsonld";
+  a.download = "sanasto.jsonld";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+</script>
+
+</body>
+</html>

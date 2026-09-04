@@ -1,0 +1,47 @@
+id: ginc
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: logistisen kuljetusvaiheen tunniste
+  type: Suositettava termi
+- lang: fi
+  label: GINC
+  type: Lyhenne
+- lang: sv
+  label: globalt identifieringsnummer för sändning
+  type: Suositettava termi
+- lang: sv
+  label: GINC
+  type: Lyhenne
+- lang: en
+  label: Global Identification Number for Consignment
+  type: Suositettava termi
+- lang: en
+  label: GINC
+  type: Lyhenne
+definitions:
+- lang: fi
+  text: GINC on GS1:n yksilöinnin standardi, jota käytetään yksilöimään yhden tai useamman logistisen
+    yksikön muodostama lähetys, joka on tarkoitettu kuljetettavaksi yhdessä ja dokumentoidaan samalle
+    kuljetusasiakirjalle.
+- lang: sv
+  text: GINC är en GS1-identifieringsstandard som används för att identifiera en sändning som består av
+    en eller flera logistiska enheter avsedda att transporteras tillsammans, dokumenterade under samma
+    transportdokument.
+- lang: en
+  text: GINC is a GS1 identification standard used to identify a consignment formed of one or more logistics
+    units that are intended to be transported together and documented on the same transport document.
+notes: []
+sources:
+- lang: fi
+  label: GS1 yksilöinti standardit
+  uri: https://www.gs1.org/standards/id-keys
+relations:
+  broader:
+  - gs1-standardit
+  narrower: []
+  related: []
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00

@@ -1,0 +1,35 @@
+id: avoin-toimintaympäristö
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: avoin toimintaympäristö
+  type: Suositettava termi
+- lang: sv
+  label: öppen verksamhetsmiljö
+  type: Suositettava termi
+- lang: en
+  label: open operating environment
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Sovellus, johon riippumattomat osapuolet voivat vapaasti osallistua ja jossa kahdenväliset järjestelyt
+    eivät ole tarpeen.
+- lang: sv
+  text: En tillämpning som oberoende parter fritt kan delta i och där bilaterala arrangemang inte behövs.
+- lang: en
+  text: An application which independent parties can freely take part in and where bilateral arrangements
+    are not needed.
+notes: []
+sources:
+- lang: fi
+  label: Alaluusua, 2023
+  uri: https://aaltodoc.aalto.fi/server/api/core/bitstreams/d55ffacc-a2d7-414b-8f8c-313dff01e984/content
+relations:
+  broader: []
+  narrower: []
+  related:
+  - suljettu-toimintaympäristö
+metadata:
+  created: 2026-02-24T17:35
+  modified: 2026-08-28T00:00

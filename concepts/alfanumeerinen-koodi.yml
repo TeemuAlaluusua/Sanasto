@@ -1,0 +1,42 @@
+id: alfanumeerinen-koodi
+status: []
+schemeId: []
+terms:
+- lang: fi
+  label: alfanumeerinen koodi
+  type: Suositettava termi
+- lang: fi
+  label: aakkosnumeerinen koodi
+  type: Synonyymi
+- lang: sv
+  label: alfanumerisk kod
+  type: Suositettava termi
+- lang: en
+  label: alphanumeric code
+  type: Suositettava termi
+definitions:
+- lang: fi
+  text: Alfanumeerinen koodi (myös aakkosnumeerinen koodi) tarkoittaa aakkosista (a-z) ja numeroista (0-9)
+    koostuvaa koodia, jossa hyödynnetään myös välimerkkejä.
+- lang: sv
+  text: Alfanumerisk kod (även alfanumerisk kod) avser en kod som består av bokstäver (a-z) och siffror
+    (0-9), där även skiljetecken används.
+- lang: en
+  text: An alphanumeric code refers to a code consisting of letters (a-z) and digits (0-9), which also
+    makes use of punctuation marks.
+notes: []
+sources:
+- lang: fi
+  label: EN 1556:1998
+  uri: https://sales.sfs.fi/fi/index/tuotteet/SFS/CEN/ID2/1/246564.html.stx
+- lang: fi
+  label: ISO/IEC 19762:2025
+  uri: https://www.iso.org/standard/84412.html
+relations:
+  broader: []
+  narrower: []
+  related:
+  - alfanumeerinen
+metadata:
+  created: 2026-08-28T00:00
+  modified: 2026-08-28T00:00
